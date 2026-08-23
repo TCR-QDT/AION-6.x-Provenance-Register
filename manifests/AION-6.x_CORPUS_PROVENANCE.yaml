@@ -1,0 +1,220 @@
+# AION-6.x Corpus Provenance Manifest
+# Machine-readable provenance manifest for AION-6.x corpus documents
+# Initialization date: 2026-08-23
+# Repository: https://github.com/TCR-QDT/AION-6.x-Provenance-Register
+# Session: web-73c75281-201c-4716-b85c-97833d25f9b3
+# Author: Edson Carvalho do Nascimento (Projetista Master, ORCID 0009-0003-5504-7439)
+# Operator: IA Curadora (Escriba / Arquiteto de Metadados)
+
+manifest_version: "1.0.0"
+initialization_date: "2026-08-23"
+repository_url: "https://github.com/TCR-QDT/AION-6.x-Provenance-Register"
+repository_initial_state: "EMPTY"
+
+# Distinção crítica: data de incorporação ≠ data dos eventos históricos
+incorporation_date_distinction: true
+retroactive_authentication: false
+historical_reconstruction: false
+corpus_modification: false
+
+# Three-level distinction preserved
+levels:
+  tcr_qdt:
+    status: "MATERIALLY_EXISTS_CAPTURED"
+    repository_url: "https://github.com/TCR-QDT/Coerencia_Relacional"
+    captured_locally: "2026-08-23"
+    captured_commit_sha: "3e0d8c7e0a3752b515d7dca4c81d861fa4eb50c3"
+  aion_6x:
+    status: "NOT_MATERIALLY_ACCESSIBLE"
+    declared_in_handoff: "AION-MVP-001"
+    corpus_source_accessible: false
+    environment_accessible: false
+  aion_7_0_0:
+    status: "SPECIFICATION_FROZEN_FINAL"
+    gate_state: "BLOCKED"
+    auth_7_0: false
+    final_auth_7_0: "BLOCKED"
+
+# Corpus v1.3.0 composition (per Handoff Section 3.1)
+corpus_v1_3_0:
+  version: "1.3.0"
+  state: "FROZEN"
+  total_records_declared: 9
+  total_records_inexistent_declared: 2
+
+  records:
+    - corpus_id: "CORPUS-001"
+      document: "AION-DOC-000.html"
+      state_declared: "CURRENT"
+      size_declared: null
+      current_status: "NOT_FOUND"
+      candidate_material: null
+      candidate_sha256: null
+      v1_identity: null
+      v2_integrity: null
+      v3_provenance: null
+      v4_canonical_content: null
+      classification: "n/a"
+
+    - corpus_id: "CORPUS-002-HIST"
+      document: "Paper A v6.2 anterior"
+      state_declared: "SUPERSEDED"
+      size_declared: "134KB"
+      current_status: "CANDIDATE_NOT_VERIFIED"
+      candidate_material: "docs/pdfs/Paper_A_v6.2_REVTeX_REAL_P3.pdf (TCR/QDT)"
+      candidate_sha256: null
+      v1_identity: "partial"
+      v2_integrity: null
+      v3_provenance: "INSUFFICIENT"
+      v4_canonical_content: null
+      classification: "not formally verified"
+
+    - corpus_id: "CORPUS-002"
+      document: "Paper A v6.2"
+      state_declared: "CURRENT/AUTHORITATIVE"
+      size_declared: "137KB"
+      current_status: "CONTENT_COMPATIBLE_CANDIDATE"
+      candidate_material: "docs/pdfs/Paper_A_v6.2_FINAL.pdf (TCR/QDT)"
+      candidate_sha256: "971986d96c4ceb1ea5d7a17acdf2a54f4276403f2805c3945874304020adc433"
+      candidate_size_bytes: 137520
+      v1_identity: "PASS"
+      v2_integrity: "PASS"
+      v3_provenance: "INSUFFICIENT"
+      v4_canonical_content: "PASS"
+      classification: "Caso_D"
+
+    - corpus_id: "CORPUS-003"
+      document: "PARTE IV Formalização Teórica"
+      state_declared: "CURRENT"
+      size_declared: null
+      current_status: "CANDIDATE_NOT_VERIFIED"
+      candidate_material: "docs/pdfs/PARTE_IV_Formalizacao_Teorica_PT-BR.pdf (TCR/QDT)"
+      candidate_sha256: null
+      v1_identity: "partial"
+      v2_integrity: null
+      v3_provenance: "INSUFFICIENT"
+      v4_canonical_content: null
+      classification: "not formally verified"
+
+    - corpus_id: "CORPUS-004"
+      document: "Paper B anterior (3 págs)"
+      state_declared: "HISTORICAL"
+      size_declared: null
+      current_status: "NOT_FOUND"
+      candidate_material: null
+      candidate_sha256: null
+      v1_identity: null
+      v2_integrity: null
+      v3_provenance: null
+      v4_canonical_content: null
+      classification: "n/a"
+
+    - corpus_id: "CORPUS-005"
+      document: "Cover Letter PT-BR"
+      state_declared: "CURRENT"
+      size_declared: null
+      current_status: "CANDIDATE_NOT_VERIFIED"
+      candidate_material: "multiple Cover_Letter_Paper_*_PT-BR.md (TCR/QDT)"
+      candidate_sha256: null
+      v1_identity: "partial"
+      v2_integrity: null
+      v3_provenance: "INSUFFICIENT"
+      v4_canonical_content: null
+      classification: "not formally verified"
+
+    - corpus_id: "CORPUS-006"
+      document: "Paper A v6.1 oficial"
+      state_declared: "HISTORICAL"
+      size_declared: "138KB"
+      current_status: "CONTENT_COMPATIBLE_CANDIDATE"
+      candidate_material: "docs/pdfs/Paper_A_v6.1_REVTeX_COMPLETE.pdf (TCR/QDT)"
+      candidate_sha256: "efd7f7caf19a5f99cd1663303c6f36d0beba50f19c71d4f44d44b81c396c8854"
+      candidate_size_bytes: 138780
+      v1_identity: "PASS"
+      v2_integrity: "PASS"
+      v3_provenance: "INSUFFICIENT"
+      v4_canonical_content: "PASS"
+      classification: "Caso_D"
+
+    - corpus_id: "CORPUS-007"
+      document: "Paper A v6.1 revisão"
+      state_declared: "HISTORICAL/SCIENTIFIC_REVISION"
+      size_declared: "326KB"
+      current_status: "NOT_FOUND"
+      candidate_material: null
+      candidate_sha256: null
+      v1_identity: null
+      v2_integrity: null
+      v3_provenance: null
+      v4_canonical_content: null
+      classification: "n/a"
+
+    - corpus_id: "CORPUS-011"
+      document: "Paper B v6.1 PT novo (5 págs)"
+      state_declared: "CURRENT"
+      size_declared: null
+      current_status: "CANDIDATE_NOT_VERIFIED"
+      candidate_material: "docs/pdfs/Paper_B_QDT_JCP_v6.1_PT-BR.pdf (TCR/QDT)"
+      candidate_sha256: null
+      v1_identity: "partial"
+      v2_integrity: null
+      v3_provenance: "INSUFFICIENT"
+      v4_canonical_content: null
+      classification: "not formally verified"
+
+    - corpus_id: "Paper A v6.0"
+      document: "(does not exist)"
+      state_declared: "DOES_NOT_EXIST"
+      size_declared: null
+      current_status: "DOES_NOT_EXIST"
+      candidate_material: null
+      candidate_sha256: null
+      v1_identity: null
+      v2_integrity: null
+      v3_provenance: null
+      v4_canonical_content: null
+      classification: "n/a"
+
+    - corpus_id: "Paper B v6.0"
+      document: "(does not exist)"
+      state_declared: "DOES_NOT_EXIST"
+      size_declared: null
+      current_status: "DOES_NOT_EXIST"
+      candidate_material: null
+      candidate_sha256: null
+      v1_identity: null
+      v2_integrity: null
+      v3_provenance: null
+      v4_canonical_content: null
+      classification: "n/a"
+
+# Summary
+summary:
+  total_corpus_ids: 11
+  materially_accessible: 0
+  content_compatible_candidates_caso_d: 2  # CORPUS-002, CORPUS-006
+  candidates_not_verified: 4  # CORPUS-002-HIST, CORPUS-003, CORPUS-005, CORPUS-011
+  not_found: 3  # CORPUS-001, CORPUS-004, CORPUS-007
+  does_not_exist: 2  # Paper A v6.0, Paper B v6.0
+
+# Bridge status
+bridge_status:
+  tcr_qdt_to_aion_6x: "NOT_AUTHENTICATED"
+  v3_insufficient_for_all_candidates: true
+  retroactive_authentication: false
+
+# Epistemic principles applied
+epistemic_principles:
+  - "UNAVAILABLE != NON_EXISTENT"
+  - "NON_OBSERVED != FALSE"
+  - "PENDING != FAILED"
+  - "COMPATIBLE != EQUIVALENT"
+  - "compatibility_of_content_does_not_equal_historical_authentication"
+
+# Future evidence incorporation fields (to be filled when new evidence arrives)
+future_evidence:
+  manifest_of_aion_6x_ingestion: null
+  independent_historical_hash: null
+  log_of_transfer: null
+  snapshot_of_environment: null
+  alternative_git_repository: null
