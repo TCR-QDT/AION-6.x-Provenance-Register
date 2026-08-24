@@ -1,0 +1,660 @@
+{
+  "chunk_count": 65,
+  "matrix_shape": [
+    65,
+    4096
+  ],
+  "vectorizer_vocab_size": 4096,
+  "chunks": [
+    {
+      "chunk_id": "CORPUS-001#chunk_001",
+      "corpus_id": "CORPUS-001",
+      "short_title": "AION-DOC-000",
+      "page": "full",
+      "section": "integral",
+      "text": "# CORPUS-001 — Extração de Texto Estruturado\n\n**Arquivo de origem:** `AION-DOC-000.html` (conteúdo colado pelo autor no chat)\n**ID do Corpus:** CORPUS-001\n**Extração realizada em:** 2026-08-16T20:55:00+00:00\n**Ferramenta:** Conversão manual HTML→Markdown (texto fornecido como texto puro, não como arquivo binário)\n**Origem do material:** Conteúdo textual fornecido diretamente por Edson Carvalho do Nascimento na conversa.\n\n---\n\n## Metadados Declarados (do conteúdo)\n\n| Campo | Valor | Proveniência |\n|---|---|---|\n| aion:id | AION-DOC-000 | `[E]` declarado no documento |\n| aion:version | 0.1.0 | `[E]` declarado no documento |\n| aion:status | Draft | `[E]` declarado no documento |\n| Classificação | Documento Normativo | `[E]` declarado no rodapé |\n\n---\n\n## Conteúdo Integral\n\n### AION-DOC-000\n#### Especificação do Documento Canônico\n**Status:** Draft 0.1.0\n\n#### Sumário\n- Objetivo\n- Princípios\n- Estrutura Canônica\n- Metadados Obrigatórios\n- Histórico\n\n#### 1. Objetivo\nDefinir a estrutura mínima obrigatória para todos os documentos oficiais do Projeto AION.\n\n#### 2. Princípios\n- Preservação\n- Rastreabilidade\n- Clareza\n- Interoperabilidade\n- Neutralidade tecnológica\n\n#### 3. Estrutura Canônica\n- Cabeçalho institucional\n- Metadados\n- Resumo executivo\n- Objetivo\n- Escopo\n- Conteúdo principal\n- Dependências\n- Histórico de versões\n\n#### 4. Metadados Obrigatórios\n\n| Campo | Obrigatório |\n|---|---|\n| aion:id | Sim |\n| aion:version | Sim |\n| aion:status | Sim |\n| author | Sim |\n\n#### 5. Histórico\n\n| Versão | Descrição |\n|---|---|\n| 0.1.0 | Primeira versão estrutural. |\n\n*Projeto AION — Documento Normativo.*\n\n---\n\n## Observações de Extração\n\n- Documento curto e estruturado (especificação normativa, não conteudo substantivo).\n- Não contém equações, tabelas complexas ou elementos matemáticos.\n- A estrutura canônica declarada (8 seções: cabeçalho institucional, metadados, resumo executivo, objetivo, escopo, conteúdo principal, dependências, histórico de versões) é a **norma formal** que todos os documentos AION devem seguir.\n- **Verificação de conformidade do próprio corpus:** dos 5 documentos do corpus AION-CORPUS-001, NENHUM segue estritamente esta estrutura canônica de 8 seções. Paper A, Paper B e Parte IV seguem a estrutura de paper científico tradicional (Abstract, Introduction, Methods, Results, Discussion, Conclusion). A Cover Letter segue formato epistolar. Isto é uma **tensão normativa** a ser registrada.",
+      "char_count": 2438,
+      "chunk_hash": "8185de480e6d"
+    },
+    {
+      "chunk_id": "CORPUS-002#p1_01",
+      "corpus_id": "CORPUS-002",
+      "short_title": "Paper A",
+      "page": "p.1",
+      "section": "—",
+      "text": "Relational Coherence in Biological Networks:\nA Quantitative Framework from Connectomes to EEG\nEdson Carvalho do Nascimento1, ∗\n1Independent researcher, Curitiba, Brazil\n(Dated: August 12, 2026)\nWe introduce the Relational Coherence Theory (TCR) for measuring informational coherence in\nbiological networks through the metric C = I×S×Hβ, where I is the normalized multivariate mutual\ninformation (integration), S is the graph automorphism index (symmetry), and H is the normalized\nspectral entropy. The exponent β is calibrated via leave-one-out cross-validation (LOOCV) over\n12 synthetic connectome fixtures. The metric is validated on three empirical regimes: connectome\nranking (P1, p = 1.0 bootstrap), species discrimination against degree-matched random graphs (P2,\nz = 28.4, p ≈0), and sleep/wake classification on real 32-channel EEG data from the OpenNeuro\nds003768 dataset (P3, AUC = 0.793 ± 0.133 across 4 subjects, p < 0.05). Sobol sensitivity analysis\nconfirms that the integration component I is the strongest discriminative feature (0.700 accuracy),\nwhile the composite C does not outperform its individual components {I, S, H}, repositioning C\nas an interpretive structural signature rather than an optimal classifier.\nWe catalog six known\ninconsistencies in the framework, three of which are resolved in this version. P1 and P2 currently\nrely on synthetic graph fixtures; definitive confirmation on empirical connectomes (WormWiring,",
+      "char_count": 1448,
+      "chunk_hash": "79b4647d02d6"
+    },
+    {
+      "chunk_id": "CORPUS-002#p1_02",
+      "corpus_id": "CORPUS-002",
+      "short_title": "Paper A",
+      "page": "p.1",
+      "section": "—",
+      "text": "known\ninconsistencies in the framework, three of which are resolved in this version. P1 and P2 currently\nrely on synthetic graph fixtures; definitive confirmation on empirical connectomes (WormWiring,\nJanelia Hemibrain, Allen Mouse Brain Atlas) is committed for v6.3. P3 uses real high-density EEG\ndata but with a preliminary sample of 4 subjects; expansion to 10+ subjects is planned.\nI.\nINTRODUCTION\nThe quantification of complexity and coherence in bio-\nlogical networks remains a foundational challenge across\nneuroscience, systems biology, and network science. A\nplethora of metrics have been proposed—from the inte-\ngrated information (Φ) of Tononi et al. [1] to the meshed-\nness of De Bona et al. [2] and the neural complexity\nof Sporns et al. [3]—yet none offers a unified, falsifi-\nable framework that simultaneously incorporates inte-\ngration, symmetry, and entropy into a single quanti-\ntative signature of relational coherence. This fragmenta-\ntion hinders cross-species comparisons, evolutionary in-\nference, and the search for universal principles governing\ninformation processing in living systems.\nIn this paper, we introduce the Relational Coher-\nence Theory (TCR)—specifically, its empirical instan-\ntiation for macroscopic biological networks. TCR posits\nthat informational coherence is not an epiphenomenon\nbut a measurable substrate property, expressible via the\nmetric:\nC = I × S × Hβ,\n(1)\nwhere I is the normalized multivariate mutual informa-",
+      "char_count": 1466,
+      "chunk_hash": "1943e55ae3df"
+    },
+    {
+      "chunk_id": "CORPUS-002#p1_03",
+      "corpus_id": "CORPUS-002",
+      "short_title": "Paper A",
+      "page": "p.1",
+      "section": "—",
+      "text": "posits\nthat informational coherence is not an epiphenomenon\nbut a measurable substrate property, expressible via the\nmetric:\nC = I × S × Hβ,\n(1)\nwhere I is the normalized multivariate mutual informa-\ntion (integration), S is the graph automorphism index\n(symmetry), and H is the normalized spectral entropy\n(entropy). The exponent β = 0.5 is adopted as a canoni-\ncal choice, calibrated via leave-one-out cross-validation\n(LOOCV) over 12 synthetic connectome fixtures (see\nSec. II). Earlier versions of TCR included a recursion\nterm R with exponent α = 1.3, but global sensitivity\n∗Electronic address: prof.edson.nascimento@protonmail.com\nanalysis (Sobol) reveals that R contributes less than 1.1%\nof the variance in C, rendering it empirically irrelevant.\nWe therefore drop it in this version, embracing parsi-\nmony without compromising the ontological framework\n(reserved for a companion paper, Paper C).\nThe scope of this manuscript (Paper A) is strictly em-\npirical and biological. We test TCR on three inde-\npendent regimes: (i) a comparative ranking of 12 con-\nnectomes from invertebrates to primates (P1), (ii) a dis-\ncrimination test between Drosophila melanogaster con-\nnectomes and degree-matched random graphs (P2), and\n(iii) a sleep/wake classification task on real 32-channel\nEEG data from the OpenNeuro ds003768 dataset [4]\n(P3). We further subject the metric to sensitivity analy-\nsis (Sobol) and a computational triviality test (Aaronson\ncriterion [5]).",
+      "char_count": 1468,
+      "chunk_hash": "0f3489e45b5a"
+    },
+    {
+      "chunk_id": "CORPUS-002#p1_04",
+      "corpus_id": "CORPUS-002",
+      "short_title": "Paper A",
+      "page": "p.1",
+      "section": "—",
+      "text": "on real 32-channel\nEEG data from the OpenNeuro ds003768 dataset [4]\n(P3). We further subject the metric to sensitivity analy-\nsis (Sobol) and a computational triviality test (Aaronson\ncriterion [5]).\nA distinctive feature of this work is its radical trans-\nparency. We explicitly catalog all known limitations—\nincluding the synthetic nature of the calibration fixtures,\nthe redundancy of C as a predictive feature (it does not\noutperform its individual components I + S + H), and\nthe deferred resolution of certain structural issues to com-\npanion papers. We believe this honesty strengthens the\nfalsifiability of the framework and aligns with the stan-\ndards of Physical Review E, where quantitative metrics\nfor complex systems are held to high empirical and sta-\ntistical scrutiny.\nThe paper is organized as follows: Section II provides\noperational definitions of I, S, H and the LOOCV cali-\nbration of β. Section III reports the three empirical ex-\nperiments. Section IV presents sensitivity and triviality\nanalyses.\nSection V discusses the six known inconsis-\ntencies and their statuses. Section VI concludes with a\nroadmap for validation and theoretical extension.",
+      "char_count": 1170,
+      "chunk_hash": "207450dc60a5"
+    },
+    {
+      "chunk_id": "CORPUS-002#p2_01",
+      "corpus_id": "CORPUS-002",
+      "short_title": "Paper A",
+      "page": "p.2",
+      "section": "—",
+      "text": "2\nII.\nTHE RELATIONAL COHERENCE METRIC\nWe define the Relational Coherence metric C as a\nmultiplicative combination of three operationally defined\ngraph-theoretic quantities: integration I, symmetry S,\nand spectral entropy H. The metric is\nC = I × S × Hβ,\n(2)\nwhere β\nis a calibration exponent determined via\nleave-one-out cross-validation (LOOCV) as described in\nSec. II B. We adopt β = 0.5 as the canonical value\nthroughout this work.\nA.\nOperational definitions\na.\nIntegration I.\nFor a graph G = (V, E) with N =\n|V | nodes, we define the integration as the normalized\nmultivariate mutual information:\nI = 1\nN\nN\n∑\ni=1\nH(Xi) −H(X1, . . . , XN),\n(3)\nwhere H(Xi) is the Shannon entropy of the degree\ndistribution at node i (normalized by log2 N), and\nH(X1, . . . , XN) is the joint entropy approximated via the\nLaplacian spectral density. Operationally, we compute\nI = 1\nN [N · Hdeg −Hspec] ,\n(4)\nwhere Hdeg = −∑\nk pk log2 pk with pk = dk/ ∑\nj dj (de-\ngree distribution), and Hspec = −∑\nℓ˜λℓlog2 ˜λℓwith\n˜λℓ= λℓ/ ∑\nm λm (Laplacian eigenvalue distribution),\nboth normalized by log2 N.\nThis integration measure\nvanishes for disconnected graphs with uniform degree and\napproaches unity for graphs with strong degree hetero-\ngeneity and correlated spectral structure.\nb.\nSymmetry S.\nWe define symmetry via the graph\nautomorphism index:\nS = log(|Aut(G)| + 1)\nlog(N!)\n,\n(5)\nwhere |Aut(G)| is the cardinality of the automorphism\ngroup of G.\nFor small graphs (N ≤100), we com-",
+      "char_count": 1464,
+      "chunk_hash": "e1b3ab94ecf8"
+    },
+    {
+      "chunk_id": "CORPUS-002#p2_02",
+      "corpus_id": "CORPUS-002",
+      "short_title": "Paper A",
+      "page": "p.2",
+      "section": "—",
+      "text": "ymmetry S.\nWe define symmetry via the graph\nautomorphism index:\nS = log(|Aut(G)| + 1)\nlog(N!)\n,\n(5)\nwhere |Aut(G)| is the cardinality of the automorphism\ngroup of G.\nFor small graphs (N ≤100), we com-\npute |Aut(G)| exactly via network isomorphism enu-\nmeration. For larger graphs, we approximate |Aut(G)|\nvia degree-class equivalence:\nif the degree sequence\npartitions into classes of sizes (n1, n2, . . . , nk), we use\nlog |Aut| ≈∑\nj log(nj!), which provides a tight lower\nbound for graphs with modular structure.\nc.\nSpectral entropy H.\nThe normalized spectral en-\ntropy is\nH = −∑\nℓ˜λℓlog2 ˜λℓ\nlog2 N\n,\n(6)\nwhere ˜λℓare the normalized Laplacian eigenvalues. This\nmeasure captures the spread of the graph’s spectral den-\nsity: H →0 for graphs with a single dominant eigen-\nvalue (e.g., complete bipartite), and H →1 for graphs\nwith uniformly distributed spectra (e.g., random regular\ngraphs).\nB.\nCalibration of β via leave-one-out\ncross-validation\nEarlier versions of TCR [? ] calibrated β on the same\nconnectomes used for testing, introducing a circularity\nthat compromises the validity of the calibration. To re-\nsolve this, we implement a leave-one-out cross-validation\n(LOOCV) protocol on 12 synthetic connectome fixtures\n(Table I).\nTABLE I. Synthetic connectome fixtures used for calibra-\ntion. All graphs are generated with realistic parameter ranges\nmatching biological connectome statistics.\nFixture\nModel\nC. elegans\nWatts-Strogatz (k = 14, p = 0.1)",
+      "char_count": 1457,
+      "chunk_hash": "40123383bf1d"
+    },
+    {
+      "chunk_id": "CORPUS-002#p2_03",
+      "corpus_id": "CORPUS-002",
+      "short_title": "Paper A",
+      "page": "p.2",
+      "section": "—",
+      "text": "onnectome fixtures used for calibra-\ntion. All graphs are generated with realistic parameter ranges\nmatching biological connectome statistics.\nFixture\nModel\nC. elegans\nWatts-Strogatz (k = 14, p = 0.1)\nDrosophila larva (hemi) Barabási-Albert (m = 8)\nDrosophila larva (full)\nBarabási-Albert (m = 10)\nDrosophila adult (hemi) Barabási-Albert (m = 12)\nDrosophila adult (full)\nBarabási-Albert (m = 15)\nMouse V1\nWatts-Strogatz (k = 20, p = 0.05)\nMouse cortex\nWatts-Strogatz (k = 25, p = 0.08)\nMacaque V1\nWatts-Strogatz (k = 10, p = 0.3)\nHuman Yeo7\nWatts-Strogatz (k = 18, p = 0.15)\nHuman HCP\nBarabási-Albert (m = 15)\nZebrafish larva\nWatts-Strogatz (k = 10, p = 0.2)\nControl (low-C)\nErdős-Rényi (p = 0.01)\nFor each β in a grid β ∈[0.1, 1.5] (15 values), we com-\npute the ranking of all 12 fixtures by C, then for each\nfixture i we recompute the ranking on the remaining 11\nfixtures and measure the Spearman correlation ρi be-\ntween the two rankings (restricted to common fixtures).\nThe LOOCV consistency is the average ⟨ρi⟩across the\n12 leave-one-out folds.\nThe results are striking:\nLOOCV consistency =\n1.0000 for all β in the tested range, with the maximum\nattained at β = 0.1. This means that the ranking of the\n12 fixtures by C is completely invariant under removal of\nany single fixture, indicating that the calibration is not\ncircular—the exponent β does not overfit to any partic-\nular fixture. We adopt β = 0.5 as the canonical value for\ninterpretability; the choice does not affect the ranking",
+      "char_count": 1494,
+      "chunk_hash": "1f070b49717f"
+    },
+    {
+      "chunk_id": "CORPUS-002#p2_04",
+      "corpus_id": "CORPUS-002",
+      "short_title": "Paper A",
+      "page": "p.2",
+      "section": "—",
+      "text": "g that the calibration is not\ncircular—the exponent β does not overfit to any partic-\nular fixture. We adopt β = 0.5 as the canonical value for\ninterpretability; the choice does not affect the ranking\nqualitatively.\na.\nLimitation.\nThe 12 fixtures are synthetic (Watts-\nStrogatz, Barabási-Albert, Erdős-Rényi) calibrated to\nmimic real-world structural properties, but they lack the\nmodular hierarchy and individual variation of biological",
+      "char_count": 437,
+      "chunk_hash": "d04c89f667d6"
+    },
+    {
+      "chunk_id": "CORPUS-002#p3_01",
+      "corpus_id": "CORPUS-002",
+      "short_title": "Paper A",
+      "page": "p.3",
+      "section": "—",
+      "text": "3\nbrains.\nDefinitive validation requires re-running\nLOOCV on empirical connectomes (WormWiring,\nJanelia Hemibrain, Allen Brain Atlas); this is committed\nfor v6.2.\nIII.\nEMPIRICAL VALIDATION\nWe validate the metric C on three independent empir-\nical regimes: connectome ranking (P1), species discrim-\nination against null models (P2), and sleep/wake EEG\nclassification (P3).\nAll experiments use the canonical\nβ = 0.5.\nA.\nExperiment P1: Connectome ranking\na.\nDataset.\nWe compute C for the 12 fixtures listed\nin Table I. The expected ranking, derived from inde-\npendent measures of structural complexity (number of\nnodes, edges, modular structure, hierarchical depth), is\npreserved by C with perfect consistency.\nb.\nMethod.\nFor each fixture, we compute I, S, H\nand C = I × S × H0.5. We then rank the 12 fixtures by C\nand compare against the expected ranking via Spearman\ncorrelation.\nc.\nResult.\nThe ranking by C reproduces the ex-\npected ranking with p = 1.0 (bootstrap with 3 replicas\nand n = 10,000 resamples). The component values for\nselected fixtures are:\nTABLE II. Component values for selected fixtures.\nFixture\nI\nS\nH\nC\nC. elegans\n0.996 0.681 0.991 0.672\nMouse V1\n0.999 0.762 0.995 0.758\nMouse cortex\n0.999 0.716 0.996 0.713\nHuman Yeo7\n0.997 0.663 0.994 0.659\nHuman HCP\n0.969 0.374 0.968 0.355\nControl (low-C) 0.981 0.591 0.967 0.557\nd.\nLimitation.\nThe “expected ranking” is itself a\nheuristic based on structural complexity, not an external",
+      "char_count": 1443,
+      "chunk_hash": "be93098dc062"
+    },
+    {
+      "chunk_id": "CORPUS-002#p3_02",
+      "corpus_id": "CORPUS-002",
+      "short_title": "Paper A",
+      "page": "p.3",
+      "section": "—",
+      "text": "0.663 0.994 0.659\nHuman HCP\n0.969 0.374 0.968 0.355\nControl (low-C) 0.981 0.591 0.967 0.557\nd.\nLimitation.\nThe “expected ranking” is itself a\nheuristic based on structural complexity, not an external\nground truth. In v6.2, we will replace this with a behav-\nioral/functional ranking (e.g., reaction time complexity,\nbehavioral repertoire) for empirical connectomes.\nB.\nExperiment P2: Drosophila vs. random graphs\na.\nDataset.\nWe use 4 Drosophila connectome fix-\ntures (larva hemi, larva full, adult hemi, adult full) and\ngenerate 1,000 degree-matched random graphs via the\nconfiguration model as null hypothesis.\nb.\nMethod.\nFor each fixture, we compute C and com-\npare against the distribution of C over the 1,000 null\ngraphs. The z-score is (Cﬁxture −⟨Cnull⟩)/σnull.\nc.\nResult.\nThe combined z-score across the 4 fix-\ntures is z = 28.4, corresponding to p ≈0 (one-tailed).\nThe Drosophila fixtures have significantly higher C than\ndegree-matched random graphs, indicating that the met-\nric captures structural organization beyond the degree\nsequence.\nd.\nLimitation.\nThe\n“Drosophila\nfixtures”\nare\nBarabási-Albert graphs, not empirical Drosophila con-\nnectomes.\nThe result demonstrates that the metric\ndistinguishes structured graphs from random graphs of\nmatched degree, but does not yet validate the metric on\nbiological data.\nC.\nExperiment P3: Sleep/wake EEG classification\na.\nDataset.\nWe\nuse\nthe\nOpenNeuro\nds003768\ndataset [4] (simultaneous EEG-fMRI during sleep, 32-",
+      "char_count": 1467,
+      "chunk_hash": "899a190b21d4"
+    },
+    {
+      "chunk_id": "CORPUS-002#p3_03",
+      "corpus_id": "CORPUS-002",
+      "short_title": "Paper A",
+      "page": "p.3",
+      "section": "—",
+      "text": "but does not yet validate the metric on\nbiological data.\nC.\nExperiment P3: Sleep/wake EEG classification\na.\nDataset.\nWe\nuse\nthe\nOpenNeuro\nds003768\ndataset [4] (simultaneous EEG-fMRI during sleep, 32-\nchannel BrainVision system, 10-20 montage).\nFour\nsubjects (sub-01, sub-04, sub-05, sub-06) with com-\nplete resting-state (wake) and sleep recordings were pro-\ncessed. EEG was downsampled to 250 Hz, band-pass fil-\ntered (0.5–30 Hz), and segmented into 30-second epochs.\nFor each epoch, a 32 × 32 coherence matrix was com-\nputed (band 1–15 Hz, Welch method, 2-second win-\ndows), thresholded at the 75th percentile, and converted\nto a binary graph.\nThe coherence metric components\n(I, S, H, C) were then computed on the resulting graph.\nb.\nMethod.\nFor each subject, a linear SVM (with\nC = 1.0, standardized features) is trained to classify\nwake (resting-state) vs. sleep recording using the fea-\nture vector (I, S, H, C). We use within-subject stratified\ncross-validation (5-fold, 10 repeats). Performance is re-\nported via accuracy, F1, AUC per subject, and the re-\nsults are consolidated across subjects (mean ± standard\ndeviation).\nc.\nResult.\nAcross the 4 subjects, the within-subject\nclassification achieves:\n• Accuracy: 0.734 ± 0.114\n• F1: 0.686 ± 0.152\n• AUC: 0.793 ± 0.133\nPer-subject results are shown in Table III:\nTABLE\nIII.\nP3\nper-subject\nresults\n(32-channel\nEEG,\nds003768).\nSubject Nwake Nsleep\nAccuracy\nAUC\nsub-01\n20\n20\n0.615 ± 0.143\n0.623\nsub-04\n12\n19\n0.752 ± 0.157\n0.821\nsub-05\n20\n15",
+      "char_count": 1495,
+      "chunk_hash": "154855852708"
+    },
+    {
+      "chunk_id": "CORPUS-002#p3_04",
+      "corpus_id": "CORPUS-002",
+      "short_title": "Paper A",
+      "page": "p.3",
+      "section": "—",
+      "text": "s are shown in Table III:\nTABLE\nIII.\nP3\nper-subject\nresults\n(32-channel\nEEG,\nds003768).\nSubject Nwake Nsleep\nAccuracy\nAUC\nsub-01\n20\n20\n0.615 ± 0.143\n0.623\nsub-04\n12\n19\n0.752 ± 0.157\n0.821\nsub-05\n20\n15\n0.911 ± 0.103\n0.988\nsub-06\n20\n19\n0.656 ± 0.133\n0.741\nMean\n—\n—\n0.734 ± 0.114 0.793 ± 0.133",
+      "char_count": 290,
+      "chunk_hash": "89968a2bcc9f"
+    },
+    {
+      "chunk_id": "CORPUS-002#p4_01",
+      "corpus_id": "CORPUS-002",
+      "short_title": "Paper A",
+      "page": "p.4",
+      "section": "—",
+      "text": "4\nAll 4 subjects achieved AUC > 0.6, and 3 of 4 achieved\nAUC > 0.7.\nThe mean AUC of 0.793 is significantly\nabove chance (0.5), confirming that the coherence metric\ncaptures real differences between wake and sleep func-\ntional connectivity networks.\nd.\nAblation analysis.\nA critical finding from the ab-\nlation analysis (Table IV) is that the composite metric C\ndoes not add discriminative power beyond its individual\ncomponents. The feature set {I, S, H} (without multi-\nplicative combination) achieves the same accuracy as the\nfull feature set {I, S, H, C}.\nTABLE IV. Ablation analysis: classification accuracy by fea-\nture set (mean across 4 subjects).\nFeature set\nAccuracy\nn features Interpretation\nI only\n0.700 ± 0.183\n1\nIntegration is the strongest single feature\nS only\n0.562 ± 0.083\n1\nSymmetry alone is weak\nH only\n0.686 ± 0.193\n1\nEntropy alone is moderate\nC only\n0.559 ± 0.088\n1\nComposite loses information\nI + S + H\n0.735 ± 0.116\n3\nComponents combined are optimal\nI + S + H + C\n0.734 ± 0.114\n4\nC is redundant\nThis indicates that C, as a composite variable, is an in-\nterpretive structural signature rather than an optimal dis-\ncriminative feature. The integration component I alone\nachieves 70.0% accuracy, suggesting that the degree-\nintegration measure of the functional connectivity graph\nis the primary carrier of sleep/wake discriminative infor-\nmation. The composite C adds no discriminative power\nbeyond its constituents (0.734 vs. 0.735), confirming the",
+      "char_count": 1470,
+      "chunk_hash": "1ca8aca55a57"
+    },
+    {
+      "chunk_id": "CORPUS-002#p4_02",
+      "corpus_id": "CORPUS-002",
+      "short_title": "Paper A",
+      "page": "p.4",
+      "section": "—",
+      "text": "functional connectivity graph\nis the primary carrier of sleep/wake discriminative infor-\nmation. The composite C adds no discriminative power\nbeyond its constituents (0.734 vs. 0.735), confirming the\nfinding from the simulated data.\ne.\nLimitation.\nThe current P3 results are based on\na preliminary sample of 4 subjects from the ds003768\ndataset. While the AUC of 0.793 ± 0.133 is significantly\nabove chance, the inter-subject variability is considerable\n(AUC range: 0.623–0.988). Expansion to 10+ subjects is\nplanned for v6.3 to strengthen the statistical power and\nassess generalizability.\nAdditionally, the current anal-\nysis compares resting-state (wake) vs. sleep recordings\nwithout distinguishing sleep stages (N1, N2, N3); finer-\ngrained stage classification is deferred to future work.\nIV.\nSENSITIVITY ANALYSIS\nA.\nSobol indices\nTo assess the relative contribution of each component\nto the variance of C, we perform a Sobol sensitivity anal-\nysis. We sample 1,000 parameter combinations via Latin\nHypercube sampling over the observed ranges of (I, S, H)\nacross the 12 fixtures, compute C = I ×S ×H0.5 for each\ncombination, and estimate the first-order Sobol indices\nvia the squared Spearman correlation between each com-\nponent and C.\na.\nResult.\nThe first-order Sobol indices on the syn-\nthetic fixtures are:\n• SI = 0.350\n• SS = 0.376\n• SH = 0.095\n• Total = 0.821\nb.\nInterpretation.\nOn the synthetic fixtures, the\nthree components contribute roughly equally to the",
+      "char_count": 1470,
+      "chunk_hash": "41d2090fb72e"
+    },
+    {
+      "chunk_id": "CORPUS-002#p4_03",
+      "corpus_id": "CORPUS-002",
+      "short_title": "Paper A",
+      "page": "p.4",
+      "section": "—",
+      "text": "bol indices on the syn-\nthetic fixtures are:\n• SI = 0.350\n• SS = 0.376\n• SH = 0.095\n• Total = 0.821\nb.\nInterpretation.\nOn the synthetic fixtures, the\nthree components contribute roughly equally to the\nvariance of C, with H contributing less than in the\nv6.0 analysis (where SH = 0.828).\nThis is expected:\nWatts-Strogatz and Barabási-Albert graphs have nearly\nredundant I, S, and H (all clustered around 0.95–\n0.99), so no single component dominates.\nOn real\nconnectomes—which exhibit stronger modular and hi-\nerarchical structure—we expect H to dominate as in\nv6.0. Definitive Sobol indices will be reported in\nv6.2 after re-running on WormWiring, Janelia, and Allen\ndatasets.\nB.\nAaronson triviality test\nFollowing Aaronson’s criterion [5] that a meaning-\nful complexity metric should vanish for computationally\ntrivial objects, we test C on:\n• Expander graphs: Ramanujan graphs with spec-\ntral gap ≥2\n√\nd −1.\nThese have minimal inte-\ngration (uniform degree) and minimal symmetry\n(asymmetric).\n• Vandermonde matrices:\nAlgebraically struc-\ntured matrices with rank-deficient minors. These\nhave degenerate Laplacian spectra.\na.\nResult.\nC = 0 for both expander graphs and Van-\ndermonde matrices, as required by the Aaronson crite-\nrion. The metric correctly identifies these computation-\nally trivial objects as having zero relational coherence.\nC.\nComparison with v6.0\nTable V summarizes the changes from v6.0 to v6.1.\nV.\nDISCUSSION: LIMITATIONS AND OPEN\nISSUES",
+      "char_count": 1460,
+      "chunk_hash": "f96ea87f782b"
+    },
+    {
+      "chunk_id": "CORPUS-002#p4_04",
+      "corpus_id": "CORPUS-002",
+      "short_title": "Paper A",
+      "page": "p.4",
+      "section": "—",
+      "text": "tifies these computation-\nally trivial objects as having zero relational coherence.\nC.\nComparison with v6.0\nTable V summarizes the changes from v6.0 to v6.1.\nV.\nDISCUSSION: LIMITATIONS AND OPEN\nISSUES\nNo scientific framework is complete at inception. In\nthe spirit of radical transparency, we catalog the six in-\nconsistencies identified during the development of TCR,\ntheir current resolution status, and their implications for\nthe interpretation of our results.",
+      "char_count": 463,
+      "chunk_hash": "1c90e806c8de"
+    },
+    {
+      "chunk_id": "CORPUS-002#p5_01",
+      "corpus_id": "CORPUS-002",
+      "short_title": "Paper A",
+      "page": "p.5",
+      "section": "—",
+      "text": "5\nTABLE V. Changes from v6.0 to v6.1.\nAspect\nv6.0\nv6.1 (this work)\nMetric\nC = I × S × R1.3 × H0.5\nC = I × S × Hβ\nCalibration\nGlobal fit on 3 connectomes\nLOOCV on 12 fixtures\nSα (Sobol)\n0.011 (irrelevant)\n— (R removed)\nP3 synthetic 99%\nRemoved\nP3 real\n52%\n91.2% (real-only pipeline)\nCircularity\nYes (fitted on tested systems)\nNo (LOOCV consistency = 1.0)\nA.\nResolved Inconsistencies (this version)\na.\nInconsistency #1:\nCalibration circularity.\nThe\nexponents α and β were originally fitted on the same sys-\ntems used in P1 and P2. To resolve this circularity, we\nimplemented leave-one-out cross-validation (LOOCV) on\n12 connectome fixtures. The value β = 0.1 yields perfect\nranking consistency (Spearman ρ = 1.0). The canonical\nvalue β = 0.5 is equally robust across the tested range\n[0.1, 1.5], and we adopt β = 0.5 for interpretability.\nb.\nInconsistency #2: P3 synthetic vs. real.\nEarlier\nversions reported 99% accuracy on synthetic EEG but\nonly 52% on real data—a 47-point discrepancy.\nThe\nsynthetic dataset was removed. The real-only pipeline\n(32-channel EEG from OpenNeuro ds003768 [4]) now\nachieves AUC = 0.793 ± 0.133 across 4 subjects (within-\nsubject SVM, 5-fold CV with 10 repeats), with all sub-\njects above chance (AUC > 0.6).\nc.\nInconsistency #4: α irrelevance.\nSobol analysis\ngave Sα = 0.011, making R1.3 empirically irrelevant.\nThe term Rα was removed entirely. The metric is now\nC = I × S × Hβ, reducing parameters and improving\nparsimony.\nd.",
+      "char_count": 1456,
+      "chunk_hash": "56fd8623870a"
+    },
+    {
+      "chunk_id": "CORPUS-002#p5_02",
+      "corpus_id": "CORPUS-002",
+      "short_title": "Paper A",
+      "page": "p.5",
+      "section": "—",
+      "text": ": α irrelevance.\nSobol analysis\ngave Sα = 0.011, making R1.3 empirically irrelevant.\nThe term Rα was removed entirely. The metric is now\nC = I × S × Hβ, reducing parameters and improving\nparsimony.\nd.\nCritical finding from ablation analysis (P3).\nThe\ncomposite metric C achieves 0.734 accuracy, but the fea-\nture set {I, S, H} (without multiplicative combination)\nachieves 0.735—essentially identical.\nIn other words,\nC does not add discriminative power beyond its con-\nstituents.\nThis does not invalidate TCR—instead, it\nrepositions C as an interpretive, structural metric for\nranking and characterization (as in P1 and P2), rather\nthan an optimal discriminative feature for classification.\nThis is a virtue: it clarifies what the metric does and\ndoes not claim.\nB.\nDeferred Inconsistencies (to be addressed in\nPaper B)\na.\nInconsistency #3: ST dimer extrapolation.\nThe\ntemperature exponent for decoherence was derived from\na 2-site dimer and extrapolated to the 7-site FMO com-\nplex.\nWe will generalize the derivation to the full 7-\nsite FMO using the 375 parameter combinations already\navailable, ensuring R2 > 0.9.\nb.\nInconsistency #5: η not confirmed.\nThe cross-\nscale index η claimed “commensurability” between δβ\nand δST , but lacked a formal definition. We now define\ncommensurability as |δβ −δST |/δβ < 0.2. With current\nvalues, this criterion is not met (0.235). The claim will\nbe removed or downgraded to an unconfirmed hypothesis\nin Paper B.\nC.",
+      "char_count": 1455,
+      "chunk_hash": "a9c0d36dfa7b"
+    },
+    {
+      "chunk_id": "CORPUS-002#p5_03",
+      "corpus_id": "CORPUS-002",
+      "short_title": "Paper A",
+      "page": "p.5",
+      "section": "—",
+      "text": "tion. We now define\ncommensurability as |δβ −δST |/δβ < 0.2. With current\nvalues, this criterion is not met (0.235). The claim will\nbe removed or downgraded to an unconfirmed hypothesis\nin Paper B.\nC.\nRecategorized Inconsistency (to be addressed in\nPaper C)\na.\nInconsistency #6: All COSMO results are post-\ndictions.\nCosmological predictions (Λ, ηB) were back-\nfitted to observations. These will be explicitly labeled\nas postdictions in Paper C, with a dedicated “Falsifiabil-\nity” section. Only COSMO-4 (fNL ∈[10−6, 10−4]) is a\ngenuine prediction, testable with CMB-S4 in 2027.\nD.\nPractical limitation: synthetic fixtures\nAll results in this paper (P1, P2, Sobol, LOOCV)\nare based on synthetic connectome fixtures (Watts-\nStrogatz and Barabasi-Albert [6, 7]) with realistic pa-\nrameter ranges, not on empirical connectome data (e.g.,\nWormWiring [8], Janelia Hemibrain [9], or Allen Brain\nAtlas [10]). While the fixtures were calibrated to mimic\nreal-world structural properties, they lack the modular\nhierarchy and individual variation of biological brains.\nDefinitive validation requires re-running the anal-\nysis on public empirical connectomes. We commit\nto this as the immediate next step (v6.2) prior to final\nsubmission.\nVI.\nCONCLUSION\nWe\nhave\nintroduced\na\nquantitative\nframework—\nRelational Coherence Theory (TCR)—for mea-\nsuring informational coherence in biological networks\nthrough the metric C = I × S × Hβ. The framework\nhas been validated on three distinct empirical regimes:",
+      "char_count": 1489,
+      "chunk_hash": "617ae82ab596"
+    },
+    {
+      "chunk_id": "CORPUS-002#p5_04",
+      "corpus_id": "CORPUS-002",
+      "short_title": "Paper A",
+      "page": "p.5",
+      "section": "—",
+      "text": "elational Coherence Theory (TCR)—for mea-\nsuring informational coherence in biological networks\nthrough the metric C = I × S × Hβ. The framework\nhas been validated on three distinct empirical regimes:\nconnectome ranking (P1, p = 1.0 bootstrap), species dis-\ncrimination (P2, z = 28.4, p ≈0), and sleep/wake clas-\nsification on real 32-channel EEG (P3, AUC = 0.793 ±\n0.133, n = 4 subjects). Sensitivity analysis confirms that\nthe entropy component H dominates the metric’s behav-\nior, while the recursion term R was justifiably removed.\nThe metric passes the Aaronson triviality test, yielding\nzero coherence for expander and Vandermonde graphs.\nCrucially, we do not oversell TCR as a panacea. The\nablation analysis reveals that C does not outperform its\ncomponents in discriminative tasks—it is fundamentally\nan interpretive, structural signature rather than a\nmachine-learning feature. Moreover, all empirical valida-\ntions in this paper rely on synthetic graph fixtures; em-\npirical connectome data (WormWiring, Janelia, Allen)",
+      "char_count": 1029,
+      "chunk_hash": "0876adce4c44"
+    },
+    {
+      "chunk_id": "CORPUS-002#p6_01",
+      "corpus_id": "CORPUS-002",
+      "short_title": "Paper A",
+      "page": "p.6",
+      "section": "—",
+      "text": "6\nare required for definitive confirmation.\nThese limita-\ntions are openly discussed and will be addressed in the\nnext iteration (v6.2).\nThe theoretical extensions of TCR—the quantum dis-\nsipative regime (Paper B, FMO/LH2) and the cosmolog-\nical / categorical formalization (Paper C, including the\nQµν tensor and Yoneda functor)—are deliberately sepa-\nrated to maintain focus and falsifiability. We believe this\nmodular approach, combined with radical transparency\nabout unresolved issues, provides a robust foundation for\na long-term research program that bridges network sci-\nence, quantum biology, and information cosmology.\na.\nImmediate next steps (v6.2).\n(1) Download and\nprocess empirical connectomes: WormWiring (C. el-\negans), Janelia Hemibrain (Drosophila), and Allen\nMouse Brain Atlas.\n(2) Download and process the\nfull PhysioNet Sleep-EDF dataset (∼5 GB) to con-\nfirm P3 real EEG results. (3) Expand P3 to 10+ sub-\njects from ds003768 (preliminary sample of 4 subjects re-\nported here). (4) Update the manuscript with expanded\nempirical results and finalize the REVTeX submission to\nPhysical Review E.\nACKNOWLEDGMENTS\nWe thank Dr. B. C. Chanyal (Gargi Degree College,\nIndia) for discussions on the algebraic structure of the\ncoherence metric and for sharing insights on quaternionic\nextensions of Einstein’s equation.\nWe also thank the\nBrazilian Journal of Physics for feedback on the v5.1\nsubmission. This work received no external funding; the\nauthor is an independent researcher.",
+      "char_count": 1493,
+      "chunk_hash": "b8409bcabe8c"
+    },
+    {
+      "chunk_id": "CORPUS-002#p6_02",
+      "corpus_id": "CORPUS-002",
+      "short_title": "Paper A",
+      "page": "p.6",
+      "section": "—",
+      "text": "extensions of Einstein’s equation.\nWe also thank the\nBrazilian Journal of Physics for feedback on the v5.1\nsubmission. This work received no external funding; the\nauthor is an independent researcher.\n[1] G. Tononi, Consciousness as Integrated Information,\nBiol. Bull. 215, 216 (2008).\n[2] A. De Bona et al., Meshedness of biological networks,\nPLOS Comput. Biol. (2021).\n[3] O. Sporns, Networks of the Brain (MIT Press, Cam-\nbridge, MA, 2011).\n[4] S. M. Tagliazucchi et\nal.,\nSimultaneous\nEEG\nand\nfMRI signals during sleep from humans, OpenNeuro\ndataset ds003768, v1.0.13 (2022). https://openneuro.\norg/datasets/ds003768\n[5] S.\nAaronson,\nWho\ncan\nname\nthe\nbigger\nnumber?\n(2005).\nhttps://www.scottaaronson.com/writings/\nbignumbers.html\n[6] D. J. Watts and S. H. Strogatz, Collective dynamics of\n“small-world” networks, Nature 393, 440 (1998).\n[7] A.-L. Barabási and R. Albert, Emergence of scaling in\nrandom networks, Science 286, 509 (1999).\n[8] WormWiring consortium, C. elegans connectome data re-\nlease. https://wormwiring.org/\n[9] Janelia Research Campus, Hemibrain: a large-scale con-\nnectome of the adult Drosophila central complex. https:\n//www.janelia.org/project-team/flyem/hemibrain\n[10] Allen Institute for Brain Science, Allen Mouse Brain\nConnectivity Atlas. https://connectivity.brain-map.\norg/\n\n---\n\n## ⚠️ Possíveis Equações Problemáticas\n\n> Heurística: linhas curtas com alta densidade de caracteres matemáticos,",
+      "char_count": 1424,
+      "chunk_hash": "0d0503b3845a"
+    },
+    {
+      "chunk_id": "CORPUS-002#p6_03",
+      "corpus_id": "CORPUS-002",
+      "short_title": "Paper A",
+      "page": "p.6",
+      "section": "—",
+      "text": "ence, Allen Mouse Brain\nConnectivity Atlas. https://connectivity.brain-map.\norg/\n\n---\n\n## ⚠️ Possíveis Equações Problemáticas\n\n> Heurística: linhas curtas com alta densidade de caracteres matemáticos,\n> ou linhas com caracteres de substituição Unicode. **Verificar manualmente**.\n\n- P2: `ℓ˜λℓlog2 ˜λℓwith`\n- P2: `˜λℓ= λℓ/ ∑`\n- P2: `log |Aut| ≈∑`\n- P2: `ℓ˜λℓlog2 ˜λℓ`\n- P2: `For each β in a grid β ∈[0.1, 1.5] (15 values), we com-`\n- P3: `0.734 ± 0.114 0.793 ± 0.133`\n- P5: `exponents α and β were originally fitted on the same sys-`\n- P5: `scale index η claimed “commensurability” between δβ`\n- P5: `commensurability as |δβ −δST |/δβ < 0.2. With current`\n- P5: `Cosmological predictions (Λ, ηB) were back-`",
+      "char_count": 706,
+      "chunk_hash": "a5df367cd536"
+    },
+    {
+      "chunk_id": "CORPUS-003#p1_01",
+      "corpus_id": "CORPUS-003",
+      "short_title": "Parte IV",
+      "page": "p.1",
+      "section": "—",
+      "text": "DOCUMENTO TEÓRICO\nPrograma de Formalização Físico-Matemática\nStatus: Conjectural / Proposta / Validado\nPARTE IV\nFormalização Teórica\nFunctor Φcat e Lema de Yoneda,\nTensor Qµν e Modiﬁcação da Equação de Einstein,\nConexões com Chanyal, Sun e Pradhan\nPassos 16 – 18 do Programa de Formalização\nAnálise crítica de statuses: conjecturas, propostas e validações\nVersão:\n1.0\nData:\n10 de agosto de 2026\nClassiﬁcação:\nDocumento teórico — difusão controlada\nIdioma:\nPortuguês (Brasil)",
+      "char_count": 474,
+      "chunk_hash": "88c4a551751c"
+    },
+    {
+      "chunk_id": "CORPUS-003#p2_01",
+      "corpus_id": "CORPUS-003",
+      "short_title": "Parte IV",
+      "page": "p.2",
+      "section": "—",
+      "text": "Formalização Teórica — Parte IV\n1\nSumário\n1\nIntrodução e Contextualização\n2\n2\nPasso 16 — Functor Φcat e Lema de Yoneda\n3\n2.1\nDeﬁnição do functor Φcat\n. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n3\n2.2\nO lema de Yoneda\n. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n3\n2.3\nConjectura do isomorﬁsmo Φcat(X) ∼= Hom(•, X) . . . . . . . . . . . . . . . . . .\n3\n2.4\nEstrutura da prova parcial . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n4\n2.5\nCaminhos plausíveis de demonstração\n. . . . . . . . . . . . . . . . . . . . . . . .\n5\n3\nPasso 17 — Tensor Qµν e Modiﬁcação da Equação de Einstein\n5\n3.1\nMotivação física . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n5\n3.2\nDeﬁnição axiomática de Qµν . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n6\n3.3\nTentativa de derivação variacional\n. . . . . . . . . . . . . . . . . . . . . . . . . .\n6\n3.4\nLimites fenomenológicos . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n7\n3.4.1\nLimite de Sitter . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n7\n3.4.2\nCosmologia de Friedmann . . . . . . . . . . . . . . . . . . . . . . . . . . .\n7\n3.4.3\nPerturbações lineares . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n8\n4\nPasso 18 — Conexões com Chanyal, Sun e Pradhan\n8\n4.1\nRevisão bibliográﬁca . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n8\n4.2",
+      "char_count": 1435,
+      "chunk_hash": "cbacb1e5ad14"
+    },
+    {
+      "chunk_id": "CORPUS-003#p2_02",
+      "corpus_id": "CORPUS-003",
+      "short_title": "Parte IV",
+      "page": "p.2",
+      "section": "Passo 18 — Conexões com Chanyal, Sun e Pradhan",
+      "text": ". . . . . . . . . . . . . . . . . . . . . . . .\n8\n4\nPasso 18 — Conexões com Chanyal, Sun e Pradhan\n8\n4.1\nRevisão bibliográﬁca . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n8\n4.2\nAnálise comparativa . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n9\n4.3\nValidações teóricas . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\n9\n4.4\nDivergências e limites da convergência . . . . . . . . . . . . . . . . . . . . . . . .\n10\n5\nAnálise Crítica Consolidada\n10\n6\nAgenda de Demonstração Futura\n11\nReferências Bibliográﬁcas\n12",
+      "char_count": 576,
+      "chunk_hash": "8c06073413fe"
+    },
+    {
+      "chunk_id": "CORPUS-003#p3_01",
+      "corpus_id": "CORPUS-003",
+      "short_title": "Parte IV",
+      "page": "p.3",
+      "section": "—",
+      "text": "Formalização Teórica — Parte IV\n2\n1\nIntrodução e Contextualização\nA Parte IV do programa de formalização consolida três pilares complementares da estrutura\nteórica em construção: a fundação categórica via functor Φcat e sua relação com o lema de\nYoneda (Passo 16), a extensão tensorial da equação de Einstein mediante introdução do tensor\ngeométrico Qµν (Passo 17) e a validação por convergência conceitual com os trabalhos indepen-\ndentes de Chanyal, Sun e Pradhan em cosmologia de modelos de Bianchi com campos magnéticos\n(Passo 18). Cada um desses passos possui status epistêmico distinto, e a honestidade metodo-\nlógica exige que essas distinções sejam explicitadas desde o início, evitando a sugestão de que o\narcabouço se encontra mais maduro do que efetivamente está.\nO Passo 16 carrega o status de conjectura: embora a relação Φcat(X) ∼= Hom(•, X) seja\naltamente plausível e esteja em consonância com a intuição categórica padrão, sua demonstração\nformal em toda a generalidade desejada — incluindo categorias topológicas, categorias enriched\ne estruturas ∞-categóricas — não foi ainda completada. As tentativas atuais de prova esbarram\nem questões técnicas não triviais relativas à continuidade functorial e à preservação de limites\nind-pro. Este documento detalha a estrutura lógica da conjectura, identiﬁca precisamente as\nlacunas e propõe caminhos concretos de demonstração.\nO Passo 17 é uma proposta teórica: a equação modiﬁcada Gµν = 8πG(Tµν + Qµν) não",
+      "char_count": 1466,
+      "chunk_hash": "2622ea273dd4"
+    },
+    {
+      "chunk_id": "CORPUS-003#p3_02",
+      "corpus_id": "CORPUS-003",
+      "short_title": "Parte IV",
+      "page": "p.3",
+      "section": "—",
+      "text": "detalha a estrutura lógica da conjectura, identiﬁca precisamente as\nlacunas e propõe caminhos concretos de demonstração.\nO Passo 17 é uma proposta teórica: a equação modiﬁcada Gµν = 8πG(Tµν + Qµν) não\nfoi derivada de primeiros princípios variacionais, mas postulada a partir de considerações feno-\nmenológicas e de consistência geométrica. O tensor Qµν é introduzido axiomáticamente, com\npropriedades de simetria, conservação covariante e traço bem deﬁnidos, mas sua origem a partir\nde uma ação de Hilbert-Einstein estendida permanece em aberto. Discutiremos em detalhe o\nque falta para transformar a proposta em derivação.\nO Passo 18, por contraste, já alcançou o status de validação teórica: a convergência\nconceitual entre o arcabouço aqui proposto e os resultados independentes de Chanyal, Sun e\nPradhan está documentada em regimes fenomenológicos sobrepostos. Esta convergência não\nconstitui prova de correção, mas fornece evidência indireta de que os Passos 16 e 17, mesmo em\nseu estado conjectural/propositivo, apontam para estrutura ﬁsicamente signiﬁcativa.\nConvenções notacionais.\nAdotamos índices gregos µ, ν, ρ, σ ∈{0, 1, 2, 3} para componentes\nespaçotempo e índices latinos i, j, k ∈{1, 2, 3} para componentes espaciais. A assinatura métrica\né (−, +, +, +), com convenção de soma de Einstein implícita.\nA conexão de Levi-Civita é\ndenotada ∇µ, e Rρσµν é o tensor de Riemann na convenção de Misner, Thorne e Wheeler. A",
+      "char_count": 1428,
+      "chunk_hash": "54183803610c"
+    },
+    {
+      "chunk_id": "CORPUS-003#p3_03",
+      "corpus_id": "CORPUS-003",
+      "short_title": "Parte IV",
+      "page": "p.3",
+      "section": "—",
+      "text": "ais. A assinatura métrica\né (−, +, +, +), com convenção de soma de Einstein implícita.\nA conexão de Levi-Civita é\ndenotada ∇µ, e Rρσµν é o tensor de Riemann na convenção de Misner, Thorne e Wheeler. A\nvelocidade da luz é c = 1 e a constante cosmológica é absorvida no lado geométrico quando\nconveniente. No âmbito categórico, C denota uma categoria localmente pequena, HomC(X, Y ) é\no conjunto de morﬁsmos, e • é um objeto distinguido cujo papel (terminal, inicial ou cóspelho)\nserá especiﬁcado contexto a contexto.",
+      "char_count": 515,
+      "chunk_hash": "c5803871a862"
+    },
+    {
+      "chunk_id": "CORPUS-003#p4_01",
+      "corpus_id": "CORPUS-003",
+      "short_title": "Parte IV",
+      "page": "p.4",
+      "section": "Passo 16 — Functor Φcat e Lema de Yoneda",
+      "text": "Formalização Teórica — Parte IV\n3\n2\nPasso 16 — Functor Φcat e Lema de Yoneda\n2.1\nDeﬁnição do functor Φcat\nSeja C uma categoria localmente pequena com objeto distinguido • ∈Ob(C). Deﬁne-se o functor\nΦcat : C −→Set,\nX 7−→HomC(•, X),\ncom ação em morﬁsmos dada, para f : X →Y em C, por\nΦcat(f) : HomC(•, X) −→HomC(•, Y ),\n(g : • →X) 7−→f ◦g.\nA veriﬁcação de que Φcat é de fato um functor covariante é imediata: Φcat(idX) = idHom(•,X)\npor deﬁnição de identidade, e Φcat(f ◦h) = Φcat(f) ◦Φcat(h) por associatividade da composição\nem C. Reconhece-se aqui o functor Hom-representável Hom(•, −), central na teoria de Yoneda.\nDeﬁnição 2.1 (Functor representável). Um functor F : C →Set é dito representável quando\nexiste um objeto A ∈C e um isomorﬁsmo natural η : HomC(A, −)\n∼\n−−→F. O par (A, η) é uma\nrepresentação de F.\nA conjectura central do Passo 16 é que Φcat é representável por • no sentido trivial de que\ncoincide com Hom(•, −), mas mais substancialmente que esta coincidência preserva estrutura\nadicional quando C porta estrutura topológica ou enriched.\n2.2\nO lema de Yoneda\nTeorema 2.1 (Lema de Yoneda). Seja C localmente pequena, A ∈C e F : C →Set um functor\ncovariante. Existe uma bijeção natural\nNat(HomC(A, −), F) ∼= F(A),\nonde Nat denota o conjunto de transformações naturais. A bijeção é dada por α 7→αA(idA),\ncom inversa x 7→\n[B 7→(f 7→F(f)(x))\n] para x ∈F(A).\nDemonstração (esboço canônico). Sejam α : Hom(A, −) ⇒F uma transformação natural e x =",
+      "char_count": 1455,
+      "chunk_hash": "3735f8a7db25"
+    },
+    {
+      "chunk_id": "CORPUS-003#p4_02",
+      "corpus_id": "CORPUS-003",
+      "short_title": "Parte IV",
+      "page": "p.4",
+      "section": "—",
+      "text": "de transformações naturais. A bijeção é dada por α 7→αA(idA),\ncom inversa x 7→\n[B 7→(f 7→F(f)(x))\n] para x ∈F(A).\nDemonstração (esboço canônico). Sejam α : Hom(A, −) ⇒F uma transformação natural e x =\nαA(idA) ∈F(A). Para qualquer f : A →B, a naturalidade exige\nF(f) ◦αA = αB ◦Hom(A, f).\nAvaliando em idA ∈Hom(A, A) obtém-se F(f)(x) = αB(f), donde α é univocamente deter-\nminado por x.\nReciprocamente, dado x ∈F(A), a fórmula αB(f) := F(f)(x) deﬁne uma\ntransformação natural, e as duas construções são inversas. A naturalidade em A e em F segue\npor veriﬁcação direta.\n2.3\nConjectura do isomorﬁsmo Φcat(X) ∼= Hom(•, X)\nConjectura 2.1 (Isomorﬁsmo Φ-Yoneda estendido). Seja C uma categoria Top-enriched (ou\nC portadora de estrutura topológica compatível) e • ∈C um objeto coﬁbrante no sentido de uma",
+      "char_count": 795,
+      "chunk_hash": "2e36f7150e60"
+    },
+    {
+      "chunk_id": "CORPUS-003#p5_01",
+      "corpus_id": "CORPUS-003",
+      "short_title": "Parte IV",
+      "page": "p.5",
+      "section": "—",
+      "text": "Formalização Teórica — Parte IV\n4\nestrutura modelo adequada. Então o functor Φcat admite reﬁnamento a um functor enriched\nΦenr\ncat : C −→Top,\ncom isomorﬁsmo natural enriched\nΦenr\ncat(X) ∼= HomC(•, X),\nonde Hom denota o objeto-Home enriched. Em particular, a aplicação das células de Whitehead\ninduz bijeção no π0 preservando composição.\n[!] CONJECTURA / PROPOSTA TEÓRICA\nStatus: CONJECTURA. A Conjectura 2.1 não está demonstrada em toda a genera-\nlidade enunciada. Os pontos críticos não resolvidos são:\n(i) Continuidade enriched. A passagem de HomC(•, X) (conjunto) para HomC(•, X)\n(espaço topológico) exige uma topologia coerente em cada Hom-conjunto, e a veri-\nﬁcação de que a composição é contínua nesta topologia não é automática.\n(ii) Compatibilidade com limites ind-pro. Categorias de interesse físico (por exem-\nplo, a categoria de variedades suaves como ind-objetos) requerem preservação de\nﬁltros de limite; a demonstração canônica de Yoneda não garante esta preservação\nno caso enriched.\n(iii) Caso ∞-categórico. A extensão a (∞, 1)-categorias, embora esperada, depende\ndo lema de Yoneda ∞-categórico de Lurie, cuja aplicação direta ao functor Φcat\nrequer hipóteses adicionais de localização.\n2.4\nEstrutura da prova parcial\nApresentamos a estrutura lógica do que pode ser demonstrado, identiﬁcando onde as hipóteses\nextras entram.\nLema 2.1 (Construtor direto). Existe uma aplicação canônica ηX : Φcat(X) →Hom(•, X) dada\npela identidade ηX(g) = g. Esta aplicação é bijetiva em Set.",
+      "char_count": 1491,
+      "chunk_hash": "457ffd92f5c0"
+    },
+    {
+      "chunk_id": "CORPUS-003#p5_02",
+      "corpus_id": "CORPUS-003",
+      "short_title": "Parte IV",
+      "page": "p.5",
+      "section": "—",
+      "text": "ado, identiﬁcando onde as hipóteses\nextras entram.\nLema 2.1 (Construtor direto). Existe uma aplicação canônica ηX : Φcat(X) →Hom(•, X) dada\npela identidade ηX(g) = g. Esta aplicação é bijetiva em Set.\nDemonstração. Por deﬁnição Φcat(X) = Hom(•, X), de modo que ηX é literalmente a identidade.\nA bijetividade é trivial.\nLema 2.2 (Naturalidade em X). A família {ηX}X∈C é uma transformação natural η : Φcat ⇒\nHom(•, −).",
+      "char_count": 416,
+      "chunk_hash": "5876ba1c0547"
+    },
+    {
+      "chunk_id": "CORPUS-003#p6_01",
+      "corpus_id": "CORPUS-003",
+      "short_title": "Parte IV",
+      "page": "p.6",
+      "section": "—",
+      "text": "Formalização Teórica — Parte IV\n5\nDemonstração. Para f : X →Y em C, devemos veriﬁcar a comutatividade do diagrama\nΦcat(X)\nHom(•, X)\nΦcat(Y )\nHom(•, Y )\nηX\nηY\nΦcat(f)\nHom(•, f)\nPara g ∈Φcat(X) = Hom(•, X), temos Hom(•, f)◦ηX(g) = f ◦g e ηY ◦Φcat(f)(g) = f ◦g. Logo\no diagrama comuta, e η é natural.\nOs Lemas 2.1 e 2.2 estabelecem que η é um isomorﬁsmo natural em Set.\nA conjectura\ncomeça onde esta demonstração termina: a exigência de que o isomorﬁsmo sobreviva à promoção\nestrutural.\n2.5\nCaminhos plausíveis de demonstração\nIdentiﬁcamos três estratégias que poderiam elevar a Conjectura 2.1 a teorema.\n(i) Estratégia via adjunção.\nSe • for adjunto à direita de um functor L : Set →C, então\nHomC(•, X) ∼= HomSet(1, L(X)), e a continuidade de L no caso enriched transfere-se direta-\nmente. Esta estratégia funciona em categorias cartesianamente fechadas com objeto terminal,\nmas não cobre categorias de interesse físico geral.\n(ii) Estratégia via teorema de representabilidade de Freyd.\nO teorema de Freyd para\nfuntores Set-valorados aﬁrma que F : C →Set é representável sse F preserva limites e satisfaz\na solução do conjunto de condições. Aplicado a Φcat, este teorema exige que C seja completa e\nque Φcat preserves produtos ﬁltrantes — condição que é exatamente o ponto (ii) da conjectura.\n(iii) Estratégia via embedding de Mitchell.\nO teorema de Mitchell–Freyd estabelece que\ntoda categoria abeliana pequena admite embedding exato e pleno em Ab. Para categorias abeli-",
+      "char_count": 1470,
+      "chunk_hash": "9a5cd8165cfd"
+    },
+    {
+      "chunk_id": "CORPUS-003#p6_02",
+      "corpus_id": "CORPUS-003",
+      "short_title": "Parte IV",
+      "page": "p.6",
+      "section": "—",
+      "text": "(ii) da conjectura.\n(iii) Estratégia via embedding de Mitchell.\nO teorema de Mitchell–Freyd estabelece que\ntoda categoria abeliana pequena admite embedding exato e pleno em Ab. Para categorias abeli-\nanas enriched sobre si mesmas, a estratégia transfere o problema para Ab, onde a demonstração\né elementar. Restringe-se, porém, a categorias abelianas.\n3\nPasso 17 — Tensor Qµν e Modiﬁcação da Equação de Einstein\n3.1\nMotivação física\nA equação de Einstein padrão\nGµν = 8πG Tµν\n(1)\nrelaciona a geometria do espaçotempo (lado esquerdo, Gµν = Rµν −1\n2R gµν) com o conteúdo\nmatéria-energia (lado direito, Tµν). Apesar de seu sucesso fenomenológico extraordinário —\nabrangendo desde testes no sistema solar até cosmologia observacional — a Equação (1) apre-\nsenta diﬁculdades conhecidas: a natureza da matéria escura e da energia escura, a tensão H0 na\nconstante de Hubble, e a ausência de uma descrição natural para regimes de curvatura extrema.",
+      "char_count": 940,
+      "chunk_hash": "eefc872aa20f"
+    },
+    {
+      "chunk_id": "CORPUS-003#p7_01",
+      "corpus_id": "CORPUS-003",
+      "short_title": "Parte IV",
+      "page": "p.7",
+      "section": "—",
+      "text": "Formalização Teórica — Parte IV\n6\nA proposta do Passo 17 é introduzir um termo geométrico adicional Qµν no lado direito,\nmodiﬁcando a equação para\nGµν = 8πG\n(Tµν + Qµν\n).\n(2)\nA interpretação física de Qµν não é a de um novo tipo de matéria, mas sim de uma correção\ngeométrica efetiva — possivelmente relacionada a contribuições de graus de liberdade topológicos\nou quânticos integrados-out. Esta escolha distingue-se das abordagens tipo f(R) ou escalar-\ntensorial por manter a teoria de segunda ordem nas equações de campo.\n3.2\nDeﬁnição axiomática de Qµν\nDeﬁnição 3.1 (Tensor Qµν). O tensor Qµν é uma forma bilinear simétrica (0, 2) no espaço-\ntempo (M, g) satisfazendo os seguintes axiomas:\nQ1. Simetria: Qµν = Qνµ.\nQ2. Conservação covariante: ∇µQµν = 0.\nQ3. Covariância geral: Qµν transforma-se como tensor sob difeomorﬁsmos de M.\nQ4. Traço bem deﬁnido: Q = gµνQµν existe e é ﬁnito em toda região compacta.\nQ5. Decaimento assintótico: Em regiões assintoticamente planas, Qµν = O(r−2−ϵ) para\nalgum ϵ > 0.\nA conservação covariante (Q2) é crítica: combinada com ∇µGµν = 0 (identidade de Bianchi)\ne ∇µTµν = 0 (conservação da matéria padrão), ela garante consistência da Equação (2). Sem\nQ2, a teoria seria incompatível com leis de conservação locais.\n3.3\nTentativa de derivação variacional\nA derivação da Equação (1) a partir da ação de Hilbert-Einstein\nSHE =\n1\n16πG\n∫\nM\nR√−g d4x + Smat\né canônica. A tentativa natural de derivar a Equação (2) é propor uma ação estendida\nS =\n1\n16πG\n∫\nM\n(R + α Q",
+      "char_count": 1493,
+      "chunk_hash": "d2d4ad7fb026"
+    },
+    {
+      "chunk_id": "CORPUS-003#p7_02",
+      "corpus_id": "CORPUS-003",
+      "short_title": "Parte IV",
+      "page": "p.7",
+      "section": "—",
+      "text": "ivação da Equação (1) a partir da ação de Hilbert-Einstein\nSHE =\n1\n16πG\n∫\nM\nR√−g d4x + Smat\né canônica. A tentativa natural de derivar a Equação (2) é propor uma ação estendida\nS =\n1\n16πG\n∫\nM\n(R + α Q\n)√−g d4x + Smat,\n(3)\nonde Q é um escalar construído a partir de Qµν e α é um acoplamento dimensional. O candidato\nmais simples é Q = Q = gµνQµν, mas isto é insuﬁciente: a variação de\n∫Q√−g d4x em gµν\nproduz um tensor ˜Qµν que não coincide em geral com Qµν como deﬁnido axiomáticamente.\n[!] CONJECTURA / PROPOSTA TEÓRICA\nStatus: PROPOSTA TEÓRICA. A Equação (2) não foi derivada de primeiros prin-\ncípios. Especiﬁcamente:\n(i) Ausência de ação fundamental.\nNão se conhece uma funcional de ação\nS[Qµν, gµν, ϕ] que, sob variação, produza simultaneamente a Equação (2) e equações",
+      "char_count": 774,
+      "chunk_hash": "f14662928a40"
+    },
+    {
+      "chunk_id": "CORPUS-003#p8_01",
+      "corpus_id": "CORPUS-003",
+      "short_title": "Parte IV",
+      "page": "p.8",
+      "section": "—",
+      "text": "Formalização Teórica — Parte IV\n7\nde movimento para os graus de liberdade de Qµν. A ação (3) é heurística.\n(ii) Origem dos graus de liberdade. Qµν possui, em geral, 10 −4 = 6 graus de\nliberdade independentes (após imposição de Q2). Não está claro se estes graus cor-\nrespondem a um campo fundamental, a uma contribuição efetiva de graus quânticos,\nou a uma correção puramente cinemática.\n(iii) Invariância de gauge. A correspondência entre Qµν e uma estrutura de gauge\nsubjacente (e.g., gauge de Weyl, gauge conforme) não foi estabelecida, impedindo a\nderivação a partir de princípios de simetria.\n(iv) Princípio de equivalência forte. Não foi veriﬁcado se a teoria modiﬁcada satisfaz\no princípio de equivalência forte (auto-aceleração de corpos compactos nula), uma\nexigência fenomenológica severa.\n3.4\nLimites fenomenológicos\nApesar do status conjectural da derivação, a Equação (2) admite análise fenomenológica em\nregimes especíﬁcos.\n3.4.1\nLimite de Sitter\nPara métrica de de Sitter gµν = diag(−1, e2Ht, e2Ht, e2Ht), temos Gµν = −3H2 gµν. Impondo\nQµν = q gµν (forma compatível com a simetria), a Equação (2) reduz-se a\n−3H2 = 8πG(ρ + q),\nonde ρ = T00 na decomposição Tµν = diag(ρ, p, p, p). O parâmetro efetivo q age como densi-\ndade de energia adicional, permitindo acomodar aceleração cósmica sem introduzir constante\ncosmológica explícita.\n3.4.2\nCosmologia de Friedmann\nPara métrica FLRW ds2 = −dt2 + a(t)2 (\ndr2\n1−kr2 + r2dΩ2)\n, a Equação (2) produz as equações\nmodiﬁcadas de Friedmann",
+      "char_count": 1493,
+      "chunk_hash": "536bf9ea8988"
+    },
+    {
+      "chunk_id": "CORPUS-003#p8_02",
+      "corpus_id": "CORPUS-003",
+      "short_title": "Parte IV",
+      "page": "p.8",
+      "section": "—",
+      "text": "smica sem introduzir constante\ncosmológica explícita.\n3.4.2\nCosmologia de Friedmann\nPara métrica FLRW ds2 = −dt2 + a(t)2 (\ndr2\n1−kr2 + r2dΩ2)\n, a Equação (2) produz as equações\nmodiﬁcadas de Friedmann\nH2 + k\na2 = 8πG\n3\n(ρ + ρQ\n),\n(4)\n˙H −k\na2 = −4πG\n(ρ + p + ρQ + pQ\n),\n(5)\nonde ρQ = −Q00 e pQ = 1\n3Qii. A conservação covariante ∇µ(Tµν + Qµν) = 0 implica\n˙ρ + 3H(ρ + p) = −\n[ ˙ρQ + 3H(ρQ + pQ)\n],\nmostrando que Qµν atua como reservatório de energia, podendo ceder ou absorver da matéria\nconvencional.",
+      "char_count": 500,
+      "chunk_hash": "a5a52f52f612"
+    },
+    {
+      "chunk_id": "CORPUS-003#p9_01",
+      "corpus_id": "CORPUS-003",
+      "short_title": "Parte IV",
+      "page": "p.9",
+      "section": "—",
+      "text": "Formalização Teórica — Parte IV\n8\n3.4.3\nPerturbações lineares\nLinearizando gµν = ¯gµν + hµν e Qµν = ¯Qµν + δQµν em torno de um fundo de Friedmann, as\nequações de perturbação tornam-se\nδGµν[¯g, h] = 8πG\n(δTµν + δQµν\n),\ncom δQµν dependendo da forma especíﬁca do acoplamento. A análise espectral destas pertur-\nbações — em particular a ausência de instabilidades gradientes e de frequências imaginárias —\né um pré-requisito para a viabilidade da proposta.\n4\nPasso 18 — Conexões com Chanyal, Sun e Pradhan\n4.1\nRevisão bibliográﬁca\nOs trabalhos de Chanyal, Sun e Pradhan constituem um corpo substancial de pesquisa em\ncosmologia de modelos de Bianchi com presença de campos magnéticos, com motivações inde-\npendentes daquelas do presente programa. A convergência conceitual documentada nesta seção\nrefere-se à sobreposição de regimes fenomenológicos e de estruturas formais.\nChanyal.\nA série de trabalhos de Chanyal e colaboradores (cf. [10, 11, 12]) investiga modelos\nde Bianchi tipos I, II, VI0, VII e VIII com tensor energia-momento magnético\nT (mag)\nµν\n= 1\n4π\n(\nFµαFνα −1\n4gµνFαβF αβ\n)\n,\nonde Fµν é o tensor de Maxwell.\nAs conclusões centrais incluem: (a) o campo magnético\nintroduz anisotropia residual que persiste em regimes tardios; (b) a conservação do tensor total\nT (mat)\nµν\n+ T (mag)\nµν\né consistente com a identidade de Bianchi; (c) o comportamento assintótico das\nsoluções exibe atração para pontos ﬁxos correspondentes a universos de Kasner generalizados.\nSun.",
+      "char_count": 1470,
+      "chunk_hash": "f407ffa321a7"
+    },
+    {
+      "chunk_id": "CORPUS-003#p9_02",
+      "corpus_id": "CORPUS-003",
+      "short_title": "Parte IV",
+      "page": "p.9",
+      "section": "—",
+      "text": "T (mat)\nµν\n+ T (mag)\nµν\né consistente com a identidade de Bianchi; (c) o comportamento assintótico das\nsoluções exibe atração para pontos ﬁxos correspondentes a universos de Kasner generalizados.\nSun.\nSun e colaboradores (cf. [13, 14]) estudam a anisotropia cósmica via modelos de Bianchi\ncom tensor energia-momento geral, incluindo contribuições de ﬂuidos perfeitos e de campos\nescalares. A contribuição metodológica central é a análise sistemática do espaço de fases via\nteoria de dynamical systems, identiﬁcando pontos críticos e suas estabilidades. A estrutura do\nespaço de fases obtida é compatível — em regimes apropriados — com a estrutura emergente\nda Equação (2).\nPradhan.\nPradhan e colaboradores (cf. [15, 16, 17]) desenvolvem cosmologia de modelos LRS\n(locally rotationally symmetric) de Bianchi com constante cosmológica variável Λ(t). A estra-\ntégia de Pradhan — absorver a variabilidade de Λ em um tensor efetivo Q(Λ)\nµν = −Λ(t)gµν —\né formalmente análoga à introdução de Qµν no Passo 17, embora com motivação e tratamento\ndistintos.",
+      "char_count": 1047,
+      "chunk_hash": "fbbda02c694b"
+    },
+    {
+      "chunk_id": "CORPUS-003#p10_01",
+      "corpus_id": "CORPUS-003",
+      "short_title": "Parte IV",
+      "page": "p.10",
+      "section": "—",
+      "text": "Formalização Teórica — Parte IV\n9\n4.2\nAnálise comparativa\nA Tabela 1 sintetiza a comparação entre o arcabouço proposto (Passo 17) e os resultados inde-\npendentes dos três autores.\nTabela 1: Análise comparativa: arcabouço proposto vs. Chanyal/Sun/Pradhan.\nAspecto\nProposta (Passo 17)\nChanyal/Sun/PradhanConvergência\nTermo adicional\nQµν geométrico\nT (mag)\nµν\nou Λ(t)gµν\nFormal: ambos somam\nao\nlado\ndireito\nde\nEq. (1)\nConservação\n∇µQµν = 0\n∇µT (mag)\nµν\n=\n0,\n∇µ(Λgµν) = −˙Λ δ0\nµ\nParcial:\ndiferença na\nfonte\nAnisotropia\nGenérica em Qµν\nCentral nos modelos de\nBianchi\nForte\nRegime tardio\nAtrai ponto ﬁxo de Sit-\nter\nAtrai Kasner generali-\nzado\nCondicional\nOrigem física\nNão especiﬁcada (con-\njectural)\nMagnética / variável Λ\nDivergente\n4.3\nValidações teóricas\n[OK] VALIDAÇÃO TEÓRICA\nStatus: VALIDAÇÃO TEÓRICA. As seguintes convergências conceituais estão do-\ncumentadas:\n(i) Conservação efetiva. Em todos os três programas (Chanyal, Sun, Pradhan), o\ntensor adicional — seja magnético, seja Λ(t)gµν — satisfaz uma lei de conservação\ncovariante efetiva, em paralelo direto com o axioma Q2. Esta é uma validação forte:\na estrutura de conservação não é artefato de nossa proposta, mas requisito imposto\npela consistência com a identidade de Bianchi.\n(ii) Anisotropia residual. Chanyal documenta que a presença de campo magnético\nintroduz anisotropia residual persistente em regimes tardios. O arcabouço do Passo\n17 reproduz esta característica quando Qµν possui componentes espaciais aniso-",
+      "char_count": 1480,
+      "chunk_hash": "6f938ff48f7a"
+    },
+    {
+      "chunk_id": "CORPUS-003#p10_02",
+      "corpus_id": "CORPUS-003",
+      "short_title": "Parte IV",
+      "page": "p.10",
+      "section": "—",
+      "text": "enta que a presença de campo magnético\nintroduz anisotropia residual persistente em regimes tardios. O arcabouço do Passo\n17 reproduz esta característica quando Qµν possui componentes espaciais aniso-\ntrópicas, indicando que a estrutura formal é suﬁcientemente rica para acomodar o\nfenômeno.\n(iii) Comportamento assintótico. Os pontos ﬁxos do espaço de fases obtidos por\nSun (universos de Kasner generalizados) coincidem, em regime apropriado, com os\npontos ﬁxos da Equação (2) quando Qµν é puramente espacial e traço-zero. Esta\ncoincidência é não trivial e fornece evidência indireta da consistência estrutural.\n(iv) Analogia formal com Λ(t). A estratégia de Pradhan de absorver Λ(t) em um\ntensor efetivo −Λ(t)gµν é formalmente idêntica — embora motivada independente-",
+      "char_count": 769,
+      "chunk_hash": "fa15d8b19a3b"
+    },
+    {
+      "chunk_id": "CORPUS-003#p11_01",
+      "corpus_id": "CORPUS-003",
+      "short_title": "Parte IV",
+      "page": "p.11",
+      "section": "—",
+      "text": "Formalização Teórica — Parte IV\n10\nmente — à introdução de Qµν = −Λ(t)gµν como caso particular do Passo 17. O\nsucesso fenomenológico da abordagem de Pradhan é, portanto, evidência de que o\narcabouço aqui proposto reduz-se corretamente a casos conhecidos.\n4.4\nDivergências e limites da convergência\nA convergência documentada não é completa, e é importante delinear os pontos de divergência.\nPrimeiro, a origem física de Qµν no Passo 17 é deixada em aberto, enquanto Chanyal e\nPradhan atribuem-na a fontes especíﬁcas (magnética e cosmológica variável, respectivamente).\nEsta divergência é em parte vantagem: a maior generalidade do Passo 17 permite, em princí-\npio, uniﬁcar as descrições; mas é também desvantagem, pois a ausência de identiﬁcação física\nenfraquece a testabilidade.\nSegundo, o regime não-perturbativo do Passo 17 — em particular a existência global de\nsoluções e a estrutura do espaço de moduli — não foi analisado com a profundidade dos trabalhos\nde Sun.\nA análise de Sun, baseada em dynamical systems, fornece resultados robustos de\nestabilidade que a presente proposta ainda não reproduz integralmente.\nTerceiro, a ausência de campos magnéticos no formalismo base do Passo 17 é uma limitação:\nos modelos de Chanyal mostram que o acoplamento magnético-matéria é fenomenologicamente\nrico, e a extensão do Passo 17 para incluir explicitamente Fµν é tarefa em aberto.\n5\nAnálise Crítica Consolidada",
+      "char_count": 1411,
+      "chunk_hash": "ceb080e88a41"
+    },
+    {
+      "chunk_id": "CORPUS-003#p11_02",
+      "corpus_id": "CORPUS-003",
+      "short_title": "Parte IV",
+      "page": "p.11",
+      "section": "—",
+      "text": "os modelos de Chanyal mostram que o acoplamento magnético-matéria é fenomenologicamente\nrico, e a extensão do Passo 17 para incluir explicitamente Fµν é tarefa em aberto.\n5\nAnálise Crítica Consolidada\nA Tabela 2 consolida os statuses dos três passos, fornecendo visão sintética do estado do pro-\ngrama.\nTabela 2: Status consolidado dos Passos 16, 17 e 18.\nPasso\nStatus\nEvidência\nLacuna principal\n16 — Φcat e Yoneda\n[!] Conjectura\nIsomorﬁsmo\nem\nSet\ndemonstrado;\ncaso enriched plau-\nsível\nContinuidade enri-\nched;\npreservação\nde ind-pro limites\n17 — Qµν e Einstein mod.\n[!] Proposta teórica\nConsistência\ncom\nconservação;\nre-\ndução\na\ncasos\nconhecidos\nDerivação variacio-\nnal; identiﬁcação fí-\nsica de Qµν\n18 — Chanyal/Sun/Pradhan\n[OK] Validação\nConvergência\ncon-\nceitual em 4 eixos\nDivergências\nem\norigem\nfísica\ne\nanálise\nnão-\nperturbativa\nA leitura conjunta dos três passos sugere uma estrutura epistêmica análoga à distinção de\nLakatos entre núcleo ﬁrme e cinturão protetor. O núcleo do programa — a hipótese de que a\nestrutura física admite formalização categórico-tensorial uniﬁcada — é sustentado pelo cinturão",
+      "char_count": 1112,
+      "chunk_hash": "5269833993f8"
+    },
+    {
+      "chunk_id": "CORPUS-003#p12_01",
+      "corpus_id": "CORPUS-003",
+      "short_title": "Parte IV",
+      "page": "p.12",
+      "section": "—",
+      "text": "Formalização Teórica — Parte IV\n11\nformado pelas conjecturas Φcat e Qµν, cuja vulnerabilidade é parcialmente compensada pela\nvalidação independente via Chanyal/Sun/Pradhan. Esta conﬁguração é típica de programas de\npesquisa em estágio intermediário: nem refutados nem conﬁrmados, mas em progresso ativo.\nA honestidade metodológica exige reconhecer que conjecturas não-provadas e propostas não-\nderivadas não constituem teoria física no sentido estrito. A distinção entre “plausível” e “de-\nmonstrado” é epistemicamente signiﬁcativa, e este documento procura manter esta distinção\nexplícita. A ausência de derivação variacional para Qµν, em particular, é uma lacuna substan-\ntiva: sem ela, a proposta é uma parametrização fenomenológica, não uma teoria fundamental.\n6\nAgenda de Demonstração Futura\nCom base na análise crítica, propõe-se a seguinte agenda de trabalho para elevar os Passos 16 e\n17 ao status de validados.\nPara o Passo 16 (18–24 meses).\nA1. Estabelecer formalmente a categoria-alvo: Top-enriched vs. (∞, 1)-categoria. A escolha\ndetermina a estratégia de prova.\nA2. Validar a Conjectura 2.1 em casos-teste concretos: categoria de espaços topológicos pon-\ntados, categoria de CW-complexos, categoria de variedades suaves.\nA3. Investigar a estratégia (ii) — teorema de Freyd — em detalhe, veriﬁcando se as hipóteses\nde completude são satisfeitas em categorias de interesse físico.\nA4. Estender a (∞, 1)-categorias via framework de Lurie, com atenção às hipóteses de locali-\nzação.",
+      "char_count": 1491,
+      "chunk_hash": "2deff7acff7e"
+    },
+    {
+      "chunk_id": "CORPUS-003#p12_02",
+      "corpus_id": "CORPUS-003",
+      "short_title": "Parte IV",
+      "page": "p.12",
+      "section": "—",
+      "text": "detalhe, veriﬁcando se as hipóteses\nde completude são satisfeitas em categorias de interesse físico.\nA4. Estender a (∞, 1)-categorias via framework de Lurie, com atenção às hipóteses de locali-\nzação.\nPara o Passo 17 (12–18 meses).\nB1. Construir ação fundamental S[Qµν, gµν, ϕ] que reproduz a Equação (2) sob variação. Can-\ndidato inicial: ação tipo Weyl com campo de gauge Bµ cuja curvatura Hµν = ∂[µBν] gera\nQµν = αHµν.\nB2. Veriﬁcar consistência com testes do sistema solar: perihelion de Mercúrio, deﬂexão lumi-\nnar, atraso Shapiro. A escala |Qµν|/|Tµν| ≲10−5 em regimes solares é limite superior\nfenomenológico.\nB3. Investigar mudanças cosmológicas: espectro de perturbações CMB, formação de estrutura,\ntaxa de expansão H(z). Comparação com dados de Planck e DES.\nB4. Análise de estabilidade: ausência de modos fantasmas, ausência de instabilidades gradien-\ntes, condições de energia positiva.",
+      "char_count": 897,
+      "chunk_hash": "20b1612f2d66"
+    },
+    {
+      "chunk_id": "CORPUS-003#p13_01",
+      "corpus_id": "CORPUS-003",
+      "short_title": "Parte IV",
+      "page": "p.13",
+      "section": "—",
+      "text": "Formalização Teórica — Parte IV\n12\nReferências Bibliográﬁcas\nReferências\n[1] Yoneda, N. On the homology theory of modules. J. Fac. Sci. Univ. Tokyo, Sec. I, vol. 7, p.\n193–227, 1954.\n[2] Mac Lane, S. Categories for the Working Mathematician. Graduate Texts in Mathematics\n5, Springer-Verlag, New York, 1971.\n[3] Lurie, J. Higher Topos Theory. Annals of Mathematics Studies 170, Princeton University\nPress, 2009.\n[4] Freyd, P. Abelian Categories: An Introduction to the Theory of Functors. Harper & Row,\nNew York, 1964.\n[5] Einstein, A. Die Feldgleichungen der Gravitation. Sitzungsberichte der Königlich PreuSSis-\nchen Akademie der Wissenschaften (Berlin), p. 844–847, 1915.\n[6] Misner, C. W.; Thorne, K. S.; Wheeler, J. A. Gravitation. W. H. Freeman, San Francisco,\n1973.\n[7] Carroll, S. M. Spacetime and Geometry: An Introduction to General Relativity. Addison-\nWesley, San Francisco, 2004.\n[8] Hawking, S. W.; Ellis, G. F. R. The Large Scale Structure of Space-Time. Cambridge\nUniversity Press, 1973.\n[9] Lakatos, I. The Methodology of Scientiﬁc Research Programmes. Cambridge University\nPress, 1978.\n[10] Chanyal, B. C.; Yilmaz, S. Bianchi type I cosmological models with a magnetic ﬁeld in f(R)\ngravity. Gen. Relativ. Gravit., vol. 45, p. 2361–2374, 2013.\n[11] Chanyal, B. C. Bianchi type VI0 cosmological models with electromagnetic ﬁeld in general\nrelativity. Astrophys. Space Sci., vol. 359, p. 32, 2015.",
+      "char_count": 1412,
+      "chunk_hash": "71f76879f165"
+    },
+    {
+      "chunk_id": "CORPUS-003#p13_02",
+      "corpus_id": "CORPUS-003",
+      "short_title": "Parte IV",
+      "page": "p.13",
+      "section": "—",
+      "text": ". Relativ. Gravit., vol. 45, p. 2361–2374, 2013.\n[11] Chanyal, B. C. Bianchi type VI0 cosmological models with electromagnetic ﬁeld in general\nrelativity. Astrophys. Space Sci., vol. 359, p. 32, 2015.\n[12] Chanyal, B. C. Bianchi type VIII cosmological model with electromagnetic ﬁeld and variable\ncosmological term. Int. J. Mod. Phys. A, vol. 35, p. 2050017, 2020.\n[13] Sun, C.-B.; Fu, H.-W. Dynamics of Bianchi type VIIh cosmology with a scalar ﬁeld. Mod.\nPhys. Lett. A, vol. 32, p. 1750019, 2017.\n[14] Sun, C.-B. Phase-space analysis of anisotropic cosmologies with matter. Phys. Rev. D, vol.\n99, p. 063517, 2019.\n[15] Pradhan, A.; Pandey, H. R. Bianchi type I cosmological models with variable cosmological\nconstant. Int. J. Mod. Phys. D, vol. 16, p. 499–513, 2007.",
+      "char_count": 768,
+      "chunk_hash": "d0fc711d5308"
+    },
+    {
+      "chunk_id": "CORPUS-003#p14_01",
+      "corpus_id": "CORPUS-003",
+      "short_title": "Parte IV",
+      "page": "p.14",
+      "section": "—",
+      "text": "Formalização Teórica — Parte IV\n13\n[16] Pradhan, A.; Jaiswal, R. LRS Bianchi type I cosmological models with variable Λ and\nmagnetic ﬁeld. Astrophys. Space Sci., vol. 357, p. 90, 2015.\n[17] Pradhan, A. Bianchi cosmologies with time-varying cosmological constant: a review. Ann.\nPhys. (Berlin), vol. 533, p. 2100015, 2021.\n[18] Lovelock, D. The four-dimensionality of space and the Einstein tensor. J. Math. Phys., vol.\n13, p. 874–876, 1972.\n\n---\n\n## Tabelas Extraídas\n\n### Tabela 1 (página 1)\n\n|  |\n| --- |\n|  |\n\n### Tabela 2 (página 1)\n\n|  |\n| --- |\n|  |\n\n---\n\n## ⚠️ Possíveis Equações Problemáticas\n\n> Heurística: linhas curtas com alta densidade de caracteres matemáticos,\n> ou linhas com caracteres de substituição Unicode. **Verificar manualmente**.\n\n- P3: `O Passo 17 é uma proposta teórica: a equação modiﬁcada Gµν = 8πG(Tµν + Qµν) não`\n- P3: `Adotamos índices gregos µ, ν, ρ, σ ∈{0, 1, 2, 3} para componentes`\n- P4: `existe um objeto A ∈C e um isomorﬁsmo natural η : HomC(A, −)`\n- P4: `αA(idA) ∈F(A). Para qualquer f : A →B, a naturalidade exige`\n- P4: `F(f) ◦αA = αB ◦Hom(A, f).`\n- P4: `Reciprocamente, dado x ∈F(A), a fórmula αB(f) := F(f)(x) deﬁne uma`\n- P5: `do lema de Yoneda ∞-categórico de Lurie, cuja aplicação direta ao functor Φcat`\n- P6: `Gµν = 8πG Tµν`\n- P6: `relaciona a geometria do espaçotempo (lado esquerdo, Gµν = Rµν −1`\n- P7: `Gµν = 8πG`\n- P7: `(Tµν + Qµν`\n- P7: `Q1. Simetria: Qµν = Qνµ.`\n- P7: `Q2. Conservação covariante: ∇µQµν = 0.`",
+      "char_count": 1463,
+      "chunk_hash": "39da57759bf0"
+    },
+    {
+      "chunk_id": "CORPUS-003#p14_02",
+      "corpus_id": "CORPUS-003",
+      "short_title": "Parte IV",
+      "page": "p.14",
+      "section": "—",
+      "text": "8πG Tµν`\n- P6: `relaciona a geometria do espaçotempo (lado esquerdo, Gµν = Rµν −1`\n- P7: `Gµν = 8πG`\n- P7: `(Tµν + Qµν`\n- P7: `Q1. Simetria: Qµν = Qνµ.`\n- P7: `Q2. Conservação covariante: ∇µQµν = 0.`\n- P7: `Q4. Traço bem deﬁnido: Q = gµνQµν existe e é ﬁnito em toda região compacta.`\n- P7: `mais simples é Q = Q = gµνQµν, mas isto é insuﬁciente: a variação de`\n- P7: `∫Q√−g d4x em gµν`\n- P8: `Qµν = q gµν (forma compatível com a simetria), a Equação (2) reduz-se a`\n- P8: `−3H2 = 8πG(ρ + q),`\n- P8: `(ρ + ρQ`\n- P8: `(ρ + p + ρQ + pQ`\n- P8: `3Qii. A conservação covariante ∇µ(Tµν + Qµν) = 0 implica`\n- P8: `˙ρ + 3H(ρ + p) = −`\n- P8: `[ ˙ρQ + 3H(ρQ + pQ)`\n- P9: `δGµν[¯g, h] = 8πG`\n- P9: `(δTµν + δQµν`\n- P9: `FµαFνα −1`\n- P9: `4gµνFαβF αβ`\n- P9: `tégia de Pradhan — absorver a variabilidade de Λ em um tensor efetivo Q(Λ)`\n- P9: `µν = −Λ(t)gµν —`\n- P10: `ou Λ(t)gµν`\n- P10: `∇µQµν = 0`\n- P10: `∇µ(Λgµν) = −˙Λ δ0`\n- P10: `(iv) Analogia formal com Λ(t). A estratégia de Pradhan de absorver Λ(t) em um`\n- P10: `tensor efetivo −Λ(t)gµν é formalmente idêntica — embora motivada independente-`\n- P11: `mente — à introdução de Qµν = −Λ(t)gµν como caso particular do Passo 17. O`\n- P12: `Qµν = αHµν.`",
+      "char_count": 1191,
+      "chunk_hash": "bbf04655ec1f"
+    },
+    {
+      "chunk_id": "CORPUS-004#p1_01",
+      "corpus_id": "CORPUS-004",
+      "short_title": "Paper B",
+      "page": "p.1",
+      "section": "—",
+      "text": "Dinâmica Quântica Dissipativa em Complexos Fotossintéticos:\nEscalas de Tempo de Descoerência e a Lei de Potência do FMO 7-Sítios\nEdson Carvalho do Nascimento1, ∗\n1Pesquisador independente, Curitiba, Brasil\n(Dated: 12 de agosto de 2026)\nRevisitamos o escalonamento power-law do tempo de coerência eletrônica T2 no complexo bac-\nteriocloroﬁla Fenna-Matthews-Olson (FMO), derivando todos os expoentes diretamente do Hamil-\ntoniano completo de 7 sítios em vez de uma extrapolação de dímero de 2 sítios como em nosso\ntrabalho anterior. Usando 375 combinações de energia de reorganização λ, acoplamento de banho\nγ, acoplamento eletrônico J, e temperatura T, obtemos T2 = K J0.831 λ−0.843 γ−0.766 T −0.261 com\nR2 = 0.988, uma melhoria substancial sobre o ﬁt anterior (R2 = 0.914). O expoente de temperatura\nST = −0.261 difere em 67% do valor derivado do dímero (−0.795), conﬁrmando que a extrapolação\nde 2 para 7 sítios era matematicamente injustiﬁcável. Testamos adicionalmente a hipótese de co-\nmensurabilidade cross-scale η entre as sensibilidades δβ e δST a mudanças em λ, aplicando o critério\nformal |δβ −δST |/δβ < 0.2. Com os novos valores FMO-completo, a razão é 0.291, excedendo o\nlimiar; a hipótese η é portanto retraída da análise presente. O Índice de Interferência Destrutiva\n(DII) correlacionando simetria estrutural com recuperação de descoerência (r = +0.459) é inafetado\npor estas correções. Discutimos as implicações para transporte quântico assistido por ambiente e",
+      "char_count": 1477,
+      "chunk_hash": "053faa62a63d"
+    },
+    {
+      "chunk_id": "CORPUS-004#p1_02",
+      "corpus_id": "CORPUS-004",
+      "short_title": "Paper B",
+      "page": "p.1",
+      "section": "—",
+      "text": "tiva\n(DII) correlacionando simetria estrutural com recuperação de descoerência (r = +0.459) é inafetado\npor estas correções. Discutimos as implicações para transporte quântico assistido por ambiente e\nrecomendamos validação HEOM completa em v6.2.\nI.\nINTRODUÇÃO\nA observação de coerências eletrônicas de longa dura-\nção em complexos de colheita de luz fotossintéticos [1, 2]\nestimulou uma década de trabalho teórico e experimental\nsobre transporte quântico assistido por ambiente [3–5].\nO complexo Fenna-Matthews-Olson (FMO) de bactérias\nde enxofre verde, com sua estrutura tratável de 7 sítios\ne Hamiltoniano bem caracterizado [6, 7], tornou-se um\nsistema benchmark para testar teorias de dinâmica de\nsistemas quânticos abertos. Uma predição quantitativa\ncentral destas teorias é o tempo de coerência eletrônica\nT2, que no FMO à temperatura ﬁsiológica tem sido me-\ndido como aproximadamente 660 ± 30 fs no conjunto de\nparâmetros de referência J = 40 cm−1, λ = 35 cm−1,\nγ = 10 cm−1, T = 300 K [2].\nEm nosso trabalho anterior (v6.0), reportamos um es-\ncalonamento power-law de T2 com os quatro parâmetros\nde controle (J, λ, γ, T):\nT2 = K J+1.205 λ−1.114 γ−1.068 T −0.795\n(R2 = 0.914),\n(1)\nderivado de simulações numéricas de um sistema dímero\nde 2 sítios e extrapolado para o complexo FMO de 7\nsítios. Reportamos também um índice de comensurabi-\nlidade cross-scale η entre as sensibilidades δβ (do expo-\nente de reorganização) e δST (do expoente de tempera-",
+      "char_count": 1455,
+      "chunk_hash": "b9ab32555faa"
+    },
+    {
+      "chunk_id": "CORPUS-004#p1_03",
+      "corpus_id": "CORPUS-004",
+      "short_title": "Paper B",
+      "page": "p.1",
+      "section": "—",
+      "text": "extrapolado para o complexo FMO de 7\nsítios. Reportamos também um índice de comensurabi-\nlidade cross-scale η entre as sensibilidades δβ (do expo-\nente de reorganização) e δST (do expoente de tempera-\ntura) a mudanças em λ, sugerindo que as duas escalas\nco-variariam de maneira consistente com uma transição\nquântico-para-clássico uniﬁcada [8].\nAmbas as aﬁrmações enfrentam desaﬁos metodológi-\ncos.\nA derivação do expoente de temperatura ST =\n−0.795 de um dímero de 2 sítios e sua aplicação a um\n∗Endereço eletrônico: prof.edson.nascimento@protonmail.com\nsistema de 7 sítios é matematicamente questionável: a\ntopologia estrutural, a densidade de estados, e a rede de\nacoplamento sítio-a-sítio diferem qualitativamente entre\nos dois casos, e não há razão a priori para esperar que\no escalonamento de temperatura seja invariante sob esta\nextrapolação. Ademais, a aﬁrmação η carece de uma de-\nﬁnição quantitativa formal de “comensurabilidade”; sem\ntal deﬁnição, a aﬁrmação não pode ser falseada.\nNeste artigo (Paper B, v6.1), abordamos ambas as\nquestões:\n(i) Re-derivamos o power-law completo diretamente do\nHamiltoniano FMO de 7 sítios usando 375 com-\nbinações de parâmetros, obtendo um novo expo-\nente ST = −0.261 (vs. −0.795 anteriormente), com\nR2 = 0.988.\n(ii) Formalizamos “comensurabilidade” como |δβ −\nδST |/δβ < 0.2 e a aplicamos aos novos dados. O\ncritério não é satisfeito (razão = 0.291), levando-\nnos a retrair a hipótese η.\nO escopo deste manuscrito é estritamente o regime",
+      "char_count": 1483,
+      "chunk_hash": "4bed8370c6c5"
+    },
+    {
+      "chunk_id": "CORPUS-004#p1_04",
+      "corpus_id": "CORPUS-004",
+      "short_title": "Paper B",
+      "page": "p.1",
+      "section": "—",
+      "text": "rabilidade” como |δβ −\nδST |/δβ < 0.2 e a aplicamos aos novos dados. O\ncritério não é satisfeito (razão = 0.291), levando-\nnos a retrair a hipótese η.\nO escopo deste manuscrito é estritamente o regime\nquântico-dissipativo de complexos fotossintéticos. A mé-\ntrica de coerência biológica/macroscópica (Paper A) e a\nformalização cosmológica/categórica (Paper C) são deli-\nberadamente separadas para manter foco e falsiﬁcabili-\ndade. O Paper A complementar introduz a métrica de\ncoerência macroscópica C = I × S × Hβ validada em co-\nnectomas e EEG; o Paper C estende a estrutura ao tensor\nQµν e ao functor Φcat no cenário categórico.\nO artigo está organizado como segue. A Seção II revisa\na estrutura HEOM e o Hamiltoniano FMO. A Seção III\napresenta o novo ﬁt power-law. A Seção IV reporta o Ín-\ndice de Interferência Destrutiva (DII). A Seção V discute\nas limitações, incluindo a retração formal de η. A Se-\nção VI conclui com recomendações para validação HEOM\nem v6.2.",
+      "char_count": 967,
+      "chunk_hash": "f02f781480bf"
+    },
+    {
+      "chunk_id": "CORPUS-004#p2_01",
+      "corpus_id": "CORPUS-004",
+      "short_title": "Paper B",
+      "page": "p.2",
+      "section": "—",
+      "text": "2\nII.\nESTRUTURA HEOM E HAMILTONIANO\nFMO\n[A Seção II será expandida em v6.2.\nConterá: (a)\nHamiltoniano FMO 7-sítios (variante Adendorf-Mahan\n/ Hayes-Engel 2011), (b) formalismo HEOM com pro-\nfundidade de hierarquia L = 4, (c) densidade espectral\nDrude-Lorentz J(ω) = 2λγω/(ω2+γ2), (d) condições ini-\nciais (sítio 1) e sítio alvo (sítio 3, mais próximo do centro\nde reação).]\nIII.\nESCALONAMENTO POWER-LAW DO\nFMO COMPLETO DE 7 SÍTIOS\n[A Seção III será expandida em v6.2. Resultados nu-\nméricos atuais do script 203_qdt_st_full_fmo.py:]\nT2 = (1.567×104) J+0.831 λ−0.843 γ−0.766 T −0.261,\nR2 = 0.988.\n(2)\nCalibração em (J, λ, γ, T) = (40, 35, 10, 300) produz T2 =\n616.8 fs, dentro de 6.5% do valor experimental de refe-\nrência de 660 fs.\nIV.\nÍNDICE DE INTERFERÊNCIA\nDESTRUTIVA (DII)\n[A Seção IV será expandida em v6.2. Correlação DII\ncom recuperação de descoerência:\nr = +0.459 (inal-\nterado desde v6.0). Densidade espectral super-Ohmica\nLH2 s = 4 também inalterada.]\nV.\nDISCUSSÃO: LIMITAÇÕES E QUESTÕES\nEM ABERTO\nDiscutimos em sequência as duas inconsistências resol-\nvidas nesta versão, depois passamos às limitações rema-\nnescentes.\nA.\nResolução da Inconsistência #3: extrapolação\nde ST do dímero\nEm v6.0, o expoente de temperatura ST = −0.795 foi\nderivado de um sistema dímero de 2 sítios e aplicado ao\ncomplexo FMO de 7 sítios. Esta extrapolação é matema-\nticamente injustiﬁcável: a topologia FMO (cadeia linear\ncom cross-links para um hub central) gera uma densi-",
+      "char_count": 1464,
+      "chunk_hash": "7f1d78295427"
+    },
+    {
+      "chunk_id": "CORPUS-004#p2_02",
+      "corpus_id": "CORPUS-004",
+      "short_title": "Paper B",
+      "page": "p.2",
+      "section": "—",
+      "text": "tema dímero de 2 sítios e aplicado ao\ncomplexo FMO de 7 sítios. Esta extrapolação é matema-\nticamente injustiﬁcável: a topologia FMO (cadeia linear\ncom cross-links para um hub central) gera uma densi-\ndade de estados e rede de acoplamento qualitativamente\ndiferente de um dímero simétrico, e não há razão teórica\npara esperar que o escalonamento de temperatura seja\ntransferível.\nNossa re-derivação usando o Hamiltoniano completo de\n7 sítios e 375 combinações de parâmetros produz ST =\n−0.261±0.016, um desvio de 67% do valor do dímero. O\nnovo ﬁt atinge R2 = 0.988, excedendo substancialmente\no R2 = 0.914 anterior. Concluímos que a extrapolação\ndo dímero estava de fato ﬂawed, e o novo valor deve ser\nusado em todas as análises TCR/QDT subsequentes.\nB.\nRetração da Inconsistência #5: hipótese de\ncomensurabilidade η\nO índice cross-scale η foi originalmente introduzido\ncomo uma aﬁrmação qualitativa de “comensurabilidade”\nentre δβ (a sensibilidade do expoente λ a mudanças no\npróprio λ) e δST (a sensibilidade análoga de ST ). Sem\numa deﬁnição formal, a aﬁrmação não podia ser falseada.\nFormalizamos agora comensurabilidade como\n|δβ −δST |\nδβ\n< 0.2.\n(3)\nAplicando este critério aos novos dados FMO-completo:\nδβ = 0.268\n(de v6.0, inalterado),\n(4)\nδST = 0.346\n(recém-calculado via split low-λ/high-λ),\n(5)\n|0.268 −0.346|\n0.268\n= 0.291 > 0.2.\n(6)\nO critério não é satisfeito. Retraímos portanto a hipótese\nde comensurabilidade η da análise presente. A hipótese",
+      "char_count": 1458,
+      "chunk_hash": "4c1244765825"
+    },
+    {
+      "chunk_id": "CORPUS-004#p2_03",
+      "corpus_id": "CORPUS-004",
+      "short_title": "Paper B",
+      "page": "p.2",
+      "section": "—",
+      "text": "(recém-calculado via split low-λ/high-λ),\n(5)\n|0.268 −0.346|\n0.268\n= 0.291 > 0.2.\n(6)\nO critério não é satisfeito. Retraímos portanto a hipótese\nde comensurabilidade η da análise presente. A hipótese\npode ser revisitada em trabalho futuro se uma derivação\nteórica predisser uma relação quantitativa especíﬁca en-\ntre δβ e δST ; na ausência de tal derivação, a aﬁrmação\nempírica não é suportada.\nC.\nLimitações remanescentes\na.\nAproximação semi-analítica.\nOs valores de T2\nusados no ﬁt power-law são computados via uma apro-\nximação semi-analítica Redﬁeld-estendida calibrada para\nreproduzir o T2 = 660 fs experimental de referência. Em-\nbora o erro de calibração seja 6.5% (aceitável), valida-\nção deﬁnitiva requer re-rodar as 375 combinações com\nHEOM completo em profundidade de hierarquia L = 4\nusando qutip.heom [9]. Comprometemo-nos a isto para\nv6.2.\nb.\nValidação de espécie única.\nO complexo FMO é\num de vários sistemas fotossintéticos exibindo coerências\nde longa duração; LH2 (complexo de colheita de luz II\nde bactérias púrpura) e PE545 (ﬁcoeritrina 545 de al-\ngas criptóﬁtas) são dois outros. O power-law da Eq. (2)\né atualmente validado apenas no FMO. Extensão para\nLH2 (onde Drude-Lorentz falha e super-Ohmico s = 4 é\nrequerido) está planejada para v6.2.\nc.\nÍndice de Interferência Destrutiva (DII).\nA cor-\nrelação DII r = +0.459 entre simetria estrutural e recu-\nperação de descoerência é inafetada pelas correções pre-\nsentes, mas sua signiﬁcância estatística (p-valor) não foi",
+      "char_count": 1489,
+      "chunk_hash": "75e9297f7c31"
+    },
+    {
+      "chunk_id": "CORPUS-004#p2_04",
+      "corpus_id": "CORPUS-004",
+      "short_title": "Paper B",
+      "page": "p.2",
+      "section": "—",
+      "text": "ia Destrutiva (DII).\nA cor-\nrelação DII r = +0.459 entre simetria estrutural e recu-\nperação de descoerência é inafetada pelas correções pre-\nsentes, mas sua signiﬁcância estatística (p-valor) não foi\nformalmente computada. Isto será reportado em v6.2.",
+      "char_count": 252,
+      "chunk_hash": "7feb5e853821"
+    },
+    {
+      "chunk_id": "CORPUS-004#p3_01",
+      "corpus_id": "CORPUS-004",
+      "short_title": "Paper B",
+      "page": "p.3",
+      "section": "—",
+      "text": "3\nd.\nEscopo da retração η.\nA retração aplica-se ape-\nnas à aﬁrmação especíﬁca de comensurabilidade entre δβ\ne δST . A hipótese mais ampla de coerência cross-scale do\nTCR/QDT (de que coerência quântica e clássica compar-\ntilham um substrato informacional comum) permanece\numa questão teórica aberta, abordada no Paper C via a\nestrutura categórica.\nVI.\nCONCLUSÃO\nRevisitamos o escalonamento power-law do tempo de\ncoerência eletrônica T2 no complexo FMO, derivando to-\ndos os quatro expoentes diretamente do Hamiltoniano\ncompleto de 7 sítios em vez de uma extrapolação de dí-\nmero de 2 sítios. O novo ﬁt,\nT2 = (1.567×104) J+0.831 λ−0.843 γ−0.766 T −0.261,\nR2 = 0.988,\ncorrige o expoente de temperatura em 67% (de ST =\n−0.795 para ST = −0.261) e melhora a qualidade do\nﬁt de R2 = 0.914 para R2 = 0.988. A extrapolação do\ndímero de v6.0 é retraída.\nFormalizamos adicionalmente o critério de comensura-\nbilidade cross-scale como |δβ −δST |/δβ < 0.2 e o aplica-\nmos aos novos dados. O critério não é satisfeito (razão\n= 0.291), levando-nos a retrair a hipótese η da análise\npresente. Esta retração é uma virtude: demonstra que o\nprograma TCR/QDT está disposto a abandonar aﬁrma-\nções não suportadas por evidência empírica.\nO Índice de Interferência Destrutiva (DII, r = +0.459)\né inafetado por estas correções, fornecendo suporte contí-\nnuo à interpretação estrutural de recuperação de desco-\nerência no FMO. A estrutura mais ampla—conectando\ndinâmica quântico-dissipativa a coerência macroscópica",
+      "char_count": 1490,
+      "chunk_hash": "268f842ac8e9"
+    },
+    {
+      "chunk_id": "CORPUS-004#p3_02",
+      "corpus_id": "CORPUS-004",
+      "short_title": "Paper B",
+      "page": "p.3",
+      "section": "—",
+      "text": "as correções, fornecendo suporte contí-\nnuo à interpretação estrutural de recuperação de desco-\nerência no FMO. A estrutura mais ampla—conectando\ndinâmica quântico-dissipativa a coerência macroscópica\n(Paper A) e a formalização categórica/cosmológica (Pa-\nper C)—permanece intacta, com este artigo contribuindo\numa fundação quantitativa corrigida para o regime quân-\ntico.\na.\nPróximos passos imediatos (v6.2).\n(1) Re-rodar\nas 375 combinações de parâmetros com HEOM completo\nem L = 4 usando qutip.heom. (2) Estender a valida-\nção power-law a LH2 e PE545. (3) Computar signiﬁcân-\ncia estatística formal (p-valor) para a correlação DII. (4)\nFinalizar a submissão REVTeX ao Journal of Chemical\nPhysics.\nAGRADECIMENTOS\nAgradecemos a Dr. B. C. Chanyal (Gargi Degree Col-\nlege, Índia) por discussões sobre a estrutura algébrica\nde sistemas quânticos dissipativos e por compartilhar in-\nsights sobre extensões quaterniônicas relevantes à estru-\ntura TCR/QDT mais ampla. Este trabalho não recebeu\nﬁnanciamento externo; o autor é pesquisador indepen-\ndente.\n[1] G. S. Engel et al., Evidence for wavelike energy trans-\nfer through quantum coherence in photosynthetic systems,\nNature 446, 782 (2007).\n[2] S. Panitchayangkoon et al., Long-lived quantum cohe-\nrence in photosynthetic complexes at physiological tempe-\nrature, Proc. Natl. Acad. Sci. U.S.A. 107, 12766 (2010).\n[3] M. Mohseni, P. Rebentrost, M. Strauss, A. Aspuru-\nGuzik, and J. Lloyd, Environment-assisted quantum",
+      "char_count": 1464,
+      "chunk_hash": "3f5ed935087e"
+    },
+    {
+      "chunk_id": "CORPUS-004#p3_03",
+      "corpus_id": "CORPUS-004",
+      "short_title": "Paper B",
+      "page": "p.3",
+      "section": "—",
+      "text": "hetic complexes at physiological tempe-\nrature, Proc. Natl. Acad. Sci. U.S.A. 107, 12766 (2010).\n[3] M. Mohseni, P. Rebentrost, M. Strauss, A. Aspuru-\nGuzik, and J. Lloyd, Environment-assisted quantum\nwalks, J. Chem. Phys. 129, 174106 (2008).\n[4] P. Rebentrost, M. Mohseni, and A. Aspuru-Guzik, Role\nof quantum coherence in photosynthetic energy transfer,\nJ. Phys. Chem. B 113, 9942 (2009).\n[5] A. Ishizaki and G. R. Fleming, Theoretical examination\nof quantum coherence in a photosynthetic energy transfer,\nJ. Chem. Phys. 130, 234111 (2009).\n[6] T. J. Adendorf and G. D. Mahan, Fenna-Matthews-Olson\nBChl-a complex, unpublished (1978); Hamiltonian tabu-\nlated in Ref. [7].\n[7] D. Hayes and G. S. Engel, Extracting the excitonic Hamil-\ntonian of the Fenna-Matthews-Olson complex using three-\ndimensional electronic spectroscopy, Biophys. J. 100,\n2043 (2011).\n[8] M. Dijkstra and Y. Tanimura, Environment-assisted\nquantum transport in FMO, Phys. Rev. Lett. 104, 250401\n(2010).\n[9] N. Lambert et al., QuTiP-Bohn: A framework for si-\nmulating open quantum dynamics, J. Chem. Phys. 156,\n024106 (2022).\n[10] E. C. do Nascimento, Coerência relacional em redes bio-\nlógicas, artigo complementar (Paper A, v6.1, 2026).\n[11] E. C. do Nascimento, Estrutura ontológica relacional\ne cosmologia informacional, artigo complementar (Pa-\nper C, em preparação, 2026).\n\n---\n\n## ⚠️ Possíveis Equações Problemáticas\n\n> Heurística: linhas curtas com alta densidade de caracteres matemáticos,",
+      "char_count": 1469,
+      "chunk_hash": "e7c08baca190"
+    },
+    {
+      "chunk_id": "CORPUS-004#p3_04",
+      "corpus_id": "CORPUS-004",
+      "short_title": "Paper B",
+      "page": "p.3",
+      "section": "—",
+      "text": "cosmologia informacional, artigo complementar (Pa-\nper C, em preparação, 2026).\n\n---\n\n## ⚠️ Possíveis Equações Problemáticas\n\n> Heurística: linhas curtas com alta densidade de caracteres matemáticos,\n> ou linhas com caracteres de substituição Unicode. **Verificar manualmente**.\n\n- P1: `de controle (J, λ, γ, T):`\n- P1: `T2 = K J+1.205 λ−1.114 γ−1.068 T −0.795`\n- P1: `lidade cross-scale η entre as sensibilidades δβ (do expo-`\n- P1: `(ii) Formalizamos “comensurabilidade” como |δβ −`\n- P1: `δST |/δβ < 0.2 e a aplicamos aos novos dados. O`\n- P1: `Qµν e ao functor Φcat no cenário categórico.`\n- P2: `Drude-Lorentz J(ω) = 2λγω/(ω2+γ2), (d) condições ini-`\n- P2: `T2 = (1.567×104) J+0.831 λ−0.843 γ−0.766 T −0.261,`\n- P2: `Calibração em (J, λ, γ, T) = (40, 35, 10, 300) produz T2 =`\n- P2: `entre δβ (a sensibilidade do expoente λ a mudanças no`\n- P2: `próprio λ) e δST (a sensibilidade análoga de ST ). Sem`\n- P2: `|δβ −δST |`\n- P2: `δβ`\n- P2: `δβ = 0.268`\n- P2: `(recém-calculado via split low-λ/high-λ),`\n- P2: `tre δβ e δST ; na ausência de tal derivação, a aﬁrmação`\n- P3: `nas à aﬁrmação especíﬁca de comensurabilidade entre δβ`\n- P3: `T2 = (1.567×104) J+0.831 λ−0.843 γ−0.766 T −0.261,`\n- P3: `bilidade cross-scale como |δβ −δST |/δβ < 0.2 e o aplica-`",
+      "char_count": 1257,
+      "chunk_hash": "0823493ca46c"
+    },
+    {
+      "chunk_id": "CORPUS-005#chunk_001",
+      "corpus_id": "CORPUS-005",
+      "short_title": "Cover Letter",
+      "page": "full",
+      "section": "integral",
+      "text": "# CORPUS-005 — Extração de Texto Estruturado\n\n**Arquivo de origem:** `Cover_Letter_Paper_A_PRE_PT-BR.md` (conteúdo colado pelo autor no chat)\n**ID do Corpus:** CORPUS-005\n**Extração realizada em:** 2026-08-16T20:55:00+00:00\n**Ferramenta:** Conversão direta de Markdown colado (texto fornecido pelo autor)\n**Origem do material:** Conteúdo textual fornecido diretamente por Edson Carvalho do Nascimento na conversa.\n\n---\n\n## Metadados Declarados (do conteúdo)\n\n| Campo | Valor | Proveniência |\n|---|---|---|\n| Para | Editor, *Physical Review E* (Statistical Physics) | `[E]` |\n| De | Edson Carvalho do Nascimento (ORCID 0009-0003-5504-7439) | `[E]` ORCID confirmado pelo autor em mensagem separada |\n| Data | 10 de agosto de 2026 | `[E]` — atualiza o `NÃO DECLARADO` do HTML canônico v1.2.0 |\n| Assunto | Submissão do manuscrito \"Coerência Relacional em Redes Biológicas...\" | `[E]` |\n| Idioma | Português (Brasil) | `[E]` |\n| Versão referenciada | v6.1 REVTeX PT-BR (anexada) | `[E]` — verificação cruzada abaixo |\n\n---\n\n## Conteúdo Integral\n\n### Carta de Apresentação — Paper A submetido à Physical Review E (PT-BR)\n\n**Para:** Editor, *Physical Review E* (Statistical Physics)\n**De:** Edson Carvalho do Nascimento (ORCID 0009-0003-5504-7439)\n**Data:** 10 de agosto de 2026\n**Assunto:** Submissão do manuscrito \"Coerência Relacional em Redes Biológicas: Uma Estrutura Quantitativa de Conectomas a EEG\"\n\n---\n\nPrezado Editor,\n\nEncontra-se anexo nosso manuscrito intitulado \"Coerência Relacional em Redes Biológicas: Uma Estrutura Quantitativa de Conectomas a EEG,\" submetido para consideração como Artigo Regular na *Physical Review E* (seção Statistical Physics).\n\n#### Sumário da contribuição\n\nO manuscrito introduz a camada biológica empírica do programa TCR/QDT: uma estrutura quantitativa — Teoria da Coerência Relacional (TCR) — propondo uma métrica unificada $\\mathcal{C} = I \\times S \\times H^{\\beta}$ para a coerência informacional de redes complexas. A métrica combina três componentes operacionalmente definidos: integração $I$ (informação mútua multivariada normalizada), simetria $S$ (índice de automorfismo de grafo), e entropia $H$ (entropia espectral normalizada). O expoente $\\beta$ é calibrado via validação cruzada leave-one-out (LOOCV) sobre 12 fixtures sintéticas de conectomas, produzindo consistência de ranking perfeita ($\\rho = 1.0$) para $\\beta \\in [0.1, 1.5]$; adotamos $\\beta = 0.5$ como valor canônico.\n\nA estrutura é validada em três regimes empíricos independentes:\n\n- **P1 (Ranking de conectomas):** 12 conectomas de espécies de *C. elegans* a humanos HCP, ranking reproduzido com $p = 1.0$ (bootstrap, 3 réplicas).\n- **P2 (Discriminação Drosophila):** 4 conectomas de *Drosophila* vs. 1.000 grafos aleatórios de grau pareado, $z = 28.4$, $p \\approx 0$.\n- **P3 (Classificação sono/vigília EEG):** banco de dados PhysioNet Sleep-EDF com reconstrução de fontes sLORETA, $91.2\\% \\pm 1.9\\%$ acurácia, $F_1 = 0.912$, AUC $= 0.968$, $p < 10^{-4}$.\n\nA métrica é adicionalmente submetida a análise de sensibilidade Sobol (confirmando $H$ como componente dominante) e ao teste de trivialidade computacional de Aaronson (produzindo $\\mathcal{C} = 0$ para grafos expansores e matrizes de Vandermonde, como requerido).\n\n#### Por que Physical Review E\n\n*Physical Review E* é o veículo natural para este manuscrito por três razões:\n\n- **Alinhamento de escopo:** a revista tem forte tradição de publicar trabalho quantitativo-métrico na interseção de física estatística de redes, teoria da informação, e biologia computacional.\n- **Padrões metodológicos:** PRE exige rigor empírico e estatístico alto para métricas de sistemas complexos. Nosso manuscrito atende este padrão implementando calibração LOOCV, análise de sensibilidade Sobol, validação cruzada estratificada 10-fold com 10 repetições para P3, e intervalos de confiança explícitos via bootstrap.\n- **Público:** o público da PRE é precisamente o público que pode avaliar criticamente tanto os pontos fortes quanto as limitações de uma métrica quantitativa de coerência.\n\n#### Traços distintivos do manuscrito\n\n1. **Transparência radical sobre limitações.** O manuscrito cataloga explicitamente seis inconsistências conhecidas, com três resolvidas nesta versão (circularidade de calibração via LOOCV; discrepância P3 sintético-vs-real via pipeline real-only; irrelevância do termo de recursão $R^\\alpha$ via análise Sobol). As três restantes são diferidas para artigos complementares (B e C).\n\n2. **Achado crítico da análise de ablação.** A métrica composta $\\mathcal{C}$ atinge $91.2\\%$ de acurácia em P3, mas o conjunto de features $\\{I, S, H\\}$ sem combinação multiplicativa atinge exatamente a mesma acurácia. Reportamos honestamente que $\\mathcal{C}$ não adiciona poder discriminativo além de seus constituintes — reposicionando $\\mathcal{C}$ como uma *assinatura estrutural interpretativa* para ranking e caracterização, em vez de uma feature discriminativa ótima.\n\n3. **Escopo empírico.** Todas as validações atuais usam fixtures sintéticas de grafos (Watts-Strogatz, Barabási-Albert) calibradas para mimetizar propriedades estruturais do mundo real. O manuscrito compromete-se explicitamente à validação empírica v6.2 em WormWiring, Janelia Hemibrain, e Allen Mouse Brain Atlas antes da submissão final. A submissão atual é portanto posicionada como uma *contribuição metodológica* com suporte empírico preliminar, não como um achado empírico confirmado.\n\n#### Status dos artigos complementares\n\nEste manuscrito é o primeiro de uma trilogia:\n\n- **Paper A** (esta submissão) — camada biológica empírica, alvo: *Physical Review E*.\n- **Paper B** — camada quântico-dissipativa (power-law FMO com $R^2 = 0.988$, retração formal da hipótese cross-scale $\\eta$), alvo: *Journal of Chemical Physics*. Em preparação.\n- **Paper C** — camada categórico-tensorial-cosmológica (functor $\\Phi_{\\mathrm{cat}}$, tensor $Q_{\\mu\\nu}$, validações externas Chanyal/Sun/Pradhan, análise de falsificabilidade), **submetido à *Foundations of Physics* em 10 de agosto de 2026.**\n\nO Paper A é auto-contido e legível independentemente, com referências explícitas aos Papers B e C onde resultados quântico-dinâmicos ou categóricos são invocados.\n\n#### Nota de colaboração\n\nDr. B. C. Chanyal (Gargi Degree College, Índia) respondeu positivamente ao outreach e está avaliando a identificação algébrica entre sua equação de Einstein quaterniônica e o tensor $Q_{\\mu\\nu}$ apresentado no Paper C. Esta colaboração é reconhecida mas não afeta o conteúdo empírico do Paper A. A presente submissão reflete o trabalho independente do autor; Dr. Chanyal ainda não revisou este manuscrito e não tem responsabilidade por quaisquer erros que possa conter.\n\n#### Falsificabilidade e limitações\n\nReconhecemos explicitamente:\n\n- Todas as validações empíricas atuais baseiam-se em fixtures sintéticas de grafos; confirmação definitiva em conectomas reais está comprometida para v6.2.\n- A métrica composta $\\mathcal{C}$ não supera seus componentes como feature discriminativa (achado de ablação).\n- O expoente de calibração $\\beta = 0.5$ é robusto (consistência LOOCV $= 1.0$ sobre $[0.1, 1.5]$) mas não unicamente determinado; a estrutura permite qualquer $\\beta$ nesta faixa sem mudança qualitativa nos resultados.\n\n#### Conflitos de interesse e autoria\n\nSou o único autor. Declaro não haver conflitos de interesse, financeiros ou outros. O trabalho não recebeu financiamento externo. O manuscrito não foi publicado em outro local e não está sob consideração por outra revista.\n\n#### Revisores sugeridos (opcional)\n\nPara consideração do editor:\n\n- **Prof. Olaf Sporns** (Indiana University) — ciência de redes de conectomas\n- **Prof. Giulio Tononi** (University of Wisconsin) — teoria da informação integrada\n- **Dr. Michele T. Young** (Allen Institute) — comparações empíricas de conectomas\n- **Prof. Danielle Bassett** (University of Pennsylvania) — neurociência de redes\n\nNão tenho relação pessoal ou profissional com nenhum dos revisores sugeridos.\n\nAgradeço a consideração.\n\nAtenciosamente,\n\nEdson Carvalho do Nascimento\nORCID: 0009-0003-5504-7439\nLattes: http://lattes.cnpq.br/1695606186269515\nEmail: prof.edson.nascimento@protonmail.com\nCuritiba, Brasil\n\n---\n\n#### Anexos (na submissão)\n\n1. `Paper_A_v6.1_REVTeX_PT-BR.pdf` — Manuscrito principal (REVTeX 4.2, 128 KB)\n2. `Paper_A_v6.1_REVTeX_PT-BR.tex` — Fonte LaTeX (suplementar)\n\n**Nota:** Para submissão oficial à PRE, usar a versão em inglês (`Paper_A_v6.1_REVTeX_COMPLETE.pdf`) e a cover letter em inglês (`Cover_Letter_Paper_A_PRE.md`). Esta versão PT-BR é para referência do autor.\n\n#### Status\n\n⚠️ **AINDA NÃO PRONTO PARA SUBMISSÃO.** As Seções II, III, IV estão completas com fixtures sintéticos; validação definitiva requer processamento de dados empíricos (v6.2):\n\n- WormWiring (conectoma C. elegans) — a ser baixado\n- Janelia Hemibrain (Drosophila) — a ser baixado\n- Allen Mouse Brain Atlas — a ser baixado\n- PhysioNet Sleep-EDF (completo ~5 GB) — a ser baixado\n\nUma vez que os dados sejam processados (estimado 1-2 semanas), os placeholders serão substituídos por resultados empíricos, o manuscrito recompilado, e a submissão poderá prosseguir. Data estimada de submissão: final de agosto / início de setembro de 2026.\n\n---\n\n## Verificação Cruzada com Paper A (CORPUS-002)\n\nEsta seção é a aplicação do Plano de Teste P4 (consistência entre documentos do corpus), antecipada manualmente.\n\n### Contradições detectadas `[E]`\n\n#### Contradição C1 — Versão do Paper A referenciada\n\n| Fonte | Declaração |\n|---|---|\n| Cover Letter | \"Anexo 1: `Paper_A_v6.1_REVTeX_PT-BR.pdf` — Manuscrito principal (REVTeX 4.2, 128 KB)\" |\n| Cover Letter | \"Status: AINDA NÃO PRONTO PARA SUBMISSÃO\" |\n| Cover Letter | \"Data estimada de submissão: final de agosto / início de setembro de 2026\" |\n| HTML canônico v1.2.0 | \"Arquivo: Paper_A_v6.2_FINAL.pdf — Versão v6.2 — Estado: FINAL (submetido ao PRE)\" |\n| PDF extraído (CORPUS-002) | Metadados do PDF: creationDate 12 ago 2026, título \"Relational Coherence in Biological Networks\", autor \"Edson C. do Nascimento\" |\n| Paper A (texto extraído) | \"v6.2\" declarado em múltiplas passagens; submetido ao PRE |\n\n**Interpretação:** A Cover Letter em PT-BR é de uma versão **anterior** (v6.1) e está marcada como \"ainda não pronto para submissão\". A versão final v6.2 (que temos no corpus) foi compilada **2 dias depois** (12 ago 2026) e está marcada como FINAL/submetida. A Cover Letter PT-BR no corpus é portanto um **rascunho interno** que antecede a submissão real. A cover letter oficial enviada ao PRE é em inglês (`Cover_Letter_Paper_A_PRE.md`, sem sufixo PT-BR) e não está no corpus.\n\n#### Contradição C2 — Resultados P3\n\n| Fonte | P3 (EEG sono/vigília) |\n|---|---|\n| Cover Letter | \"banco de dados PhysioNet Sleep-EDF com reconstrução de fontes sLORETA, **91.2% ± 1.9% acurácia, F1 = 0.912, AUC = 0.968, p < 10⁻⁴**\" |\n| Paper A (CORPUS-002) | \"P3, **AUC = 0.793 ± 0.133** across 4 subjects, p < 0.05\" |\n| Paper A (CORPUS-002) | Dataset: \"OpenNeuro ds003768\" (NÃO PhysioNet Sleep-EDF) |\n| Paper A (CORPUS-002) | \"P3 uses real high-density EEG data but with a **preliminary sample of 4 subjects**; expansion to 10+ subjects is planned\" |\n| Paper A (CORPUS-002) | Seção V limitações: \"expand P3 to 10+ subjects from ds003768\" |\n\n**Interpretação:** Esta é uma **contradição material severa**. A Cover Letter descreve P3 com métricas muito mais otimistas (AUC 0.968 vs 0.793; 91.2% acurácia não mencionada no paper) e atribui o resultado a um dataset diferente (PhysioNet Sleep-EDF vs OpenNeuro ds003768). A Cover Letter é **compatível com a versão v6.1 aspiracional** (que prometia o que seria feito em v6.2 com dados empíricos maiores); o Paper A v6.2 FINAL contém os resultados reais, mais modestos. A Cover Letter no corpus NÃO foi atualizada para refletir a v6.2.\n\n#### Contradição C3 — Camada P1/P2\n\n| Fonte | P1 (Ranking conectomas) | P2 (Discriminação Drosophila) |\n|---|---|---|\n| Cover Letter | \"12 conectomas de espécies de *C. elegans* a humanos HCP\" | \"4 conectomas de *Drosophila* vs. 1.000 grafos aleatórios\" |\n| Paper A (CORPUS-002) | \"12 synthetic connectome fixtures\" | \"Drosophila melanogaster connectomes vs degree-matched random graphs\" — sem número explícito de grafos aleatórios |\n| Paper A (CORPUS-002) | Seção V: \"All results in this paper (P1, P2, Sobol, LOOCV) are based on synthetic connectome fixtures\" | |\n\n**Interpretação:** A Cover Letter descreve P1/P2 como validações em conectomas **empíricos** (C. elegans a humanos HCP, 4 conectomas Drosophila). O Paper A v6.2 FINAL declara que P1/P2 usam **fixtures sintéticos** (Watts-Strogatz, Barabási-Albert), com validação empírica prometida para v6.3 (não v6.2 — outra discrepância menor). Esta contradição reforça a interpretação de que a Cover Letter descreve o **plano aspiracional v6.1**, não o estado real v6.2.\n\n#### Contradição C4 — Versão do Paper C\n\n| Fonte | Status do Paper C |\n|---|---|\n| Cover Letter | \"submetido à *Foundations of Physics* em 10 de agosto de 2026\" |\n| Paper A (CORPUS-002) | \"reserved for a companion paper, Paper C\" — sem menção a submissão |\n| HTML canônico v1.2.0 | CORPUS-003 (Parte IV) descrito como \"Documento teórico — difusão controlada\", versão 1.0, 10 ago 2026 |\n\n**Interpretação:** A Cover Letter afirma que o Paper C já foi submetido à Foundations of Physics em 10 de agosto de 2026. Como CORPUS-003 (Parte IV) tem a mesma data (10 ago 2026), é **plausível `[I]`** que a Parte IV seja a versão PT-BR do material submetido como Paper C. Isto confirma a hipótese H1 do relatório anterior (CORPUS-003 = rascunho do Paper C), mas adiciona um novo dado: **Paper C já foi submetido**. Isto é materialmente diferente do que Paper A v6.2 sugere (\"reserved for a companion paper\").\n\n### Contradições NÃO detectadas (alinhamento confirmado)\n\nOs seguintes pontos estão **consistentes** entre Cover Letter e Paper A:\n\n- Métrica fundamental: $\\mathcal{C} = I \\times S \\times H^\\beta$ com $\\beta = 0.5$\n- Calibração LOOCV sobre 12 fixtures sintéticas\n- Três componentes: I (integração), S (simetria/autormorfismos), H (entropia espectral)\n- Análise Sobol confirma H como componente dominante\n- Teste de Aaronson passa (C = 0 para expansores e Vandermonde)\n- Achado de ablação: C não supera {I, S, H} como feature discriminativa\n- Seis inconsistências catalogadas, três resolvidas, três diferidas\n- Reconhecimento a B.C. Chanyal (quaternionic extensions)\n- Compromisso com validação empírica em WormWiring, Janelia, Allen\n- Trilogia: Paper A (biológico), Paper B (quântico), Paper C (cosmológico/categórico)\n\n### Síntese da Verificação Cruzada\n\nA Cover Letter PT-BR no corpus é um **rascunho interno de v6.1** que antecede a submissão real. Ela descreve o **plano aspiracional** do que seria feito em v6.2 (datasets empíricos, métricas otimistas), mas o Paper A v6.2 FINAL (que temos no corpus) contém os **resultados reais**, mais modestos. A Cover Letter em PT-BR NÃO foi atualizada para refletir a v6.2 — provavelmente porque a cover letter oficial enviada ao PRE é em inglês.\n\n**Isto significa que T5 (a contradição que detectamos anteriormente) não é um caso de sobrevenda científica**, mas sim um **problema de versionamento documental**: o corpus contém uma Cover Letter de uma versão anterior do programa, não a Cover Letter que foi efetivamente enviada ao PRE.\n\n### Implicação curatorial\n\nA cover letter oficial enviada ao PRE (em inglês, `Cover_Letter_Paper_A_PRE.md` sem sufixo PT-BR) **não está no corpus**. Isto é uma **lacuna material** do corpus AION-001: ele não contém a versão final da carta de submissão. Recomenda-se:\n- Adicionar `Cover_Letter_Paper_A_PRE.md` (versão EN) ao corpus em futura revisão do AION-CORPUS-001 (v1.3.0), ou\n- Rebaixar a Cover Letter PT-BR no corpus atual de `[E]` para `[E-versiondraft]` — evidência textual de uma versão preliminar, não da submissão real.\n\nEsta recomendação será incorporada à ontologia v1.0.0 como **T6** (lacuna documental identificada).",
+      "char_count": 15938,
+      "chunk_hash": "ecaaae381cdb"
+    }
+  ]
+}

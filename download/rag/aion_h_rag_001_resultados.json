@@ -1,0 +1,749 @@
+{
+  "metadata": {
+    "experiment": "H-RAG-001",
+    "timestamp": "2026-08-17T04:35:26+00:00",
+    "author_structure": "Edson C. Nascimento (Projetista Master)",
+    "author_implementation": "IA Curadora",
+    "protocol": "AION-EVAL-002 v1.0.0"
+  },
+  "hipotese": "Embeddings semânticos melhoram a recuperação do documento-fonte correto para B1, mantendo ou melhorando o desempenho dos demais testes.",
+  "regra_nao_regressao": "B1_embedding > B1_tfidf E perf_global_embedding >= perf_global_tfidf",
+  "sistema_A": {
+    "description": "TF-IDF (sklearn) + GraphRAG + LLM z-ai",
+    "results_source": "aion_bench_001_resultados.json + aion_bench_001_eval002_resultados.json"
+  },
+  "sistema_B": {
+    "description": "Embeddings semânticos (paraphrase-MiniLM-L3-v2, 384 dims) + GraphRAG + LLM z-ai",
+    "results": {
+      "B1": {
+        "test_id": "B1",
+        "categoria": "Proveniência",
+        "pergunta": "Qual é a fonte exata da afirmação de que a métrica TCR é C = I × S × H^β?",
+        "resposta": "INFORMAÇÃO NÃO ENCONTRADA NO CONTEXTO",
+        "tempo_segundos": 0.53,
+        "retrieved_chunks_count": 8,
+        "retrieved_chunks_top5": [
+          {
+            "rank": 1,
+            "chunk_id": "CORPUS-003#p3_03",
+            "score": 0.5639858245849609,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 2,
+            "chunk_id": "CORPUS-004#p3_01",
+            "score": 0.5024847984313965,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "rank": 3,
+            "chunk_id": "CORPUS-003#p7_02",
+            "score": 0.494817852973938,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 4,
+            "chunk_id": "CORPUS-003#p11_01",
+            "score": 0.4558352828025818,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 5,
+            "chunk_id": "CORPUS-002#p5_02",
+            "score": 0.4317000210285187,
+            "corpus_id": "CORPUS-002"
+          }
+        ],
+        "eval_002": {
+          "categories": {
+            "R1": {
+              "status": "PASS",
+              "reason": "Chunk esperado CORPUS-002#p1_01 recuperado em #5"
+            },
+            "R2": {
+              "status": "PASS",
+              "reason": "Contexto contém informação (max score: 0.564)"
+            },
+            "P1": {
+              "status": "FAIL",
+              "reason": "Documento CORPUS-002 não citado"
+            },
+            "P2": {
+              "status": "FAIL",
+              "reason": "Sem citação granular (chunk_id, página, seção ou linha)"
+            },
+            "T1": {
+              "status": "N/A",
+              "reason": "T1 não aplicável a este teste"
+            },
+            "E1": {
+              "status": "FAIL",
+              "reason": "Sem distinção entre evidência e interpretação"
+            },
+            "N1": {
+              "status": "N/A",
+              "reason": "N1 não aplicável a este teste"
+            },
+            "C1": {
+              "status": "N/A",
+              "reason": "C1 não aplicável a este teste"
+            },
+            "S1": {
+              "status": "N/A",
+              "reason": "S1 não aplicável a este teste"
+            },
+            "H1": {
+              "status": "PASS-SEMANTIC",
+              "reason": "Nenhuma afirmação categórica não suportada"
+            }
+          },
+          "avaliacao_final": "FAIL",
+          "justificativa": "Falhas críticas: P1 (proveniência correta)"
+        },
+        "gabarito": {
+          "documento": "CORPUS-002",
+          "versao": "v6.2",
+          "secao": "Abstract, p.1",
+          "linha": 46,
+          "chunk_id": "CORPUS-002#p1_01",
+          "evidence_type": "[E]"
+        },
+        "sistema": "B (embeddings semânticos)"
+      },
+      "B2": {
+        "test_id": "B2",
+        "categoria": "Temporalidade",
+        "pergunta": "Quando a métrica C = I × S × H^β apareceu pela primeira vez no corpus e qual foi sua última modificação documentada?",
+        "resposta": "A métrica C = I × S × H^β apareceu pela primeira vez no contexto em [CORPUS-005#chunk_001], na Cover Letter PT-BR, onde é descrita como \"uma métrica unificada C = I × S × H^β para a coerência informacional\" (evidence_type: [E]).\n\nA última modificação documentada da métrica é encontrada em [CORPUS-002], onde o expoente β foi calibrado via LOOCV, resultando em \"C = I × S × H^β, β=0.5 calibrado via LOOCV sobre 12 fixtures sintéticas\" (evidence_type: [E]).",
+        "tempo_segundos": 3.36,
+        "retrieved_chunks_count": 8,
+        "retrieved_chunks_top5": [
+          {
+            "rank": 1,
+            "chunk_id": "CORPUS-003#p3_03",
+            "score": 0.5014369487762451,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 2,
+            "chunk_id": "CORPUS-004#p2_04",
+            "score": 0.48591122031211853,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "rank": 3,
+            "chunk_id": "CORPUS-003#p5_02",
+            "score": 0.4848572015762329,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 4,
+            "chunk_id": "CORPUS-004#p3_02",
+            "score": 0.46732473373413086,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "rank": 5,
+            "chunk_id": "CORPUS-005#chunk_001",
+            "score": 0.4589270353317261,
+            "corpus_id": "CORPUS-005"
+          }
+        ],
+        "eval_002": {
+          "categories": {
+            "R1": {
+              "status": "N/A",
+              "reason": "Gabarito não especifica chunk_id esperado"
+            },
+            "R2": {
+              "status": "PASS",
+              "reason": "Contexto contém informação (max score: 0.501)"
+            },
+            "P1": {
+              "status": "N/A",
+              "reason": "Gabarito não especifica documento esperado"
+            },
+            "P2": {
+              "status": "PASS",
+              "reason": "Citação de chunk_id específica"
+            },
+            "T1": {
+              "status": "FAIL",
+              "reason": "Não distinguiu versões temporais"
+            },
+            "E1": {
+              "status": "PASS-SEMANTIC",
+              "reason": "Distingue evidência de inferência (ainda que não com tags formais)"
+            },
+            "N1": {
+              "status": "N/A",
+              "reason": "N1 não aplicável a este teste"
+            },
+            "C1": {
+              "status": "N/A",
+              "reason": "C1 não aplicável a este teste"
+            },
+            "S1": {
+              "status": "N/A",
+              "reason": "S1 não aplicável a este teste"
+            },
+            "H1": {
+              "status": "PASS-SEMANTIC",
+              "reason": "Nenhuma afirmação categórica não suportada"
+            }
+          },
+          "avaliacao_final": "FAIL",
+          "justificativa": "Falhas críticas: T1 (coerência temporal)"
+        },
+        "gabarito": {
+          "introduced_at": "2026-08-10 (Cover Letter v6.1 aspiracional)",
+          "last_refined_at": "2026-08-12 (Paper A v6.2 — β calibrado)",
+          "change_type": "STABLE → REFINED"
+        },
+        "sistema": "B (embeddings semânticos)"
+      },
+      "B3": {
+        "test_id": "B3",
+        "categoria": "Revogação",
+        "pergunta": "A hipótese de comensurabilidade cross-scale η continua válida ou foi posteriormente abandonada?",
+        "resposta": "A hipótese de comensurabilidade cross-scale η foi abandonada. De acordo com o contexto:\n\n\"A retração aplica-se apenas à aﬁrmação especíﬁca de comensurabilidade entre δβ e δST. A hipótese mais ampla de coerência cross-scale do TCR/QDT (de que coerência quântica e clássica compartilham um substrato informacional comum) permanece uma questão teórica aberta, abordada no Paper C via a estrutura categórica.\" [CORPUS-004#p3_01]\n\n\"O critério não é satisfeito (razão = 0.291), levando-nos a retrair a hipótese η da análise presente. Esta retração é uma virtude: demonstra que o programa TCR/QDT está disposto a abandonar aﬁrmações não suportadas por evidência empírica.\" [CORPUS-004#p3_01]",
+        "tempo_segundos": 3.81,
+        "retrieved_chunks_count": 8,
+        "retrieved_chunks_top5": [
+          {
+            "rank": 1,
+            "chunk_id": "CORPUS-004#p2_03",
+            "score": 0.5586470365524292,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "rank": 2,
+            "chunk_id": "CORPUS-003#p12_01",
+            "score": 0.5181035995483398,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 3,
+            "chunk_id": "CORPUS-004#p3_01",
+            "score": 0.4889605641365051,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "rank": 4,
+            "chunk_id": "CORPUS-003#p5_02",
+            "score": 0.47337910532951355,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 5,
+            "chunk_id": "CORPUS-003#p12_02",
+            "score": 0.4603227376937866,
+            "corpus_id": "CORPUS-003"
+          }
+        ],
+        "eval_002": {
+          "categories": {
+            "R1": {
+              "status": "N/A",
+              "reason": "Gabarito não especifica chunk_id esperado"
+            },
+            "R2": {
+              "status": "PASS",
+              "reason": "Contexto contém informação (max score: 0.559)"
+            },
+            "P1": {
+              "status": "N/A",
+              "reason": "Gabarito não especifica documento esperado"
+            },
+            "P2": {
+              "status": "PASS",
+              "reason": "Citação de chunk_id específica"
+            },
+            "T1": {
+              "status": "FAIL",
+              "reason": "Revogação não temporalmente situada"
+            },
+            "E1": {
+              "status": "PASS-SEMANTIC",
+              "reason": "Distingue evidência de inferência (ainda que não com tags formais)"
+            },
+            "N1": {
+              "status": "N/A",
+              "reason": "N1 não aplicável a este teste"
+            },
+            "C1": {
+              "status": "N/A",
+              "reason": "C1 não aplicável a este teste"
+            },
+            "S1": {
+              "status": "N/A",
+              "reason": "S1 não aplicável a este teste"
+            },
+            "H1": {
+              "status": "PASS-SEMANTIC",
+              "reason": "Nenhuma afirmação categórica não suportada"
+            }
+          },
+          "avaliacao_final": "FAIL",
+          "justificativa": "Falhas críticas: T1 (coerência temporal)"
+        },
+        "gabarito": {
+          "status": "REVOKED",
+          "data_revogacao": "2026-08-12",
+          "documento_revogacao": "CORPUS-004 (Paper B v6.1)",
+          "evidence": "razão |δβ − δST|/δβ = 0.291 > 0.2 não satisfeito"
+        },
+        "sistema": "B (embeddings semânticos)"
+      },
+      "B4": {
+        "test_id": "B4",
+        "categoria": "Ausência",
+        "pergunta": "O corpus contém evidência de que Edson defende o conceito de 'consciência' como parte do programa TCR?",
+        "resposta": "INFORMAÇÃO NÃO ENCONTRADA NO CONTEXTO.",
+        "tempo_segundos": 1.37,
+        "retrieved_chunks_count": 8,
+        "retrieved_chunks_top5": [
+          {
+            "rank": 1,
+            "chunk_id": "CORPUS-004#p3_01",
+            "score": 0.5276790857315063,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "rank": 2,
+            "chunk_id": "CORPUS-005#chunk_001",
+            "score": 0.4643460214138031,
+            "corpus_id": "CORPUS-005"
+          },
+          {
+            "rank": 3,
+            "chunk_id": "CORPUS-004#p1_03",
+            "score": 0.4592571556568146,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "rank": 4,
+            "chunk_id": "CORPUS-001#chunk_001",
+            "score": 0.44509774446487427,
+            "corpus_id": "CORPUS-001"
+          },
+          {
+            "rank": 5,
+            "chunk_id": "CORPUS-003#p11_01",
+            "score": 0.4408921003341675,
+            "corpus_id": "CORPUS-003"
+          }
+        ],
+        "eval_002": {
+          "categories": {
+            "R1": {
+              "status": "N/A",
+              "reason": "Gabarito não especifica chunk_id esperado"
+            },
+            "R2": {
+              "status": "N/A",
+              "reason": "Pergunta sobre ausência — não exige retrieval de chunk específico"
+            },
+            "P1": {
+              "status": "N/A",
+              "reason": "Gabarito não especifica documento esperado"
+            },
+            "P2": {
+              "status": "FAIL",
+              "reason": "Sem citação granular (chunk_id, página, seção ou linha)"
+            },
+            "T1": {
+              "status": "N/A",
+              "reason": "T1 não aplicável a este teste"
+            },
+            "E1": {
+              "status": "FAIL",
+              "reason": "Sem distinção entre evidência e interpretação"
+            },
+            "N1": {
+              "status": "PASS",
+              "reason": "Declara ausência: \"informação não encontrada\""
+            },
+            "C1": {
+              "status": "N/A",
+              "reason": "C1 não aplicável a este teste"
+            },
+            "S1": {
+              "status": "N/A",
+              "reason": "S1 não aplicável a este teste"
+            },
+            "H1": {
+              "status": "PASS-SEMANTIC",
+              "reason": "Nenhuma afirmação categórica não suportada"
+            }
+          },
+          "avaliacao_final": "PARTIAL",
+          "justificativa": "Critérios críticos PASS, mas há falhas não-críticas"
+        },
+        "gabarito": {
+          "resposta_esperada": "NÃO",
+          "razao": "Termo \"consciência\" não aparece em nenhum dos 5 textos extraídos. Única referência: Paper A cita Tononi (Φ-IIT) como referência externa, não como conceito do programa.",
+          "evidence_type": "[E] — ausência confirmada por auditoria T4"
+        },
+        "sistema": "B (embeddings semânticos)"
+      },
+      "B5": {
+        "test_id": "B5",
+        "categoria": "Contradição",
+        "pergunta": "Existem documentos do corpus que apresentam posições incompatíveis sobre os resultados P3 do Paper A?",
+        "resposta": "Sim, existem documentos do corpus que apresentam posições incompatíveis sobre os resultados P3 do Paper A.\n\nA Cover Letter (CORPUS-005#chunk_001) descreve os resultados P3 da seguinte forma:\n\"banco de dados PhysioNet Sleep-EDF com reconstrução de fontes sLORETA, 91.2% ± 1.9% acurácia, F1 = 0.912, AUC = 0.968, p < 10^{-4}\"\n\nNo entanto, o Paper A (CORPUS-002, referenciado na seção de verificação cruzada em CORPUS-005#chunk_001) apresenta resultados diferentes:\n\"P3, AUC = 0.793 ± 0.133 across 4 subjects, p < 0.05\"\n\nAlém disso, há uma incompatibilidade sobre o dataset utilizado:\n- Cover Letter: \"banco de dados PhysioNet Sleep-EDF\"\n- Paper A: \"Dataset: OpenNeuro ds003768 (NÃO PhysioNet Sleep-EDF)\"\n\nEssas contradições demonstram que a Cover Letter descreve um aspiracional v6.1 com resultados otimistas e dataset diferente, enquanto o Paper A v6.2 FINAL contém resultados reais mais modestos.",
+        "tempo_segundos": 5.19,
+        "retrieved_chunks_count": 8,
+        "retrieved_chunks_top5": [
+          {
+            "rank": 1,
+            "chunk_id": "CORPUS-005#chunk_001",
+            "score": 0.5283294320106506,
+            "corpus_id": "CORPUS-005"
+          },
+          {
+            "rank": 2,
+            "chunk_id": "CORPUS-003#p11_01",
+            "score": 0.4638339579105377,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 3,
+            "chunk_id": "CORPUS-001#chunk_001",
+            "score": 0.44838863611221313,
+            "corpus_id": "CORPUS-001"
+          },
+          {
+            "rank": 4,
+            "chunk_id": "CORPUS-003#p8_01",
+            "score": 0.4433242380619049,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 5,
+            "chunk_id": "CORPUS-003#p12_01",
+            "score": 0.4203184247016907,
+            "corpus_id": "CORPUS-003"
+          }
+        ],
+        "eval_002": {
+          "categories": {
+            "R1": {
+              "status": "N/A",
+              "reason": "Gabarito não especifica chunk_id esperado"
+            },
+            "R2": {
+              "status": "PASS",
+              "reason": "Contexto contém informação (max score: 0.528)"
+            },
+            "P1": {
+              "status": "N/A",
+              "reason": "Gabarito não especifica documento esperado"
+            },
+            "P2": {
+              "status": "PASS",
+              "reason": "Citação de chunk_id específica"
+            },
+            "T1": {
+              "status": "N/A",
+              "reason": "T1 não aplicável a este teste"
+            },
+            "E1": {
+              "status": "PASS-SEMANTIC",
+              "reason": "Cita chunks como fonte (forma implícita de marcar evidência)"
+            },
+            "N1": {
+              "status": "N/A",
+              "reason": "N1 não aplicável a este teste"
+            },
+            "C1": {
+              "status": "PASS",
+              "reason": "Contradição identificada entre {'002', '005'}"
+            },
+            "S1": {
+              "status": "N/A",
+              "reason": "S1 não aplicável a este teste"
+            },
+            "H1": {
+              "status": "PASS-SEMANTIC",
+              "reason": "Nenhuma afirmação categórica não suportada"
+            }
+          },
+          "avaliacao_final": "PASS-SEMANTIC",
+          "justificativa": "PASS com 2 categorias em modo semântico (sinônimos)"
+        },
+        "gabarito": {
+          "contradicao_identificada": "SIM — C2",
+          "doc1": "CORPUS-005 Cover Letter PT-BR: AUC 0.968, 91.2% acurácia, PhysioNet Sleep-EDF",
+          "doc2": "CORPUS-002 Paper A v6.2: AUC 0.793±0.133, 4 sujeitos, OpenNeuro ds003768",
+          "interpretacao": "Defasagem de versionamento — Cover Letter é rascunho v6.1 aspiracional"
+        },
+        "sistema": "B (embeddings semânticos)"
+      },
+      "B6": {
+        "test_id": "B6",
+        "categoria": "Lacuna",
+        "pergunta": "O que seria necessário consultar para responder com maior confiança quando Edson abandonou o termo de recursão R^α?",
+        "resposta": "INFORMAÇÃO NÃO ENCONTRADA NO CONTEXTO",
+        "tempo_segundos": 0.77,
+        "retrieved_chunks_count": 8,
+        "retrieved_chunks_top5": [
+          {
+            "rank": 1,
+            "chunk_id": "CORPUS-004#p1_03",
+            "score": 0.5616207122802734,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "rank": 2,
+            "chunk_id": "CORPUS-003#p11_01",
+            "score": 0.5612804889678955,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 3,
+            "chunk_id": "CORPUS-004#p2_04",
+            "score": 0.5179879665374756,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "rank": 4,
+            "chunk_id": "CORPUS-001#chunk_001",
+            "score": 0.5105047225952148,
+            "corpus_id": "CORPUS-001"
+          },
+          {
+            "rank": 5,
+            "chunk_id": "CORPUS-003#p10_02",
+            "score": 0.5042664408683777,
+            "corpus_id": "CORPUS-003"
+          }
+        ],
+        "eval_002": {
+          "categories": {
+            "R1": {
+              "status": "N/A",
+              "reason": "Gabarito não especifica chunk_id esperado"
+            },
+            "R2": {
+              "status": "PASS",
+              "reason": "Contexto contém informação (max score: 0.562)"
+            },
+            "P1": {
+              "status": "N/A",
+              "reason": "Gabarito não especifica documento esperado"
+            },
+            "P2": {
+              "status": "FAIL",
+              "reason": "Sem citação granular (chunk_id, página, seção ou linha)"
+            },
+            "T1": {
+              "status": "N/A",
+              "reason": "T1 não aplicável a este teste"
+            },
+            "E1": {
+              "status": "FAIL",
+              "reason": "Sem distinção entre evidência e interpretação"
+            },
+            "N1": {
+              "status": "N/A",
+              "reason": "N1 não aplicável a este teste"
+            },
+            "C1": {
+              "status": "N/A",
+              "reason": "C1 não aplicável a este teste"
+            },
+            "S1": {
+              "status": "N/A",
+              "reason": "S1 não aplicável a este teste"
+            },
+            "H1": {
+              "status": "PASS-SEMANTIC",
+              "reason": "Nenhuma afirmação categórica não suportada"
+            }
+          },
+          "avaliacao_final": "PARTIAL",
+          "justificativa": "Critérios críticos PASS, mas há falhas não-críticas"
+        },
+        "gabarito": {
+          "documento_necessario": "Versões v6.0 e v6.1 do Paper A (não no corpus)",
+          "razao": "Não há documento intermediário entre v5.1 (com R) e v6.2 (sem R)",
+          "tipo_lacuna": "T9 (estrutural) + lacuna documental de versão"
+        },
+        "sistema": "B (embeddings semânticos)"
+      },
+      "B7": {
+        "test_id": "B7",
+        "categoria": "Síntese",
+        "pergunta": "Reconstrua a evolução do conceito de Power-law T₂ sem misturar versões.",
+        "resposta": "INFORMAÇÃO NÃO ENCONTRADA NO CONTEXTO.",
+        "tempo_segundos": 0.67,
+        "retrieved_chunks_count": 8,
+        "retrieved_chunks_top5": [
+          {
+            "rank": 1,
+            "chunk_id": "CORPUS-003#p12_01",
+            "score": 0.485248327255249,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 2,
+            "chunk_id": "CORPUS-003#p7_01",
+            "score": 0.4705509841442108,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 3,
+            "chunk_id": "CORPUS-004#p3_02",
+            "score": 0.4685463011264801,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "rank": 4,
+            "chunk_id": "CORPUS-003#p3_02",
+            "score": 0.4679965674877167,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 5,
+            "chunk_id": "CORPUS-004#p2_04",
+            "score": 0.4642259478569031,
+            "corpus_id": "CORPUS-004"
+          }
+        ],
+        "eval_002": {
+          "categories": {
+            "R1": {
+              "status": "N/A",
+              "reason": "Gabarito não especifica chunk_id esperado"
+            },
+            "R2": {
+              "status": "PASS",
+              "reason": "Contexto contém informação (max score: 0.485)"
+            },
+            "P1": {
+              "status": "N/A",
+              "reason": "Gabarito não especifica documento esperado"
+            },
+            "P2": {
+              "status": "FAIL",
+              "reason": "Sem citação granular (chunk_id, página, seção ou linha)"
+            },
+            "T1": {
+              "status": "FAIL",
+              "reason": "Versões não distinguídas"
+            },
+            "E1": {
+              "status": "FAIL",
+              "reason": "Sem distinção entre evidência e interpretação"
+            },
+            "N1": {
+              "status": "N/A",
+              "reason": "N1 não aplicável a este teste"
+            },
+            "C1": {
+              "status": "N/A",
+              "reason": "C1 não aplicável a este teste"
+            },
+            "S1": {
+              "status": "FAIL",
+              "reason": "Não distinguiu estados temporais"
+            },
+            "H1": {
+              "status": "PASS-SEMANTIC",
+              "reason": "Nenhuma afirmação categórica não suportada"
+            }
+          },
+          "avaliacao_final": "FAIL",
+          "justificativa": "Falhas críticas: S1 (qualidade da síntese), T1 (coerência temporal)"
+        },
+        "gabarito": {
+          "estado_v6.0": "T₂ = K·J^1.205·λ^(-1.114)·γ^(-1.068)·T^(-0.795), R²=0.914 (dímero 2 sítios)",
+          "estado_v6.1": "T₂ = (1.567×10⁴)·J^0.831·λ^(-0.843)·γ^(-0.766)·T^(-0.261), R²=0.988 (FMO 7 sítios)",
+          "change_type": "REFINED",
+          "data_refinamento": "2026-08-12",
+          "razao_refinamento": "Re-derivação a partir do Hamiltoniano FMO completo (375 combinações)"
+        },
+        "sistema": "B (embeddings semânticos)"
+      }
+    }
+  },
+  "comparison": {
+    "matrix": {
+      "criterios": [
+        "B1 (Proveniência — crítico)",
+        "B2 (Temporalidade)",
+        "B3 (Revogação)",
+        "B4 (Ausência)",
+        "B5 (Contradição)",
+        "B6 (Lacuna)",
+        "B7 (Síntese)",
+        "PASS count (estrito + semântico)",
+        "PASS estrito",
+        "PARTIAL count",
+        "FAIL count",
+        "Latência média (s)"
+      ],
+      "sistema_A_tfidf": {
+        "B1 (Proveniência)": "❌ FAIL",
+        "B2 (Temporalidade)": "🟡 PASS-SEMANTIC",
+        "B3 (Revogação)": "🟡 PASS-SEMANTIC",
+        "B4 (Ausência)": "🟡 PASS-SEMANTIC",
+        "B5 (Contradição)": "🟡 PASS-SEMANTIC",
+        "B6 (Lacuna)": "⚠️ PARTIAL",
+        "B7 (Síntese)": "🟡 PASS-SEMANTIC",
+        "PASS count (estrito + semântico)": "5/7",
+        "PASS estrito": "0/7",
+        "PARTIAL count": "1/7",
+        "FAIL count": "1/7",
+        "Latência média (s)": "5.6s"
+      },
+      "sistema_B_embedding": {
+        "B1 (Proveniência)": "❌ FAIL",
+        "B2 (Temporalidade)": "❌ FAIL",
+        "B3 (Revogação)": "❌ FAIL",
+        "B4 (Ausência)": "⚠️ PARTIAL",
+        "B5 (Contradição)": "🟡 PASS-SEMANTIC",
+        "B6 (Lacuna)": "⚠️ PARTIAL",
+        "B7 (Síntese)": "❌ FAIL",
+        "PASS count (estrito + semântico)": "1/7",
+        "PASS estrito": "0/7",
+        "PARTIAL count": "2/7",
+        "FAIL count": "4/7",
+        "Latência média (s)": "2.2s"
+      }
+    },
+    "b1_status_A": "FAIL",
+    "b1_status_B": "FAIL",
+    "b1_improved": false,
+    "regressions": [
+      {
+        "test": "B2",
+        "tfidf_status": "PASS-SEMANTIC",
+        "embedding_status": "FAIL"
+      },
+      {
+        "test": "B3",
+        "tfidf_status": "PASS-SEMANTIC",
+        "embedding_status": "FAIL"
+      },
+      {
+        "test": "B4",
+        "tfidf_status": "PASS-SEMANTIC",
+        "embedding_status": "PARTIAL"
+      },
+      {
+        "test": "B7",
+        "tfidf_status": "PASS-SEMANTIC",
+        "embedding_status": "FAIL"
+      }
+    ],
+    "no_regression": false,
+    "pass_count_A": 5,
+    "pass_count_B": 1,
+    "verdict": "CASO C — Regressão + B1 não melhorou",
+    "decision": "REJEITAR substituição"
+  },
+  "verdict": "CASO C — Regressão + B1 não melhorou",
+  "decision": "REJEITAR substituição"
+}

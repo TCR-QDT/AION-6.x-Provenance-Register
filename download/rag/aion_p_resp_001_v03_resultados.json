@@ -1,0 +1,1650 @@
+{
+  "metadata": {
+    "experiment": "P-RESP-001 v0.3 com Validator Determinístico",
+    "timestamp": "2026-08-17T15:22:35+00:00",
+    "author_structure": "Edson C. Nascimento (Projetista Master)",
+    "author_implementation": "IA Curadora"
+  },
+  "validator_rules": {
+    "V1_existence": "Todo chunk_id citado deve existir no corpus (CORPUS_INDEX)",
+    "V2_retrieval": "Todo chunk_id citado deve estar entre retrieved chunks",
+    "V3_intersection": "Válido = V1 AND V2",
+    "no_silent_substitution": "IDs inválidos são substituídos por [PROVENANCE_INVALID], não por IDs alternativos"
+  },
+  "evidence_categories": {
+    "EVIDENCE_VALID": "Existe evidência e chunk é recuperado",
+    "EVIDENCE_ABSENT": "Não existe evidência disponível no contexto",
+    "PROVENANCE_INVALID": "Sistema tentou atribuir fonte, mas fonte não pode ser validada"
+  },
+  "sistema_A_controle": {
+    "description": "Prompt controle, sem validator",
+    "results": {
+      "B1": {
+        "test_id": "B1",
+        "categoria": "Proveniência",
+        "pergunta": "Qual é a fonte exata da afirmação de que a métrica TCR é C = I × S × H^β?",
+        "resposta": "A afirmação de que a métrica TCR é C = I × S × H^β é encontrada na carta de apresentação (Cover Letter) do Paper A. Especificamente, no seguinte trecho:\n\n\"O manuscrito introduz a camada biológica empírica do programa TCR/QDT: uma estrutura quantitativa — Teoria da Coerência Relacional (TCR) — propondo uma métrica unificada $\\mathcal{C} = I \\times S \\times H^{\\beta}$ para a coerência informacional de redes complexas. A métrica combina três componentes operacionalmente definidos: integração $I$ (informação mútua multivariada normalizada), simetria $S$ (índice de automorfismo de grafo), e entropia $H$ (entropia espectral normalizada).\"\n\n[CORPUS-005#chunk_001]",
+        "tempo_segundos": 4.46,
+        "retrieved_chunks_top5": [
+          {
+            "rank": 1,
+            "chunk_id": "CORPUS-003#p8_02",
+            "score": 0.1068989949086633,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 2,
+            "chunk_id": "CORPUS-004#p3_01",
+            "score": 0.09628058235160475,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "rank": 3,
+            "chunk_id": "CORPUS-003#p3_02",
+            "score": 0.09376228671967034,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 4,
+            "chunk_id": "CORPUS-003#p4_01",
+            "score": 0.0903240077379034,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 5,
+            "chunk_id": "CORPUS-005#chunk_001",
+            "score": 0.08658676073994144,
+            "corpus_id": "CORPUS-005"
+          }
+        ],
+        "eval_002_v02": {
+          "categories": {
+            "R1": {
+              "status": "FAIL",
+              "reason": "Chunk esperado CORPUS-002#p1_01 NÃO recuperado. Top: CORPUS-003#p8_02",
+              "classification": "SYSTEM"
+            },
+            "R2": {
+              "status": "PASS",
+              "reason": "Contexto contém informação (max score: 0.107)",
+              "classification": "N/A"
+            },
+            "P1": {
+              "status": "PASS-SEMANTIC",
+              "reason": "Documento identificado por sinônimo \"paper a\"",
+              "classification": "N/A"
+            },
+            "P2": {
+              "status": "PASS",
+              "reason": "Citação de chunk_id",
+              "classification": "N/A"
+            },
+            "T1": {
+              "status": "N/A",
+              "reason": "T1 não aplicável",
+              "classification": "N/A"
+            },
+            "E1": {
+              "status": "PASS-SEMANTIC",
+              "reason": "Cita chunks como fonte (tags implícitas)",
+              "classification": "N/A"
+            },
+            "N1": {
+              "status": "N/A",
+              "reason": "N1 não aplicável",
+              "classification": "N/A"
+            },
+            "C1": {
+              "status": "N/A",
+              "reason": "C1 não aplicável",
+              "classification": "N/A"
+            },
+            "S1": {
+              "status": "N/A",
+              "reason": "S1 não aplicável",
+              "classification": "N/A"
+            },
+            "H1": {
+              "status": "PASS-SEMANTIC",
+              "reason": "Sem afirmações categóricas não suportadas",
+              "classification": "N/A"
+            }
+          },
+          "avaliacao_final": "FAIL-SYSTEM",
+          "justificativa": "Falhas críticas (classificação SYSTEM): ['R1']"
+        },
+        "gabarito": {
+          "documento": "CORPUS-002",
+          "versao": "v6.2",
+          "secao": "Abstract, p.1",
+          "linha": 46,
+          "chunk_id": "CORPUS-002#p1_01",
+          "evidence_type": "[E]"
+        },
+        "sistema": "A (controle, sem validator)",
+        "validator_aplicado": false
+      },
+      "B2": {
+        "test_id": "B2",
+        "categoria": "Temporalidade",
+        "pergunta": "Quando a métrica C = I × S × H^β apareceu pela primeira vez no corpus e qual foi sua última modificação documentada?",
+        "resposta": "A métrica C = I × S × H^β apareceu pela primeira vez no contexto em **CORPUS-005** (Cover Letter PT-BR) em **10 de agosto de 2026**, na versão v6.1 aspiracional, como uma métrica unificada para a coerência informacional, com β canônico não declarado. [CORPUS-005#chunk_001]\n\nA última modificação documentada ocorreu em **CORPUS-002** (Paper A v6.2 FINAL) em **12 de agosto de 2026**, onde β foi calibrado como 0.5 via LOOCV sobre 12 fixtures sintéticas, e o termo de recursão R foi removido por irrelevância empírica (Sobol <1.1%). [CORPUS-002#chunk_001]",
+        "tempo_segundos": 3.47,
+        "retrieved_chunks_top5": [
+          {
+            "rank": 1,
+            "chunk_id": "CORPUS-005#chunk_001",
+            "score": 0.09858609732619998,
+            "corpus_id": "CORPUS-005"
+          },
+          {
+            "rank": 2,
+            "chunk_id": "CORPUS-003#p3_03",
+            "score": 0.078015662455431,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 3,
+            "chunk_id": "CORPUS-003#p3_02",
+            "score": 0.07028902578002338,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 4,
+            "chunk_id": "CORPUS-004#p2_04",
+            "score": 0.061723475104804755,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "rank": 5,
+            "chunk_id": "CORPUS-001#chunk_001",
+            "score": 0.06149570555472931,
+            "corpus_id": "CORPUS-001"
+          }
+        ],
+        "eval_002_v02": {
+          "categories": {
+            "R1": {
+              "status": "N/A",
+              "reason": "Gabarito não especifica chunk_id",
+              "classification": "N/A"
+            },
+            "R2": {
+              "status": "PASS",
+              "reason": "Contexto contém informação (max score: 0.099)",
+              "classification": "N/A"
+            },
+            "P1": {
+              "status": "N/A",
+              "reason": "Gabarito não especifica documento",
+              "classification": "N/A"
+            },
+            "P2": {
+              "status": "PASS",
+              "reason": "Citação de chunk_id",
+              "classification": "N/A"
+            },
+            "T1": {
+              "status": "PASS",
+              "reason": "Múltiplas referências temporais: {'10 de agosto', '12 de agosto', 'v6.1', 'v6.2'}",
+              "classification": "N/A"
+            },
+            "E1": {
+              "status": "PASS-SEMANTIC",
+              "reason": "Cita chunks como fonte (tags implícitas)",
+              "classification": "N/A"
+            },
+            "N1": {
+              "status": "N/A",
+              "reason": "N1 não aplicável",
+              "classification": "N/A"
+            },
+            "C1": {
+              "status": "N/A",
+              "reason": "C1 não aplicável",
+              "classification": "N/A"
+            },
+            "S1": {
+              "status": "N/A",
+              "reason": "S1 não aplicável",
+              "classification": "N/A"
+            },
+            "H1": {
+              "status": "PASS-SEMANTIC",
+              "reason": "Sem afirmações categóricas não suportadas",
+              "classification": "N/A"
+            }
+          },
+          "avaliacao_final": "PASS-SEMANTIC",
+          "justificativa": "PASS com 2 categorias semânticas"
+        },
+        "gabarito": {
+          "introduced_at": "2026-08-10 (Cover Letter v6.1 aspiracional)",
+          "last_refined_at": "2026-08-12 (Paper A v6.2 — β calibrado)",
+          "change_type": "STABLE → REFINED"
+        },
+        "sistema": "A (controle, sem validator)",
+        "validator_aplicado": false
+      },
+      "B3": {
+        "test_id": "B3",
+        "categoria": "Revogação",
+        "pergunta": "A hipótese de comensurabilidade cross-scale η continua válida ou foi posteriormente abandonada?",
+        "resposta": "A hipótese de comensurabilidade cross-scale η foi abandonada. De acordo com o contexto, os autores formalizaram a comensurabilidade como |δβ −δST |/δβ < 0.2 e aplicaram este critério aos novos dados, obtendo um resultado de 0.291 > 0.2. Como o critério não foi satisfeito, eles retraíram a hipótese η da análise presente [CORPUS-004#p2_02 | Paper B | p.2]. A retração aplica-se apenas à afirmação específica de comensurabilidade entre δβ e δST [CORPUS-004#p3_01 | Paper B | p.3].",
+        "tempo_segundos": 2.48,
+        "retrieved_chunks_top5": [
+          {
+            "rank": 1,
+            "chunk_id": "CORPUS-004#p2_02",
+            "score": 0.25236997259195826,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "rank": 2,
+            "chunk_id": "CORPUS-004#p3_04",
+            "score": 0.17173007410946384,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "rank": 3,
+            "chunk_id": "CORPUS-004#p3_01",
+            "score": 0.15705863190616878,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "rank": 4,
+            "chunk_id": "CORPUS-004#p1_03",
+            "score": 0.13073960019808875,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "rank": 5,
+            "chunk_id": "CORPUS-004#p2_03",
+            "score": 0.12577234646967717,
+            "corpus_id": "CORPUS-004"
+          }
+        ],
+        "eval_002_v02": {
+          "categories": {
+            "R1": {
+              "status": "N/A",
+              "reason": "Gabarito não especifica chunk_id",
+              "classification": "N/A"
+            },
+            "R2": {
+              "status": "PASS",
+              "reason": "Contexto contém informação (max score: 0.252)",
+              "classification": "N/A"
+            },
+            "P1": {
+              "status": "N/A",
+              "reason": "Gabarito não especifica documento",
+              "classification": "N/A"
+            },
+            "P2": {
+              "status": "PASS",
+              "reason": "Citação de chunk_id",
+              "classification": "N/A"
+            },
+            "T1": {
+              "status": "PASS-SEMANTIC",
+              "reason": "Revogação identificada temporalmente",
+              "classification": "N/A"
+            },
+            "E1": {
+              "status": "PASS-SEMANTIC",
+              "reason": "Cita chunks como fonte (tags implícitas)",
+              "classification": "N/A"
+            },
+            "N1": {
+              "status": "N/A",
+              "reason": "N1 não aplicável",
+              "classification": "N/A"
+            },
+            "C1": {
+              "status": "N/A",
+              "reason": "C1 não aplicável",
+              "classification": "N/A"
+            },
+            "S1": {
+              "status": "N/A",
+              "reason": "S1 não aplicável",
+              "classification": "N/A"
+            },
+            "H1": {
+              "status": "PASS-SEMANTIC",
+              "reason": "Sem afirmações categóricas não suportadas",
+              "classification": "N/A"
+            }
+          },
+          "avaliacao_final": "PASS-SEMANTIC",
+          "justificativa": "PASS com 3 categorias semânticas"
+        },
+        "gabarito": {
+          "status": "REVOKED",
+          "data_revogacao": "2026-08-12",
+          "documento_revogacao": "CORPUS-004 (Paper B v6.1)",
+          "evidence": "razão |δβ − δST|/δβ = 0.291 > 0.2 não satisfeito"
+        },
+        "sistema": "A (controle, sem validator)",
+        "validator_aplicado": false
+      },
+      "B4": {
+        "test_id": "B4",
+        "categoria": "Ausência",
+        "pergunta": "O corpus contém evidência de que Edson defende o conceito de 'consciência' como parte do programa TCR?",
+        "resposta": "INFORMAÇÃO NÃO ENCONTRADA NO CONTEXTO",
+        "tempo_segundos": 1.37,
+        "retrieved_chunks_top5": [
+          {
+            "rank": 1,
+            "chunk_id": "CORPUS-005#chunk_001",
+            "score": 0.12116543735779291,
+            "corpus_id": "CORPUS-005"
+          },
+          {
+            "rank": 2,
+            "chunk_id": "CORPUS-003#p1_01",
+            "score": 0.11994227291223632,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 3,
+            "chunk_id": "CORPUS-003#p11_01",
+            "score": 0.11986631515206382,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 4,
+            "chunk_id": "CORPUS-004#p3_01",
+            "score": 0.1179088517922866,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "rank": 5,
+            "chunk_id": "CORPUS-001#chunk_001",
+            "score": 0.10415393273198084,
+            "corpus_id": "CORPUS-001"
+          }
+        ],
+        "eval_002_v02": {
+          "categories": {
+            "R1": {
+              "status": "N/A",
+              "reason": "Gabarito não especifica chunk_id",
+              "classification": "N/A"
+            },
+            "R2": {
+              "status": "N/A",
+              "reason": "Pergunta sobre ausência",
+              "classification": "N/A"
+            },
+            "P1": {
+              "status": "N/A",
+              "reason": "Gabarito não especifica documento",
+              "classification": "N/A"
+            },
+            "P2": {
+              "status": "FAIL",
+              "reason": "Sem citação granular",
+              "classification": "SYSTEM"
+            },
+            "T1": {
+              "status": "N/A",
+              "reason": "T1 não aplicável",
+              "classification": "N/A"
+            },
+            "E1": {
+              "status": "FAIL",
+              "reason": "Sem distinção [E]/[I]/[H]",
+              "classification": "SYSTEM"
+            },
+            "N1": {
+              "status": "PASS",
+              "reason": "Declara ausência: \"informação não encontrada\"",
+              "classification": "N/A"
+            },
+            "C1": {
+              "status": "N/A",
+              "reason": "C1 não aplicável",
+              "classification": "N/A"
+            },
+            "S1": {
+              "status": "N/A",
+              "reason": "S1 não aplicável",
+              "classification": "N/A"
+            },
+            "H1": {
+              "status": "PASS-SEMANTIC",
+              "reason": "Sem afirmações categóricas não suportadas",
+              "classification": "N/A"
+            }
+          },
+          "avaliacao_final": "PARTIAL",
+          "justificativa": "Critérios críticos PASS, falhas não-críticas"
+        },
+        "gabarito": {
+          "resposta_esperada": "NÃO",
+          "razao": "Termo \"consciência\" não aparece em nenhum dos 5 textos extraídos. Única referência: Paper A cita Tononi (Φ-IIT) como referência externa, não como conceito do programa.",
+          "evidence_type": "[E] — ausência confirmada por auditoria T4"
+        },
+        "sistema": "A (controle, sem validator)",
+        "validator_aplicado": false
+      },
+      "B5": {
+        "test_id": "B5",
+        "categoria": "Contradição",
+        "pergunta": "Existem documentos do corpus que apresentam posições incompatíveis sobre os resultados P3 do Paper A?",
+        "resposta": "Sim, existem documentos do corpus que apresentam posições incompatíveis sobre os resultados P3 do Paper A.\n\nA contradição é documentada na seção de verificação cruzada entre a Cover Letter (CORPUS-005) e o Paper A (CORPUS-002):\n\n1. Na Cover Letter (CORPUS-005#chunk_001), os resultados P3 são descritos como:\n   - \"banco de dados PhysioNet Sleep-EDF com reconstrução de fontes sLORETA, 91.2% ± 1.9% acurácia, F1 = 0.912, AUC = 0.968, p < 10⁻⁴\"\n\n2. No Paper A (CORPUS-002), os resultados P3 são:\n   - \"P3, AUC = 0.793 ± 0.133 across 4 subjects, p < 0.05\"\n   - Dataset: \"OpenNeuro ds003768\" (NÃO PhysioNet Sleep-EDF)\n   - \"P3 uses real high-density EEG data but with a preliminary sample of 4 subjects\"\n\nA Cover Letter descreve P3 com métricas muito mais otimistas (AUC 0.968 vs 0.793; 91.2% acurácia não mencionada no paper) e atribui o resultado a um dataset diferente (PhysioNet Sleep-EDF vs OpenNeuro ds003768). Esta é uma contradição material severa documentada como Contradição C2.",
+        "tempo_segundos": 6.43,
+        "retrieved_chunks_top5": [
+          {
+            "rank": 1,
+            "chunk_id": "CORPUS-001#chunk_001",
+            "score": 0.16544476930014332,
+            "corpus_id": "CORPUS-001"
+          },
+          {
+            "rank": 2,
+            "chunk_id": "CORPUS-005#chunk_001",
+            "score": 0.14141035968151836,
+            "corpus_id": "CORPUS-005"
+          },
+          {
+            "rank": 3,
+            "chunk_id": "CORPUS-003#p10_01",
+            "score": 0.06987810156582133,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 4,
+            "chunk_id": "CORPUS-003#p11_01",
+            "score": 0.06533365594150053,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 5,
+            "chunk_id": "CORPUS-003#p3_02",
+            "score": 0.06076298443034385,
+            "corpus_id": "CORPUS-003"
+          }
+        ],
+        "eval_002_v02": {
+          "categories": {
+            "R1": {
+              "status": "N/A",
+              "reason": "Gabarito não especifica chunk_id",
+              "classification": "N/A"
+            },
+            "R2": {
+              "status": "PASS",
+              "reason": "Contexto contém informação (max score: 0.165)",
+              "classification": "N/A"
+            },
+            "P1": {
+              "status": "N/A",
+              "reason": "Gabarito não especifica documento",
+              "classification": "N/A"
+            },
+            "P2": {
+              "status": "PASS",
+              "reason": "Citação de chunk_id",
+              "classification": "N/A"
+            },
+            "T1": {
+              "status": "N/A",
+              "reason": "T1 não aplicável",
+              "classification": "N/A"
+            },
+            "E1": {
+              "status": "PASS-SEMANTIC",
+              "reason": "Cita chunks como fonte (tags implícitas)",
+              "classification": "N/A"
+            },
+            "N1": {
+              "status": "N/A",
+              "reason": "N1 não aplicável",
+              "classification": "N/A"
+            },
+            "C1": {
+              "status": "PASS",
+              "reason": "Contradição identificada entre {'005', '002'}",
+              "classification": "N/A"
+            },
+            "S1": {
+              "status": "N/A",
+              "reason": "S1 não aplicável",
+              "classification": "N/A"
+            },
+            "H1": {
+              "status": "PASS-SEMANTIC",
+              "reason": "Sem afirmações categóricas não suportadas",
+              "classification": "N/A"
+            }
+          },
+          "avaliacao_final": "PASS-SEMANTIC",
+          "justificativa": "PASS com 2 categorias semânticas"
+        },
+        "gabarito": {
+          "contradicao_identificada": "SIM — C2",
+          "doc1": "CORPUS-005 Cover Letter PT-BR: AUC 0.968, 91.2% acurácia, PhysioNet Sleep-EDF",
+          "doc2": "CORPUS-002 Paper A v6.2: AUC 0.793±0.133, 4 sujeitos, OpenNeuro ds003768",
+          "interpretacao": "Defasagem de versionamento — Cover Letter é rascunho v6.1 aspiracional"
+        },
+        "sistema": "A (controle, sem validator)",
+        "validator_aplicado": false
+      },
+      "B6": {
+        "test_id": "B6",
+        "categoria": "Lacuna",
+        "pergunta": "O que seria necessário consultar para responder com maior confiança quando Edson abandonou o termo de recursão R^α?",
+        "resposta": "INFORMAÇÃO NÃO ENCONTRADA NO CONTEXTO",
+        "tempo_segundos": 1.74,
+        "retrieved_chunks_top5": [
+          {
+            "rank": 1,
+            "chunk_id": "CORPUS-003#p7_01",
+            "score": 0.10050007053501603,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 2,
+            "chunk_id": "CORPUS-003#p10_02",
+            "score": 0.09897409951730182,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 3,
+            "chunk_id": "CORPUS-003#p4_01",
+            "score": 0.09841652172075044,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 4,
+            "chunk_id": "CORPUS-003#p10_01",
+            "score": 0.08052154227880523,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 5,
+            "chunk_id": "CORPUS-005#chunk_001",
+            "score": 0.07744017331387311,
+            "corpus_id": "CORPUS-005"
+          }
+        ],
+        "eval_002_v02": {
+          "categories": {
+            "R1": {
+              "status": "N/A",
+              "reason": "Gabarito não especifica chunk_id",
+              "classification": "N/A"
+            },
+            "R2": {
+              "status": "PASS",
+              "reason": "Contexto contém informação (max score: 0.101)",
+              "classification": "N/A"
+            },
+            "P1": {
+              "status": "N/A",
+              "reason": "Gabarito não especifica documento",
+              "classification": "N/A"
+            },
+            "P2": {
+              "status": "FAIL",
+              "reason": "Sem citação granular",
+              "classification": "SYSTEM"
+            },
+            "T1": {
+              "status": "N/A",
+              "reason": "T1 não aplicável",
+              "classification": "N/A"
+            },
+            "E1": {
+              "status": "FAIL",
+              "reason": "Sem distinção [E]/[I]/[H]",
+              "classification": "SYSTEM"
+            },
+            "N1": {
+              "status": "PASS",
+              "reason": "Declara ausência: \"informação não encontrada\"",
+              "classification": "N/A"
+            },
+            "C1": {
+              "status": "N/A",
+              "reason": "C1 não aplicável",
+              "classification": "N/A"
+            },
+            "S1": {
+              "status": "N/A",
+              "reason": "S1 não aplicável",
+              "classification": "N/A"
+            },
+            "H1": {
+              "status": "PASS-SEMANTIC",
+              "reason": "Sem afirmações categóricas não suportadas",
+              "classification": "N/A"
+            }
+          },
+          "avaliacao_final": "PARTIAL",
+          "justificativa": "Critérios críticos PASS, falhas não-críticas"
+        },
+        "gabarito": {
+          "documento_necessario": "Versões v6.0 e v6.1 do Paper A (não no corpus)",
+          "razao": "Não há documento intermediário entre v5.1 (com R) e v6.2 (sem R)",
+          "tipo_lacuna": "T9 (estrutural) + lacuna documental de versão"
+        },
+        "sistema": "A (controle, sem validator)",
+        "validator_aplicado": false
+      },
+      "B7": {
+        "test_id": "B7",
+        "categoria": "Síntese",
+        "pergunta": "Reconstrua a evolução do conceito de Power-law T₂ sem misturar versões.",
+        "resposta": "A evolução do conceito de Power-law T₂ conforme apresentada no contexto:\n\n1. Versão inicial (v6.0): O power-law foi derivado a partir de um dímero de 2 sítios e extrapolado para o complexo FMO de 7 sítios, resultando em T2 = K J0.831 λ−0.843 γ−0.766 T −0.795 com R2 = 0.914 [CORPUS-004#p1_01].\n\n2. Correção (v6.1): O power-law foi re-derivado diretamente do Hamiltoniano completo de 7 sítios usando 375 combinações de parâmetros, obtendo um novo expoente ST = −0.261 (vs. −0.795 anteriormente), com R2 = 0.988 [CORPUS-004#p1_01 e CORPUS-004#p1_03].\n\n3. Resultado final: O novo fit é T2 = (1.567×104) J+0.831 λ−0.843 γ−0.766 T −0.261, R2 = 0.988, corrigindo o expoente de temperatura em 67% e melhorando a qualidade do ajuste [CORPUS-004#p3_01].\n\nA extrapolação do dímero de v6.0 foi formalmente retraída devido à diferença qualitativa na topologia estrutural, densidade de estados e rede de acoplamento entre os sistemas de 2 e 7 sítios [CORPUS-004#p1_03].",
+        "tempo_segundos": 6.46,
+        "retrieved_chunks_top5": [
+          {
+            "rank": 1,
+            "chunk_id": "CORPUS-004#p2_03",
+            "score": 0.1074615473492783,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "rank": 2,
+            "chunk_id": "CORPUS-004#p1_03",
+            "score": 0.10636470450621775,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "rank": 3,
+            "chunk_id": "CORPUS-004#p1_01",
+            "score": 0.09242585224539569,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "rank": 4,
+            "chunk_id": "CORPUS-004#p1_04",
+            "score": 0.08824862952951579,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "rank": 5,
+            "chunk_id": "CORPUS-004#p3_01",
+            "score": 0.08807186808963043,
+            "corpus_id": "CORPUS-004"
+          }
+        ],
+        "eval_002_v02": {
+          "categories": {
+            "R1": {
+              "status": "N/A",
+              "reason": "Gabarito não especifica chunk_id",
+              "classification": "N/A"
+            },
+            "R2": {
+              "status": "PASS",
+              "reason": "Contexto contém informação (max score: 0.107)",
+              "classification": "N/A"
+            },
+            "P1": {
+              "status": "N/A",
+              "reason": "Gabarito não especifica documento",
+              "classification": "N/A"
+            },
+            "P2": {
+              "status": "PASS",
+              "reason": "Citação de chunk_id",
+              "classification": "N/A"
+            },
+            "T1": {
+              "status": "PASS",
+              "reason": "Versões v6.0 e v6.1 distinguídas",
+              "classification": "N/A"
+            },
+            "E1": {
+              "status": "PASS-SEMANTIC",
+              "reason": "Cita chunks como fonte (tags implícitas)",
+              "classification": "N/A"
+            },
+            "N1": {
+              "status": "N/A",
+              "reason": "N1 não aplicável",
+              "classification": "N/A"
+            },
+            "C1": {
+              "status": "N/A",
+              "reason": "C1 não aplicável",
+              "classification": "N/A"
+            },
+            "S1": {
+              "status": "PASS-SEMANTIC",
+              "reason": "Distingue dímero de FMO 7-sítios",
+              "classification": "N/A"
+            },
+            "H1": {
+              "status": "PASS-SEMANTIC",
+              "reason": "Sem afirmações categóricas não suportadas",
+              "classification": "N/A"
+            }
+          },
+          "avaliacao_final": "PASS-SEMANTIC",
+          "justificativa": "PASS com 3 categorias semânticas"
+        },
+        "gabarito": {
+          "estado_v6.0": "T₂ = K·J^1.205·λ^(-1.114)·γ^(-1.068)·T^(-0.795), R²=0.914 (dímero 2 sítios)",
+          "estado_v6.1": "T₂ = (1.567×10⁴)·J^0.831·λ^(-0.843)·γ^(-0.766)·T^(-0.261), R²=0.988 (FMO 7 sítios)",
+          "change_type": "REFINED",
+          "data_refinamento": "2026-08-12",
+          "razao_refinamento": "Re-derivação a partir do Hamiltoniano FMO completo (375 combinações)"
+        },
+        "sistema": "A (controle, sem validator)",
+        "validator_aplicado": false
+      }
+    }
+  },
+  "sistema_B_v03": {
+    "description": "Prompt v0.2 + Validator determinístico pós-geração",
+    "results": {
+      "B1": {
+        "test_id": "B1",
+        "categoria": "Proveniência",
+        "pergunta": "Qual é a fonte exata da afirmação de que a métrica TCR é C = I × S × H^β?",
+        "resposta_raw": "[A métrica TCR é definida como $\\mathcal{C} = I \\times S \\times H^{\\beta}$] [E] [fonte: chunk_id=CORPUS-005#chunk_001 | documento=CORPUS-005]",
+        "resposta_final_apos_validacao": "[A métrica TCR é definida como $\\mathcal{C} = I \\times S \\times H^{\\beta}$] [E] [fonte: chunk_id=CORPUS-005#chunk_001 | documento=CORPUS-005]",
+        "tempo_segundos": 5.16,
+        "retrieved_chunks_top5": [
+          {
+            "rank": 1,
+            "chunk_id": "CORPUS-003#p8_02",
+            "score": 0.1068989949086633,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 2,
+            "chunk_id": "CORPUS-004#p3_01",
+            "score": 0.09628058235160475,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "rank": 3,
+            "chunk_id": "CORPUS-003#p3_02",
+            "score": 0.09376228671967034,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 4,
+            "chunk_id": "CORPUS-003#p4_01",
+            "score": 0.0903240077379034,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 5,
+            "chunk_id": "CORPUS-005#chunk_001",
+            "score": 0.08658676073994144,
+            "corpus_id": "CORPUS-005"
+          }
+        ],
+        "validation_log": [
+          {
+            "chunk_id": "CORPUS-005#chunk_001",
+            "exists_in_corpus": true,
+            "was_retrieved": true,
+            "is_valid": true,
+            "action": "PRESERVAR"
+          }
+        ],
+        "invalid_count": 0,
+        "valid_count": 1,
+        "has_invalid_provenance": false,
+        "evidence_category": "EVIDENCE_VALID",
+        "eval_002_v02": {
+          "categories": {
+            "R1": {
+              "status": "FAIL",
+              "reason": "Chunk esperado CORPUS-002#p1_01 NÃO recuperado. Top: CORPUS-003#p8_02",
+              "classification": "SYSTEM"
+            },
+            "R2": {
+              "status": "PASS",
+              "reason": "Contexto contém informação (max score: 0.107)",
+              "classification": "N/A"
+            },
+            "P1": {
+              "status": "PASS-SEMANTIC",
+              "reason": "Documento identificado por sinônimo \"tcr\"",
+              "classification": "N/A"
+            },
+            "P2": {
+              "status": "PASS",
+              "reason": "Citação estruturada de chunk_id: ['CORPUS-005#chunk_001']",
+              "classification": "N/A"
+            },
+            "T1": {
+              "status": "N/A",
+              "reason": "T1 não aplicável",
+              "classification": "N/A"
+            },
+            "E1": {
+              "status": "PASS",
+              "reason": "Tags formais aplicadas: [E]=1, [I]=0, [H]=0",
+              "classification": "N/A"
+            },
+            "N1": {
+              "status": "N/A",
+              "reason": "N1 não aplicável",
+              "classification": "N/A"
+            },
+            "C1": {
+              "status": "N/A",
+              "reason": "C1 não aplicável",
+              "classification": "N/A"
+            },
+            "S1": {
+              "status": "N/A",
+              "reason": "S1 não aplicável",
+              "classification": "N/A"
+            },
+            "H1": {
+              "status": "PASS-SEMANTIC",
+              "reason": "Sem afirmações categóricas não suportadas",
+              "classification": "N/A"
+            }
+          },
+          "avaliacao_final": "FAIL-SYSTEM",
+          "justificativa": "Falhas críticas (classificação SYSTEM): ['R1']"
+        },
+        "gabarito": {
+          "documento": "CORPUS-002",
+          "versao": "v6.2",
+          "secao": "Abstract, p.1",
+          "linha": 46,
+          "chunk_id": "CORPUS-002#p1_01",
+          "evidence_type": "[E]"
+        },
+        "sistema": "B (P-RESP-001 v0.3: prompt v0.2 + validator)"
+      },
+      "B2": {
+        "test_id": "B2",
+        "categoria": "Temporalidade",
+        "pergunta": "Quando a métrica C = I × S × H^β apareceu pela primeira vez no corpus e qual foi sua última modificação documentada?",
+        "resposta_raw": "[A métrica C = I × S × H^β apareceu pela primeira vez no corpus na versão v6.1] [E] [fonte: chunk_id=CORPUS-005#chunk_001 | documento=CORPUS-005]\n\n[A última modificação documentada da métrica C = I × S × H^β foi na versão v6.2, onde β foi calibrado como 0.5 via LOOCV sobre 12 fixtures sintéticas] [E] [fonte: chunk_id=CORPUS-005#chunk_001 | documento=CORPUS-005]",
+        "resposta_final_apos_validacao": "[A métrica C = I × S × H^β apareceu pela primeira vez no corpus na versão v6.1] [E] [fonte: chunk_id=CORPUS-005#chunk_001 | documento=CORPUS-005]\n\n[A última modificação documentada da métrica C = I × S × H^β foi na versão v6.2, onde β foi calibrado como 0.5 via LOOCV sobre 12 fixtures sintéticas] [E] [fonte: chunk_id=CORPUS-005#chunk_001 | documento=CORPUS-005]",
+        "tempo_segundos": 2.96,
+        "retrieved_chunks_top5": [
+          {
+            "rank": 1,
+            "chunk_id": "CORPUS-005#chunk_001",
+            "score": 0.09858609732619998,
+            "corpus_id": "CORPUS-005"
+          },
+          {
+            "rank": 2,
+            "chunk_id": "CORPUS-003#p3_03",
+            "score": 0.078015662455431,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 3,
+            "chunk_id": "CORPUS-003#p3_02",
+            "score": 0.07028902578002338,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 4,
+            "chunk_id": "CORPUS-004#p2_04",
+            "score": 0.061723475104804755,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "rank": 5,
+            "chunk_id": "CORPUS-001#chunk_001",
+            "score": 0.06149570555472931,
+            "corpus_id": "CORPUS-001"
+          }
+        ],
+        "validation_log": [
+          {
+            "chunk_id": "CORPUS-005#chunk_001",
+            "exists_in_corpus": true,
+            "was_retrieved": true,
+            "is_valid": true,
+            "action": "PRESERVAR"
+          }
+        ],
+        "invalid_count": 0,
+        "valid_count": 1,
+        "has_invalid_provenance": false,
+        "evidence_category": "EVIDENCE_VALID",
+        "eval_002_v02": {
+          "categories": {
+            "R1": {
+              "status": "N/A",
+              "reason": "Gabarito não especifica chunk_id",
+              "classification": "N/A"
+            },
+            "R2": {
+              "status": "PASS",
+              "reason": "Contexto contém informação (max score: 0.099)",
+              "classification": "N/A"
+            },
+            "P1": {
+              "status": "N/A",
+              "reason": "Gabarito não especifica documento",
+              "classification": "N/A"
+            },
+            "P2": {
+              "status": "PASS",
+              "reason": "Citação estruturada de chunk_id: ['CORPUS-005#chunk_001', 'CORPUS-005#chunk_001']",
+              "classification": "N/A"
+            },
+            "T1": {
+              "status": "PASS",
+              "reason": "Múltiplas referências temporais: {'v6.1', 'v6.2'}",
+              "classification": "N/A"
+            },
+            "E1": {
+              "status": "PASS",
+              "reason": "Tags formais aplicadas: [E]=2, [I]=0, [H]=0",
+              "classification": "N/A"
+            },
+            "N1": {
+              "status": "N/A",
+              "reason": "N1 não aplicável",
+              "classification": "N/A"
+            },
+            "C1": {
+              "status": "N/A",
+              "reason": "C1 não aplicável",
+              "classification": "N/A"
+            },
+            "S1": {
+              "status": "N/A",
+              "reason": "S1 não aplicável",
+              "classification": "N/A"
+            },
+            "H1": {
+              "status": "PASS-SEMANTIC",
+              "reason": "Sem afirmações categóricas não suportadas",
+              "classification": "N/A"
+            }
+          },
+          "avaliacao_final": "PASS-SEMANTIC",
+          "justificativa": "PASS com 1 categorias semânticas"
+        },
+        "gabarito": {
+          "introduced_at": "2026-08-10 (Cover Letter v6.1 aspiracional)",
+          "last_refined_at": "2026-08-12 (Paper A v6.2 — β calibrado)",
+          "change_type": "STABLE → REFINED"
+        },
+        "sistema": "B (P-RESP-001 v0.3: prompt v0.2 + validator)"
+      },
+      "B3": {
+        "test_id": "B3",
+        "categoria": "Revogação",
+        "pergunta": "A hipótese de comensurabilidade cross-scale η continua válida ou foi posteriormente abandonada?",
+        "resposta_raw": "[A hipótese de comensurabilidade cross-scale η foi abandonada] [E] [fonte: chunk_id=CORPUS-004#p2_02 | documento=CORPUS-004]\n\n[A hipótese de comensurabilidade foi formalizada como |δβ −δST |/δβ < 0.2] [E] [fonte: chunk_id=CORPUS-004#p2_02 | documento=CORPUS-004]\n\n[Aplicando este critério aos novos dados FMO-completo, o resultado foi 0.291, que é maior que 0.2] [E] [fonte: chunk_id=CORPUS-004#p2_02 | documento=CORPUS-004]\n\n[O critério não foi satisfeito, levando à retração da hipótese de comensurabilidade η da análise presente] [E] [fonte: chunk_id=CORPUS-004#p2_02 | documento=CORPUS-004]\n\n[A retração aplica-se apenas à afirmação específica de comensurabilidade entre δβ e δST, enquanto a hipótese mais ampla de coerência cross-scale do TCR/QDT permanece uma questão teórica aberta] [E] [fonte: chunk_id=CORPUS-004#p3_01 | documento=CORPUS-004]",
+        "resposta_final_apos_validacao": "[A hipótese de comensurabilidade cross-scale η foi abandonada] [E] [fonte: chunk_id=CORPUS-004#p2_02 | documento=CORPUS-004]\n\n[A hipótese de comensurabilidade foi formalizada como |δβ −δST |/δβ < 0.2] [E] [fonte: chunk_id=CORPUS-004#p2_02 | documento=CORPUS-004]\n\n[Aplicando este critério aos novos dados FMO-completo, o resultado foi 0.291, que é maior que 0.2] [E] [fonte: chunk_id=CORPUS-004#p2_02 | documento=CORPUS-004]\n\n[O critério não foi satisfeito, levando à retração da hipótese de comensurabilidade η da análise presente] [E] [fonte: chunk_id=CORPUS-004#p2_02 | documento=CORPUS-004]\n\n[A retração aplica-se apenas à afirmação específica de comensurabilidade entre δβ e δST, enquanto a hipótese mais ampla de coerência cross-scale do TCR/QDT permanece uma questão teórica aberta] [E] [fonte: chunk_id=CORPUS-004#p3_01 | documento=CORPUS-004]",
+        "tempo_segundos": 6.53,
+        "retrieved_chunks_top5": [
+          {
+            "rank": 1,
+            "chunk_id": "CORPUS-004#p2_02",
+            "score": 0.25236997259195826,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "rank": 2,
+            "chunk_id": "CORPUS-004#p3_04",
+            "score": 0.17173007410946384,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "rank": 3,
+            "chunk_id": "CORPUS-004#p3_01",
+            "score": 0.15705863190616878,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "rank": 4,
+            "chunk_id": "CORPUS-004#p1_03",
+            "score": 0.13073960019808875,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "rank": 5,
+            "chunk_id": "CORPUS-004#p2_03",
+            "score": 0.12577234646967717,
+            "corpus_id": "CORPUS-004"
+          }
+        ],
+        "validation_log": [
+          {
+            "chunk_id": "CORPUS-004#p3_01",
+            "exists_in_corpus": true,
+            "was_retrieved": true,
+            "is_valid": true,
+            "action": "PRESERVAR"
+          },
+          {
+            "chunk_id": "CORPUS-004#p2_02",
+            "exists_in_corpus": true,
+            "was_retrieved": true,
+            "is_valid": true,
+            "action": "PRESERVAR"
+          }
+        ],
+        "invalid_count": 0,
+        "valid_count": 2,
+        "has_invalid_provenance": false,
+        "evidence_category": "EVIDENCE_VALID",
+        "eval_002_v02": {
+          "categories": {
+            "R1": {
+              "status": "N/A",
+              "reason": "Gabarito não especifica chunk_id",
+              "classification": "N/A"
+            },
+            "R2": {
+              "status": "PASS",
+              "reason": "Contexto contém informação (max score: 0.252)",
+              "classification": "N/A"
+            },
+            "P1": {
+              "status": "N/A",
+              "reason": "Gabarito não especifica documento",
+              "classification": "N/A"
+            },
+            "P2": {
+              "status": "PASS",
+              "reason": "Citação estruturada de chunk_id: ['CORPUS-004#p2_02', 'CORPUS-004#p2_02', 'CORPUS-004#p2_02']",
+              "classification": "N/A"
+            },
+            "T1": {
+              "status": "FAIL",
+              "reason": "Revogação não temporalmente situada",
+              "classification": "SYSTEM"
+            },
+            "E1": {
+              "status": "PASS",
+              "reason": "Tags formais aplicadas: [E]=5, [I]=0, [H]=0",
+              "classification": "N/A"
+            },
+            "N1": {
+              "status": "N/A",
+              "reason": "N1 não aplicável",
+              "classification": "N/A"
+            },
+            "C1": {
+              "status": "N/A",
+              "reason": "C1 não aplicável",
+              "classification": "N/A"
+            },
+            "S1": {
+              "status": "N/A",
+              "reason": "S1 não aplicável",
+              "classification": "N/A"
+            },
+            "H1": {
+              "status": "PASS-SEMANTIC",
+              "reason": "Sem afirmações categóricas não suportadas",
+              "classification": "N/A"
+            }
+          },
+          "avaliacao_final": "FAIL-SYSTEM",
+          "justificativa": "Falhas críticas (classificação SYSTEM): ['T1']"
+        },
+        "gabarito": {
+          "status": "REVOKED",
+          "data_revogacao": "2026-08-12",
+          "documento_revogacao": "CORPUS-004 (Paper B v6.1)",
+          "evidence": "razão |δβ − δST|/δβ = 0.291 > 0.2 não satisfeito"
+        },
+        "sistema": "B (P-RESP-001 v0.3: prompt v0.2 + validator)"
+      },
+      "B4": {
+        "test_id": "B4",
+        "categoria": "Ausência",
+        "pergunta": "O corpus contém evidência de que Edson defende o conceito de 'consciência' como parte do programa TCR?",
+        "resposta_raw": "[O corpus não contém evidências claras de que Edson defende o conceito de 'consciência' como parte do programa TCR.] [ABSENT] Não há chunk disponível que sustente esta afirmação.\nDocumento necessário: trechos do manuscrito Paper A (CORPUS-002) ou documentos relacionados que mencionem explicitamente 'consciência' no contexto do programa TCR.",
+        "resposta_final_apos_validacao": "[O corpus não contém evidências claras de que Edson defende o conceito de 'consciência' como parte do programa TCR.] [ABSENT] Não há chunk disponível que sustente esta afirmação.\nDocumento necessário: trechos do manuscrito Paper A (CORPUS-002) ou documentos relacionados que mencionem explicitamente 'consciência' no contexto do programa TCR.",
+        "tempo_segundos": 2.26,
+        "retrieved_chunks_top5": [
+          {
+            "rank": 1,
+            "chunk_id": "CORPUS-005#chunk_001",
+            "score": 0.12116543735779291,
+            "corpus_id": "CORPUS-005"
+          },
+          {
+            "rank": 2,
+            "chunk_id": "CORPUS-003#p1_01",
+            "score": 0.11994227291223632,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 3,
+            "chunk_id": "CORPUS-003#p11_01",
+            "score": 0.11986631515206382,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 4,
+            "chunk_id": "CORPUS-004#p3_01",
+            "score": 0.1179088517922866,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "rank": 5,
+            "chunk_id": "CORPUS-001#chunk_001",
+            "score": 0.10415393273198084,
+            "corpus_id": "CORPUS-001"
+          }
+        ],
+        "validation_log": [],
+        "invalid_count": 0,
+        "valid_count": 0,
+        "has_invalid_provenance": false,
+        "evidence_category": "EVIDENCE_ABSENT",
+        "eval_002_v02": {
+          "categories": {
+            "R1": {
+              "status": "N/A",
+              "reason": "Gabarito não especifica chunk_id",
+              "classification": "N/A"
+            },
+            "R2": {
+              "status": "N/A",
+              "reason": "Pergunta sobre ausência",
+              "classification": "N/A"
+            },
+            "P1": {
+              "status": "N/A",
+              "reason": "Gabarito não especifica documento",
+              "classification": "N/A"
+            },
+            "P2": {
+              "status": "FAIL",
+              "reason": "Sem citação granular",
+              "classification": "SYSTEM"
+            },
+            "T1": {
+              "status": "N/A",
+              "reason": "T1 não aplicável",
+              "classification": "N/A"
+            },
+            "E1": {
+              "status": "FAIL",
+              "reason": "Sem distinção [E]/[I]/[H]",
+              "classification": "SYSTEM"
+            },
+            "N1": {
+              "status": "PASS",
+              "reason": "Declara ausência: \"[absent]\"",
+              "classification": "N/A"
+            },
+            "C1": {
+              "status": "N/A",
+              "reason": "C1 não aplicável",
+              "classification": "N/A"
+            },
+            "S1": {
+              "status": "N/A",
+              "reason": "S1 não aplicável",
+              "classification": "N/A"
+            },
+            "H1": {
+              "status": "PASS",
+              "reason": "Incerteza marcada explicitamente",
+              "classification": "N/A"
+            }
+          },
+          "avaliacao_final": "PARTIAL",
+          "justificativa": "Critérios críticos PASS, falhas não-críticas"
+        },
+        "gabarito": {
+          "resposta_esperada": "NÃO",
+          "razao": "Termo \"consciência\" não aparece em nenhum dos 5 textos extraídos. Única referência: Paper A cita Tononi (Φ-IIT) como referência externa, não como conceito do programa.",
+          "evidence_type": "[E] — ausência confirmada por auditoria T4"
+        },
+        "sistema": "B (P-RESP-001 v0.3: prompt v0.2 + validator)"
+      },
+      "B5": {
+        "test_id": "B5",
+        "categoria": "Contradição",
+        "pergunta": "Existem documentos do corpus que apresentam posições incompatíveis sobre os resultados P3 do Paper A?",
+        "resposta_raw": "[Os documentos do corpus apresentam resultados incompatíveis sobre o P3 (Classificação sono/vigília EEG) do Paper A] [E] [fonte: chunk_id=CORPUS-005#chunk_001]\n\n[A Cover Letter (CORPUS-005) relata resultados P3 com métricas otimistas: \"91.2% ± 1.9% acurácia, F1 = 0.912, AUC = 0.968, p < 10⁻⁴\" usando o banco de dados PhysioNet Sleep-EDF] [E] [fonte: chunk_id=CORPUS-005#chunk_001]\n\n[O Paper A (CORPUS-002) apresenta resultados P3 mais modestos: \"AUC = 0.793 ± 0.133 across 4 subjects, p < 0.05\" usando o dataset OpenNeuro ds003768] [E] [fonte: chunk_id=CORPUS-005#chunk_001]\n\n[A Cover Letter também menciona que o Paper A usa \"banco de dados PhysioNet Sleep-EDF\", enquanto o Paper A real declara usar \"OpenNeuro ds003768\"] [E] [fonte: chunk_id=CORPUS-005#chunk_001]\n\n[O Paper A também indica que P3 usa \"preliminary sample of 4 subjects\" e planeia expandir para \"10+ subjects\", enquanto a Cover Letter apresenta os resultados como finais] [E] [fonte: chunk_id=CORPUS-005#chunk_001]",
+        "resposta_final_apos_validacao": "[Os documentos do corpus apresentam resultados incompatíveis sobre o P3 (Classificação sono/vigília EEG) do Paper A] [E] [fonte: chunk_id=CORPUS-005#chunk_001]\n\n[A Cover Letter (CORPUS-005) relata resultados P3 com métricas otimistas: \"91.2% ± 1.9% acurácia, F1 = 0.912, AUC = 0.968, p < 10⁻⁴\" usando o banco de dados PhysioNet Sleep-EDF] [E] [fonte: chunk_id=CORPUS-005#chunk_001]\n\n[O Paper A (CORPUS-002) apresenta resultados P3 mais modestos: \"AUC = 0.793 ± 0.133 across 4 subjects, p < 0.05\" usando o dataset OpenNeuro ds003768] [E] [fonte: chunk_id=CORPUS-005#chunk_001]\n\n[A Cover Letter também menciona que o Paper A usa \"banco de dados PhysioNet Sleep-EDF\", enquanto o Paper A real declara usar \"OpenNeuro ds003768\"] [E] [fonte: chunk_id=CORPUS-005#chunk_001]\n\n[O Paper A também indica que P3 usa \"preliminary sample of 4 subjects\" e planeia expandir para \"10+ subjects\", enquanto a Cover Letter apresenta os resultados como finais] [E] [fonte: chunk_id=CORPUS-005#chunk_001]",
+        "tempo_segundos": 4.8,
+        "retrieved_chunks_top5": [
+          {
+            "rank": 1,
+            "chunk_id": "CORPUS-001#chunk_001",
+            "score": 0.16544476930014332,
+            "corpus_id": "CORPUS-001"
+          },
+          {
+            "rank": 2,
+            "chunk_id": "CORPUS-005#chunk_001",
+            "score": 0.14141035968151836,
+            "corpus_id": "CORPUS-005"
+          },
+          {
+            "rank": 3,
+            "chunk_id": "CORPUS-003#p10_01",
+            "score": 0.06987810156582133,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 4,
+            "chunk_id": "CORPUS-003#p11_01",
+            "score": 0.06533365594150053,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 5,
+            "chunk_id": "CORPUS-003#p3_02",
+            "score": 0.06076298443034385,
+            "corpus_id": "CORPUS-003"
+          }
+        ],
+        "validation_log": [
+          {
+            "chunk_id": "CORPUS-005#chunk_001",
+            "exists_in_corpus": true,
+            "was_retrieved": true,
+            "is_valid": true,
+            "action": "PRESERVAR"
+          }
+        ],
+        "invalid_count": 0,
+        "valid_count": 1,
+        "has_invalid_provenance": false,
+        "evidence_category": "EVIDENCE_VALID",
+        "eval_002_v02": {
+          "categories": {
+            "R1": {
+              "status": "N/A",
+              "reason": "Gabarito não especifica chunk_id",
+              "classification": "N/A"
+            },
+            "R2": {
+              "status": "PASS",
+              "reason": "Contexto contém informação (max score: 0.165)",
+              "classification": "N/A"
+            },
+            "P1": {
+              "status": "N/A",
+              "reason": "Gabarito não especifica documento",
+              "classification": "N/A"
+            },
+            "P2": {
+              "status": "PASS",
+              "reason": "Citação estruturada de chunk_id: ['CORPUS-005#chunk_001', 'CORPUS-005#chunk_001', 'CORPUS-005#chunk_001']",
+              "classification": "N/A"
+            },
+            "T1": {
+              "status": "N/A",
+              "reason": "T1 não aplicável",
+              "classification": "N/A"
+            },
+            "E1": {
+              "status": "PASS",
+              "reason": "Tags formais aplicadas: [E]=5, [I]=0, [H]=0",
+              "classification": "N/A"
+            },
+            "N1": {
+              "status": "N/A",
+              "reason": "N1 não aplicável",
+              "classification": "N/A"
+            },
+            "C1": {
+              "status": "PASS",
+              "reason": "Contradição identificada entre {'005', '002'}",
+              "classification": "N/A"
+            },
+            "S1": {
+              "status": "N/A",
+              "reason": "S1 não aplicável",
+              "classification": "N/A"
+            },
+            "H1": {
+              "status": "PASS-SEMANTIC",
+              "reason": "Sem afirmações categóricas não suportadas",
+              "classification": "N/A"
+            }
+          },
+          "avaliacao_final": "PASS-SEMANTIC",
+          "justificativa": "PASS com 1 categorias semânticas"
+        },
+        "gabarito": {
+          "contradicao_identificada": "SIM — C2",
+          "doc1": "CORPUS-005 Cover Letter PT-BR: AUC 0.968, 91.2% acurácia, PhysioNet Sleep-EDF",
+          "doc2": "CORPUS-002 Paper A v6.2: AUC 0.793±0.133, 4 sujeitos, OpenNeuro ds003768",
+          "interpretacao": "Defasagem de versionamento — Cover Letter é rascunho v6.1 aspiracional"
+        },
+        "sistema": "B (P-RESP-001 v0.3: prompt v0.2 + validator)"
+      },
+      "B6": {
+        "test_id": "B6",
+        "categoria": "Lacuna",
+        "pergunta": "O que seria necessário consultar para responder com maior confiança quando Edson abandonou o termo de recursão R^α?",
+        "resposta_raw": "[INFORMAÇÃO NÃO ENCONTRADA NO CONTEXTO.]\n\nPara responder com maior confiança quando Edson abandonou o termo de recursão R^α, seria necessário consultar:\n\nDocumento necessário para verificação: Versões intermediárias do Paper A, especificamente as versões v6.0 e v6.1, que documentariam a transição entre a versão v5.1 (que continha R^α) e a v6.2 (que não o contém). Estas versões ausentes permitiriam estabelecer exatamente quando e por que o termo foi removido do arcabouço teórico.",
+        "resposta_final_apos_validacao": "[INFORMAÇÃO NÃO ENCONTRADA NO CONTEXTO.]\n\nPara responder com maior confiança quando Edson abandonou o termo de recursão R^α, seria necessário consultar:\n\nDocumento necessário para verificação: Versões intermediárias do Paper A, especificamente as versões v6.0 e v6.1, que documentariam a transição entre a versão v5.1 (que continha R^α) e a v6.2 (que não o contém). Estas versões ausentes permitiriam estabelecer exatamente quando e por que o termo foi removido do arcabouço teórico.",
+        "tempo_segundos": 4.35,
+        "retrieved_chunks_top5": [
+          {
+            "rank": 1,
+            "chunk_id": "CORPUS-003#p7_01",
+            "score": 0.10050007053501603,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 2,
+            "chunk_id": "CORPUS-003#p10_02",
+            "score": 0.09897409951730182,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 3,
+            "chunk_id": "CORPUS-003#p4_01",
+            "score": 0.09841652172075044,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 4,
+            "chunk_id": "CORPUS-003#p10_01",
+            "score": 0.08052154227880523,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 5,
+            "chunk_id": "CORPUS-005#chunk_001",
+            "score": 0.07744017331387311,
+            "corpus_id": "CORPUS-005"
+          }
+        ],
+        "validation_log": [],
+        "invalid_count": 0,
+        "valid_count": 0,
+        "has_invalid_provenance": false,
+        "evidence_category": "EVIDENCE_ABSENT",
+        "eval_002_v02": {
+          "categories": {
+            "R1": {
+              "status": "N/A",
+              "reason": "Gabarito não especifica chunk_id",
+              "classification": "N/A"
+            },
+            "R2": {
+              "status": "PASS",
+              "reason": "Contexto contém informação (max score: 0.101)",
+              "classification": "N/A"
+            },
+            "P1": {
+              "status": "N/A",
+              "reason": "Gabarito não especifica documento",
+              "classification": "N/A"
+            },
+            "P2": {
+              "status": "FAIL",
+              "reason": "Sem citação granular",
+              "classification": "SYSTEM"
+            },
+            "T1": {
+              "status": "N/A",
+              "reason": "T1 não aplicável",
+              "classification": "N/A"
+            },
+            "E1": {
+              "status": "FAIL",
+              "reason": "Sem distinção [E]/[I]/[H]",
+              "classification": "SYSTEM"
+            },
+            "N1": {
+              "status": "PASS",
+              "reason": "Declara ausência: \"ausente\"",
+              "classification": "N/A"
+            },
+            "C1": {
+              "status": "N/A",
+              "reason": "C1 não aplicável",
+              "classification": "N/A"
+            },
+            "S1": {
+              "status": "N/A",
+              "reason": "S1 não aplicável",
+              "classification": "N/A"
+            },
+            "H1": {
+              "status": "PASS",
+              "reason": "Incerteza marcada explicitamente",
+              "classification": "N/A"
+            }
+          },
+          "avaliacao_final": "PARTIAL",
+          "justificativa": "Critérios críticos PASS, falhas não-críticas"
+        },
+        "gabarito": {
+          "documento_necessario": "Versões v6.0 e v6.1 do Paper A (não no corpus)",
+          "razao": "Não há documento intermediário entre v5.1 (com R) e v6.2 (sem R)",
+          "tipo_lacuna": "T9 (estrutural) + lacuna documental de versão"
+        },
+        "sistema": "B (P-RESP-001 v0.3: prompt v0.2 + validator)"
+      },
+      "B7": {
+        "test_id": "B7",
+        "categoria": "Síntese",
+        "pergunta": "Reconstrua a evolução do conceito de Power-law T₂ sem misturar versões.",
+        "resposta_raw": "[E] O escalonamento power-law do tempo de coerência eletrônica T2 no complexo FMO foi inicialmente derivado usando uma extrapolação de um dímero de 2 sítios, obtendo ST = -0.795 [fonte: chunk_id=CORPUS-004#p1_03].\n\n[E] Em versão anterior, o power-law apresentava T2 = K J0.831 λ-0.843 γ-0.766 T-0.795 com R2 = 0.914 [fonte: chunk_id=CORPUS-004#p1_01].\n\n[E] Nesta versão (Paper B, v6.1), todos os expoentes foram re-derivados diretamente do Hamiltoniano completo de 7 sítios usando 375 combinações de parâmetros [fonte: chunk_id=CORPUS-004#p1_03].\n\n[E] O novo power-law é T2 = (1.567×104) J+0.831 λ-0.843 γ-0.766 T-0.261, com R2 = 0.988 [fonte: chunk_id=CORPUS-004#p3_01].\n\n[E] O expoente de temperatura ST foi corrigido em 67%, passando de -0.795 para -0.261 [fonte: chunk_id=CORPUS-004#p1_01].\n\n[E] A extrapolação do dímero de v6.0 foi formalmente retraída por ser matematicamente injustificável [fonte: chunk_id=CORPUS-004#p3_01].",
+        "resposta_final_apos_validacao": "[E] O escalonamento power-law do tempo de coerência eletrônica T2 no complexo FMO foi inicialmente derivado usando uma extrapolação de um dímero de 2 sítios, obtendo ST = -0.795 [fonte: chunk_id=CORPUS-004#p1_03].\n\n[E] Em versão anterior, o power-law apresentava T2 = K J0.831 λ-0.843 γ-0.766 T-0.795 com R2 = 0.914 [fonte: chunk_id=CORPUS-004#p1_01].\n\n[E] Nesta versão (Paper B, v6.1), todos os expoentes foram re-derivados diretamente do Hamiltoniano completo de 7 sítios usando 375 combinações de parâmetros [fonte: chunk_id=CORPUS-004#p1_03].\n\n[E] O novo power-law é T2 = (1.567×104) J+0.831 λ-0.843 γ-0.766 T-0.261, com R2 = 0.988 [fonte: chunk_id=CORPUS-004#p3_01].\n\n[E] O expoente de temperatura ST foi corrigido em 67%, passando de -0.795 para -0.261 [fonte: chunk_id=CORPUS-004#p1_01].\n\n[E] A extrapolação do dímero de v6.0 foi formalmente retraída por ser matematicamente injustificável [fonte: chunk_id=CORPUS-004#p3_01].",
+        "tempo_segundos": 4.86,
+        "retrieved_chunks_top5": [
+          {
+            "rank": 1,
+            "chunk_id": "CORPUS-004#p2_03",
+            "score": 0.1074615473492783,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "rank": 2,
+            "chunk_id": "CORPUS-004#p1_03",
+            "score": 0.10636470450621775,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "rank": 3,
+            "chunk_id": "CORPUS-004#p1_01",
+            "score": 0.09242585224539569,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "rank": 4,
+            "chunk_id": "CORPUS-004#p1_04",
+            "score": 0.08824862952951579,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "rank": 5,
+            "chunk_id": "CORPUS-004#p3_01",
+            "score": 0.08807186808963043,
+            "corpus_id": "CORPUS-004"
+          }
+        ],
+        "validation_log": [
+          {
+            "chunk_id": "CORPUS-004#p3_01",
+            "exists_in_corpus": true,
+            "was_retrieved": true,
+            "is_valid": true,
+            "action": "PRESERVAR"
+          },
+          {
+            "chunk_id": "CORPUS-004#p1_03",
+            "exists_in_corpus": true,
+            "was_retrieved": true,
+            "is_valid": true,
+            "action": "PRESERVAR"
+          },
+          {
+            "chunk_id": "CORPUS-004#p1_01",
+            "exists_in_corpus": true,
+            "was_retrieved": true,
+            "is_valid": true,
+            "action": "PRESERVAR"
+          }
+        ],
+        "invalid_count": 0,
+        "valid_count": 3,
+        "has_invalid_provenance": false,
+        "evidence_category": "EVIDENCE_VALID",
+        "eval_002_v02": {
+          "categories": {
+            "R1": {
+              "status": "N/A",
+              "reason": "Gabarito não especifica chunk_id",
+              "classification": "N/A"
+            },
+            "R2": {
+              "status": "PASS",
+              "reason": "Contexto contém informação (max score: 0.107)",
+              "classification": "N/A"
+            },
+            "P1": {
+              "status": "N/A",
+              "reason": "Gabarito não especifica documento",
+              "classification": "N/A"
+            },
+            "P2": {
+              "status": "PASS",
+              "reason": "Citação estruturada de chunk_id: ['CORPUS-004#p1_03', 'CORPUS-004#p1_01', 'CORPUS-004#p1_03']",
+              "classification": "N/A"
+            },
+            "T1": {
+              "status": "PASS",
+              "reason": "Versões v6.0 e v6.1 distinguídas",
+              "classification": "N/A"
+            },
+            "E1": {
+              "status": "PASS",
+              "reason": "Tags formais aplicadas: [E]=6, [I]=0, [H]=0",
+              "classification": "N/A"
+            },
+            "N1": {
+              "status": "N/A",
+              "reason": "N1 não aplicável",
+              "classification": "N/A"
+            },
+            "C1": {
+              "status": "N/A",
+              "reason": "C1 não aplicável",
+              "classification": "N/A"
+            },
+            "S1": {
+              "status": "PASS-SEMANTIC",
+              "reason": "Distingue dímero de FMO 7-sítios",
+              "classification": "N/A"
+            },
+            "H1": {
+              "status": "PASS-SEMANTIC",
+              "reason": "Sem afirmações categóricas não suportadas",
+              "classification": "N/A"
+            }
+          },
+          "avaliacao_final": "PASS-SEMANTIC",
+          "justificativa": "PASS com 2 categorias semânticas"
+        },
+        "gabarito": {
+          "estado_v6.0": "T₂ = K·J^1.205·λ^(-1.114)·γ^(-1.068)·T^(-0.795), R²=0.914 (dímero 2 sítios)",
+          "estado_v6.1": "T₂ = (1.567×10⁴)·J^0.831·λ^(-0.843)·γ^(-0.766)·T^(-0.261), R²=0.988 (FMO 7 sítios)",
+          "change_type": "REFINED",
+          "data_refinamento": "2026-08-12",
+          "razao_refinamento": "Re-derivação a partir do Hamiltoniano FMO completo (375 combinações)"
+        },
+        "sistema": "B (P-RESP-001 v0.3: prompt v0.2 + validator)"
+      }
+    },
+    "provenance_log": {
+      "B1": [
+        {
+          "chunk_id": "CORPUS-005#chunk_001",
+          "exists_in_corpus": true,
+          "was_retrieved": true,
+          "is_valid": true,
+          "action": "PRESERVAR"
+        }
+      ],
+      "B2": [
+        {
+          "chunk_id": "CORPUS-005#chunk_001",
+          "exists_in_corpus": true,
+          "was_retrieved": true,
+          "is_valid": true,
+          "action": "PRESERVAR"
+        }
+      ],
+      "B3": [
+        {
+          "chunk_id": "CORPUS-004#p3_01",
+          "exists_in_corpus": true,
+          "was_retrieved": true,
+          "is_valid": true,
+          "action": "PRESERVAR"
+        },
+        {
+          "chunk_id": "CORPUS-004#p2_02",
+          "exists_in_corpus": true,
+          "was_retrieved": true,
+          "is_valid": true,
+          "action": "PRESERVAR"
+        }
+      ],
+      "B4": [],
+      "B5": [
+        {
+          "chunk_id": "CORPUS-005#chunk_001",
+          "exists_in_corpus": true,
+          "was_retrieved": true,
+          "is_valid": true,
+          "action": "PRESERVAR"
+        }
+      ],
+      "B6": [],
+      "B7": [
+        {
+          "chunk_id": "CORPUS-004#p3_01",
+          "exists_in_corpus": true,
+          "was_retrieved": true,
+          "is_valid": true,
+          "action": "PRESERVAR"
+        },
+        {
+          "chunk_id": "CORPUS-004#p1_03",
+          "exists_in_corpus": true,
+          "was_retrieved": true,
+          "is_valid": true,
+          "action": "PRESERVAR"
+        },
+        {
+          "chunk_id": "CORPUS-004#p1_01",
+          "exists_in_corpus": true,
+          "was_retrieved": true,
+          "is_valid": true,
+          "action": "PRESERVAR"
+        }
+      ]
+    }
+  },
+  "criteria_evaluation": {
+    "1_zero_provenance_inventada": true,
+    "2_B5_sem_id_inexistente": true,
+    "3_nenhum_id_real_nao_recuperado": true,
+    "4_B6_respeita_ausencia": true,
+    "5_H1_PASS_em_todos": true,
+    "6_B2_B4_nao_regrediram": true,
+    "7_B1_B3_FAIL_SYSTEM_nao_mascarado": true
+  },
+  "pass_count": 7,
+  "total_count": 7,
+  "verdict": "P-RESP-001 v0.3 APROVADO",
+  "decision": "MVP ESTABILIZADO — Passo 6 (Dify) liberado"
+}

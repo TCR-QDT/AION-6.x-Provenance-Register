@@ -1,0 +1,335 @@
+{
+  "metadata": {
+    "experiment": "AION-6.2 Etapas 6.2.3-6.2.5 — Experimentos B, C, D",
+    "timestamp": "2026-08-17T22:34:45+00:00",
+    "author_structure": "Edson C. Nascimento (Projetista Master)",
+    "author_implementation": "IA Curadora"
+  },
+  "experiment_B_normalization": {
+    "description": "Normalização matemática (β→beta, ×→*, etc.)",
+    "document_preservation": "Documento-fonte PRESERVADO; apenas representação experimental normalizada",
+    "result": {
+      "experiment": "B (Normalização)",
+      "runs": [
+        {
+          "run_idx": 1,
+          "top3_chunks": [
+            {
+              "rank": 1,
+              "chunk_id": "CORPUS-011#p4_04",
+              "score": 0.15107532944851396,
+              "corpus_id": "CORPUS-011"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "CORPUS-005#chunk_001",
+              "score": 0.1172833863792705,
+              "corpus_id": "CORPUS-005"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "CORPUS-003#p3_02",
+              "score": 0.11519689426488514,
+              "corpus_id": "CORPUS-003"
+            }
+          ],
+          "hit_top3": false,
+          "hit_top5": false,
+          "expected_rank": null
+        },
+        {
+          "run_idx": 2,
+          "top3_chunks": [
+            {
+              "rank": 1,
+              "chunk_id": "CORPUS-011#p4_04",
+              "score": 0.15107532944851396,
+              "corpus_id": "CORPUS-011"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "CORPUS-005#chunk_001",
+              "score": 0.1172833863792705,
+              "corpus_id": "CORPUS-005"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "CORPUS-003#p3_02",
+              "score": 0.11519689426488514,
+              "corpus_id": "CORPUS-003"
+            }
+          ],
+          "hit_top3": false,
+          "hit_top5": false,
+          "expected_rank": null
+        },
+        {
+          "run_idx": 3,
+          "top3_chunks": [
+            {
+              "rank": 1,
+              "chunk_id": "CORPUS-011#p4_04",
+              "score": 0.15107532944851396,
+              "corpus_id": "CORPUS-011"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "CORPUS-005#chunk_001",
+              "score": 0.1172833863792705,
+              "corpus_id": "CORPUS-005"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "CORPUS-003#p3_02",
+              "score": 0.11519689426488514,
+              "corpus_id": "CORPUS-003"
+            }
+          ],
+          "hit_top3": false,
+          "hit_top5": false,
+          "expected_rank": null
+        }
+      ],
+      "n_runs": 3,
+      "hits_top3": 0,
+      "hits_top5": 0,
+      "retrieval_hit_rate": 0.0,
+      "deterministic": true,
+      "B1_status": "FAIL-SYSTEM"
+    }
+  },
+  "experiment_C_chunking": {
+    "description": "Chunking matemático (preservar fórmulas como unidades)",
+    "document_preservation": "Documento-fonte PRESERVADO; apenas boundaries de chunk alterados",
+    "result": {
+      "experiment": "C (Chunking)",
+      "runs": [
+        {
+          "run_idx": 1,
+          "top3_chunks": [
+            {
+              "rank": 1,
+              "chunk_id": "CORPUS-011#p3_04#math_03",
+              "score": 0.3051125774721778,
+              "corpus_id": "CORPUS-011"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "CORPUS-003#p10_01#math_01",
+              "score": 0.13114392894731217,
+              "corpus_id": "CORPUS-003"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "CORPUS-011#p4_04",
+              "score": 0.12460344242743138,
+              "corpus_id": "CORPUS-011"
+            }
+          ],
+          "hit_top3": false,
+          "hit_top5": false,
+          "expected_rank": null
+        },
+        {
+          "run_idx": 2,
+          "top3_chunks": [
+            {
+              "rank": 1,
+              "chunk_id": "CORPUS-011#p3_04#math_03",
+              "score": 0.3051125774721778,
+              "corpus_id": "CORPUS-011"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "CORPUS-003#p10_01#math_01",
+              "score": 0.13114392894731217,
+              "corpus_id": "CORPUS-003"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "CORPUS-011#p4_04",
+              "score": 0.12460344242743138,
+              "corpus_id": "CORPUS-011"
+            }
+          ],
+          "hit_top3": false,
+          "hit_top5": false,
+          "expected_rank": null
+        },
+        {
+          "run_idx": 3,
+          "top3_chunks": [
+            {
+              "rank": 1,
+              "chunk_id": "CORPUS-011#p3_04#math_03",
+              "score": 0.3051125774721778,
+              "corpus_id": "CORPUS-011"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "CORPUS-003#p10_01#math_01",
+              "score": 0.13114392894731217,
+              "corpus_id": "CORPUS-003"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "CORPUS-011#p4_04",
+              "score": 0.12460344242743138,
+              "corpus_id": "CORPUS-011"
+            }
+          ],
+          "hit_top3": false,
+          "hit_top5": false,
+          "expected_rank": null
+        }
+      ],
+      "n_runs": 3,
+      "hits_top3": 0,
+      "hits_top5": 0,
+      "retrieval_hit_rate": 0.0,
+      "deterministic": true,
+      "B1_status": "FAIL-SYSTEM"
+    }
+  },
+  "experiment_D_tokenization": {
+    "description": "Token_pattern estendido para símbolos matemáticos",
+    "document_preservation": "Documento-fonte PRESERVADO; apenas token_pattern alterado",
+    "result": {
+      "experiment": "D (Tokenização)",
+      "runs": [
+        {
+          "run_idx": 1,
+          "top3_chunks": [
+            {
+              "rank": 1,
+              "chunk_id": "CORPUS-011#p4_04",
+              "score": 0.15952191677349759,
+              "corpus_id": "CORPUS-011"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "CORPUS-003#p3_02",
+              "score": 0.12525318418415232,
+              "corpus_id": "CORPUS-003"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "CORPUS-003#p8_02",
+              "score": 0.12333567268894698,
+              "corpus_id": "CORPUS-003"
+            }
+          ],
+          "hit_top3": false,
+          "hit_top5": false,
+          "expected_rank": null
+        },
+        {
+          "run_idx": 2,
+          "top3_chunks": [
+            {
+              "rank": 1,
+              "chunk_id": "CORPUS-011#p4_04",
+              "score": 0.15952191677349759,
+              "corpus_id": "CORPUS-011"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "CORPUS-003#p3_02",
+              "score": 0.12525318418415232,
+              "corpus_id": "CORPUS-003"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "CORPUS-003#p8_02",
+              "score": 0.12333567268894698,
+              "corpus_id": "CORPUS-003"
+            }
+          ],
+          "hit_top3": false,
+          "hit_top5": false,
+          "expected_rank": null
+        },
+        {
+          "run_idx": 3,
+          "top3_chunks": [
+            {
+              "rank": 1,
+              "chunk_id": "CORPUS-011#p4_04",
+              "score": 0.15952191677349759,
+              "corpus_id": "CORPUS-011"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "CORPUS-003#p3_02",
+              "score": 0.12525318418415232,
+              "corpus_id": "CORPUS-003"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "CORPUS-003#p8_02",
+              "score": 0.12333567268894698,
+              "corpus_id": "CORPUS-003"
+            }
+          ],
+          "hit_top3": false,
+          "hit_top5": false,
+          "expected_rank": null
+        }
+      ],
+      "n_runs": 3,
+      "hits_top3": 0,
+      "hits_top5": 0,
+      "retrieval_hit_rate": 0.0,
+      "deterministic": true,
+      "B1_status": "FAIL-SYSTEM"
+    }
+  },
+  "comparison": {
+    "A (Controle)": {
+      "intervention": "NENHUMA (TF-IDF atual)",
+      "hits_top3": 0,
+      "retrieval_hit_rate": 0.0,
+      "B1_status": "FAIL-SYSTEM",
+      "deterministic": true
+    },
+    "B (Normalização)": {
+      "intervention": "Normalização matemática (β→beta, ×→*)",
+      "hits_top3": 0,
+      "retrieval_hit_rate": 0.0,
+      "B1_status": "FAIL-SYSTEM",
+      "deterministic": true
+    },
+    "C (Chunking)": {
+      "intervention": "Chunking matemático (preservar fórmulas)",
+      "hits_top3": 0,
+      "retrieval_hit_rate": 0.0,
+      "B1_status": "FAIL-SYSTEM",
+      "deterministic": true
+    },
+    "D (Tokenização)": {
+      "intervention": "Token_pattern estendido (símbolos matemáticos)",
+      "hits_top3": 0,
+      "retrieval_hit_rate": 0.0,
+      "B1_status": "FAIL-SYSTEM",
+      "deterministic": true
+    }
+  },
+  "best_arm": {
+    "name": "A (Controle)",
+    "data": {
+      "intervention": "NENHUMA (TF-IDF atual)",
+      "hits_top3": 0,
+      "retrieval_hit_rate": 0.0,
+      "B1_status": "FAIL-SYSTEM",
+      "deterministic": true
+    }
+  },
+  "next_step": "6.2.7 — Rebenchmark B1-B7 da melhor intervenção",
+  "rules_preserved": [
+    "Corpus v1.3.0: FROZEN",
+    "GraphRAG: FROZEN",
+    "P-RESP-001 v0.3: FROZEN",
+    "AION-EVAL-002 v0.2: FROZEN",
+    "Documento-fonte: PRESERVADO em todos os braços"
+  ]
+}

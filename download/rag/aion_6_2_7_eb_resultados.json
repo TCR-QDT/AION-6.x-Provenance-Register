@@ -1,0 +1,622 @@
+{
+  "metadata": {
+    "experiment": "AION-6.2.7 — Experimento Combinado E+B",
+    "timestamp": "2026-08-17T22:46:29+00:00",
+    "author_structure": "Edson C. Nascimento (Projetista Master)",
+    "author_implementation": "IA Curadora"
+  },
+  "experiment_eb": {
+    "description": "Stopword filtering (E) + Normalização matemática (B)",
+    "document_preservation": "Documento-fonte PRESERVADO; apenas representação experimental alterada",
+    "interventions_applied": [
+      "E: stopword filtering",
+      "B: normalização matemática (β→beta, ×→*)"
+    ],
+    "result": {
+      "top_k_diagnosis": {
+        "question": "Qual é a fonte exata da afirmação de que a métrica TCR é C = I × S × H^β?",
+        "expected_prefix": "CORPUS-002#p1",
+        "hits_by_k": {
+          "1": false,
+          "3": false,
+          "5": false,
+          "10": false,
+          "20": false
+        },
+        "found_at_rank": null,
+        "corpus_002_chunks_retrieved": [
+          {
+            "rank": 10,
+            "chunk_id": "CORPUS-002#p2_04",
+            "score": 0.04454943504736196
+          },
+          {
+            "rank": 14,
+            "chunk_id": "CORPUS-002#p6_03",
+            "score": 0.04081956072485868
+          },
+          {
+            "rank": 19,
+            "chunk_id": "CORPUS-002#p2_03",
+            "score": 0.0353344461385277
+          }
+        ],
+        "top1": {
+          "chunk_id": "CORPUS-005#chunk_001",
+          "score": 0.0975113654288034,
+          "corpus_id": "CORPUS-005"
+        },
+        "top10_all": [
+          {
+            "rank": 1,
+            "chunk_id": "CORPUS-005#chunk_001",
+            "score": 0.0975113654288034,
+            "corpus_id": "CORPUS-005"
+          },
+          {
+            "rank": 2,
+            "chunk_id": "CORPUS-003#p3_03",
+            "score": 0.07221389040489684,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 3,
+            "chunk_id": "CORPUS-003#p10_01",
+            "score": 0.060953254206617256,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 4,
+            "chunk_id": "CORPUS-003#p8_01",
+            "score": 0.06053985549737985,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 5,
+            "chunk_id": "CORPUS-011#p4_04",
+            "score": 0.05877899378568768,
+            "corpus_id": "CORPUS-011"
+          },
+          {
+            "rank": 6,
+            "chunk_id": "CORPUS-011#p4_03",
+            "score": 0.054454642896425154,
+            "corpus_id": "CORPUS-011"
+          },
+          {
+            "rank": 7,
+            "chunk_id": "CORPUS-003#p8_02",
+            "score": 0.053985669398433224,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 8,
+            "chunk_id": "CORPUS-011#p3_03",
+            "score": 0.052261227357299406,
+            "corpus_id": "CORPUS-011"
+          },
+          {
+            "rank": 9,
+            "chunk_id": "CORPUS-006#p4_03",
+            "score": 0.05047093724408125,
+            "corpus_id": "CORPUS-006"
+          },
+          {
+            "rank": 10,
+            "chunk_id": "CORPUS-002#p2_04",
+            "score": 0.04454943504736196,
+            "corpus_id": "CORPUS-002"
+          }
+        ]
+      },
+      "runs": [
+        {
+          "run_idx": 1,
+          "top3_chunks": [
+            {
+              "rank": 1,
+              "chunk_id": "CORPUS-005#chunk_001",
+              "score": 0.0975113654288034
+            },
+            {
+              "rank": 2,
+              "chunk_id": "CORPUS-003#p3_03",
+              "score": 0.07221389040489684
+            },
+            {
+              "rank": 3,
+              "chunk_id": "CORPUS-003#p10_01",
+              "score": 0.060953254206617256
+            }
+          ],
+          "hit_top3": false
+        },
+        {
+          "run_idx": 2,
+          "top3_chunks": [
+            {
+              "rank": 1,
+              "chunk_id": "CORPUS-005#chunk_001",
+              "score": 0.0975113654288034
+            },
+            {
+              "rank": 2,
+              "chunk_id": "CORPUS-003#p3_03",
+              "score": 0.07221389040489684
+            },
+            {
+              "rank": 3,
+              "chunk_id": "CORPUS-003#p10_01",
+              "score": 0.060953254206617256
+            }
+          ],
+          "hit_top3": false
+        },
+        {
+          "run_idx": 3,
+          "top3_chunks": [
+            {
+              "rank": 1,
+              "chunk_id": "CORPUS-005#chunk_001",
+              "score": 0.0975113654288034
+            },
+            {
+              "rank": 2,
+              "chunk_id": "CORPUS-003#p3_03",
+              "score": 0.07221389040489684
+            },
+            {
+              "rank": 3,
+              "chunk_id": "CORPUS-003#p10_01",
+              "score": 0.060953254206617256
+            }
+          ],
+          "hit_top3": false
+        }
+      ],
+      "hits_top3": 0,
+      "retrieval_hit_rate": 0.0,
+      "deterministic": true,
+      "B1_status_retrieval": "FAIL-SYSTEM"
+    }
+  },
+  "comparison_a_e_eb": {
+    "A (Controle)": {
+      "intervention": "TF-IDF atual",
+      "hits_by_k": {
+        "1": false,
+        "3": false,
+        "5": false,
+        "10": false,
+        "20": false
+      },
+      "found_at_rank": null,
+      "top1": {
+        "chunk_id": "CORPUS-011#p4_04",
+        "score": 0.1562777391196012
+      }
+    },
+    "E (Stopwords)": {
+      "intervention": "Stopword filtering",
+      "hits_by_k": {
+        "1": false,
+        "3": false,
+        "5": false,
+        "10": false,
+        "20": true
+      },
+      "found_at_rank": 18,
+      "top1": {
+        "chunk_id": "CORPUS-005#chunk_001",
+        "score": 0.08877049184118459
+      }
+    },
+    "E+B (Stopwords + Normalização)": {
+      "intervention": "Stopword filtering + Normalização matemática",
+      "hits_by_k": {
+        "1": false,
+        "3": false,
+        "5": false,
+        "10": false,
+        "20": false
+      },
+      "found_at_rank": null,
+      "top1": {
+        "chunk_id": "CORPUS-005#chunk_001",
+        "score": 0.0975113654288034,
+        "corpus_id": "CORPUS-005"
+      }
+    }
+  },
+  "b2_b7_regression_test": {
+    "B2": {
+      "test_id": "B2",
+      "categoria": "Temporalidade",
+      "eval_002_v02": {
+        "categories": {
+          "R1": {
+            "status": "N/A",
+            "reason": "Gabarito não especifica chunk_id",
+            "classification": "N/A"
+          },
+          "R2": {
+            "status": "PASS",
+            "reason": "Contexto contém informação (max score: 0.113)",
+            "classification": "N/A"
+          },
+          "P1": {
+            "status": "N/A",
+            "reason": "Gabarito não especifica documento",
+            "classification": "N/A"
+          },
+          "P2": {
+            "status": "PASS",
+            "reason": "Citação estruturada de chunk_id: ['CORPUS-005#chunk_001', 'CORPUS-002']",
+            "classification": "N/A"
+          },
+          "T1": {
+            "status": "PASS",
+            "reason": "Múltiplas referências temporais: {'10 de agosto', 'v6.1', 'v6.2', '12 de agosto'}",
+            "classification": "N/A"
+          },
+          "E1": {
+            "status": "PASS",
+            "reason": "Tags formais aplicadas: [E]=2, [I]=0, [H]=0",
+            "classification": "N/A"
+          },
+          "N1": {
+            "status": "N/A",
+            "reason": "N1 não aplicável",
+            "classification": "N/A"
+          },
+          "C1": {
+            "status": "N/A",
+            "reason": "C1 não aplicável",
+            "classification": "N/A"
+          },
+          "S1": {
+            "status": "N/A",
+            "reason": "S1 não aplicável",
+            "classification": "N/A"
+          },
+          "H1": {
+            "status": "PASS-SEMANTIC",
+            "reason": "Sem afirmações categóricas não suportadas",
+            "classification": "N/A"
+          }
+        },
+        "avaliacao_final": "PASS-SEMANTIC",
+        "justificativa": "PASS com 1 categorias semânticas"
+      },
+      "invalid_count": 0,
+      "valid_count": 1,
+      "evidence_status": "EVIDENCE_VALID"
+    },
+    "B3": {
+      "test_id": "B3",
+      "categoria": "Revogação",
+      "eval_002_v02": {
+        "categories": {
+          "R1": {
+            "status": "N/A",
+            "reason": "Gabarito não especifica chunk_id",
+            "classification": "N/A"
+          },
+          "R2": {
+            "status": "PASS",
+            "reason": "Contexto contém informação (max score: 0.316)",
+            "classification": "N/A"
+          },
+          "P1": {
+            "status": "N/A",
+            "reason": "Gabarito não especifica documento",
+            "classification": "N/A"
+          },
+          "P2": {
+            "status": "PASS",
+            "reason": "Citação estruturada de chunk_id: ['CORPUS-004#p2_02', 'CORPUS-004#p2_02', 'CORPUS-004#p2_02']",
+            "classification": "N/A"
+          },
+          "T1": {
+            "status": "FAIL",
+            "reason": "Revogação não temporalmente situada",
+            "classification": "SYSTEM"
+          },
+          "E1": {
+            "status": "PASS",
+            "reason": "Tags formais aplicadas: [E]=5, [I]=0, [H]=0",
+            "classification": "N/A"
+          },
+          "N1": {
+            "status": "N/A",
+            "reason": "N1 não aplicável",
+            "classification": "N/A"
+          },
+          "C1": {
+            "status": "N/A",
+            "reason": "C1 não aplicável",
+            "classification": "N/A"
+          },
+          "S1": {
+            "status": "N/A",
+            "reason": "S1 não aplicável",
+            "classification": "N/A"
+          },
+          "H1": {
+            "status": "PASS-SEMANTIC",
+            "reason": "Sem afirmações categóricas não suportadas",
+            "classification": "N/A"
+          }
+        },
+        "avaliacao_final": "FAIL-SYSTEM",
+        "justificativa": "Falhas críticas (classificação SYSTEM): ['T1']"
+      },
+      "invalid_count": 0,
+      "valid_count": 2,
+      "evidence_status": "EVIDENCE_VALID"
+    },
+    "B4": {
+      "test_id": "B4",
+      "categoria": "Ausência",
+      "eval_002_v02": {
+        "categories": {
+          "R1": {
+            "status": "N/A",
+            "reason": "Gabarito não especifica chunk_id",
+            "classification": "N/A"
+          },
+          "R2": {
+            "status": "N/A",
+            "reason": "Pergunta sobre ausência",
+            "classification": "N/A"
+          },
+          "P1": {
+            "status": "N/A",
+            "reason": "Gabarito não especifica documento",
+            "classification": "N/A"
+          },
+          "P2": {
+            "status": "FAIL",
+            "reason": "Sem citação granular",
+            "classification": "SYSTEM"
+          },
+          "T1": {
+            "status": "N/A",
+            "reason": "T1 não aplicável",
+            "classification": "N/A"
+          },
+          "E1": {
+            "status": "FAIL",
+            "reason": "Sem distinção [E]/[I]/[H]",
+            "classification": "SYSTEM"
+          },
+          "N1": {
+            "status": "PASS",
+            "reason": "Declara ausência: \"informação não encontrada\"",
+            "classification": "N/A"
+          },
+          "C1": {
+            "status": "N/A",
+            "reason": "C1 não aplicável",
+            "classification": "N/A"
+          },
+          "S1": {
+            "status": "N/A",
+            "reason": "S1 não aplicável",
+            "classification": "N/A"
+          },
+          "H1": {
+            "status": "PASS-SEMANTIC",
+            "reason": "Sem afirmações categóricas não suportadas",
+            "classification": "N/A"
+          }
+        },
+        "avaliacao_final": "PARTIAL",
+        "justificativa": "Critérios críticos PASS, falhas não-críticas"
+      },
+      "invalid_count": 0,
+      "valid_count": 0,
+      "evidence_status": "EVIDENCE_ABSENT"
+    },
+    "B5": {
+      "test_id": "B5",
+      "categoria": "Contradição",
+      "eval_002_v02": {
+        "categories": {
+          "R1": {
+            "status": "N/A",
+            "reason": "Gabarito não especifica chunk_id",
+            "classification": "N/A"
+          },
+          "R2": {
+            "status": "PASS",
+            "reason": "Contexto contém informação (max score: 0.213)",
+            "classification": "N/A"
+          },
+          "P1": {
+            "status": "N/A",
+            "reason": "Gabarito não especifica documento",
+            "classification": "N/A"
+          },
+          "P2": {
+            "status": "PASS",
+            "reason": "Citação estruturada de chunk_id: ['CORPUS-005#chunk_001', 'CORPUS-005#chunk_001', 'CORPUS-005#chunk_001']",
+            "classification": "N/A"
+          },
+          "T1": {
+            "status": "N/A",
+            "reason": "T1 não aplicável",
+            "classification": "N/A"
+          },
+          "E1": {
+            "status": "PASS",
+            "reason": "Tags formais aplicadas: [E]=8, [I]=1, [H]=0",
+            "classification": "N/A"
+          },
+          "N1": {
+            "status": "N/A",
+            "reason": "N1 não aplicável",
+            "classification": "N/A"
+          },
+          "C1": {
+            "status": "PASS",
+            "reason": "Contradição identificada entre {'002', '005'}",
+            "classification": "N/A"
+          },
+          "S1": {
+            "status": "N/A",
+            "reason": "S1 não aplicável",
+            "classification": "N/A"
+          },
+          "H1": {
+            "status": "PASS-SEMANTIC",
+            "reason": "Sem afirmações categóricas não suportadas",
+            "classification": "N/A"
+          }
+        },
+        "avaliacao_final": "PASS-SEMANTIC",
+        "justificativa": "PASS com 1 categorias semânticas"
+      },
+      "invalid_count": 0,
+      "valid_count": 1,
+      "evidence_status": "EVIDENCE_VALID"
+    },
+    "B6": {
+      "test_id": "B6",
+      "categoria": "Lacuna",
+      "eval_002_v02": {
+        "categories": {
+          "R1": {
+            "status": "N/A",
+            "reason": "Gabarito não especifica chunk_id",
+            "classification": "N/A"
+          },
+          "R2": {
+            "status": "PASS",
+            "reason": "Contexto contém informação (max score: 0.118)",
+            "classification": "N/A"
+          },
+          "P1": {
+            "status": "N/A",
+            "reason": "Gabarito não especifica documento",
+            "classification": "N/A"
+          },
+          "P2": {
+            "status": "FAIL",
+            "reason": "Sem citação granular",
+            "classification": "SYSTEM"
+          },
+          "T1": {
+            "status": "N/A",
+            "reason": "T1 não aplicável",
+            "classification": "N/A"
+          },
+          "E1": {
+            "status": "FAIL",
+            "reason": "Sem distinção [E]/[I]/[H]",
+            "classification": "SYSTEM"
+          },
+          "N1": {
+            "status": "PASS",
+            "reason": "Declara ausência: \"informação não encontrada\"",
+            "classification": "N/A"
+          },
+          "C1": {
+            "status": "N/A",
+            "reason": "C1 não aplicável",
+            "classification": "N/A"
+          },
+          "S1": {
+            "status": "N/A",
+            "reason": "S1 não aplicável",
+            "classification": "N/A"
+          },
+          "H1": {
+            "status": "PASS",
+            "reason": "Incerteza marcada explicitamente",
+            "classification": "N/A"
+          }
+        },
+        "avaliacao_final": "PARTIAL",
+        "justificativa": "Critérios críticos PASS, falhas não-críticas"
+      },
+      "invalid_count": 0,
+      "valid_count": 0,
+      "evidence_status": "EVIDENCE_ABSENT"
+    },
+    "B7": {
+      "test_id": "B7",
+      "categoria": "Síntese",
+      "eval_002_v02": {
+        "categories": {
+          "R1": {
+            "status": "N/A",
+            "reason": "Gabarito não especifica chunk_id",
+            "classification": "N/A"
+          },
+          "R2": {
+            "status": "PASS",
+            "reason": "Contexto contém informação (max score: 0.151)",
+            "classification": "N/A"
+          },
+          "P1": {
+            "status": "N/A",
+            "reason": "Gabarito não especifica documento",
+            "classification": "N/A"
+          },
+          "P2": {
+            "status": "PASS",
+            "reason": "Citação estruturada de chunk_id: ['CORPUS-004#p1_03', 'CORPUS-004#p1_03', 'CORPUS-004#p1_03']",
+            "classification": "N/A"
+          },
+          "T1": {
+            "status": "PASS",
+            "reason": "Versões v6.0 e v6.1 distinguídas",
+            "classification": "N/A"
+          },
+          "E1": {
+            "status": "PASS",
+            "reason": "Tags formais aplicadas: [E]=6, [I]=0, [H]=0",
+            "classification": "N/A"
+          },
+          "N1": {
+            "status": "N/A",
+            "reason": "N1 não aplicável",
+            "classification": "N/A"
+          },
+          "C1": {
+            "status": "N/A",
+            "reason": "C1 não aplicável",
+            "classification": "N/A"
+          },
+          "S1": {
+            "status": "PASS-SEMANTIC",
+            "reason": "Distingue dímero de FMO 7-sítios",
+            "classification": "N/A"
+          },
+          "H1": {
+            "status": "PASS",
+            "reason": "Incerteza marcada explicitamente",
+            "classification": "N/A"
+          }
+        },
+        "avaliacao_final": "PASS-SEMANTIC",
+        "justificativa": "PASS com 1 categorias semânticas"
+      },
+      "invalid_count": 0,
+      "valid_count": 3,
+      "evidence_status": "EVIDENCE_VALID"
+    }
+  },
+  "decision_tree": {
+    "level": 0,
+    "level_name": "FALHA",
+    "b1_status": "FAIL-SYSTEM",
+    "verdict": "B1 continua FAIL-SYSTEM — chunk-alvo não recuperado em Top-20",
+    "can_promote": false,
+    "no_regression": true,
+    "regressions": [],
+    "all_provenance_valid_b2_b7": true,
+    "final_decision": "B1 NOT RESOLVED"
+  }
+}

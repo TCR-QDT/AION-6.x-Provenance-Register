@@ -1,0 +1,210 @@
+{
+  "timestamp": "2026-08-17T03:34:02+00:00",
+  "protocol": "AION-EVAL-001 v0.1.0",
+  "passo4_reevaluated": {
+    "P1": {
+      "test_id": "P1",
+      "has_chunk_citation": true,
+      "declares_absence": false,
+      "identifies_contradiction": false,
+      "has_double_citation": true,
+      "corpus_mentions": [
+        "001",
+        "003",
+        "005"
+      ],
+      "concepts_found": [
+        "coerência relacional",
+        "integração",
+        "simetria",
+        "entropia",
+        "functor",
+        "yoneda",
+        "tensor",
+        "einstein",
+        "dissipativa",
+        "conjectura"
+      ],
+      "concepts_coverage": "10/12",
+      "docs_found": [
+        "corpus-001",
+        "corpus-003",
+        "corpus-005"
+      ],
+      "docs_coverage": "3/5",
+      "category": "PASS",
+      "justification": "Lista 10 conceitos em 3 documentos, mas com cobertura incompleta.",
+      "category_definition": "Resposta correta com evidência documental direta"
+    },
+    "P2": {
+      "test_id": "P2",
+      "has_chunk_citation": true,
+      "declares_absence": false,
+      "identifies_contradiction": false,
+      "has_double_citation": true,
+      "corpus_mentions": [
+        "002",
+        "003",
+        "005"
+      ],
+      "category": "PASS-ABSENCE",
+      "justification": "Sistema indicou ausência, embora com formulação diferente.",
+      "category_definition": "Resposta correta que declara ausência de informação no corpus"
+    },
+    "P3": {
+      "test_id": "P3",
+      "has_chunk_citation": true,
+      "declares_absence": false,
+      "identifies_contradiction": true,
+      "has_double_citation": true,
+      "corpus_mentions": [
+        "002",
+        "005"
+      ],
+      "limitation_indicators_found": [
+        "inconsistência",
+        "fixtures sintét",
+        "synthetic",
+        "ablação"
+      ],
+      "category": "PASS-PROVENANCE",
+      "justification": "Lista limitações com citação a chunks. Indicadores: ['inconsistência', 'fixtures sintét', 'synthetic', 'ablação'].",
+      "category_definition": "Resposta correta que inclui referência à fonte (documento, seção, página)"
+    },
+    "P4": {
+      "test_id": "P4",
+      "has_chunk_citation": true,
+      "declares_absence": false,
+      "identifies_contradiction": true,
+      "has_double_citation": true,
+      "corpus_mentions": [
+        "001",
+        "002",
+        "003",
+        "004",
+        "005"
+      ],
+      "contradictions_identified": [
+        "C1 (Versão)",
+        "C2 (P3 results)",
+        "C3 (P1/P2 datasets)",
+        "C4 (Paper C status)"
+      ],
+      "contradictions_coverage": "4/4",
+      "category": "PASS-PROVENANCE",
+      "justification": "Identificou 4/4 contradições com citação dupla de documentos.",
+      "category_definition": "Resposta correta que inclui referência à fonte (documento, seção, página)"
+    }
+  },
+  "passo5_reevaluated": {
+    "P1": {
+      "test_id": "P1",
+      "has_chunk_citation": true,
+      "declares_absence": false,
+      "identifies_contradiction": false,
+      "has_double_citation": true,
+      "corpus_mentions": [
+        "001",
+        "003",
+        "005"
+      ],
+      "concepts_found": [
+        "coerência relacional",
+        "integração",
+        "simetria",
+        "entropia",
+        "functor",
+        "yoneda",
+        "tensor",
+        "einstein",
+        "conjectura"
+      ],
+      "concepts_coverage": "9/12",
+      "docs_found": [
+        "corpus-001",
+        "corpus-003",
+        "corpus-005"
+      ],
+      "docs_coverage": "3/5",
+      "category": "PASS",
+      "justification": "Lista 9 conceitos em 3 documentos, mas com cobertura incompleta.",
+      "category_definition": "Resposta correta com evidência documental direta"
+    },
+    "P2": {
+      "test_id": "P2",
+      "has_chunk_citation": true,
+      "declares_absence": true,
+      "identifies_contradiction": false,
+      "has_double_citation": true,
+      "corpus_mentions": [
+        "002",
+        "003",
+        "004",
+        "005"
+      ],
+      "category": "PASS-ABSENCE",
+      "justification": "Sistema declarou corretamente a ausência da informação no corpus.",
+      "category_definition": "Resposta correta que declara ausência de informação no corpus"
+    },
+    "P3": {
+      "test_id": "P3",
+      "has_chunk_citation": true,
+      "declares_absence": false,
+      "identifies_contradiction": true,
+      "has_double_citation": true,
+      "corpus_mentions": [
+        "002",
+        "005"
+      ],
+      "limitation_indicators_found": [
+        "inconsistência",
+        "fixtures sintét",
+        "synthetic",
+        "ablação"
+      ],
+      "category": "PASS-PROVENANCE",
+      "justification": "Lista limitações com citação a chunks. Indicadores: ['inconsistência', 'fixtures sintét', 'synthetic', 'ablação'].",
+      "category_definition": "Resposta correta que inclui referência à fonte (documento, seção, página)"
+    },
+    "P4": {
+      "test_id": "P4",
+      "has_chunk_citation": true,
+      "declares_absence": false,
+      "identifies_contradiction": true,
+      "has_double_citation": true,
+      "corpus_mentions": [
+        "001",
+        "002",
+        "004",
+        "005"
+      ],
+      "contradictions_identified": [
+        "C1 (Versão)",
+        "C2 (P3 results)",
+        "C3 (P1/P2 datasets)",
+        "C4 (Paper C status)"
+      ],
+      "contradictions_coverage": "4/4",
+      "category": "PASS-PROVENANCE",
+      "justification": "Identificou 4/4 contradições com citação dupla de documentos.",
+      "category_definition": "Resposta correta que inclui referência à fonte (documento, seção, página)"
+    }
+  },
+  "summary": {
+    "passo4_pass_count": 4,
+    "passo5_pass_count": 4,
+    "passo4_categories": [
+      "PASS",
+      "PASS-ABSENCE",
+      "PASS-PROVENANCE",
+      "PASS-PROVENANCE"
+    ],
+    "passo5_categories": [
+      "PASS",
+      "PASS-ABSENCE",
+      "PASS-PROVENANCE",
+      "PASS-PROVENANCE"
+    ]
+  },
+  "differences_p4_to_p5": []
+}

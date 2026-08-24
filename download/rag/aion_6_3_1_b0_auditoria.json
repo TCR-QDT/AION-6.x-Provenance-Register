@@ -1,0 +1,26 @@
+{
+  "metadata": {
+    "experiment": "AION-6.3.1-B.0 — Auditoria prévia obrigatória",
+    "timestamp": "2026-08-21T14:55:10+00:00"
+  },
+  "comparison": {
+    "b1_top1_baseline_630": "CORPUS-005#chunk_001",
+    "b1_top1_reproduction_a1": "CORPUS-005#chunk_001",
+    "b2_top1_actual": "CORPUS-005#chunk_001",
+    "b1_top1_with_en_translation": "CORPUS-006#p1_01",
+    "b2_retrieval_deterministic": true,
+    "query_hash": "f5b02dd52186b8f0e37ffe5a1a90fe8b943a7f607c507194b79e856c857ceb33",
+    "context_hash": "33063db42ffc4dc0e744cb3e8f57f4fa46bebaac836c96a4739d8f07484b9a32",
+    "corpus_version": "v1.3.0",
+    "oracle_version": "v3"
+  },
+  "issues": [],
+  "verdict": "AUDITORIA APROVADA — contexto confirmado idêntico",
+  "action": "Prosseguir para P0/P1/P2",
+  "correction": {
+    "b1_top1_values_in_baseline_630_was": "CORPUS-005#chunk_001",
+    "b1_top1_values_should_be_for_b2": "CORPUS-005#chunk_001",
+    "b1_top1_values_should_be_for_b1": "CORPUS-006#p1_01",
+    "note": "Baseline 6.3.0 confundiu Top-1 de B1 com Top-1 de B2 no campo b1_top1_values. O RETRIEVAL estava correto; apenas a ROTULAGEM estava errada."
+  }
+}

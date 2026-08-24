@@ -1,0 +1,1554 @@
+{
+  "metadata": {
+    "experiment": "AION-6.2.6 — Diagnóstico Top-k + Experimentos E, F, G, H",
+    "timestamp": "2026-08-17T22:40:22+00:00",
+    "author_structure": "Edson C. Nascimento (Projetista Master)",
+    "author_implementation": "IA Curadora"
+  },
+  "control_top_k_diagnosis": {
+    "experiment": "A (Controle) - Top-k",
+    "top_k_diagnosis": {
+      "question": "Qual é a fonte exata da afirmação de que a métrica TCR é C = I × S × H^β?",
+      "expected_prefix": "CORPUS-002#p1",
+      "hits_by_k": {
+        "1": false,
+        "3": false,
+        "5": false,
+        "10": false,
+        "20": false
+      },
+      "found_at_rank": null,
+      "corpus_002_chunks_retrieved": [],
+      "top1": {
+        "chunk_id": "CORPUS-011#p4_04",
+        "score": 0.1562777391196012
+      },
+      "top10_all": [
+        {
+          "rank": 1,
+          "chunk_id": "CORPUS-011#p4_04",
+          "score": 0.1562777391196012,
+          "corpus_id": "CORPUS-011"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "CORPUS-003#p8_02",
+          "score": 0.13498629108882412,
+          "corpus_id": "CORPUS-003"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "CORPUS-003#p3_02",
+          "score": 0.12392522852967908,
+          "corpus_id": "CORPUS-003"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "CORPUS-003#p11_01",
+          "score": 0.11255810751482298,
+          "corpus_id": "CORPUS-003"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "CORPUS-004#p3_01",
+          "score": 0.1121163308521496,
+          "corpus_id": "CORPUS-004"
+        },
+        {
+          "rank": 6,
+          "chunk_id": "CORPUS-003#p3_03",
+          "score": 0.11185962560595197,
+          "corpus_id": "CORPUS-003"
+        },
+        {
+          "rank": 7,
+          "chunk_id": "CORPUS-003#p4_01",
+          "score": 0.11170133223543752,
+          "corpus_id": "CORPUS-003"
+        },
+        {
+          "rank": 8,
+          "chunk_id": "CORPUS-003#p3_01",
+          "score": 0.11106938648073077,
+          "corpus_id": "CORPUS-003"
+        },
+        {
+          "rank": 9,
+          "chunk_id": "CORPUS-005#chunk_001",
+          "score": 0.10956993601530572,
+          "corpus_id": "CORPUS-005"
+        },
+        {
+          "rank": 10,
+          "chunk_id": "CORPUS-003#p6_01",
+          "score": 0.10822400797335643,
+          "corpus_id": "CORPUS-003"
+        }
+      ]
+    },
+    "runs": [
+      {
+        "run_idx": 1,
+        "top3_chunks": [
+          {
+            "rank": 1,
+            "chunk_id": "CORPUS-011#p4_04",
+            "score": 0.1562777391196012
+          },
+          {
+            "rank": 2,
+            "chunk_id": "CORPUS-003#p8_02",
+            "score": 0.13498629108882412
+          },
+          {
+            "rank": 3,
+            "chunk_id": "CORPUS-003#p3_02",
+            "score": 0.12392522852967908
+          }
+        ],
+        "hit_top3": false
+      },
+      {
+        "run_idx": 2,
+        "top3_chunks": [
+          {
+            "rank": 1,
+            "chunk_id": "CORPUS-011#p4_04",
+            "score": 0.1562777391196012
+          },
+          {
+            "rank": 2,
+            "chunk_id": "CORPUS-003#p8_02",
+            "score": 0.13498629108882412
+          },
+          {
+            "rank": 3,
+            "chunk_id": "CORPUS-003#p3_02",
+            "score": 0.12392522852967908
+          }
+        ],
+        "hit_top3": false
+      },
+      {
+        "run_idx": 3,
+        "top3_chunks": [
+          {
+            "rank": 1,
+            "chunk_id": "CORPUS-011#p4_04",
+            "score": 0.1562777391196012
+          },
+          {
+            "rank": 2,
+            "chunk_id": "CORPUS-003#p8_02",
+            "score": 0.13498629108882412
+          },
+          {
+            "rank": 3,
+            "chunk_id": "CORPUS-003#p3_02",
+            "score": 0.12392522852967908
+          }
+        ],
+        "hit_top3": false
+      }
+    ],
+    "hits_top3": 0,
+    "retrieval_hit_rate": 0.0,
+    "deterministic": true,
+    "B1_status": "FAIL-SYSTEM"
+  },
+  "experiment_E_stopwords": {
+    "experiment": "E (Stopwords)",
+    "top_k_diagnosis": {
+      "question": "Qual é a fonte exata da afirmação de que a métrica TCR é C = I × S × H^β?",
+      "expected_prefix": "CORPUS-002#p1",
+      "hits_by_k": {
+        "1": false,
+        "3": false,
+        "5": false,
+        "10": false,
+        "20": true
+      },
+      "found_at_rank": 18,
+      "corpus_002_chunks_retrieved": [
+        {
+          "rank": 13,
+          "chunk_id": "CORPUS-002#p5_04",
+          "score": 0.026424307203983456
+        },
+        {
+          "rank": 16,
+          "chunk_id": "CORPUS-002#p4_04",
+          "score": 0.021910862958149365
+        },
+        {
+          "rank": 18,
+          "chunk_id": "CORPUS-002#p1_03",
+          "score": 0.021627681053257106
+        }
+      ],
+      "top1": {
+        "chunk_id": "CORPUS-005#chunk_001",
+        "score": 0.08877049184118459
+      },
+      "top10_all": [
+        {
+          "rank": 1,
+          "chunk_id": "CORPUS-005#chunk_001",
+          "score": 0.08877049184118459,
+          "corpus_id": "CORPUS-005"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "CORPUS-003#p3_03",
+          "score": 0.07413421407522858,
+          "corpus_id": "CORPUS-003"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "CORPUS-003#p8_02",
+          "score": 0.07120752659915926,
+          "corpus_id": "CORPUS-003"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "CORPUS-003#p10_01",
+          "score": 0.06901276074069174,
+          "corpus_id": "CORPUS-003"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "CORPUS-003#p8_01",
+          "score": 0.06398832635624536,
+          "corpus_id": "CORPUS-003"
+        },
+        {
+          "rank": 6,
+          "chunk_id": "CORPUS-011#p4_04",
+          "score": 0.06363892343172144,
+          "corpus_id": "CORPUS-011"
+        },
+        {
+          "rank": 7,
+          "chunk_id": "CORPUS-011#p4_03",
+          "score": 0.057326299056210714,
+          "corpus_id": "CORPUS-011"
+        },
+        {
+          "rank": 8,
+          "chunk_id": "CORPUS-011#p3_03",
+          "score": 0.056855777533441974,
+          "corpus_id": "CORPUS-011"
+        },
+        {
+          "rank": 9,
+          "chunk_id": "CORPUS-004#p1_04",
+          "score": 0.047626305724686624,
+          "corpus_id": "CORPUS-004"
+        },
+        {
+          "rank": 10,
+          "chunk_id": "CORPUS-003#p3_02",
+          "score": 0.044723143629543674,
+          "corpus_id": "CORPUS-003"
+        }
+      ]
+    },
+    "runs": [
+      {
+        "run_idx": 1,
+        "top3_chunks": [
+          {
+            "rank": 1,
+            "chunk_id": "CORPUS-005#chunk_001",
+            "score": 0.08877049184118459
+          },
+          {
+            "rank": 2,
+            "chunk_id": "CORPUS-003#p3_03",
+            "score": 0.07413421407522858
+          },
+          {
+            "rank": 3,
+            "chunk_id": "CORPUS-003#p8_02",
+            "score": 0.07120752659915926
+          }
+        ],
+        "hit_top3": false
+      },
+      {
+        "run_idx": 2,
+        "top3_chunks": [
+          {
+            "rank": 1,
+            "chunk_id": "CORPUS-005#chunk_001",
+            "score": 0.08877049184118459
+          },
+          {
+            "rank": 2,
+            "chunk_id": "CORPUS-003#p3_03",
+            "score": 0.07413421407522858
+          },
+          {
+            "rank": 3,
+            "chunk_id": "CORPUS-003#p8_02",
+            "score": 0.07120752659915926
+          }
+        ],
+        "hit_top3": false
+      },
+      {
+        "run_idx": 3,
+        "top3_chunks": [
+          {
+            "rank": 1,
+            "chunk_id": "CORPUS-005#chunk_001",
+            "score": 0.08877049184118459
+          },
+          {
+            "rank": 2,
+            "chunk_id": "CORPUS-003#p3_03",
+            "score": 0.07413421407522858
+          },
+          {
+            "rank": 3,
+            "chunk_id": "CORPUS-003#p8_02",
+            "score": 0.07120752659915926
+          }
+        ],
+        "hit_top3": false
+      }
+    ],
+    "hits_top3": 0,
+    "retrieval_hit_rate": 0.0,
+    "deterministic": true,
+    "B1_status": "FAIL-SYSTEM"
+  },
+  "experiment_F1_unigram": {
+    "experiment": "F1 (Unigram)",
+    "top_k_diagnosis": {
+      "question": "Qual é a fonte exata da afirmação de que a métrica TCR é C = I × S × H^β?",
+      "expected_prefix": "CORPUS-002#p1",
+      "hits_by_k": {
+        "1": false,
+        "3": false,
+        "5": false,
+        "10": false,
+        "20": false
+      },
+      "found_at_rank": null,
+      "corpus_002_chunks_retrieved": [],
+      "top1": {
+        "chunk_id": "CORPUS-011#p4_04",
+        "score": 0.14956062778615847
+      },
+      "top10_all": [
+        {
+          "rank": 1,
+          "chunk_id": "CORPUS-011#p4_04",
+          "score": 0.14956062778615847,
+          "corpus_id": "CORPUS-011"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "CORPUS-011#p1_01",
+          "score": 0.11212426658313042,
+          "corpus_id": "CORPUS-011"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "CORPUS-011#p4_03",
+          "score": 0.1113319751618124,
+          "corpus_id": "CORPUS-011"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "CORPUS-003#p8_02",
+          "score": 0.1071391031494185,
+          "corpus_id": "CORPUS-003"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "CORPUS-011#p3_03",
+          "score": 0.10405025173671659,
+          "corpus_id": "CORPUS-011"
+        },
+        {
+          "rank": 6,
+          "chunk_id": "CORPUS-005#chunk_001",
+          "score": 0.09364992953440955,
+          "corpus_id": "CORPUS-005"
+        },
+        {
+          "rank": 7,
+          "chunk_id": "CORPUS-003#p3_03",
+          "score": 0.08804315212165187,
+          "corpus_id": "CORPUS-003"
+        },
+        {
+          "rank": 8,
+          "chunk_id": "CORPUS-011#p4_01",
+          "score": 0.0834807499134032,
+          "corpus_id": "CORPUS-011"
+        },
+        {
+          "rank": 9,
+          "chunk_id": "CORPUS-003#p3_02",
+          "score": 0.08304697789543634,
+          "corpus_id": "CORPUS-003"
+        },
+        {
+          "rank": 10,
+          "chunk_id": "CORPUS-004#p3_01",
+          "score": 0.08119658733724382,
+          "corpus_id": "CORPUS-004"
+        }
+      ]
+    },
+    "runs": [
+      {
+        "run_idx": 1,
+        "top3_chunks": [
+          {
+            "rank": 1,
+            "chunk_id": "CORPUS-011#p4_04",
+            "score": 0.14956062778615847
+          },
+          {
+            "rank": 2,
+            "chunk_id": "CORPUS-011#p1_01",
+            "score": 0.11212426658313042
+          },
+          {
+            "rank": 3,
+            "chunk_id": "CORPUS-011#p4_03",
+            "score": 0.1113319751618124
+          }
+        ],
+        "hit_top3": false
+      },
+      {
+        "run_idx": 2,
+        "top3_chunks": [
+          {
+            "rank": 1,
+            "chunk_id": "CORPUS-011#p4_04",
+            "score": 0.14956062778615847
+          },
+          {
+            "rank": 2,
+            "chunk_id": "CORPUS-011#p1_01",
+            "score": 0.11212426658313042
+          },
+          {
+            "rank": 3,
+            "chunk_id": "CORPUS-011#p4_03",
+            "score": 0.1113319751618124
+          }
+        ],
+        "hit_top3": false
+      },
+      {
+        "run_idx": 3,
+        "top3_chunks": [
+          {
+            "rank": 1,
+            "chunk_id": "CORPUS-011#p4_04",
+            "score": 0.14956062778615847
+          },
+          {
+            "rank": 2,
+            "chunk_id": "CORPUS-011#p1_01",
+            "score": 0.11212426658313042
+          },
+          {
+            "rank": 3,
+            "chunk_id": "CORPUS-011#p4_03",
+            "score": 0.1113319751618124
+          }
+        ],
+        "hit_top3": false
+      }
+    ],
+    "hits_top3": 0,
+    "retrieval_hit_rate": 0.0,
+    "deterministic": true,
+    "B1_status": "FAIL-SYSTEM"
+  },
+  "experiment_F2_bigram": {
+    "experiment": "F2 (Bigram)",
+    "top_k_diagnosis": {
+      "question": "Qual é a fonte exata da afirmação de que a métrica TCR é C = I × S × H^β?",
+      "expected_prefix": "CORPUS-002#p1",
+      "hits_by_k": {
+        "1": false,
+        "3": false,
+        "5": false,
+        "10": false,
+        "20": false
+      },
+      "found_at_rank": null,
+      "corpus_002_chunks_retrieved": [],
+      "top1": {
+        "chunk_id": "CORPUS-003#p4_01",
+        "score": 0.148249688924143
+      },
+      "top10_all": [
+        {
+          "rank": 1,
+          "chunk_id": "CORPUS-003#p4_01",
+          "score": 0.148249688924143,
+          "corpus_id": "CORPUS-003"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "CORPUS-003#p11_02",
+          "score": 0.10764014449603156,
+          "corpus_id": "CORPUS-003"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "CORPUS-003#p3_01",
+          "score": 0.09944585943349887,
+          "corpus_id": "CORPUS-003"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "CORPUS-003#p6_01",
+          "score": 0.09064711405511883,
+          "corpus_id": "CORPUS-003"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "CORPUS-003#p5_01",
+          "score": 0.08781822732960239,
+          "corpus_id": "CORPUS-003"
+        },
+        {
+          "rank": 6,
+          "chunk_id": "CORPUS-003#p11_01",
+          "score": 0.08646059198789413,
+          "corpus_id": "CORPUS-003"
+        },
+        {
+          "rank": 7,
+          "chunk_id": "CORPUS-003#p3_02",
+          "score": 0.08026112485023079,
+          "corpus_id": "CORPUS-003"
+        },
+        {
+          "rank": 8,
+          "chunk_id": "CORPUS-004#p3_01",
+          "score": 0.07704960485243827,
+          "corpus_id": "CORPUS-004"
+        },
+        {
+          "rank": 9,
+          "chunk_id": "CORPUS-011#p1_02",
+          "score": 0.0767510559892464,
+          "corpus_id": "CORPUS-011"
+        },
+        {
+          "rank": 10,
+          "chunk_id": "CORPUS-011#p1_01",
+          "score": 0.0719845142678183,
+          "corpus_id": "CORPUS-011"
+        }
+      ]
+    },
+    "runs": [
+      {
+        "run_idx": 1,
+        "top3_chunks": [
+          {
+            "rank": 1,
+            "chunk_id": "CORPUS-003#p4_01",
+            "score": 0.148249688924143
+          },
+          {
+            "rank": 2,
+            "chunk_id": "CORPUS-003#p11_02",
+            "score": 0.10764014449603156
+          },
+          {
+            "rank": 3,
+            "chunk_id": "CORPUS-003#p3_01",
+            "score": 0.09944585943349887
+          }
+        ],
+        "hit_top3": false
+      },
+      {
+        "run_idx": 2,
+        "top3_chunks": [
+          {
+            "rank": 1,
+            "chunk_id": "CORPUS-003#p4_01",
+            "score": 0.148249688924143
+          },
+          {
+            "rank": 2,
+            "chunk_id": "CORPUS-003#p11_02",
+            "score": 0.10764014449603156
+          },
+          {
+            "rank": 3,
+            "chunk_id": "CORPUS-003#p3_01",
+            "score": 0.09944585943349887
+          }
+        ],
+        "hit_top3": false
+      },
+      {
+        "run_idx": 3,
+        "top3_chunks": [
+          {
+            "rank": 1,
+            "chunk_id": "CORPUS-003#p4_01",
+            "score": 0.148249688924143
+          },
+          {
+            "rank": 2,
+            "chunk_id": "CORPUS-003#p11_02",
+            "score": 0.10764014449603156
+          },
+          {
+            "rank": 3,
+            "chunk_id": "CORPUS-003#p3_01",
+            "score": 0.09944585943349887
+          }
+        ],
+        "hit_top3": false
+      }
+    ],
+    "hits_top3": 0,
+    "retrieval_hit_rate": 0.0,
+    "deterministic": true,
+    "B1_status": "FAIL-SYSTEM"
+  },
+  "experiment_G_boost": {
+    "experiment": "G (Boost estrutural)",
+    "top_k_diagnosis": {
+      "question": "Qual é a fonte exata da afirmação de que a métrica TCR é C = I × S × H^β?",
+      "expected_prefix": "CORPUS-002#p1",
+      "hits_by_k": {
+        "1": false,
+        "3": false,
+        "5": false,
+        "10": false,
+        "20": false
+      },
+      "found_at_rank": null,
+      "corpus_002_chunks_retrieved": [],
+      "top1": {
+        "chunk_id": "CORPUS-003#p10_01",
+        "score": 0.18857304284684107
+      },
+      "top10_all": [
+        {
+          "rank": 1,
+          "chunk_id": "CORPUS-003#p10_01",
+          "score": 0.18857304284684107,
+          "corpus_id": "CORPUS-003"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "CORPUS-005#chunk_001",
+          "score": 0.09324894017018116,
+          "corpus_id": "CORPUS-005"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "CORPUS-011#p4_04",
+          "score": 0.07962797463706664,
+          "corpus_id": "CORPUS-011"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "CORPUS-003#p11_01",
+          "score": 0.05086499579903158,
+          "corpus_id": "CORPUS-003"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "CORPUS-003#p3_01",
+          "score": 0.04917503780405318,
+          "corpus_id": "CORPUS-003"
+        },
+        {
+          "rank": 6,
+          "chunk_id": "CORPUS-011#p4_03",
+          "score": 0.04898006598750878,
+          "corpus_id": "CORPUS-011"
+        },
+        {
+          "rank": 7,
+          "chunk_id": "CORPUS-004#p3_01",
+          "score": 0.044807254358447554,
+          "corpus_id": "CORPUS-004"
+        },
+        {
+          "rank": 8,
+          "chunk_id": "CORPUS-011#p1_02",
+          "score": 0.04460731424451453,
+          "corpus_id": "CORPUS-011"
+        },
+        {
+          "rank": 9,
+          "chunk_id": "CORPUS-003#p3_02",
+          "score": 0.04377045805305091,
+          "corpus_id": "CORPUS-003"
+        },
+        {
+          "rank": 10,
+          "chunk_id": "CORPUS-004#p2_02",
+          "score": 0.03898391803588722,
+          "corpus_id": "CORPUS-004"
+        }
+      ]
+    },
+    "runs": [
+      {
+        "run_idx": 1,
+        "top3_chunks": [
+          {
+            "rank": 1,
+            "chunk_id": "CORPUS-003#p10_01",
+            "score": 0.18857304284684107
+          },
+          {
+            "rank": 2,
+            "chunk_id": "CORPUS-005#chunk_001",
+            "score": 0.09324894017018116
+          },
+          {
+            "rank": 3,
+            "chunk_id": "CORPUS-011#p4_04",
+            "score": 0.07962797463706664
+          }
+        ],
+        "hit_top3": false
+      },
+      {
+        "run_idx": 2,
+        "top3_chunks": [
+          {
+            "rank": 1,
+            "chunk_id": "CORPUS-003#p10_01",
+            "score": 0.18857304284684107
+          },
+          {
+            "rank": 2,
+            "chunk_id": "CORPUS-005#chunk_001",
+            "score": 0.09324894017018116
+          },
+          {
+            "rank": 3,
+            "chunk_id": "CORPUS-011#p4_04",
+            "score": 0.07962797463706664
+          }
+        ],
+        "hit_top3": false
+      },
+      {
+        "run_idx": 3,
+        "top3_chunks": [
+          {
+            "rank": 1,
+            "chunk_id": "CORPUS-003#p10_01",
+            "score": 0.18857304284684107
+          },
+          {
+            "rank": 2,
+            "chunk_id": "CORPUS-005#chunk_001",
+            "score": 0.09324894017018116
+          },
+          {
+            "rank": 3,
+            "chunk_id": "CORPUS-011#p4_04",
+            "score": 0.07962797463706664
+          }
+        ],
+        "hit_top3": false
+      }
+    ],
+    "hits_top3": 0,
+    "retrieval_hit_rate": 0.0,
+    "deterministic": true,
+    "B1_status": "FAIL-SYSTEM"
+  },
+  "experiment_H_reranking": {
+    "experiment": "H (Reranking)",
+    "top_k_diagnosis": {
+      "question": "Qual é a fonte exata da afirmação de que a métrica TCR é C = I × S × H^β?",
+      "expected_prefix": "CORPUS-002#p1",
+      "hits_by_k": {
+        "1": false,
+        "3": false,
+        "5": false,
+        "10": false,
+        "20": false
+      },
+      "found_at_rank": null,
+      "corpus_002_chunks_retrieved": [],
+      "top1": {
+        "chunk_id": "CORPUS-011#p4_04",
+        "score": 0.20316106085548155
+      },
+      "top10_all": [
+        {
+          "rank": 1,
+          "chunk_id": "CORPUS-011#p4_04",
+          "score": 0.20316106085548155,
+          "corpus_id": "CORPUS-011"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "CORPUS-003#p8_02",
+          "score": 0.17548217841547137,
+          "corpus_id": "CORPUS-003"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "CORPUS-004#p3_01",
+          "score": 0.1681744962782244,
+          "corpus_id": "CORPUS-004"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "CORPUS-003#p3_02",
+          "score": 0.1611027970885828,
+          "corpus_id": "CORPUS-003"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "CORPUS-003#p3_03",
+          "score": 0.14541751328773758,
+          "corpus_id": "CORPUS-003"
+        },
+        {
+          "rank": 6,
+          "chunk_id": "CORPUS-003#p3_01",
+          "score": 0.14439020242495001,
+          "corpus_id": "CORPUS-003"
+        },
+        {
+          "rank": 7,
+          "chunk_id": "CORPUS-005#chunk_001",
+          "score": 0.14244091681989746,
+          "corpus_id": "CORPUS-005"
+        },
+        {
+          "rank": 8,
+          "chunk_id": "CORPUS-011#p3_03",
+          "score": 0.1284530793073814,
+          "corpus_id": "CORPUS-011"
+        },
+        {
+          "rank": 9,
+          "chunk_id": "CORPUS-011#p4_01",
+          "score": 0.1271047240760172,
+          "corpus_id": "CORPUS-011"
+        },
+        {
+          "rank": 10,
+          "chunk_id": "CORPUS-003#p11_01",
+          "score": 0.12381391826630529,
+          "corpus_id": "CORPUS-003"
+        }
+      ]
+    },
+    "runs": [
+      {
+        "run_idx": 1,
+        "top3_chunks": [
+          {
+            "rank": 1,
+            "chunk_id": "CORPUS-011#p4_04",
+            "score": 0.20316106085548155
+          },
+          {
+            "rank": 2,
+            "chunk_id": "CORPUS-003#p8_02",
+            "score": 0.17548217841547137
+          },
+          {
+            "rank": 3,
+            "chunk_id": "CORPUS-004#p3_01",
+            "score": 0.1681744962782244
+          }
+        ],
+        "hit_top3": false
+      },
+      {
+        "run_idx": 2,
+        "top3_chunks": [
+          {
+            "rank": 1,
+            "chunk_id": "CORPUS-011#p4_04",
+            "score": 0.20316106085548155
+          },
+          {
+            "rank": 2,
+            "chunk_id": "CORPUS-003#p8_02",
+            "score": 0.17548217841547137
+          },
+          {
+            "rank": 3,
+            "chunk_id": "CORPUS-004#p3_01",
+            "score": 0.1681744962782244
+          }
+        ],
+        "hit_top3": false
+      },
+      {
+        "run_idx": 3,
+        "top3_chunks": [
+          {
+            "rank": 1,
+            "chunk_id": "CORPUS-011#p4_04",
+            "score": 0.20316106085548155
+          },
+          {
+            "rank": 2,
+            "chunk_id": "CORPUS-003#p8_02",
+            "score": 0.17548217841547137
+          },
+          {
+            "rank": 3,
+            "chunk_id": "CORPUS-004#p3_01",
+            "score": 0.1681744962782244
+          }
+        ],
+        "hit_top3": false
+      }
+    ],
+    "hits_top3": 0,
+    "retrieval_hit_rate": 0.0,
+    "deterministic": true,
+    "B1_status": "FAIL-SYSTEM"
+  },
+  "comparison_all": {
+    "A (Controle)": {
+      "intervention": "TF-IDF atual",
+      "hits_top3": 0,
+      "B1_status": "FAIL-SYSTEM",
+      "top_k_diagnosis": {
+        "question": "Qual é a fonte exata da afirmação de que a métrica TCR é C = I × S × H^β?",
+        "expected_prefix": "CORPUS-002#p1",
+        "hits_by_k": {
+          "1": false,
+          "3": false,
+          "5": false,
+          "10": false,
+          "20": false
+        },
+        "found_at_rank": null,
+        "corpus_002_chunks_retrieved": [],
+        "top1": {
+          "chunk_id": "CORPUS-011#p4_04",
+          "score": 0.1562777391196012
+        },
+        "top10_all": [
+          {
+            "rank": 1,
+            "chunk_id": "CORPUS-011#p4_04",
+            "score": 0.1562777391196012,
+            "corpus_id": "CORPUS-011"
+          },
+          {
+            "rank": 2,
+            "chunk_id": "CORPUS-003#p8_02",
+            "score": 0.13498629108882412,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 3,
+            "chunk_id": "CORPUS-003#p3_02",
+            "score": 0.12392522852967908,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 4,
+            "chunk_id": "CORPUS-003#p11_01",
+            "score": 0.11255810751482298,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 5,
+            "chunk_id": "CORPUS-004#p3_01",
+            "score": 0.1121163308521496,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "rank": 6,
+            "chunk_id": "CORPUS-003#p3_03",
+            "score": 0.11185962560595197,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 7,
+            "chunk_id": "CORPUS-003#p4_01",
+            "score": 0.11170133223543752,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 8,
+            "chunk_id": "CORPUS-003#p3_01",
+            "score": 0.11106938648073077,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 9,
+            "chunk_id": "CORPUS-005#chunk_001",
+            "score": 0.10956993601530572,
+            "corpus_id": "CORPUS-005"
+          },
+          {
+            "rank": 10,
+            "chunk_id": "CORPUS-003#p6_01",
+            "score": 0.10822400797335643,
+            "corpus_id": "CORPUS-003"
+          }
+        ]
+      }
+    },
+    "B (Normalização)": {
+      "intervention": "Normalização matemática",
+      "hits_top3": 0,
+      "B1_status": "FAIL-SYSTEM"
+    },
+    "C (Chunking)": {
+      "intervention": "Chunking matemático",
+      "hits_top3": 0,
+      "B1_status": "FAIL-SYSTEM"
+    },
+    "D (Tokenização)": {
+      "intervention": "Token_pattern estendido",
+      "hits_top3": 0,
+      "B1_status": "FAIL-SYSTEM"
+    },
+    "E (Stopwords)": {
+      "intervention": "Stopword filtering",
+      "hits_top3": 0,
+      "B1_status": "FAIL-SYSTEM",
+      "top_k_diagnosis": {
+        "question": "Qual é a fonte exata da afirmação de que a métrica TCR é C = I × S × H^β?",
+        "expected_prefix": "CORPUS-002#p1",
+        "hits_by_k": {
+          "1": false,
+          "3": false,
+          "5": false,
+          "10": false,
+          "20": true
+        },
+        "found_at_rank": 18,
+        "corpus_002_chunks_retrieved": [
+          {
+            "rank": 13,
+            "chunk_id": "CORPUS-002#p5_04",
+            "score": 0.026424307203983456
+          },
+          {
+            "rank": 16,
+            "chunk_id": "CORPUS-002#p4_04",
+            "score": 0.021910862958149365
+          },
+          {
+            "rank": 18,
+            "chunk_id": "CORPUS-002#p1_03",
+            "score": 0.021627681053257106
+          }
+        ],
+        "top1": {
+          "chunk_id": "CORPUS-005#chunk_001",
+          "score": 0.08877049184118459
+        },
+        "top10_all": [
+          {
+            "rank": 1,
+            "chunk_id": "CORPUS-005#chunk_001",
+            "score": 0.08877049184118459,
+            "corpus_id": "CORPUS-005"
+          },
+          {
+            "rank": 2,
+            "chunk_id": "CORPUS-003#p3_03",
+            "score": 0.07413421407522858,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 3,
+            "chunk_id": "CORPUS-003#p8_02",
+            "score": 0.07120752659915926,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 4,
+            "chunk_id": "CORPUS-003#p10_01",
+            "score": 0.06901276074069174,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 5,
+            "chunk_id": "CORPUS-003#p8_01",
+            "score": 0.06398832635624536,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 6,
+            "chunk_id": "CORPUS-011#p4_04",
+            "score": 0.06363892343172144,
+            "corpus_id": "CORPUS-011"
+          },
+          {
+            "rank": 7,
+            "chunk_id": "CORPUS-011#p4_03",
+            "score": 0.057326299056210714,
+            "corpus_id": "CORPUS-011"
+          },
+          {
+            "rank": 8,
+            "chunk_id": "CORPUS-011#p3_03",
+            "score": 0.056855777533441974,
+            "corpus_id": "CORPUS-011"
+          },
+          {
+            "rank": 9,
+            "chunk_id": "CORPUS-004#p1_04",
+            "score": 0.047626305724686624,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "rank": 10,
+            "chunk_id": "CORPUS-003#p3_02",
+            "score": 0.044723143629543674,
+            "corpus_id": "CORPUS-003"
+          }
+        ]
+      }
+    },
+    "F1 (Unigram)": {
+      "intervention": "n-gram (1,1)",
+      "hits_top3": 0,
+      "B1_status": "FAIL-SYSTEM",
+      "top_k_diagnosis": {
+        "question": "Qual é a fonte exata da afirmação de que a métrica TCR é C = I × S × H^β?",
+        "expected_prefix": "CORPUS-002#p1",
+        "hits_by_k": {
+          "1": false,
+          "3": false,
+          "5": false,
+          "10": false,
+          "20": false
+        },
+        "found_at_rank": null,
+        "corpus_002_chunks_retrieved": [],
+        "top1": {
+          "chunk_id": "CORPUS-011#p4_04",
+          "score": 0.14956062778615847
+        },
+        "top10_all": [
+          {
+            "rank": 1,
+            "chunk_id": "CORPUS-011#p4_04",
+            "score": 0.14956062778615847,
+            "corpus_id": "CORPUS-011"
+          },
+          {
+            "rank": 2,
+            "chunk_id": "CORPUS-011#p1_01",
+            "score": 0.11212426658313042,
+            "corpus_id": "CORPUS-011"
+          },
+          {
+            "rank": 3,
+            "chunk_id": "CORPUS-011#p4_03",
+            "score": 0.1113319751618124,
+            "corpus_id": "CORPUS-011"
+          },
+          {
+            "rank": 4,
+            "chunk_id": "CORPUS-003#p8_02",
+            "score": 0.1071391031494185,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 5,
+            "chunk_id": "CORPUS-011#p3_03",
+            "score": 0.10405025173671659,
+            "corpus_id": "CORPUS-011"
+          },
+          {
+            "rank": 6,
+            "chunk_id": "CORPUS-005#chunk_001",
+            "score": 0.09364992953440955,
+            "corpus_id": "CORPUS-005"
+          },
+          {
+            "rank": 7,
+            "chunk_id": "CORPUS-003#p3_03",
+            "score": 0.08804315212165187,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 8,
+            "chunk_id": "CORPUS-011#p4_01",
+            "score": 0.0834807499134032,
+            "corpus_id": "CORPUS-011"
+          },
+          {
+            "rank": 9,
+            "chunk_id": "CORPUS-003#p3_02",
+            "score": 0.08304697789543634,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 10,
+            "chunk_id": "CORPUS-004#p3_01",
+            "score": 0.08119658733724382,
+            "corpus_id": "CORPUS-004"
+          }
+        ]
+      }
+    },
+    "F2 (Bigram)": {
+      "intervention": "n-gram (2,2)",
+      "hits_top3": 0,
+      "B1_status": "FAIL-SYSTEM",
+      "top_k_diagnosis": {
+        "question": "Qual é a fonte exata da afirmação de que a métrica TCR é C = I × S × H^β?",
+        "expected_prefix": "CORPUS-002#p1",
+        "hits_by_k": {
+          "1": false,
+          "3": false,
+          "5": false,
+          "10": false,
+          "20": false
+        },
+        "found_at_rank": null,
+        "corpus_002_chunks_retrieved": [],
+        "top1": {
+          "chunk_id": "CORPUS-003#p4_01",
+          "score": 0.148249688924143
+        },
+        "top10_all": [
+          {
+            "rank": 1,
+            "chunk_id": "CORPUS-003#p4_01",
+            "score": 0.148249688924143,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 2,
+            "chunk_id": "CORPUS-003#p11_02",
+            "score": 0.10764014449603156,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 3,
+            "chunk_id": "CORPUS-003#p3_01",
+            "score": 0.09944585943349887,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 4,
+            "chunk_id": "CORPUS-003#p6_01",
+            "score": 0.09064711405511883,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 5,
+            "chunk_id": "CORPUS-003#p5_01",
+            "score": 0.08781822732960239,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 6,
+            "chunk_id": "CORPUS-003#p11_01",
+            "score": 0.08646059198789413,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 7,
+            "chunk_id": "CORPUS-003#p3_02",
+            "score": 0.08026112485023079,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 8,
+            "chunk_id": "CORPUS-004#p3_01",
+            "score": 0.07704960485243827,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "rank": 9,
+            "chunk_id": "CORPUS-011#p1_02",
+            "score": 0.0767510559892464,
+            "corpus_id": "CORPUS-011"
+          },
+          {
+            "rank": 10,
+            "chunk_id": "CORPUS-011#p1_01",
+            "score": 0.0719845142678183,
+            "corpus_id": "CORPUS-011"
+          }
+        ]
+      }
+    },
+    "G (Boost)": {
+      "intervention": "Boost de termos raros",
+      "hits_top3": 0,
+      "B1_status": "FAIL-SYSTEM",
+      "top_k_diagnosis": {
+        "question": "Qual é a fonte exata da afirmação de que a métrica TCR é C = I × S × H^β?",
+        "expected_prefix": "CORPUS-002#p1",
+        "hits_by_k": {
+          "1": false,
+          "3": false,
+          "5": false,
+          "10": false,
+          "20": false
+        },
+        "found_at_rank": null,
+        "corpus_002_chunks_retrieved": [],
+        "top1": {
+          "chunk_id": "CORPUS-003#p10_01",
+          "score": 0.18857304284684107
+        },
+        "top10_all": [
+          {
+            "rank": 1,
+            "chunk_id": "CORPUS-003#p10_01",
+            "score": 0.18857304284684107,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 2,
+            "chunk_id": "CORPUS-005#chunk_001",
+            "score": 0.09324894017018116,
+            "corpus_id": "CORPUS-005"
+          },
+          {
+            "rank": 3,
+            "chunk_id": "CORPUS-011#p4_04",
+            "score": 0.07962797463706664,
+            "corpus_id": "CORPUS-011"
+          },
+          {
+            "rank": 4,
+            "chunk_id": "CORPUS-003#p11_01",
+            "score": 0.05086499579903158,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 5,
+            "chunk_id": "CORPUS-003#p3_01",
+            "score": 0.04917503780405318,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 6,
+            "chunk_id": "CORPUS-011#p4_03",
+            "score": 0.04898006598750878,
+            "corpus_id": "CORPUS-011"
+          },
+          {
+            "rank": 7,
+            "chunk_id": "CORPUS-004#p3_01",
+            "score": 0.044807254358447554,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "rank": 8,
+            "chunk_id": "CORPUS-011#p1_02",
+            "score": 0.04460731424451453,
+            "corpus_id": "CORPUS-011"
+          },
+          {
+            "rank": 9,
+            "chunk_id": "CORPUS-003#p3_02",
+            "score": 0.04377045805305091,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 10,
+            "chunk_id": "CORPUS-004#p2_02",
+            "score": 0.03898391803588722,
+            "corpus_id": "CORPUS-004"
+          }
+        ]
+      }
+    },
+    "H (Reranking)": {
+      "intervention": "Reranking híbrido",
+      "hits_top3": 0,
+      "B1_status": "FAIL-SYSTEM",
+      "top_k_diagnosis": {
+        "question": "Qual é a fonte exata da afirmação de que a métrica TCR é C = I × S × H^β?",
+        "expected_prefix": "CORPUS-002#p1",
+        "hits_by_k": {
+          "1": false,
+          "3": false,
+          "5": false,
+          "10": false,
+          "20": false
+        },
+        "found_at_rank": null,
+        "corpus_002_chunks_retrieved": [],
+        "top1": {
+          "chunk_id": "CORPUS-011#p4_04",
+          "score": 0.20316106085548155
+        },
+        "top10_all": [
+          {
+            "rank": 1,
+            "chunk_id": "CORPUS-011#p4_04",
+            "score": 0.20316106085548155,
+            "corpus_id": "CORPUS-011"
+          },
+          {
+            "rank": 2,
+            "chunk_id": "CORPUS-003#p8_02",
+            "score": 0.17548217841547137,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 3,
+            "chunk_id": "CORPUS-004#p3_01",
+            "score": 0.1681744962782244,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "rank": 4,
+            "chunk_id": "CORPUS-003#p3_02",
+            "score": 0.1611027970885828,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 5,
+            "chunk_id": "CORPUS-003#p3_03",
+            "score": 0.14541751328773758,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 6,
+            "chunk_id": "CORPUS-003#p3_01",
+            "score": 0.14439020242495001,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 7,
+            "chunk_id": "CORPUS-005#chunk_001",
+            "score": 0.14244091681989746,
+            "corpus_id": "CORPUS-005"
+          },
+          {
+            "rank": 8,
+            "chunk_id": "CORPUS-011#p3_03",
+            "score": 0.1284530793073814,
+            "corpus_id": "CORPUS-011"
+          },
+          {
+            "rank": 9,
+            "chunk_id": "CORPUS-011#p4_01",
+            "score": 0.1271047240760172,
+            "corpus_id": "CORPUS-011"
+          },
+          {
+            "rank": 10,
+            "chunk_id": "CORPUS-003#p11_01",
+            "score": 0.12381391826630529,
+            "corpus_id": "CORPUS-003"
+          }
+        ]
+      }
+    }
+  },
+  "best_arm": {
+    "name": "A (Controle)",
+    "data": {
+      "intervention": "TF-IDF atual",
+      "hits_top3": 0,
+      "B1_status": "FAIL-SYSTEM",
+      "top_k_diagnosis": {
+        "question": "Qual é a fonte exata da afirmação de que a métrica TCR é C = I × S × H^β?",
+        "expected_prefix": "CORPUS-002#p1",
+        "hits_by_k": {
+          "1": false,
+          "3": false,
+          "5": false,
+          "10": false,
+          "20": false
+        },
+        "found_at_rank": null,
+        "corpus_002_chunks_retrieved": [],
+        "top1": {
+          "chunk_id": "CORPUS-011#p4_04",
+          "score": 0.1562777391196012
+        },
+        "top10_all": [
+          {
+            "rank": 1,
+            "chunk_id": "CORPUS-011#p4_04",
+            "score": 0.1562777391196012,
+            "corpus_id": "CORPUS-011"
+          },
+          {
+            "rank": 2,
+            "chunk_id": "CORPUS-003#p8_02",
+            "score": 0.13498629108882412,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 3,
+            "chunk_id": "CORPUS-003#p3_02",
+            "score": 0.12392522852967908,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 4,
+            "chunk_id": "CORPUS-003#p11_01",
+            "score": 0.11255810751482298,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 5,
+            "chunk_id": "CORPUS-004#p3_01",
+            "score": 0.1121163308521496,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "rank": 6,
+            "chunk_id": "CORPUS-003#p3_03",
+            "score": 0.11185962560595197,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 7,
+            "chunk_id": "CORPUS-003#p4_01",
+            "score": 0.11170133223543752,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 8,
+            "chunk_id": "CORPUS-003#p3_01",
+            "score": 0.11106938648073077,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 9,
+            "chunk_id": "CORPUS-005#chunk_001",
+            "score": 0.10956993601530572,
+            "corpus_id": "CORPUS-005"
+          },
+          {
+            "rank": 10,
+            "chunk_id": "CORPUS-003#p6_01",
+            "score": 0.10822400797335643,
+            "corpus_id": "CORPUS-003"
+          }
+        ]
+      }
+    }
+  }
+}

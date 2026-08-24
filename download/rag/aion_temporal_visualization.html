@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AION — Grafo Temporal</title>
+<style>
+body{font-family:system-ui,sans-serif;max-width:1200px;margin:2rem auto;line-height:1.6;padding:0 1rem;background:#fafafa;color:#111}
+h1{color:#1a252f}
+h2{color:#2c3e50;border-left:4px solid #3498db;padding-left:.8rem;margin-top:2rem}
+.timeline{margin:1rem 0;padding:1rem;background:#fff;border-left:4px solid #3498db}
+.state{margin:.5rem 0;padding:.8rem;background:#f8f9fa;border-radius:4px;border-left:3px solid #95a5a6}
+.change-INTRODUCED{border-left-color:#27ae60}
+.change-REFINED{border-left-color:#3498db}
+.change-EXTENDED{border-left-color:#9b59b6}
+.change-CONTRADICTED{border-left-color:#e67e22}
+.change-REVOKED{border-left-color:#e74c3c}
+.change-STABLE{border-left-color:#95a5a6}
+.badge{display:inline-block;padding:.2rem .6rem;border-radius:3px;font-size:.8rem;color:#fff;font-weight:bold;margin-right:.3rem}
+.badge-E{background:#27ae60}
+.badge-I{background:#f39c12}
+.unknown{background:#fff3cd;padding:.5rem;border-left:4px solid #f39c12;margin:.5rem 0}
+.tpc-summary{background:#d4edda;padding:1rem;border-radius:4px;margin:1rem 0}
+.tpc-summary h3{margin-top:0;color:#155724}
+</style>
+</head>
+<body>
+<header>
+<h1>AION — Grafo Temporal</h1>
+<p><strong>Versão:</strong> 1.0.0</p>
+<p><strong>Data:</strong> 17 de agosto de 2026</p>
+<p><strong>Autor da estrutura:</strong> Edson C. Nascimento (Projetista Master)</p>
+<p><strong>Implementação:</strong> IA Curadora</p>
+</header>
+
+
+<section class="tpc-summary">
+<h3>TPC — Temporal Provenance Coverage</h3>
+<p><strong>15/20</strong> estados com data verificável documentalmente.</p>
+<p><strong>TPC = 0.7500 (75.0%)</strong></p>
+<p><em>Estados com data UNKNOWN são explicitamente marcados — não são artificialmente datados.</em></p>
+</section>
+
+<h2>Estados Conceituais Temporais</h2>
+<div class="timeline">
+<h3>Coerência Relacional (C) <code>(C)</code></h3>
+<div class="state change-REFINED">
+<strong>2026-08-12</strong> — <span class="badge badge-E">[E]</span> <span class="badge change-REFINED">REFINED</span>
+<br><em>Documento:</em> CORPUS-002 (v6.2)
+<br><em>Estado:</em> C = I × S × H^β, β=0.5 calibrado via LOOCV sobre 12 fixtures sintéticas
+<br><em>Estado anterior:</em> C = I × S × H^β, β canônico não declarado
+<br><em>Evidência:</em> <code>"We adopt β = 0.5 as the canonical value throughout this work"</code>
+<br><em>Nota:</em> Paper A v6.2 FINAL — β calibrado, termo de recursão R removido por irrelevância empírica (Sobol <1.1%).
+</div>
+<div class="state change-STABLE">
+<strong>UNKNOWN</strong> — <span class="badge badge-E">[E]</span> <span class="badge change-STABLE">STABLE</span>
+<br><em>Documento:</em> CORPUS-005 (v6.1 aspiracional)
+<br><em>Estado:</em> C = I × S × H^β, β canônico não declarado
+<br><em>Evidência:</em> <code>"uma métrica unificada C = I × S × H^β para a coerência informacional"</code>
+<br><em>Nota:</em> Cover Letter PT-BR descreve plano aspiracional v6.1; métrica fundamental já estável.
+</div>
+</div>
+<div class="timeline">
+<h3>Equação de Einstein modificada <code>(Einstein_mod)</code></h3>
+<div class="state change-INTRODUCED">
+<strong>2026-08-10</strong> — <span class="badge badge-E">[E]</span> <span class="badge change-INTRODUCED">INTRODUCED</span>
+<br><em>Documento:</em> CORPUS-003 (1.0)
+<br><em>Estado:</em> Gµν = 8πG(Tµν + Qµν) — Proposta teórica
+<br><em>Evidência:</em> <code>"a equação modificada Gµν = 8πG(Tµν + Qµν)"</code>
+<br><em>Nota:</em> Derivação variacional pendente (lacuna declarada na Tabela 2).
+</div>
+</div>
+<div class="timeline">
+<h3>Programa de pesquisa Lakatosiano <code>(Lakatos_program)</code></h3>
+<div class="state change-INTRODUCED">
+<strong>2026-08-10</strong> — <span class="badge badge-E">[E]</span> <span class="badge change-INTRODUCED">INTRODUCED</span>
+<br><em>Documento:</em> CORPUS-003 (1.0)
+<br><em>Estado:</em> Auto-designação explícita — núcleo firme + cinturão protetor; núcleo = formalização categórico-tensorial unificada
+<br><em>Evidência:</em> <code>"A leitura conjunta dos três passos sugere uma estrutura epistêmica análoga à distinção de Lakatos"</code>
+<br><em>Nota:</em> CORPUS-003 declara explicitamente a estrutura lakatosiana.
+</div>
+</div>
+<div class="timeline">
+<h3>Functor Φcat <code>(Phi_cat)</code></h3>
+<div class="state change-INTRODUCED">
+<strong>2026-08-10</strong> — <span class="badge badge-E">[E]</span> <span class="badge change-INTRODUCED">INTRODUCED</span>
+<br><em>Documento:</em> CORPUS-003 (1.0)
+<br><em>Estado:</em> Φcat : C → Set, X ↦ Hom_C(•, X) — Conjectura (Passo 16)
+<br><em>Evidência:</em> <code>"Define-se o functor Φcat : C → Set, X ↦ Hom_C(•, X)"</code>
+<br><em>Nota:</em> CORPUS-003 é Parte IV de um programa maior; passos 1-15 não estão no corpus — estado anterior desconhecido.
+</div>
+</div>
+<div class="timeline">
+<h3>Power-law T₂ (FMO) <code>(Power_law_T2)</code></h3>
+<div class="state change-REFINED">
+<strong>2026-08-12</strong> — <span class="badge badge-E">[E]</span> <span class="badge change-REFINED">REFINED</span>
+<br><em>Documento:</em> CORPUS-004 (v6.1)
+<br><em>Estado:</em> T₂ = (1.567×10⁴)·J^0.831·λ^(-0.843)·γ^(-0.766)·T^(-0.261), R²=0.988 (FMO 7 sítios)
+<br><em>Estado anterior:</em> T₂ = K·J^1.205·λ^(-1.114)·γ^(-1.068)·T^(-0.795) (dímero)
+<br><em>Evidência:</em> <code>"obtemos T₂ = K J^0.831 λ^(-0.843) γ^(-0.766) T^(-0.261) com R² = 0.988"</code>
+<br><em>Nota:</em> Inconsistência #3 do Paper A resolvida — re-derivação a partir do Hamiltoniano FMO completo (375 combinações).
+</div>
+<div class="state change-INTRODUCED">
+<strong>UNKNOWN</strong> — <span class="badge badge-E">[E]</span> <span class="badge change-INTRODUCED">INTRODUCED</span>
+<br><em>Documento:</em> Paper B v6.0 (não no corpus) (v6.0)
+<br><em>Estado:</em> T₂ = K·J^1.205·λ^(-1.114)·γ^(-1.068)·T^(-0.795), R²=0.914 (dímero 2 sítios)
+<br><em>Evidência:</em> <code>"Em nosso trabalho anterior (v6.0), reportamos um escalonamento power-law..."</code>
+<br><em>Nota:</em> Estado anterior citado no Paper B v6.1; data do documento original desconhecida.
+</div>
+</div>
+<div class="timeline">
+<h3>Tensor Qµν <code>(Q_munu)</code></h3>
+<div class="state change-INTRODUCED">
+<strong>2026-08-10</strong> — <span class="badge badge-E">[E]</span> <span class="badge change-INTRODUCED">INTRODUCED</span>
+<br><em>Documento:</em> CORPUS-003 (1.0)
+<br><em>Estado:</em> Forma bilinear simétrica (0,2), 5 axiomas (Q1-Q5) — Proposta (Passo 17)
+<br><em>Evidência:</em> <code>"Definição 3.1 (Tensor Qµν)... Q1. Simetria; Q2. Conservação covariante; Q3. Covariância geral; Q4. Traço bem definido; Q5. Decaimento assintótico"</code>
+<br><em>Nota:</em> CORPUS-003 é Parte IV; estado anterior desconhecido.
+</div>
+</div>
+<div class="timeline">
+<h3>Termo de recursão R^α <code>(R_recursion)</code></h3>
+<div class="state change-REVOKED">
+<strong>2026-08-12</strong> — <span class="badge badge-E">[E]</span> <span class="badge change-REVOKED">REVOKED</span>
+<br><em>Documento:</em> CORPUS-002 (v6.2)
+<br><em>Estado:</em> REMOVIDO da métrica C
+<br><em>Estado anterior:</em> R^α com α=1.3 como parte da métrica C
+<br><em>Evidência:</em> <code>"global sensitivity analysis (Sobol) reveals that R contributes less than 1.1% of the variance in C, rendering it empirically irrelevant. We therefore drop it in this version"</code>
+<br><em>Nota:</em> Inconsistência #2 do Paper A resolvida — abandono por irrelevância empírica (parsimônia).
+</div>
+<div class="state change-INTRODUCED">
+<strong>UNKNOWN</strong> — <span class="badge badge-E">[E]</span> <span class="badge change-INTRODUCED">INTRODUCED</span>
+<br><em>Documento:</em> Paper A v5.1/v6.0 (não no corpus) (pre-v6.2)
+<br><em>Estado:</em> R^α com α=1.3 como parte da métrica C
+<br><em>Evidência:</em> <code>"Earlier versions of TCR included a recursion term R with exponent α = 1.3"</code>
+<br><em>Nota:</em> Referência ao estado anterior feita no Paper A v6.2 (p.1, linha 90-91).
+</div>
+</div>
+<div class="timeline">
+<h3>β (calibração LOOCV) <code>(beta)</code></h3>
+<div class="state change-REFINED">
+<strong>2026-08-12</strong> — <span class="badge badge-E">[E]</span> <span class="badge change-REFINED">REFINED</span>
+<br><em>Documento:</em> CORPUS-002 (v6.2)
+<br><em>Estado:</em> β=0.5, calibrado via LOOCV, consistência = 1.0 em [0.1, 1.5]
+<br><em>Estado anterior:</em> β não explicitamente calibrado
+<br><em>Evidência:</em> <code>"calibrated via leave-one-out cross-validation (LOOCV) over 12 synthetic connectome fixtures"</code>
+<br><em>Nota:</em> Inconsistência #1 do Paper A resolvida nesta versão.
+</div>
+<div class="state change-INTRODUCED">
+<strong>UNKNOWN</strong> — <span class="badge badge-I">[I]</span> <span class="badge change-INTRODUCED">INTRODUCED</span>
+<br><em>Documento:</em> NÃO DOCUMENTADO ANTES DE v6.2 (pre-v6.2)
+<br><em>Estado:</em> β não explicitamente calibrado; presunção de β=1 ou valor nominal
+<br><em>Evidência:</em> <code>Ausência documental — inferência do gap entre v5.1 (BJoP feedback) e v6.2 FINAL</code>
+<br><em>Nota:</em> Estado reconstruído por inferência; marcado UNKNOWN.
+</div>
+</div>
+<div class="timeline">
+<h3>Campo Primordial <code>(campo_primordial)</code></h3>
+<div class="state change-INTRODUCED">
+<strong>2026-08-16</strong> — <span class="badge badge-I">[I]</span> <span class="badge change-INTRODUCED">INTRODUCED</span>
+<br><em>Documento:</em> AION-CORPUS-001 Handoff original (Handoff)
+<br><em>Estado:</em> Atribuído ao CORPUS-003 no Handoff original como subtítulo descritivo
+<br><em>Evidência:</em> <code>Handoff original: "Documento 3 — Nível 0 (Campo Primordial)"</code>
+<br><em>Nota:</em> Inferência do curador a partir do contexto; termo não aparece no texto do CORPUS-003.
+</div>
+<div class="state change-CONTRADICTED">
+<strong>2026-08-17</strong> — <span class="badge badge-E">[E]</span> <span class="badge change-CONTRADICTED">CONTRADICTED</span>
+<br><em>Documento:</em> Auditoria da ontologia v1.0.0 (v1.0.0)
+<br><em>Estado:</em> AUSÊNCIA CONFIRMADA — termo "Campo Primordial" não aparece no texto extraído do CORPUS-003. Conceito removido da ontologia v1.0.0.
+<br><em>Estado anterior:</em> Atribuído ao CORPUS-003 no Handoff
+<br><em>Evidência:</em> <code>Auditoria de corpus: termo "Campo Primordial" ausente do CORPUS-003</code>
+<br><em>Nota:</em> Conceito removido da ontologia v1.0.0 (Cluster B).
+</div>
+</div>
+<div class="timeline">
+<h3>Consciência <code>(consciencia)</code></h3>
+<div class="state change-INTRODUCED">
+<strong>2026-08-16</strong> — <span class="badge badge-I">[I]</span> <span class="badge change-INTRODUCED">INTRODUCED</span>
+<br><em>Documento:</em> AION-CORPUS-001 Handoff original (Handoff)
+<br><em>Estado:</em> Mencionado no Handoff original como "Nível 0 — Campo Primordial da Consciência" — inferência do curador, não presente nos textos
+<br><em>Evidência:</em> <code>Handoff original menciona "Nível 0 — Campo Primordial da Consciência"</code>
+<br><em>Nota:</em> Inferência posteriormente descreditada pela auditoria T4 — termo não aparece em nenhum dos 5 textos.
+</div>
+<div class="state change-CONTRADICTED">
+<strong>2026-08-16</strong> — <span class="badge badge-E">[E]</span> <span class="badge change-CONTRADICTED">CONTRADICTED</span>
+<br><em>Documento:</em> Auditoria da ontologia v1.0.0 (v1.0.0)
+<br><em>Estado:</em> AUSÊNCIA CONFIRMADA — termo "consciência" não aparece em nenhum dos 5 textos extraídos. Única ponte: Paper A cita Tononi (Φ-IIT) como referência crítica, não como conceito do programa.
+<br><em>Estado anterior:</em> Mencionado no Handoff como sinônimo de CORPUS-003
+<br><em>Evidência:</em> <code>Auditoria de corpus: termo "consciência" ausente de CORPUS-001 a 005</code>
+<br><em>Nota:</em> T4 resolvida na ontologia v1.0.0 — Handoff original continha inferência.
+</div>
+</div>
+<div class="timeline">
+<h3>Dependência ontológica Paper A → Parte IV <code>(edge_paperA_to_parteIV)</code></h3>
+<div class="state change-INTRODUCED">
+<strong>2026-08-16</strong> — <span class="badge badge-I">[I]</span> <span class="badge change-INTRODUCED">INTRODUCED</span>
+<br><em>Documento:</em> AION-CORPUS-001 HTML canônico v1.2.0 (v1.2.0)
+<br><em>Estado:</em> CORPUS-002 (Paper A) depende ontologicamente do CORPUS-003 (Parte IV)
+<br><em>Evidência:</em> <code>HTML canônico seção 3: "Paper A depende ontologicamente da Parte IV"</code>
+<br><em>Nota:</em> Inferência do curador no registro do corpus.
+</div>
+<div class="state change-REVOKED">
+<strong>2026-08-17</strong> — <span class="badge badge-E">[E]</span> <span class="badge change-REVOKED">REVOKED</span>
+<br><em>Documento:</em> Auditoria da ontologia v1.0.0 (v1.0.0)
+<br><em>Estado:</em> REVOGADA — substituída por paralelismo epistêmico
+<br><em>Estado anterior:</em> Paper A depende ontologicamente da Parte IV
+<br><em>Evidência:</em> <code>"deliberately separated to maintain focus and falsifiability" (Paper A v6.2, p.5-6)</code>
+<br><em>Nota:</em> Revogação baseada em citação direta do Paper A v6.2.
+</div>
+</div>
+<div class="timeline">
+<h3>Hipótese η (cross-scale) <code>(eta_hyp)</code></h3>
+<div class="state change-REVOKED">
+<strong>2026-08-12</strong> — <span class="badge badge-E">[E]</span> <span class="badge change-REVOKED">REVOKED</span>
+<br><em>Documento:</em> CORPUS-004 (v6.1)
+<br><em>Estado:</em> HIPÓTESE RETIRADA — critério |δβ − δST|/δβ < 0.2 não satisfeito (razão = 0.291)
+<br><em>Estado anterior:</em> Hipótese η proposta — comensurabilidade cross-scale
+<br><em>Evidência:</em> <code>"O critério não é satisfeito (razão = 0.291), levando-nos a retrair a hipótese η da análise presente"</code>
+<br><em>Nota:</em> Inconsistência #5 do Paper A resolvida por retração formal.
+</div>
+<div class="state change-INTRODUCED">
+<strong>UNKNOWN</strong> — <span class="badge badge-E">[E]</span> <span class="badge change-INTRODUCED">INTRODUCED</span>
+<br><em>Documento:</em> Paper B v6.0 (não no corpus) (v6.0)
+<br><em>Estado:</em> Hipótese η proposta — comensurabilidade cross-scale entre δβ e δST
+<br><em>Evidência:</em> <code>"Reportamos também um índice de comensurabilidade cross-scale η..."</code>
+<br><em>Nota:</em> Estado anterior citado no Paper B v6.1.
+</div>
+</div>
+
+<footer>
+<p><em>Ausência de informação não é autorização para inferência. Estados UNKNOWN são dados, não lacunas a preencher.</em></p>
+</footer>
+</body>
+</html>

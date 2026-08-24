@@ -1,0 +1,153 @@
+{
+  "metadata": {
+    "experiment": "AION-6.3.1.1-2 — Auditoria causal das fabricações F3",
+    "timestamp": "2026-08-21T05:02:07+00:00",
+    "author_structure": "Edson C. Nascimento (Projetista Master)",
+    "author_implementation": "IA Curadora"
+  },
+  "context_analysis": {
+    "retrieved_top5": [
+      "CORPUS-005#chunk_001",
+      "CORPUS-003#p3_03",
+      "CORPUS-004#p2_04",
+      "CORPUS-003#p3_02",
+      "CORPUS-001#chunk_001"
+    ],
+    "unique_context_ids": [
+      "CORPUS-001#chunk_001",
+      "CORPUS-005#chunk_001",
+      "CORPUS-004#p2_04",
+      "CORPUS-003#p3_03",
+      "CORPUS-003#p3_02"
+    ],
+    "chunk_formats_by_doc": {
+      "CORPUS-001": [
+        "chunk_001"
+      ],
+      "CORPUS-005": [
+        "chunk_001"
+      ],
+      "CORPUS-004": [
+        "p2_04"
+      ],
+      "CORPUS-003": [
+        "p3_03",
+        "p3_02"
+      ]
+    },
+    "chunk_001_present": true,
+    "p1_01_present": false
+  },
+  "f3_classifications": [
+    {
+      "run_id": 1,
+      "invalid_id": "CORPUS-002#chunk_001",
+      "type": "F3_DOCUMENT_CORRECT_FORMAT_INCORRECT",
+      "classification": "F3-C_MULTIPLE_SCHEMAS",
+      "description": "Contexto contém múltiplos schemas: chunk_001 (de outro doc) E p1_01 (do CORPUS-002)"
+    },
+    {
+      "run_id": 3,
+      "invalid_id": "CORPUS-002#chunk_001",
+      "type": "F3_DOCUMENT_CORRECT_FORMAT_INCORRECT",
+      "classification": "F3-C_MULTIPLE_SCHEMAS",
+      "description": "Contexto contém múltiplos schemas: chunk_001 (de outro doc) E p1_01 (do CORPUS-002)"
+    },
+    {
+      "run_id": 5,
+      "invalid_id": "CORPUS-002#chunk_001",
+      "type": "F3_DOCUMENT_CORRECT_FORMAT_INCORRECT",
+      "classification": "F3-C_MULTIPLE_SCHEMAS",
+      "description": "Contexto contém múltiplos schemas: chunk_001 (de outro doc) E p1_01 (do CORPUS-002)"
+    },
+    {
+      "run_id": 6,
+      "invalid_id": "CORPUS-002#chunk_001",
+      "type": "F3_DOCUMENT_CORRECT_FORMAT_INCORRECT",
+      "classification": "F3-C_MULTIPLE_SCHEMAS",
+      "description": "Contexto contém múltiplos schemas: chunk_001 (de outro doc) E p1_01 (do CORPUS-002)"
+    },
+    {
+      "run_id": 10,
+      "invalid_id": "CORPUS-002#chunk_001",
+      "type": "F3_DOCUMENT_CORRECT_FORMAT_INCORRECT",
+      "classification": "F3-C_MULTIPLE_SCHEMAS",
+      "description": "Contexto contém múltiplos schemas: chunk_001 (de outro doc) E p1_01 (do CORPUS-002)"
+    },
+    {
+      "run_id": 12,
+      "invalid_id": "CORPUS-002#chunk_001",
+      "type": "F3_DOCUMENT_CORRECT_FORMAT_INCORRECT",
+      "classification": "F3-C_MULTIPLE_SCHEMAS",
+      "description": "Contexto contém múltiplos schemas: chunk_001 (de outro doc) E p1_01 (do CORPUS-002)"
+    },
+    {
+      "run_id": 16,
+      "invalid_id": "CORPUS-002#chunk_001",
+      "type": "F3_DOCUMENT_CORRECT_FORMAT_INCORRECT",
+      "classification": "F3-C_MULTIPLE_SCHEMAS",
+      "description": "Contexto contém múltiplos schemas: chunk_001 (de outro doc) E p1_01 (do CORPUS-002)"
+    },
+    {
+      "run_id": 17,
+      "invalid_id": "CORPUS-002#chunk_001",
+      "type": "F3_DOCUMENT_CORRECT_FORMAT_INCORRECT",
+      "classification": "F3-C_MULTIPLE_SCHEMAS",
+      "description": "Contexto contém múltiplos schemas: chunk_001 (de outro doc) E p1_01 (do CORPUS-002)"
+    },
+    {
+      "run_id": 21,
+      "invalid_id": "CORPUS-002#chunk_001",
+      "type": "F3_DOCUMENT_CORRECT_FORMAT_INCORRECT",
+      "classification": "F3-C_MULTIPLE_SCHEMAS",
+      "description": "Contexto contém múltiplos schemas: chunk_001 (de outro doc) E p1_01 (do CORPUS-002)"
+    },
+    {
+      "run_id": 23,
+      "invalid_id": "CORPUS-002#chunk_001",
+      "type": "F3_DOCUMENT_CORRECT_FORMAT_INCORRECT",
+      "classification": "F3-C_MULTIPLE_SCHEMAS",
+      "description": "Contexto contém múltiplos schemas: chunk_001 (de outro doc) E p1_01 (do CORPUS-002)"
+    },
+    {
+      "run_id": 24,
+      "invalid_id": "CORPUS-002#p2_04",
+      "type": "F4_CHUNK_EXISTS_DOCUMENT_INCORRECT",
+      "classification": "NON_F3",
+      "description": "Tipo não-F3 — não analisado nesta auditoria"
+    },
+    {
+      "run_id": 25,
+      "invalid_id": "CORPUS-002#chunk_001",
+      "type": "F3_DOCUMENT_CORRECT_FORMAT_INCORRECT",
+      "classification": "F3-C_MULTIPLE_SCHEMAS",
+      "description": "Contexto contém múltiplos schemas: chunk_001 (de outro doc) E p1_01 (do CORPUS-002)"
+    },
+    {
+      "run_id": 26,
+      "invalid_id": "CORPUS-002#chunk_001",
+      "type": "F3_DOCUMENT_CORRECT_FORMAT_INCORRECT",
+      "classification": "F3-C_MULTIPLE_SCHEMAS",
+      "description": "Contexto contém múltiplos schemas: chunk_001 (de outro doc) E p1_01 (do CORPUS-002)"
+    },
+    {
+      "run_id": 28,
+      "invalid_id": "CORPUS-002#chunk_001",
+      "type": "F3_DOCUMENT_CORRECT_FORMAT_INCORRECT",
+      "classification": "F3-C_MULTIPLE_SCHEMAS",
+      "description": "Contexto contém múltiplos schemas: chunk_001 (de outro doc) E p1_01 (do CORPUS-002)"
+    },
+    {
+      "run_id": 30,
+      "invalid_id": "CORPUS-002#chunk_001",
+      "type": "F3_DOCUMENT_CORRECT_FORMAT_INCORRECT",
+      "classification": "F3-C_MULTIPLE_SCHEMAS",
+      "description": "Contexto contém múltiplos schemas: chunk_001 (de outro doc) E p1_01 (do CORPUS-002)"
+    }
+  ],
+  "classification_summary": {
+    "F3-C_MULTIPLE_SCHEMAS": 14,
+    "NON_F3": 1
+  },
+  "causal_hypothesis": "H-F3 CONFIRMADA: A fabricação F3 resulta de competição entre diferentes esquemas de identificação de chunks presentes no contexto de geração. 100% dos casos F3 (14/14) têm múltiplos schemas visíveis."
+}

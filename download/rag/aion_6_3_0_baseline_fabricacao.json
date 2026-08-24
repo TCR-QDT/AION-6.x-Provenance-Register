@@ -1,0 +1,917 @@
+{
+  "metadata": {
+    "experiment": "AION-6.3.0 — Baseline Estatístico de Fabricação B2",
+    "timestamp": "2026-08-21T03:14:12+00:00",
+    "author_structure": "Edson C. Nascimento (Projetista Master)",
+    "author_implementation": "IA Curadora",
+    "n_runs": 100
+  },
+  "freeze": {
+    "corpus": "v1.3.0",
+    "oracle": "v3",
+    "graphrag": "v1.0.0",
+    "p_resp_001": "v0.3",
+    "aion_eval_002": "v0.2",
+    "b1_retrieval": "configuração 6.2.11 (J cross-lingual)"
+  },
+  "metrics": {
+    "FR_fabrication_rate": 0.15,
+    "FR_runs_with_fabrication": 15,
+    "IR_invalid_reference_rate": 0.3409090909090909,
+    "IR_total_ids_generated": 44,
+    "IR_total_invalid_ids": 15,
+    "VR_validation_interception_rate": 1.0,
+    "VR_total_detected": 15,
+    "SR_semantic_pass_rate": 0.29,
+    "SR_semantic_pass_count": 29
+  },
+  "b1_control": {
+    "b1_deterministic": true,
+    "b1_top1_values": [
+      "CORPUS-005#chunk_001"
+    ]
+  },
+  "fabrication_distribution": {
+    "F3_DOCUMENT_CORRECT_FORMAT_INCORRECT": 14,
+    "F4_CHUNK_EXISTS_DOCUMENT_INCORRECT": 1
+  },
+  "semantic_provenance_crosstab": {
+    "semantic_pass_provenance_valid": 14,
+    "semantic_pass_provenance_invalid": 15,
+    "semantic_fail_provenance_valid": 71,
+    "semantic_fail_provenance_invalid": 0
+  },
+  "verdict": {
+    "criteria": {
+      "A_RETRIEVAL": true,
+      "B_SEMANTIC": true,
+      "C_PROVENANCE": true,
+      "D_VALIDATION": true
+    },
+    "all_pass": true,
+    "verdict": "AION-6.3.0 CONCLUÍDO — baseline estatístico estabelecido",
+    "next_action": "AION-6.3.1+ pode investigar intervenções em geração"
+  },
+  "runs_summary": [
+    {
+      "run_id": 1,
+      "invalid_ids": [
+        "CORPUS-002#chunk_001"
+      ],
+      "invalid_types": [
+        "F3_DOCUMENT_CORRECT_FORMAT_INCORRECT"
+      ],
+      "validator_status": "INTERCEPTED",
+      "semantic_status": "PASS-SEMANTIC",
+      "provenance_status": "INVALID"
+    },
+    {
+      "run_id": 2,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "PASS-SEMANTIC",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 3,
+      "invalid_ids": [
+        "CORPUS-002#chunk_001"
+      ],
+      "invalid_types": [
+        "F3_DOCUMENT_CORRECT_FORMAT_INCORRECT"
+      ],
+      "validator_status": "INTERCEPTED",
+      "semantic_status": "PASS-SEMANTIC",
+      "provenance_status": "INVALID"
+    },
+    {
+      "run_id": 4,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "PASS-SEMANTIC",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 5,
+      "invalid_ids": [
+        "CORPUS-002#chunk_001"
+      ],
+      "invalid_types": [
+        "F3_DOCUMENT_CORRECT_FORMAT_INCORRECT"
+      ],
+      "validator_status": "INTERCEPTED",
+      "semantic_status": "PASS-SEMANTIC",
+      "provenance_status": "INVALID"
+    },
+    {
+      "run_id": 6,
+      "invalid_ids": [
+        "CORPUS-002#chunk_001"
+      ],
+      "invalid_types": [
+        "F3_DOCUMENT_CORRECT_FORMAT_INCORRECT"
+      ],
+      "validator_status": "INTERCEPTED",
+      "semantic_status": "PASS-SEMANTIC",
+      "provenance_status": "INVALID"
+    },
+    {
+      "run_id": 7,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "PASS-SEMANTIC",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 8,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "PASS-SEMANTIC",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 9,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "PASS-SEMANTIC",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 10,
+      "invalid_ids": [
+        "CORPUS-002#chunk_001"
+      ],
+      "invalid_types": [
+        "F3_DOCUMENT_CORRECT_FORMAT_INCORRECT"
+      ],
+      "validator_status": "INTERCEPTED",
+      "semantic_status": "PASS-SEMANTIC",
+      "provenance_status": "INVALID"
+    },
+    {
+      "run_id": 11,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "PASS-SEMANTIC",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 12,
+      "invalid_ids": [
+        "CORPUS-002#chunk_001"
+      ],
+      "invalid_types": [
+        "F3_DOCUMENT_CORRECT_FORMAT_INCORRECT"
+      ],
+      "validator_status": "INTERCEPTED",
+      "semantic_status": "PASS-SEMANTIC",
+      "provenance_status": "INVALID"
+    },
+    {
+      "run_id": 13,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "PASS-SEMANTIC",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 14,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "PASS-SEMANTIC",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 15,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "PASS-SEMANTIC",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 16,
+      "invalid_ids": [
+        "CORPUS-002#chunk_001"
+      ],
+      "invalid_types": [
+        "F3_DOCUMENT_CORRECT_FORMAT_INCORRECT"
+      ],
+      "validator_status": "INTERCEPTED",
+      "semantic_status": "PASS-SEMANTIC",
+      "provenance_status": "INVALID"
+    },
+    {
+      "run_id": 17,
+      "invalid_ids": [
+        "CORPUS-002#chunk_001"
+      ],
+      "invalid_types": [
+        "F3_DOCUMENT_CORRECT_FORMAT_INCORRECT"
+      ],
+      "validator_status": "INTERCEPTED",
+      "semantic_status": "PASS-SEMANTIC",
+      "provenance_status": "INVALID"
+    },
+    {
+      "run_id": 18,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "PASS-SEMANTIC",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 19,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "PASS-SEMANTIC",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 20,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 21,
+      "invalid_ids": [
+        "CORPUS-002#chunk_001"
+      ],
+      "invalid_types": [
+        "F3_DOCUMENT_CORRECT_FORMAT_INCORRECT"
+      ],
+      "validator_status": "INTERCEPTED",
+      "semantic_status": "PASS-SEMANTIC",
+      "provenance_status": "INVALID"
+    },
+    {
+      "run_id": 22,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "PASS-SEMANTIC",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 23,
+      "invalid_ids": [
+        "CORPUS-002#chunk_001"
+      ],
+      "invalid_types": [
+        "F3_DOCUMENT_CORRECT_FORMAT_INCORRECT"
+      ],
+      "validator_status": "INTERCEPTED",
+      "semantic_status": "PASS-SEMANTIC",
+      "provenance_status": "INVALID"
+    },
+    {
+      "run_id": 24,
+      "invalid_ids": [
+        "CORPUS-002#p2_04"
+      ],
+      "invalid_types": [
+        "F4_CHUNK_EXISTS_DOCUMENT_INCORRECT"
+      ],
+      "validator_status": "INTERCEPTED",
+      "semantic_status": "PASS-SEMANTIC",
+      "provenance_status": "INVALID"
+    },
+    {
+      "run_id": 25,
+      "invalid_ids": [
+        "CORPUS-002#chunk_001"
+      ],
+      "invalid_types": [
+        "F3_DOCUMENT_CORRECT_FORMAT_INCORRECT"
+      ],
+      "validator_status": "INTERCEPTED",
+      "semantic_status": "PASS-SEMANTIC",
+      "provenance_status": "INVALID"
+    },
+    {
+      "run_id": 26,
+      "invalid_ids": [
+        "CORPUS-002#chunk_001"
+      ],
+      "invalid_types": [
+        "F3_DOCUMENT_CORRECT_FORMAT_INCORRECT"
+      ],
+      "validator_status": "INTERCEPTED",
+      "semantic_status": "PASS-SEMANTIC",
+      "provenance_status": "INVALID"
+    },
+    {
+      "run_id": 27,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "PASS-SEMANTIC",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 28,
+      "invalid_ids": [
+        "CORPUS-002#chunk_001"
+      ],
+      "invalid_types": [
+        "F3_DOCUMENT_CORRECT_FORMAT_INCORRECT"
+      ],
+      "validator_status": "INTERCEPTED",
+      "semantic_status": "PASS-SEMANTIC",
+      "provenance_status": "INVALID"
+    },
+    {
+      "run_id": 29,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "PASS-SEMANTIC",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 30,
+      "invalid_ids": [
+        "CORPUS-002#chunk_001"
+      ],
+      "invalid_types": [
+        "F3_DOCUMENT_CORRECT_FORMAT_INCORRECT"
+      ],
+      "validator_status": "INTERCEPTED",
+      "semantic_status": "PASS-SEMANTIC",
+      "provenance_status": "INVALID"
+    },
+    {
+      "run_id": 31,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 32,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 33,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 34,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 35,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 36,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 37,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 38,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 39,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 40,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 41,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 42,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 43,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 44,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 45,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 46,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 47,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 48,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 49,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 50,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 51,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 52,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 53,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 54,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 55,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 56,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 57,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 58,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 59,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 60,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 61,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 62,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 63,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 64,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 65,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 66,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 67,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 68,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 69,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 70,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 71,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 72,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 73,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 74,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 75,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 76,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 77,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 78,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 79,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 80,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 81,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 82,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 83,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 84,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 85,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 86,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 87,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 88,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 89,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 90,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 91,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 92,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 93,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 94,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 95,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 96,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 97,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 98,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 99,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 100,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    }
+  ]
+}

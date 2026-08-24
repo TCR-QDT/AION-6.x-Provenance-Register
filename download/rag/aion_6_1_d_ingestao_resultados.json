@@ -1,0 +1,690 @@
+{
+  "metadata": {
+    "experiment": "AION-6.1-D — Ingestão Controlada + AUDIT v6.2",
+    "timestamp": "2026-08-17T21:18:00+00:00",
+    "author_structure": "Edson C. Nascimento (Projetista Master)",
+    "author_implementation": "IA Curadora"
+  },
+  "ingestion_results": {
+    "CORPUS-006": {
+      "document_id": "CORPUS-006",
+      "filename": "Paper_A_v6.1_REVTeX_COMPLETE.pdf",
+      "curatorial_identification": {
+        "filepath": "/home/z/my-project/upload/Paper_A_v6.1_REVTeX_COMPLETE.pdf",
+        "document_id": "CORPUS-006",
+        "filename": "Paper_A_v6.1_REVTeX_COMPLETE.pdf",
+        "curatorial_id": "Paper A v6.1 oficial",
+        "version": "v6.1",
+        "language": "EN",
+        "state": "DRAFT (transição para v6.2)",
+        "origin": "submission archive",
+        "sha256_known": "bc2e75fdd6bc8a6d62e4081a5c2858a890809bb07c860ade5d777bf456670f09",
+        "expected_R_alpha": true
+      },
+      "stages": {
+        "1_INGEST": {
+          "status": "OK",
+          "sha256_computed": "bc2e75fdd6bc8a6d62e4081a5c2858a890809bb07c860ade5d777bf456670f09",
+          "sha256_expected": "bc2e75fdd6bc8a6d62e4081a5c2858a890809bb07c860ade5d777bf456670f09",
+          "hash_match": true,
+          "file_size_bytes": 138780,
+          "file_type": "PDF"
+        },
+        "2_AUDIT": {
+          "status": "PASS",
+          "issues": [],
+          "audit_timestamp": "2026-08-17T21:18:00+00:00"
+        },
+        "3_EXTRACT": {
+          "status": "OK",
+          "page_count": 6,
+          "char_count": 23755,
+          "pdf_metadata": {
+            "format": "PDF 1.5",
+            "title": "Relational Coherence in Biological Networks",
+            "author": "Edson C. do Nascimento",
+            "subject": "",
+            "keywords": "",
+            "creator": "LaTeX with hyperref",
+            "producer": "xdvipdfmx (0.1)",
+            "creationDate": "D:20260810224850-00'00'",
+            "modDate": "",
+            "trapped": "",
+            "encryption": null
+          },
+          "specific_checks": {
+            "R_alpha_present": true,
+            "patterns_matched": [
+              "R\\s*\\^?\\s*α",
+              "recursion term R",
+              "R\\s+with\\s+exponent",
+              "α\\s*=\\s*1\\.3",
+              "exponent\\s+α"
+            ]
+          }
+        },
+        "4_CHUNK": {
+          "status": "OK",
+          "chunk_count": 21,
+          "chunks_metadata": [
+            {
+              "chunk_id": "CORPUS-006#p1_01",
+              "page": "p.1",
+              "section": "—",
+              "char_count": 1437
+            },
+            {
+              "chunk_id": "CORPUS-006#p1_02",
+              "page": "p.1",
+              "section": "—",
+              "char_count": 1480
+            },
+            {
+              "chunk_id": "CORPUS-006#p1_03",
+              "page": "p.1",
+              "section": "—",
+              "char_count": 1491
+            },
+            {
+              "chunk_id": "CORPUS-006#p1_04",
+              "page": "p.1",
+              "section": "—",
+              "char_count": 1114
+            },
+            {
+              "chunk_id": "CORPUS-006#p2_01",
+              "page": "p.2",
+              "section": "—",
+              "char_count": 1464
+            },
+            {
+              "chunk_id": "CORPUS-006#p2_02",
+              "page": "p.2",
+              "section": "—",
+              "char_count": 1457
+            },
+            {
+              "chunk_id": "CORPUS-006#p2_03",
+              "page": "p.2",
+              "section": "—",
+              "char_count": 1494
+            },
+            {
+              "chunk_id": "CORPUS-006#p2_04",
+              "page": "p.2",
+              "section": "—",
+              "char_count": 437
+            },
+            {
+              "chunk_id": "CORPUS-006#p3_01",
+              "page": "p.3",
+              "section": "—",
+              "char_count": 1443
+            },
+            {
+              "chunk_id": "CORPUS-006#p3_02",
+              "page": "p.3",
+              "section": "—",
+              "char_count": 1471
+            },
+            {
+              "chunk_id": "CORPUS-006#p3_03",
+              "page": "p.3",
+              "section": "—",
+              "char_count": 1458
+            },
+            {
+              "chunk_id": "CORPUS-006#p3_04",
+              "page": "p.3",
+              "section": "—",
+              "char_count": 529
+            },
+            {
+              "chunk_id": "CORPUS-006#p4_01",
+              "page": "p.4",
+              "section": "—",
+              "char_count": 1495
+            },
+            {
+              "chunk_id": "CORPUS-006#p4_02",
+              "page": "p.4",
+              "section": "—",
+              "char_count": 1493
+            },
+            {
+              "chunk_id": "CORPUS-006#p4_03",
+              "page": "p.4",
+              "section": "—",
+              "char_count": 1072
+            },
+            {
+              "chunk_id": "CORPUS-006#p5_01",
+              "page": "p.5",
+              "section": "—",
+              "char_count": 1475
+            },
+            {
+              "chunk_id": "CORPUS-006#p5_02",
+              "page": "p.5",
+              "section": "—",
+              "char_count": 1479
+            },
+            {
+              "chunk_id": "CORPUS-006#p5_03",
+              "page": "p.5",
+              "section": "—",
+              "char_count": 1498
+            },
+            {
+              "chunk_id": "CORPUS-006#p5_04",
+              "page": "p.5",
+              "section": "—",
+              "char_count": 1182
+            },
+            {
+              "chunk_id": "CORPUS-006#p6_01",
+              "page": "p.6",
+              "section": "ACKNOWLEDGMENTS",
+              "char_count": 1456
+            },
+            {
+              "chunk_id": "CORPUS-006#p6_02",
+              "page": "p.6",
+              "section": "—",
+              "char_count": 315
+            }
+          ]
+        }
+      },
+      "overall_status": "COMPLETED",
+      "completed_at": "2026-08-17T21:18:00+00:00"
+    },
+    "CORPUS-007": {
+      "document_id": "CORPUS-007",
+      "filename": "Paper_A_v6.1_REVTeX_COMPLETE .pdf",
+      "curatorial_identification": {
+        "filepath": "/home/z/my-project/upload/Paper_A_v6.1_REVTeX_COMPLETE .pdf",
+        "document_id": "CORPUS-007",
+        "filename": "Paper_A_v6.1_REVTeX_COMPLETE .pdf",
+        "curatorial_id": "Paper A v6.1 revisão posterior",
+        "version": "v6.1-revision",
+        "language": "EN",
+        "state": "REVISÃO POSTERIOR (data posterior ao v6.2)",
+        "origin": "submission archive",
+        "sha256_known": "470cc395e0e7829379794480a62e7c1fb6bac4b622be171ad6c2554bd7346b2c",
+        "note": "Revisão posterior rotulada como v6.1; data 12/08 (igual ao v6.2)"
+      },
+      "stages": {
+        "1_INGEST": {
+          "status": "OK",
+          "sha256_computed": "470cc395e0e7829379794480a62e7c1fb6bac4b622be171ad6c2554bd7346b2c",
+          "sha256_expected": "470cc395e0e7829379794480a62e7c1fb6bac4b622be171ad6c2554bd7346b2c",
+          "hash_match": true,
+          "file_size_bytes": 326156,
+          "file_type": "PDF"
+        },
+        "2_AUDIT": {
+          "status": "PASS",
+          "issues": [],
+          "audit_timestamp": "2026-08-17T21:18:00+00:00"
+        },
+        "3_EXTRACT": {
+          "status": "OK",
+          "page_count": 6,
+          "char_count": 25040,
+          "pdf_metadata": {
+            "format": "PDF 1.5",
+            "title": "Relational Coherence in Biological Networks",
+            "author": "Edson C. do Nascimento",
+            "subject": "",
+            "keywords": "",
+            "creator": "LaTeX with hyperref",
+            "producer": "pdfTeX-1.40.25",
+            "creationDate": "D:20260812181321-03'00'",
+            "modDate": "D:20260812181321-03'00'",
+            "trapped": "",
+            "encryption": null
+          },
+          "specific_checks": {
+            "R_alpha_present": true,
+            "patterns_matched": [
+              "R\\s*\\^?\\s*α",
+              "recursion term R",
+              "R\\s+with\\s+exponent",
+              "α\\s*=\\s*1\\.3",
+              "exponent\\s+α"
+            ]
+          }
+        },
+        "4_CHUNK": {
+          "status": "OK",
+          "chunk_count": 23,
+          "chunks_metadata": [
+            {
+              "chunk_id": "CORPUS-007#p1_01",
+              "page": "p.1",
+              "section": "—",
+              "char_count": 1448
+            },
+            {
+              "chunk_id": "CORPUS-007#p1_02",
+              "page": "p.1",
+              "section": "—",
+              "char_count": 1466
+            },
+            {
+              "chunk_id": "CORPUS-007#p1_03",
+              "page": "p.1",
+              "section": "—",
+              "char_count": 1488
+            },
+            {
+              "chunk_id": "CORPUS-007#p1_04",
+              "page": "p.1",
+              "section": "—",
+              "char_count": 1171
+            },
+            {
+              "chunk_id": "CORPUS-007#p2_01",
+              "page": "p.2",
+              "section": "—",
+              "char_count": 1464
+            },
+            {
+              "chunk_id": "CORPUS-007#p2_02",
+              "page": "p.2",
+              "section": "—",
+              "char_count": 1457
+            },
+            {
+              "chunk_id": "CORPUS-007#p2_03",
+              "page": "p.2",
+              "section": "—",
+              "char_count": 1444
+            },
+            {
+              "chunk_id": "CORPUS-007#p2_04",
+              "page": "p.2",
+              "section": "—",
+              "char_count": 496
+            },
+            {
+              "chunk_id": "CORPUS-007#p3_01",
+              "page": "p.3",
+              "section": "—",
+              "char_count": 1443
+            },
+            {
+              "chunk_id": "CORPUS-007#p3_02",
+              "page": "p.3",
+              "section": "—",
+              "char_count": 1469
+            },
+            {
+              "chunk_id": "CORPUS-007#p3_03",
+              "page": "p.3",
+              "section": "—",
+              "char_count": 1495
+            },
+            {
+              "chunk_id": "CORPUS-007#p3_04",
+              "page": "p.3",
+              "section": "—",
+              "char_count": 290
+            },
+            {
+              "chunk_id": "CORPUS-007#p4_01",
+              "page": "p.4",
+              "section": "—",
+              "char_count": 1470
+            },
+            {
+              "chunk_id": "CORPUS-007#p4_02",
+              "page": "p.4",
+              "section": "—",
+              "char_count": 1470
+            },
+            {
+              "chunk_id": "CORPUS-007#p4_03",
+              "page": "p.4",
+              "section": "—",
+              "char_count": 1461
+            },
+            {
+              "chunk_id": "CORPUS-007#p4_04",
+              "page": "p.4",
+              "section": "—",
+              "char_count": 463
+            },
+            {
+              "chunk_id": "CORPUS-007#p5_01",
+              "page": "p.5",
+              "section": "—",
+              "char_count": 1456
+            },
+            {
+              "chunk_id": "CORPUS-007#p5_02",
+              "page": "p.5",
+              "section": "—",
+              "char_count": 1455
+            },
+            {
+              "chunk_id": "CORPUS-007#p5_03",
+              "page": "p.5",
+              "section": "—",
+              "char_count": 1489
+            },
+            {
+              "chunk_id": "CORPUS-007#p5_04",
+              "page": "p.5",
+              "section": "—",
+              "char_count": 1029
+            },
+            {
+              "chunk_id": "CORPUS-007#p6_01",
+              "page": "p.6",
+              "section": "—",
+              "char_count": 1493
+            },
+            {
+              "chunk_id": "CORPUS-007#p6_02",
+              "page": "p.6",
+              "section": "—",
+              "char_count": 1305
+            },
+            {
+              "chunk_id": "CORPUS-007#p6_03",
+              "page": "p.6",
+              "section": "—",
+              "char_count": 6
+            }
+          ]
+        }
+      },
+      "overall_status": "COMPLETED",
+      "completed_at": "2026-08-17T21:18:00+00:00"
+    },
+    "CORPUS-011": {
+      "document_id": "CORPUS-011",
+      "filename": "Paper_B_QDT_v6.1_PT.pdf",
+      "curatorial_identification": {
+        "filepath": "/home/z/my-project/upload/Paper_B_QDT_v6.1_PT.pdf",
+        "document_id": "CORPUS-011",
+        "filename": "Paper_B_QDT_v6.1_PT.pdf",
+        "curatorial_id": "Paper B v6.1 PT (novo, 5 págs)",
+        "version": "v6.1",
+        "language": "PT-BR",
+        "state": "NOVO Paper B v6.1 expandido (5 págs vs 3 do CORPUS-004)",
+        "origin": "submission archive",
+        "sha256_known": "30476135b03b182d8d38c74fc2b276119a356c5ced293797fdf9ccc7f70ba916",
+        "expected_eta": true
+      },
+      "stages": {
+        "1_INGEST": {
+          "status": "OK",
+          "sha256_computed": "30476135b03b182d8d38c74fc2b276119a356c5ced293797fdf9ccc7f70ba916",
+          "sha256_expected": "30476135b03b182d8d38c74fc2b276119a356c5ced293797fdf9ccc7f70ba916",
+          "hash_match": true,
+          "file_size_bytes": 116434,
+          "file_type": "PDF"
+        },
+        "2_AUDIT": {
+          "status": "PASS",
+          "issues": [],
+          "audit_timestamp": "2026-08-17T21:18:00+00:00"
+        },
+        "3_EXTRACT": {
+          "status": "OK",
+          "page_count": 5,
+          "char_count": 19679,
+          "pdf_metadata": {
+            "format": "PDF 1.5",
+            "title": "Escalonamento Quântico Dissipativo no Complexo FMO",
+            "author": "Edson Carvalho do Nascimento",
+            "subject": "",
+            "keywords": "",
+            "creator": "LaTeX with hyperref",
+            "producer": "xdvipdfmx (0.1)",
+            "creationDate": "D:20260817194631-00'00'",
+            "modDate": "",
+            "trapped": "",
+            "encryption": null
+          },
+          "specific_checks": {
+            "eta_present": true,
+            "patterns_matched": [
+              "\\bη\\b",
+              "comensurabilidade"
+            ]
+          }
+        },
+        "4_CHUNK": {
+          "status": "OK",
+          "chunk_count": 17,
+          "chunks_metadata": [
+            {
+              "chunk_id": "CORPUS-011#p1_01",
+              "page": "p.1",
+              "section": "—",
+              "char_count": 1429
+            },
+            {
+              "chunk_id": "CORPUS-011#p1_02",
+              "page": "p.1",
+              "section": "—",
+              "char_count": 1480
+            },
+            {
+              "chunk_id": "CORPUS-011#p1_03",
+              "page": "p.1",
+              "section": "—",
+              "char_count": 1494
+            },
+            {
+              "chunk_id": "CORPUS-011#p1_04",
+              "page": "p.1",
+              "section": "—",
+              "char_count": 748
+            },
+            {
+              "chunk_id": "CORPUS-011#p2_01",
+              "page": "p.2",
+              "section": "—",
+              "char_count": 1467
+            },
+            {
+              "chunk_id": "CORPUS-011#p2_02",
+              "page": "p.2",
+              "section": "—",
+              "char_count": 1465
+            },
+            {
+              "chunk_id": "CORPUS-011#p2_03",
+              "page": "p.2",
+              "section": "—",
+              "char_count": 1166
+            },
+            {
+              "chunk_id": "CORPUS-011#p3_01",
+              "page": "p.3",
+              "section": "—",
+              "char_count": 1476
+            },
+            {
+              "chunk_id": "CORPUS-011#p3_02",
+              "page": "p.3",
+              "section": "—",
+              "char_count": 1452
+            },
+            {
+              "chunk_id": "CORPUS-011#p3_03",
+              "page": "p.3",
+              "section": "—",
+              "char_count": 1484
+            },
+            {
+              "chunk_id": "CORPUS-011#p3_04",
+              "page": "p.3",
+              "section": "—",
+              "char_count": 778
+            },
+            {
+              "chunk_id": "CORPUS-011#p4_01",
+              "page": "p.4",
+              "section": "—",
+              "char_count": 1444
+            },
+            {
+              "chunk_id": "CORPUS-011#p4_02",
+              "page": "p.4",
+              "section": "—",
+              "char_count": 1479
+            },
+            {
+              "chunk_id": "CORPUS-011#p4_03",
+              "page": "p.4",
+              "section": "—",
+              "char_count": 1491
+            },
+            {
+              "chunk_id": "CORPUS-011#p4_04",
+              "page": "p.4",
+              "section": "—",
+              "char_count": 485
+            },
+            {
+              "chunk_id": "CORPUS-011#p5_01",
+              "page": "p.5",
+              "section": "—",
+              "char_count": 1466
+            },
+            {
+              "chunk_id": "CORPUS-011#p5_02",
+              "page": "p.5",
+              "section": "—",
+              "char_count": 1262
+            }
+          ]
+        }
+      },
+      "overall_status": "COMPLETED",
+      "completed_at": "2026-08-17T21:18:00+00:00"
+    }
+  },
+  "v62_audit": {
+    "v62_old": {
+      "source": "CORPUS-002_extracted.md (do Passo 3)",
+      "size_bytes": 134294,
+      "text_chars": 27738,
+      "text_words": 4331,
+      "text_sha256": "4deff4f90cd39fbf1ccf60fe6f5cbab57a70f2d303b60bd54809e464b2e9e702",
+      "page_count": 6,
+      "R_alpha_present": true,
+      "P1_results": 3,
+      "AUC_mentions": [
+        "AUC = 0.793",
+        "AUC = 0.793",
+        "AUC = 0.793"
+      ],
+      "beta_mentions": [
+        "β = 0.5",
+        "β = 0.5",
+        "β = 0.1.",
+        "β = 0.5",
+        "β = 0.5.",
+        "β = 0.1",
+        "β = 0.5",
+        "β = 0.5"
+      ],
+      "references_count": 10,
+      "references_set": [
+        "1",
+        "10",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ]
+    },
+    "v62_new": {
+      "source": "Paper_A_v6.2_FINAL.pdf (novo upload)",
+      "size_bytes": 137520,
+      "text_chars": 25006,
+      "text_words": 3880,
+      "text_sha256": "d1e74fc01aa6a140569b5b9ba4d15ce7db6027a35fa6bcb3bd53f80b6c673e88",
+      "page_count": 6,
+      "pdf_metadata": {
+        "format": "PDF 1.5",
+        "title": "Relational Coherence in Biological Networks",
+        "author": "Edson C. do Nascimento",
+        "subject": "",
+        "keywords": "",
+        "creator": "LaTeX with hyperref",
+        "producer": "xdvipdfmx (0.1)",
+        "creationDate": "D:20260812212209-00'00'",
+        "modDate": "",
+        "trapped": "",
+        "encryption": null
+      },
+      "R_alpha_present": true,
+      "P1_results": 3,
+      "AUC_mentions": [
+        "AUC = 0.793",
+        "AUC = 0.793",
+        "AUC = 0.793"
+      ],
+      "beta_mentions": [
+        "β = 0.5",
+        "β = 0.5",
+        "β = 0.1.",
+        "β = 0.5",
+        "β = 0.5.",
+        "β = 0.1",
+        "β = 0.5",
+        "β = 0.5"
+      ],
+      "references_count": 10,
+      "references_set": [
+        "1",
+        "10",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ]
+    },
+    "differences": {
+      "text_chars_diff": -2732,
+      "text_words_diff": -451,
+      "text_hash_different": true,
+      "R_alpha_consistent": true,
+      "refs_added": [],
+      "refs_removed": [],
+      "auc_consistent": true,
+      "beta_consistent": true
+    },
+    "classification": "DIFERENÇA TEXTUAL MENOR — possivelmente formatação",
+    "recommendation": "Substituição possível após verificação visual"
+  },
+  "corpus_002_decision": {
+    "identity_authorized": true,
+    "textual_audit": "DIFERENÇA TEXTUAL MENOR — possivelmente formatação",
+    "substitution_decision": "SUBSTITUIÇÃO POSSÍVEL — diferença textual menor detectada"
+  },
+  "sha256_registry": {
+    "CORPUS-006": "bc2e75fdd6bc8a6d62e4081a5c2858a890809bb07c860ade5d777bf456670f09",
+    "CORPUS-007": "470cc395e0e7829379794480a62e7c1fb6bac4b622be171ad6c2554bd7346b2c",
+    "CORPUS-011": "30476135b03b182d8d38c74fc2b276119a356c5ced293797fdf9ccc7f70ba916",
+    "CORPUS-002 (novo)": "971986d96c4ceb1ea5d7a17acdf2a54f4276403f2805c3945874304020adc433",
+    "CORPUS-002 (antigo, no corpus v1.2.0)": "a ser verificado no Passo 3 original"
+  },
+  "next_step": "Estabelecer composição definitiva do Corpus v1.3.0 — aguardando decisão do Projetista Master sobre CORPUS-002"
+}

@@ -1,0 +1,439 @@
+{
+  "metadata": {
+    "experiment": "AION-B1-DIAG-001",
+    "timestamp": "2026-08-17T12:51:14+00:00",
+    "author_structure": "Edson C. Nascimento (Projetista Master)",
+    "author_implementation": "IA Curadora",
+    "protocol": "AION-EVAL-002 v1.0.0 (apenas retrieval, sem geração)"
+  },
+  "objective": "Diagnosticar se B1 falha por retrieval capability ou query formulation",
+  "variants": {
+    "Q1_natural": {
+      "descricao": "Pergunta original do benchmark (formulação natural)",
+      "pergunta": "Qual é a fonte exata da afirmação de que a métrica TCR é C = I × S × H^β?",
+      "hipotese": "Testa capacidade do retriever de mapear pergunta natural ao chunk correto"
+    },
+    "Q2_enriquecida": {
+      "descricao": "Pergunta lexicalmente enriquecida com termos do domínio",
+      "pergunta": "Qual é a fonte documental exata da definição da métrica TCR (Teoria da Coerência Relacional), que combina integração I, simetria S e entropia espectral H com expoente β?",
+      "hipotese": "Testa se sinais lexicais adicionais melhoram retrieval"
+    },
+    "Q3_explicita": {
+      "descricao": "Pergunta contendo explicitamente a fórmula/termo técnico",
+      "pergunta": "Qual documento define textualmente a métrica C = I × S × H^β com β calibrado via LOOCV? Procure pela fórmula exata.",
+      "hipotese": "Testa se presença explícita da fórmula resolve retrieval"
+    }
+  },
+  "expected_chunk_prefix": "CORPUS-002#p1",
+  "acceptable_chunks": [
+    "CORPUS-002#p1_01",
+    "CORPUS-002#p2_01",
+    "CORPUS-005#chunk_001"
+  ],
+  "results": {
+    "Q1_natural": {
+      "descricao": "Pergunta original do benchmark (formulação natural)",
+      "pergunta": "Qual é a fonte exata da afirmação de que a métrica TCR é C = I × S × H^β?",
+      "hipotese": "Testa capacidade do retriever de mapear pergunta natural ao chunk correto",
+      "tfidf": {
+        "retrieved": [
+          {
+            "rank": 1,
+            "chunk_id": "CORPUS-003#p8_02",
+            "score": 0.1068989949086633,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 2,
+            "chunk_id": "CORPUS-004#p3_01",
+            "score": 0.09628058235160475,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "rank": 3,
+            "chunk_id": "CORPUS-003#p3_02",
+            "score": 0.09376228671967034,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 4,
+            "chunk_id": "CORPUS-003#p4_01",
+            "score": 0.0903240077379034,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 5,
+            "chunk_id": "CORPUS-005#chunk_001",
+            "score": 0.08658676073994144,
+            "corpus_id": "CORPUS-005"
+          },
+          {
+            "rank": 6,
+            "chunk_id": "CORPUS-003#p3_01",
+            "score": 0.08479025116250992,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 7,
+            "chunk_id": "CORPUS-003#p6_01",
+            "score": 0.08227637183914478,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 8,
+            "chunk_id": "CORPUS-003#p3_03",
+            "score": 0.0812210880907171,
+            "corpus_id": "CORPUS-003"
+          }
+        ],
+        "evaluation": {
+          "expected_in_top3": false,
+          "expected_in_top5": false,
+          "expected_rank": null,
+          "acceptable_in_top3": false,
+          "acceptable_rank": 5,
+          "pass": false
+        }
+      },
+      "embedding": {
+        "retrieved": [
+          {
+            "rank": 1,
+            "chunk_id": "CORPUS-003#p3_03",
+            "score": 0.5639858245849609,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 2,
+            "chunk_id": "CORPUS-004#p3_01",
+            "score": 0.5024847984313965,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "rank": 3,
+            "chunk_id": "CORPUS-003#p7_02",
+            "score": 0.494817852973938,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 4,
+            "chunk_id": "CORPUS-003#p11_01",
+            "score": 0.4558352828025818,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 5,
+            "chunk_id": "CORPUS-002#p5_02",
+            "score": 0.4317000210285187,
+            "corpus_id": "CORPUS-002"
+          },
+          {
+            "rank": 6,
+            "chunk_id": "CORPUS-004#p1_02",
+            "score": 0.4214535355567932,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "rank": 7,
+            "chunk_id": "CORPUS-003#p8_02",
+            "score": 0.417964905500412,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 8,
+            "chunk_id": "CORPUS-003#p7_01",
+            "score": 0.4169310927391052,
+            "corpus_id": "CORPUS-003"
+          }
+        ],
+        "evaluation": {
+          "expected_in_top3": false,
+          "expected_in_top5": false,
+          "expected_rank": null,
+          "acceptable_in_top3": false,
+          "acceptable_rank": null,
+          "pass": false
+        }
+      }
+    },
+    "Q2_enriquecida": {
+      "descricao": "Pergunta lexicalmente enriquecida com termos do domínio",
+      "pergunta": "Qual é a fonte documental exata da definição da métrica TCR (Teoria da Coerência Relacional), que combina integração I, simetria S e entropia espectral H com expoente β?",
+      "hipotese": "Testa se sinais lexicais adicionais melhoram retrieval",
+      "tfidf": {
+        "retrieved": [
+          {
+            "rank": 1,
+            "chunk_id": "CORPUS-005#chunk_001",
+            "score": 0.15131888950889605,
+            "corpus_id": "CORPUS-005"
+          },
+          {
+            "rank": 2,
+            "chunk_id": "CORPUS-004#p3_01",
+            "score": 0.07095221172728323,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "rank": 3,
+            "chunk_id": "CORPUS-004#p3_03",
+            "score": 0.06257078414204645,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "rank": 4,
+            "chunk_id": "CORPUS-003#p7_01",
+            "score": 0.061222926678168574,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 5,
+            "chunk_id": "CORPUS-003#p8_01",
+            "score": 0.05631757618477948,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 6,
+            "chunk_id": "CORPUS-003#p8_02",
+            "score": 0.05001221643285252,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 7,
+            "chunk_id": "CORPUS-004#p2_01",
+            "score": 0.04973776394491306,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "rank": 8,
+            "chunk_id": "CORPUS-004#p1_01",
+            "score": 0.04857323292962708,
+            "corpus_id": "CORPUS-004"
+          }
+        ],
+        "evaluation": {
+          "expected_in_top3": false,
+          "expected_in_top5": false,
+          "expected_rank": null,
+          "acceptable_in_top3": true,
+          "acceptable_rank": 1,
+          "pass": false
+        }
+      },
+      "embedding": {
+        "retrieved": [
+          {
+            "rank": 1,
+            "chunk_id": "CORPUS-004#p3_01",
+            "score": 0.6257595419883728,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "rank": 2,
+            "chunk_id": "CORPUS-003#p11_01",
+            "score": 0.5609281659126282,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 3,
+            "chunk_id": "CORPUS-004#p1_03",
+            "score": 0.5314370393753052,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "rank": 4,
+            "chunk_id": "CORPUS-003#p7_02",
+            "score": 0.5190029144287109,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 5,
+            "chunk_id": "CORPUS-004#p3_02",
+            "score": 0.5168710947036743,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "rank": 6,
+            "chunk_id": "CORPUS-003#p3_03",
+            "score": 0.5156593918800354,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 7,
+            "chunk_id": "CORPUS-004#p2_02",
+            "score": 0.5136837363243103,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "rank": 8,
+            "chunk_id": "CORPUS-003#p3_01",
+            "score": 0.5112771987915039,
+            "corpus_id": "CORPUS-003"
+          }
+        ],
+        "evaluation": {
+          "expected_in_top3": false,
+          "expected_in_top5": false,
+          "expected_rank": null,
+          "acceptable_in_top3": false,
+          "acceptable_rank": null,
+          "pass": false
+        }
+      }
+    },
+    "Q3_explicita": {
+      "descricao": "Pergunta contendo explicitamente a fórmula/termo técnico",
+      "pergunta": "Qual documento define textualmente a métrica C = I × S × H^β com β calibrado via LOOCV? Procure pela fórmula exata.",
+      "hipotese": "Testa se presença explícita da fórmula resolve retrieval",
+      "tfidf": {
+        "retrieved": [
+          {
+            "rank": 1,
+            "chunk_id": "CORPUS-003#p3_03",
+            "score": 0.08819627723288886,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 2,
+            "chunk_id": "CORPUS-002#p2_01",
+            "score": 0.08052672721255787,
+            "corpus_id": "CORPUS-002"
+          },
+          {
+            "rank": 3,
+            "chunk_id": "CORPUS-003#p1_01",
+            "score": 0.07089887312884549,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 4,
+            "chunk_id": "CORPUS-003#p12_01",
+            "score": 0.06438819193195774,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 5,
+            "chunk_id": "CORPUS-002#p2_02",
+            "score": 0.058144410542027444,
+            "corpus_id": "CORPUS-002"
+          },
+          {
+            "rank": 6,
+            "chunk_id": "CORPUS-003#p3_02",
+            "score": 0.05695605961636868,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 7,
+            "chunk_id": "CORPUS-003#p4_02",
+            "score": 0.04815658460230519,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 8,
+            "chunk_id": "CORPUS-003#p5_02",
+            "score": 0.04609146729604679,
+            "corpus_id": "CORPUS-003"
+          }
+        ],
+        "evaluation": {
+          "expected_in_top3": false,
+          "expected_in_top5": false,
+          "expected_rank": null,
+          "acceptable_in_top3": true,
+          "acceptable_rank": 2,
+          "pass": false
+        }
+      },
+      "embedding": {
+        "retrieved": [
+          {
+            "rank": 1,
+            "chunk_id": "CORPUS-002#p5_02",
+            "score": 0.4476071894168854,
+            "corpus_id": "CORPUS-002"
+          },
+          {
+            "rank": 2,
+            "chunk_id": "CORPUS-003#p3_03",
+            "score": 0.4193710684776306,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 3,
+            "chunk_id": "CORPUS-003#p5_02",
+            "score": 0.40057533979415894,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 4,
+            "chunk_id": "CORPUS-002#p2_04",
+            "score": 0.3969337046146393,
+            "corpus_id": "CORPUS-002"
+          },
+          {
+            "rank": 5,
+            "chunk_id": "CORPUS-004#p1_04",
+            "score": 0.38621288537979126,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "rank": 6,
+            "chunk_id": "CORPUS-003#p7_02",
+            "score": 0.3778090476989746,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 7,
+            "chunk_id": "CORPUS-003#p9_02",
+            "score": 0.37321415543556213,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "rank": 8,
+            "chunk_id": "CORPUS-002#p2_01",
+            "score": 0.3398381471633911,
+            "corpus_id": "CORPUS-002"
+          }
+        ],
+        "evaluation": {
+          "expected_in_top3": false,
+          "expected_in_top5": false,
+          "expected_rank": null,
+          "acceptable_in_top3": false,
+          "acceptable_rank": 8,
+          "pass": false
+        }
+      }
+    }
+  },
+  "diagnostic_matrix": {
+    "matrix": [
+      {
+        "query": "Q1_natural",
+        "tfidf_pass": false,
+        "tfidf_rank": null,
+        "embedding_pass": false,
+        "embedding_rank": null
+      },
+      {
+        "query": "Q2_enriquecida",
+        "tfidf_pass": false,
+        "tfidf_rank": null,
+        "embedding_pass": false,
+        "embedding_rank": null
+      },
+      {
+        "query": "Q3_explicita",
+        "tfidf_pass": false,
+        "tfidf_rank": null,
+        "embedding_pass": false,
+        "embedding_rank": null
+      }
+    ],
+    "diagnosis": "PROBLEMA DE RETRIEVER + REPRESENTAÇÃO DOCUMENTAL — ambos falham mesmo com Q3 explícita",
+    "implication": "Solução: revisar chunking ou representação documental"
+  },
+  "diagnosis": "PROBLEMA DE RETRIEVER + REPRESENTAÇÃO DOCUMENTAL — ambos falham mesmo com Q3 explícita",
+  "implication": "Solução: revisar chunking ou representação documental"
+}

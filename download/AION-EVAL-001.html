@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AION-EVAL-001 — Protocolo de Avaliação Semântica</title>
+    <meta name="aion:id" content="AION-EVAL-001">
+    <meta name="aion:version" content="0.1.0">
+    <meta name="aion:status" content="Draft">
+    <meta name="author" content="Edson Carvalho do Nascimento">
+    <style>
+        body{font-family:system-ui,sans-serif;max-width:1000px;margin:2rem auto;line-height:1.6;padding:0 1rem;background:#fafafa;color:#111}
+        header,footer{border-bottom:2px solid #2c3e50;padding-bottom:1rem;margin-bottom:2rem}
+        h1{color:#1a252f}
+        h2{color:#2c3e50;border-left:4px solid #3498db;padding-left:.8rem}
+        table{border-collapse:collapse;width:100%;margin:1.5rem 0;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,0.1)}
+        th,td{border:1px solid #bdc3c7;padding:.7rem;text-align:left;vertical-align:top}
+        th{background:#ecf0f1;font-weight:600}
+        code{background:#e8e8e8;padding:.15rem .4rem;border-radius:3px;font-size:.9em}
+        .badge{display:inline-block;padding:.1rem .5rem;border-radius:4px;font-size:.8rem;font-weight:bold;color:#fff}
+        .badge-pass{background:#27ae60}
+        .badge-partial{background:#f39c12}
+        .badge-fail{background:#e74c3c}
+        .badge-unsupported{background:#8e44ad}
+        .badge-contradiction{background:#c0392b}
+        .badge-provenance{background:#2980b9}
+        .badge-absence{background:#16a085}
+        hr{margin:2rem 0;border:0;border-top:1px dashed #bdc3c7}
+        .attribution-note{background:#fff3cd;border-left:4px solid #f39c12;padding:1rem;margin:1rem 0}
+    </style>
+</head>
+<body>
+<article data-aion-id="AION-EVAL-001" data-aion-version="0.1.0">
+<header>
+<h1>AION-EVAL-001</h1>
+<h2>Protocolo de Avaliação Semântica</h2>
+<p><strong>Status:</strong> Draft 0.1.0</p>
+<p><strong>Autor do conteúdo:</strong> Edson Carvalho do Nascimento</p>
+<p><strong>Data:</strong> 17 de agosto de 2026</p>
+
+<div class="attribution-note">
+<strong>Nota de Atribuição (T8 — aplicada):</strong>
+Este artefato foi produzido manualmente pelo autor humano do projeto (Edson C. Nascimento),
+não pela IA Curadora. O conteúdo é aceito como Draft 0.1.0 após auditoria de cobertura pela
+IA Curadora (ver Seção 6 — Auditoria). Atribuição declarada conforme protocolo E/I/H aplicado
+à dinâmica humano-IA (Tensão T8 da ontologia v1.0.0).
+</div>
+</header>
+
+<section id="objetivo">
+<h2>1. Objetivo</h2>
+<p>Definir um protocolo normativo para avaliação de respostas do sistema AION, substituindo a avaliação puramente lexical por uma taxonomia de categorias semânticas. O protocolo é necessário porque a avaliação léxica usada no Passo 4 (TF-IDF + matching de palavras-chave) marcou como FAIL respostas corretas que usavam formulação diferente da esperada (ex: "INFORMAÇÃO NÃO ENCONTRADA" vs "não aparece").</p>
+</section>
+
+<section id="categorias">
+<h2>2. Categorias de Avaliação</h2>
+<table>
+<thead>
+<tr><th>Categoria</th><th>Definição</th><th>Exemplo</th></tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="badge badge-pass">PASS</span></td>
+<td>Resposta correta com evidência documental direta.</td>
+<td>"A métrica C é definida como I × S × H^β."</td>
+</tr>
+<tr>
+<td><span class="badge badge-absence">PASS-ABSENCE</span></td>
+<td>Resposta correta que declara ausência de informação no corpus.</td>
+<td>"INFORMAÇÃO NÃO ENCONTRADA NO CONTEXTO."</td>
+</tr>
+<tr>
+<td><span class="badge badge-provenance">PASS-PROVENANCE</span></td>
+<td>Resposta correta que inclui referência à fonte (documento, seção, página).</td>
+<td>"Conforme CORPUS-002, p.2, Sec. II."</td>
+</tr>
+<tr>
+<td><span class="badge badge-partial">PARTIAL</span></td>
+<td>Resposta parcialmente correta, com omissão ou imprecisão menor.</td>
+<td>"A métrica C é I × S × H" (omite β).</td>
+</tr>
+<tr>
+<td><span class="badge badge-unsupported">UNSUPPORTED</span></td>
+<td>Resposta não suportada pelo corpus (invenção ou inferência não declarada).</td>
+<td>"Campo Primordial é o fundamento ontológico do Paper A." (aresta revogada)</td>
+</tr>
+<tr>
+<td><span class="badge badge-contradiction">CONTRADICTION</span></td>
+<td>Resposta que contradiz evidência documental explícita.</td>
+<td>"P3 usou dados do PhysioNet Sleep-EDF." (contradiz Paper A v6.2)</td>
+</tr>
+<tr>
+<td><span class="badge badge-fail">FAIL</span></td>
+<td>Resposta incorreta ou que transforma ausência em evidência de ausência.</td>
+<td>"X não existe." (sem evidência para a negação)</td>
+</tr>
+</tbody>
+</table>
+</section>
+
+<section id="regras">
+<h2>3. Regras de Avaliação</h2>
+<ul>
+<li><strong>Regra 1:</strong> Respostas que declaram ausência de informação com a frase "INFORMAÇÃO NÃO ENCONTRADA" ou equivalente devem ser avaliadas como <code>PASS-ABSENCE</code>.</li>
+<li><strong>Regra 2:</strong> Respostas que incluem citação explícita da fonte devem ser avaliadas como <code>PASS-PROVENANCE</code>, independentemente da avaliação lexical.</li>
+<li><strong>Regra 3:</strong> Respostas que inferem uma relação não declarada textualmente devem ser avaliadas como <code>UNSUPPORTED</code>, a menos que a inferência seja explicitamente marcada como <code>[I]</code> na ontologia.</li>
+<li><strong>Regra 4:</strong> Respostas que afirmam a inexistência de algo sem evidência documental para a negação devem ser avaliadas como <code>FAIL</code>.</li>
+<li><strong>Regra 5 (adicionada em auditoria):</strong> Respostas que identificam corretamente uma contradição entre documentos do corpus devem ser avaliadas como <code>PASS</code> (não <code>CONTRADICTION</code> — esta última categoria é para respostas que <em>contêm</em> contradições internas, não para as que as <em>identificam</em>).</li>
+</ul>
+</section>
+
+<section id="proveniencia">
+<h2>4. Proveniência da Avaliação</h2>
+<p>Cada avaliação deve registrar:</p>
+<ul>
+<li><strong>Pergunta:</strong> Texto original da consulta.</li>
+<li><strong>Resposta:</strong> Texto gerado pelo sistema.</li>
+<li><strong>Categoria:</strong> Uma das 7 categorias acima.</li>
+<li><strong>Justificativa:</strong> Breve explicação da decisão de avaliação.</li>
+<li><strong>Documentos recuperados:</strong> Lista de chunks ou fontes utilizadas pelo sistema.</li>
+<li><strong>Avaliador:</strong> Humano ou IA (distinção relevante para T8).</li>
+</ul>
+</section>
+
+<section id="historico">
+<h2>5. Histórico</h2>
+<table>
+<tr><th>Versão</th><th>Data</th><th>Descrição</th></tr>
+<tr><td>0.1.0</td><td>2026-08-17</td><td>Primeira versão do protocolo de avaliação semântica. 7 categorias, 5 regras (Regra 5 adicionada em auditoria pela IA Curadora).</td></tr>
+</table>
+</section>
+
+<section id="auditoria">
+<h2>6. Auditoria de Cobertura (IA Curadora)</h2>
+<p>A IA Curadora realizou auditoria do protocolo para verificar cobertura dos casos de teste conhecidos (P1-P4 do Passo 4 e Passo 5).</p>
+
+<table>
+<tr><th>Caso</th><th>Categoria aplicável</th><th>Cobertura</th></tr>
+<tr><td>P1 — sistema lista conceitos corretamente</td><td><code>PASS</code></td><td>✅</td></tr>
+<tr><td>P1 — sistema omite conceitos importantes</td><td><code>PARTIAL</code></td><td>✅</td></tr>
+<tr><td>P1 — sistema inventa conceito não documental</td><td><code>UNSUPPORTED</code></td><td>✅</td></tr>
+<tr><td>P2 — sistema diz "consciência não está no corpus"</td><td><code>PASS-ABSENCE</code></td><td>✅</td></tr>
+<tr><td>P2 — sistema afirma "X não existe" sem evidência</td><td><code>FAIL</code></td><td>✅</td></tr>
+<tr><td>P3 — sistema lista limitações com citação</td><td><code>PASS-PROVENANCE</code></td><td>✅</td></tr>
+<tr><td>P3 — sistema cita PhysioNet como dataset de P3</td><td><code>CONTRADICTION</code></td><td>✅</td></tr>
+<tr><td>P4 — sistema identifica contradição Cover Letter vs Paper A</td><td><code>PASS</code> <em>(não CONTRADICTION — ver Regra 5)</em></td><td>✅</td></tr>
+<tr><td>P4 — sistema lista contradições com citação dupla</td><td><code>PASS-PROVENANCE</code></td><td>✅</td></tr>
+</table>
+
+<p><strong>Resultado da auditoria:</strong> 9/9 casos de teste cobertos pelas 7 categorias. Protocolo considerado <em>suficiente</em> para reavaliação do Passo 5.</p>
+
+<p><strong>Lacuna identificada:</strong> nenhuma categoria cobre explicitamente o caso de "resposta correta mas com citação a chunk errado" (problema de P2 no Passo 4, onde o sistema citou CORPUS-005 em vez de CORPUS-002 para uma afirmação sobre o Paper A). Recomendação: categoria adicional <code>PASS-WRONG-CITATION</code> em v0.2.0.</p>
+</section>
+
+<footer>
+<p><strong>Próximo passo operacional:</strong> Reavaliar resultados do Passo 5 usando as 7 categorias + Regra 5.</p>
+<p><strong>Responsável pela curadoria:</strong> Edson Carvalho do Nascimento.</p>
+<p><em>"Nenhuma resposta correta penalizada por divergência lexical. Nenhuma resposta inventada aceita como evidência."</em></p>
+</footer>
+</article>
+</body>
+</html>

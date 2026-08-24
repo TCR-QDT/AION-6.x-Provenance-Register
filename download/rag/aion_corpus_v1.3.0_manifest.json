@@ -1,0 +1,137 @@
+{
+  "version": "1.3.0",
+  "status": "FROZEN",
+  "frozen_at": "2026-08-17T22:16:35+00:00",
+  "composition": [
+    {
+      "id": "CORPUS-001",
+      "filename": "AION-DOC-000.html",
+      "title": "Especificação do Documento Canônico",
+      "version": "0.1.0",
+      "document_date": "UNKNOWN",
+      "state": "CURRENT",
+      "role": "normativo",
+      "sha256_pdf": "N/A (HTML)"
+    },
+    {
+      "id": "CORPUS-002-HIST",
+      "filename": "Paper_A_v6.2_FINAL.pdf (anterior, 134.294 B)",
+      "title": "Relational Coherence (Paper A v6.2 — versão anterior)",
+      "version": "v6.2",
+      "document_date": "2026-08-12",
+      "state": "SUPERSEDED",
+      "role": "historical_artifact",
+      "sha256_pdf": "a ser verificado (artefato do Passo 3)",
+      "superseded_by": "CORPUS-002"
+    },
+    {
+      "id": "CORPUS-002",
+      "filename": "Paper_A_v6.2_FINAL.pdf (novo, 137.520 B)",
+      "title": "Relational Coherence in Biological Networks (Paper A v6.2 — CURRENT)",
+      "version": "v6.2",
+      "document_date": "2026-08-12",
+      "state": "CURRENT / AUTHORITATIVE",
+      "role": "paper_final",
+      "sha256_pdf": "971986d96c4ceb1ea5d7a17acdf2a54f4276403f2805c3945874304020adc433",
+      "supersedes": "CORPUS-002-HIST"
+    },
+    {
+      "id": "CORPUS-003",
+      "filename": "PARTE_IV_Formalizacao_Teorica_PT-BR.pdf",
+      "title": "PARTE IV — Formalização Teórica (Functor Φcat, Tensor Qµν)",
+      "version": "1.0",
+      "document_date": "2026-08-10",
+      "state": "CURRENT",
+      "role": "paper_theoretical",
+      "sha256_pdf": "a ser verificado (artefato do Passo 3)"
+    },
+    {
+      "id": "CORPUS-004",
+      "filename": "Paper_B_QDT_JCP_v6.1_PT-BR.pdf",
+      "title": "Dinâmica Quântica Dissipativa (Paper B — versão anterior)",
+      "version": "v6.1",
+      "document_date": "2026-08-12",
+      "state": "HISTORICAL / PREVIOUS",
+      "role": "paper_historical",
+      "sha256_pdf": "a ser verificado (artefato do Passo 3)",
+      "succeeded_by": "CORPUS-011"
+    },
+    {
+      "id": "CORPUS-005",
+      "filename": "Cover_Letter_Paper_A_PRE_PT-BR.md",
+      "title": "Cover Letter – Paper A – PRE (PT-BR)",
+      "version": "NÃO DECLARADO",
+      "document_date": "2026-08-10",
+      "state": "CURRENT",
+      "role": "cover_letter",
+      "sha256_pdf": "N/A (MD)",
+      "reinterpretation": "CONSISTENTE com v6.1 oficial (C=0.968) — não aspiracional"
+    },
+    {
+      "id": "CORPUS-006",
+      "filename": "Paper_A_v6.1_REVTeX_COMPLETE.pdf",
+      "title": "Relational Coherence (Paper A v6.1 oficial)",
+      "version": "v6.1",
+      "document_date": "2026-08-10",
+      "state": "HISTORICAL",
+      "role": "paper_historical",
+      "sha256_pdf": "bc2e75fdd6bc8a6d62e4081a5c2858a890809bb07c860ade5d777bf456670f09",
+      "P3_value": "C = 0.968",
+      "R_alpha": "PRESENTE",
+      "succeeded_by": "CORPUS-007"
+    },
+    {
+      "id": "CORPUS-007",
+      "filename": "Paper_A_v6.1_REVTeX_COMPLETE .pdf (com espaço)",
+      "title": "Relational Coherence (Paper A v6.1 revisão posterior)",
+      "version": "v6.1-revision",
+      "document_date": "2026-08-12",
+      "state": "HISTORICAL / SCIENTIFIC_REVISION",
+      "role": "paper_historical_revision",
+      "sha256_pdf": "470cc395e0e7829379794480a62e7c1fb6bac4b622be171ad6c2554bd7346b2c",
+      "P3_value": "C = 0.793 ± 0.133",
+      "R_alpha": "PRESENTE",
+      "succeeds": "CORPUS-006",
+      "succeeded_by": "CORPUS-002"
+    },
+    {
+      "id": "CORPUS-011",
+      "filename": "Paper_B_QDT_v6.1_PT.pdf",
+      "title": "Escalonamento Quântico Dissipativo (Paper B v6.1 PT — novo)",
+      "version": "v6.1",
+      "document_date": "2026-08-17",
+      "state": "CURRENT / NEW REVISION",
+      "role": "paper_final_expanded",
+      "sha256_pdf": "30476135b03b182d8d38c74fc2b276119a356c5ced293797fdf9ccc7f70ba916",
+      "expands": "CORPUS-004"
+    }
+  ],
+  "non_existent_documents": [
+    {
+      "name": "Paper A v6.0",
+      "state": "DOES_NOT_EXIST",
+      "note": "Declarado pelo Projetista Master em 17/08/2026"
+    },
+    {
+      "name": "Paper B v6.0",
+      "state": "DOES_NOT_EXIST",
+      "note": "Declarado pelo Projetista Master em 17/08/2026"
+    }
+  ],
+  "changes_from_v1.2.0": [
+    "Adicionado CORPUS-006 (Paper A v6.1 oficial, 10/08)",
+    "Adicionado CORPUS-007 (Paper A v6.1 revisão, 12/08, SCIENTIFIC_REVISION)",
+    "Adicionado CORPUS-011 (Paper B v6.1 novo expandido, 17/08)",
+    "Adicionado CORPUS-002-HIST (Paper A v6.2 anterior, SUPERSEDED)",
+    "Promovido CORPUS-002 para nova versão (137.520 B, substituindo 134.294 B)",
+    "Reinterpretado T5: Cover Letter PT-BR era consistente com v6.1 original, não aspiracional",
+    "B6 status: TEMPORALLY BOUNDED, NOT CLOSED (janela 12/08 entre v6.1rev e v6.2)"
+  ],
+  "principles_preserved": [
+    "Nenhum documento histórico removido",
+    "Genealogia documental preservada",
+    "Substituição não é apagamento",
+    "B6 não foi artificialmente CLOSED",
+    "Ontologia v1.0.0 mantida (sem v1.1.0 desnecessário)"
+  ]
+}

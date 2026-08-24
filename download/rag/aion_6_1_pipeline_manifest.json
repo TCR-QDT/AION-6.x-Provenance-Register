@@ -1,0 +1,105 @@
+{
+  "metadata": {
+    "pipeline": "AION-6.1 — Aquisição Controlada",
+    "timestamp": "2026-08-17T19:09:07+00:00",
+    "author_structure": "Edson C. Nascimento (Projetista Master)",
+    "author_implementation": "IA Curadora"
+  },
+  "status": "PIPELINE_READY_AWAITING_DOCUMENTS",
+  "expected_documents": [
+    {
+      "prioridade": "P1",
+      "document_id": "CORPUS-006",
+      "filename_esperado": "Paper_A_v6.0.pdf",
+      "title": "Relational Coherence (Paper A v6.0 — com termo de recursão R^α)",
+      "version": "v6.0",
+      "document_date": "UNKNOWN",
+      "origin": "submission archive",
+      "state": "FINAL draft (com R^α)",
+      "lacunas_que_resolve": [
+        "B6 (data de abandono do R^α)",
+        "TPC UNKNOWN pré-v6.2"
+      ]
+    },
+    {
+      "prioridade": "P1",
+      "document_id": "CORPUS-007",
+      "filename_esperado": "Paper_A_v6.1.pdf",
+      "title": "Relational Coherence (Paper A v6.1 — transição para v6.2)",
+      "version": "v6.1",
+      "document_date": "UNKNOWN",
+      "origin": "submission archive",
+      "state": "DRAFT (transição)",
+      "lacunas_que_resolve": [
+        "B6 (data de abandono do R^α)"
+      ]
+    },
+    {
+      "prioridade": "P1",
+      "document_id": "CORPUS-008",
+      "filename_esperado": "Paper_B_v6.0.pdf",
+      "title": "Dinâmica Quântica Dissipativa (Paper B v6.0 — com hipótese η, dímero 2 sítios)",
+      "version": "v6.0",
+      "document_date": "UNKNOWN",
+      "origin": "submission archive",
+      "state": "FINAL draft (com η e dímero 2 sítios)",
+      "lacunas_que_resolve": [
+        "B6 (data de proposição do η)"
+      ]
+    },
+    {
+      "prioridade": "P2",
+      "document_id": "CORPUS-009",
+      "filename_esperado": "Cover_Letter_Paper_A_PRE.md",
+      "title": "Cover Letter (EN — versão oficial submetida ao PRE)",
+      "version": "NÃO DECLARADO",
+      "document_date": "UNKNOWN",
+      "origin": "submission archive",
+      "state": "Carta de submissão oficial (EN)",
+      "lacunas_que_resolve": [
+        "T6 (lacuna Cover Letter EN)"
+      ]
+    },
+    {
+      "prioridade": "P2",
+      "document_id": "CORPUS-010",
+      "filename_esperado": "Partes_I_a_III_Formalizacao.pdf",
+      "title": "Partes I-III do Programa de Formalização Físico-Matemática",
+      "version": "UNKNOWN",
+      "document_date": "UNKNOWN",
+      "origin": "submission archive",
+      "state": "Documento teórico (Passos 1-15)",
+      "lacunas_que_resolve": [
+        "T9 (lacuna estrutural Partes I-III)"
+      ]
+    }
+  ],
+  "pipeline_stages": [
+    "1_INGEST",
+    "2_AUDIT",
+    "3_EXTRACT",
+    "4_CHUNK",
+    "5_ONTOLOGY",
+    "6_TEMPORAL_INDEX",
+    "7_GRAPH",
+    "8_CORPUS_VERSION"
+  ],
+  "lcr_definition": {
+    "formula": "LCR = lacunas_resolvidas / lacunas_selecionadas",
+    "closed_criteria": [
+      "1_in_corpus",
+      "2_retrieved",
+      "3_provenance_valid",
+      "4_temporal_consistent",
+      "5_no_interpretation_as_evidence"
+    ]
+  },
+  "principles_preserved": [
+    "TF-IDF permanece",
+    "GraphRAG permanece",
+    "P-RESP-001 v0.3 permanece",
+    "AION-EVAL-002 v0.2 permanece",
+    "Dify permanece apenas como orquestrador",
+    "B1 permanece KNOWN LIMITATION"
+  ]
+}

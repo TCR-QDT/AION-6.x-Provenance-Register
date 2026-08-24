@@ -1,0 +1,189 @@
+{
+  "metadata": {
+    "experiment": "AION-6.1-E — Diff CORPUS-006 × CORPUS-007",
+    "timestamp": "2026-08-17T22:03:18+00:00",
+    "author_structure": "Edson C. Nascimento (Projetista Master)",
+    "author_implementation": "IA Curadora"
+  },
+  "corpus_006": {
+    "filepath": "/home/z/my-project/upload/Paper_A_v6.1_REVTeX_COMPLETE.pdf",
+    "sha256_pdf": "bc2e75fdd6bc8a6d62e4081a5c2858a890809bb07c860ade5d777bf456670f09",
+    "page_count": 6,
+    "char_count": 23755,
+    "text_sha256_raw": "c57496bfcd1e7ce6f620855cead658320411d2731a1230a9829d639926902945",
+    "text_sha256_normalized": "fd618a5ef99cb77b12121ca764d0c17d492fd7347370458e41b345c7adb61c50"
+  },
+  "corpus_007": {
+    "filepath": "/home/z/my-project/upload/Paper_A_v6.1_REVTeX_COMPLETE .pdf",
+    "sha256_pdf": "470cc395e0e7829379794480a62e7c1fb6bac4b622be171ad6c2554bd7346b2c",
+    "page_count": 6,
+    "char_count": 25040,
+    "text_sha256_raw": "37909c289036682fea857d6b0174914519e4d4fb99c7e67b6b7f6961d392885b",
+    "text_sha256_normalized": "588e656021c3e20ffa9ecabe641d99ca6bde04059a35cff17d9857c68630e646"
+  },
+  "comparison": {
+    "raw_hash_match": false,
+    "normalized_hash_match": false,
+    "char_count_diff": 1285
+  },
+  "diff": {
+    "diff_size_lines": 636,
+    "additions": 214,
+    "removals": 178,
+    "diff_file": "/home/z/my-project/download/rag/diff_corpus_006_vs_007.txt"
+  },
+  "scientific_differences": {
+    "numbers": {
+      "total_a": 340,
+      "total_b": 396,
+      "unique_a": 121,
+      "unique_b": 134,
+      "added": [
+        "-01",
+        "-04",
+        "-05",
+        "-06",
+        "-20",
+        "0.083",
+        "0.088",
+        "0.103",
+        "0.114",
+        "0.116",
+        "0.133",
+        "0.143",
+        "0.152",
+        "0.157",
+        "0.183",
+        "0.193",
+        "0.559",
+        "0.562",
+        "0.6",
+        "0.615"
+      ],
+      "removed": [
+        "0.014",
+        "0.019",
+        "0.020",
+        "0.021",
+        "0.649",
+        "0.725",
+        "0.764",
+        "0.822",
+        "0.908",
+        "0.909",
+        "0.912",
+        "0.916",
+        "0.966",
+        "0.970",
+        "1.9",
+        "200",
+        "2002",
+        "201",
+        "202",
+        "24"
+      ],
+      "added_count": 41,
+      "removed_count": 28
+    },
+    "equations": {
+      "total_a": 55,
+      "total_b": 57,
+      "added": [
+        "C = 0.793 ±",
+        "C = 0.793 ± 0.133 across 4 subjects (within-",
+        "C = 0.793 ± 0.133 across 4 subjects, p < 0.05). Sobol sensitivity analysis",
+        "C = 1.0, standardized features) is trained to classify",
+        "C = I × S × Hβ",
+        "H = −P",
+        "c = −P",
+        "g = −P",
+        "k = dk/ P",
+        "n = 4 subjects). Sensitivity analysis confirms that"
+      ],
+      "removed": [
+        "C =\nCalibration",
+        "C = 0.968.",
+        "C = 1.0, standard-",
+        "H = −∑",
+        "R = 0.011)",
+        "c = −∑",
+        "g = −∑",
+        "k = dk/ ∑",
+        "n = 200).",
+        "p = 1.0 bootstrap), species discrimination against degree-matched random graphs"
+      ],
+      "added_count": 13,
+      "removed_count": 11
+    },
+    "math_symbols": {
+      "a": [
+        "±",
+        "∈",
+        "∑",
+        "√",
+        "≈",
+        "≤",
+        "≥"
+      ],
+      "b": [
+        "±",
+        "∈",
+        "√",
+        "≈",
+        "≤",
+        "≥"
+      ],
+      "identical": false
+    },
+    "references": {
+      "a": [
+        "1",
+        "10",
+        "11",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "b": [
+        "1",
+        "10",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "added": [],
+      "removed": [
+        "11"
+      ]
+    }
+  },
+  "classification": {
+    "category": "SCIENTIFIC_REVISION",
+    "description": "Alteração de equações, parâmetros ou resultados numéricos",
+    "implication": "CORPUS-007 é revisão científica efetiva — ambos devem ser preservados como documentos independentes",
+    "details": {
+      "equations_added": 13,
+      "equations_removed": 11,
+      "numbers_added": 41,
+      "numbers_removed": 28,
+      "references_added": [],
+      "references_removed": [
+        "11"
+      ]
+    }
+  },
+  "curatorial_decision": {
+    "decision_text": "CORPUS-006 e CORPUS-007 permanecem ambos no histórico documental.\nSuas relações temporais serão explicitamente registradas.\nNenhum será descartado.",
+    "corpus_007_role": "DOCUMENTO_EPISTEMICAMENTE_INDEPENDENTE"
+  }
+}
