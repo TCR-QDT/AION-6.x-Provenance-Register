@@ -1,0 +1,53 @@
+AION-7.1.x — GitHub Release Manifest
+=====================================
+
+Generated: 2026-08-24 11:12:29 (UTC-3)
+Tarball:   aion-7.1.x-github-release.tar.gz
+Files:     26  (including this MANIFEST.txt)
+
+All SHA-256 hashes computed over the file bytes stored in the tarball.
+
+Format:  <sha256>  <size_bytes>  <path_in_tarball>
+
+------------------------------------------------------------------------------
+b50e1c6504e6a2984fd895f2a963f0796912ee407be370b49450dcb0d8b892bc      1910  aion-7.1.x/.github/CODEOWNERS
+02fdeef3413b56f0519f9143aad19074e7a2d05c9a1686b9b7299ab756d247b5      4650  aion-7.1.x/.github/CODE_OF_CONDUCT.md
+994e3eda05981b068fb0ab53037a1e3ecfefcdb0655d8d5327837f02d1fd487f      6466  aion-7.1.x/.github/CONTRIBUTING.md
+b67e748150959f0e79860f8f17645aa58f9006b348c15a53cb8de7f195e63639      4650  aion-7.1.x/.github/ISSUE_TEMPLATE/audit-finding.md
+1d8ab6605fd310734aba5fa50ac59db1675ef68213b7d1ee683419e04a3143ea      1220  aion-7.1.x/.github/ISSUE_TEMPLATE/config.yml
+d1272bdcd3966a8fcce3b496022f38df68cd7a2006105b4397fcead54493e633      3897  aion-7.1.x/.github/ISSUE_TEMPLATE/invariant-violation-escalation.md
+cf85aafd7ececf7450f2397b36d51040b6436cc3cdd48a4571f075290657c715      5072  aion-7.1.x/.github/ISSUE_TEMPLATE/task-proposal.md
+f26325699364f9289aa275c35bbd0eb423c2e71ee53b10add78bd110db71e724      5807  aion-7.1.x/.github/PULL_REQUEST_TEMPLATE.md
+41348114d009af1d0094ee67fb245dec97f544513f2cca9cd0037efc0be73f55      5059  aion-7.1.x/.github/SECURITY.md
+cbf345bdd984dd1f1ed2592c4c5ac0c840c2accaf951666c67500c71e42a89c8      5541  aion-7.1.x/.github/branch-protection.md
+1216708269714deb47bf7a328e9b922a66707612d9f528bf7c5e04d9d4bd70fa      9856  aion-7.1.x/.github/workflows/aion-verify.yml
+426d080e0a0bdfb60f2ad96ea7c78a66ba1b666be2860c7f3ea992f570c57ade      1376  aion-7.1.x/.gitignore
+964e02fa5f645cdcdefc676fe12ae86fd6271ca84ef9e7bb6a2d9466f0eb58f6      7649  aion-7.1.x/AION-7.0.0_EPISTEMIC_STATE_FREEZE.md
+1e42245ed96ddd12e1ae6ed0ab973ffb58ea8ad8fabb12866ec198405605c72c      5581  aion-7.1.x/AION-7.0.0_PROVENANCE_BOUNDARY.md
+fa14c4ebdad30063f5921f1c73bdd11c7b9a263b16239aaa996bf75112b2b8b4     10175  aion-7.1.x/AION-7.0.0_R0_CONSOLIDATION_MANIFEST.md
+a1fb82a3c924e02beaa6e8ea444879f11a2504f987e4714407ed41e2d699e726     45531  aion-7.1.x/AION-7.1.x_ARCH_OPTIONS.md
+e9254e55e090ef067993965c2768013c2893668435f450bc287f9e168e128f84     14572  aion-7.1.x/AION-7.1.x_CHARTER.md
+d80c2d8bb4085a7a35d4a3a0511a52977155c9c4f5b3b97b3f83936dfadc9d94     40133  aion-7.1.x/AION-7.1.x_REQUIREMENTS.md
+0332a3a89eab3426796b679b43ca56cd5f9c87915da4740d1004c1c7492e5f13     20362  aion-7.1.x/README.md
+7b33b1ccfcd1153e8c3607a488635a10128d4f7d0d3e9b4c592c291ccd10b2dd      7920  aion-7.1.x/scripts/aion_71x_archoptions_verify.py
+d163533c94522bc10215e033374c402ec86294d90594d2eb85b8765e179468f9      5353  aion-7.1.x/scripts/aion_71x_charter_verify.py
+69117ada1cfbaf628211e0593d7c502704e87eba58c2d0090531b87f7ac9e3ae      6834  aion-7.1.x/scripts/aion_71x_requirements_verify.py
+696a816bb3a7737c4dd544fd95f7e0696cc1582a3c3963814e91e1a5852e220c      5649  aion-7.1.x/scripts/aion_build_github_release.py
+92bf7fb0cfae302f63663dd6d9ce84f90dbaf9d09f6179643285c10ac5545936      5450  aion-7.1.x/scripts/aion_r0_consolidation_verify.py
+2d352d991a98e84bcf58790704f181ff2d8f3e30c9296136db87e162a6f263a6     21896  aion-7.1.x/worklog.md
+------------------------------------------------------------------------------
+
+Combined hash (deterministic over file list): da96162ac2110e96ef4c2ff21944ef6089df833fdbba048e71eadeaa21b944c2
+
+Verification procedure:
+  1. Extract the tarball:  tar -xzf aion-7.1.x-github-release.tar.gz
+  2. cd aion-7.1.x
+  3. Verify each file:     sha256sum download/*.md scripts/*.py worklog.md .github/**
+  4. Compare with the hashes listed above.
+
+Integrity rule (R-7.1.3 / REQ-MI.3):
+  The three 7.0.0 FROZEN artifacts MUST have these hashes:
+    AION-7.0.0_R0_CONSOLIDATION_MANIFEST.md  = fa14c4ebdad30063f5921f1c73bdd11c7b9a263b16239aaa996bf75112b2b8b4
+    AION-7.0.0_EPISTEMIC_STATE_FREEZE.md     = 964e02fa5f645cdcdefc676fe12ae86fd6271ca84ef9e7bb6a2d9466f0eb58f6
+    AION-7.0.0_PROVENANCE_BOUNDARY.md        = 1e42245ed96ddd12e1ae6ed0ab973ffb58ea8ad8fabb12866ec198405605c72c
+  Any mismatch indicates tampering or corruption.
