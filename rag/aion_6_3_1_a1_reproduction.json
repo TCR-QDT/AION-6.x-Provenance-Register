@@ -1,0 +1,347 @@
+{
+  "metadata": {
+    "experiment": "AION-6.3.1-A.1 — Prompt Reproduction Test",
+    "timestamp": "2026-08-21T14:38:56+00:00",
+    "author_structure": "Edson C. Nascimento (Projetista Master)",
+    "author_implementation": "IA Curadora",
+    "n_runs": 30,
+    "prompt_used": "P_RESP_001_V02_SYSTEM_PROMPT (igual ao baseline 6.3.0)"
+  },
+  "metrics": {
+    "FR": 0.5666666666666667,
+    "IR": 0.3695652173913043,
+    "VR": 1.0,
+    "SR": 0.9,
+    "F3R": 0.5333333333333333,
+    "PER": 0.7166666666666667,
+    "f3_count": 16,
+    "total_ids_generated": 46,
+    "total_invalid_ids": 17
+  },
+  "b1_control": {
+    "b1_top1": "CORPUS-005#chunk_001",
+    "b1_deterministic": true
+  },
+  "fabrication_distribution": {
+    "F3_DOCUMENT_CORRECT_FORMAT_INCORRECT": 16,
+    "F4_CHUNK_EXISTS_DOCUMENT_INCORRECT": 1
+  },
+  "crosstab": {
+    "semantic_pass_provenance_valid": 10,
+    "semantic_pass_provenance_invalid": 17,
+    "semantic_fail_provenance_valid": 3,
+    "semantic_fail_provenance_invalid": 0
+  },
+  "runs_summary": [
+    {
+      "run_id": 1,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "PASS-SEMANTIC",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 2,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "PASS-SEMANTIC",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 3,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 4,
+      "invalid_ids": [
+        "CORPUS-002#chunk_001"
+      ],
+      "invalid_types": [
+        "F3_DOCUMENT_CORRECT_FORMAT_INCORRECT"
+      ],
+      "validator_status": "INTERCEPTED",
+      "semantic_status": "PASS-SEMANTIC",
+      "provenance_status": "INVALID"
+    },
+    {
+      "run_id": 5,
+      "invalid_ids": [
+        "CORPUS-002#chunk_001"
+      ],
+      "invalid_types": [
+        "F3_DOCUMENT_CORRECT_FORMAT_INCORRECT"
+      ],
+      "validator_status": "INTERCEPTED",
+      "semantic_status": "PASS-SEMANTIC",
+      "provenance_status": "INVALID"
+    },
+    {
+      "run_id": 6,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "PASS-SEMANTIC",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 7,
+      "invalid_ids": [
+        "CORPUS-002#chunk_001"
+      ],
+      "invalid_types": [
+        "F3_DOCUMENT_CORRECT_FORMAT_INCORRECT"
+      ],
+      "validator_status": "INTERCEPTED",
+      "semantic_status": "PASS-SEMANTIC",
+      "provenance_status": "INVALID"
+    },
+    {
+      "run_id": 8,
+      "invalid_ids": [
+        "CORPUS-002#chunk_001"
+      ],
+      "invalid_types": [
+        "F3_DOCUMENT_CORRECT_FORMAT_INCORRECT"
+      ],
+      "validator_status": "INTERCEPTED",
+      "semantic_status": "PASS-SEMANTIC",
+      "provenance_status": "INVALID"
+    },
+    {
+      "run_id": 9,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "PASS-SEMANTIC",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 10,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 11,
+      "invalid_ids": [
+        "CORPUS-002#chunk_001"
+      ],
+      "invalid_types": [
+        "F3_DOCUMENT_CORRECT_FORMAT_INCORRECT"
+      ],
+      "validator_status": "INTERCEPTED",
+      "semantic_status": "PASS-SEMANTIC",
+      "provenance_status": "INVALID"
+    },
+    {
+      "run_id": 12,
+      "invalid_ids": [
+        "CORPUS-002#chunk_001"
+      ],
+      "invalid_types": [
+        "F3_DOCUMENT_CORRECT_FORMAT_INCORRECT"
+      ],
+      "validator_status": "INTERCEPTED",
+      "semantic_status": "PASS-SEMANTIC",
+      "provenance_status": "INVALID"
+    },
+    {
+      "run_id": 13,
+      "invalid_ids": [
+        "CORPUS-002#chunk_001"
+      ],
+      "invalid_types": [
+        "F3_DOCUMENT_CORRECT_FORMAT_INCORRECT"
+      ],
+      "validator_status": "INTERCEPTED",
+      "semantic_status": "PASS-SEMANTIC",
+      "provenance_status": "INVALID"
+    },
+    {
+      "run_id": 14,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "PASS-SEMANTIC",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 15,
+      "invalid_ids": [
+        "CORPUS-002#chunk_001"
+      ],
+      "invalid_types": [
+        "F3_DOCUMENT_CORRECT_FORMAT_INCORRECT"
+      ],
+      "validator_status": "INTERCEPTED",
+      "semantic_status": "PASS-SEMANTIC",
+      "provenance_status": "INVALID"
+    },
+    {
+      "run_id": 16,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "PASS-SEMANTIC",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 17,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "PASS-SEMANTIC",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 18,
+      "invalid_ids": [
+        "CORPUS-002#chunk_001"
+      ],
+      "invalid_types": [
+        "F3_DOCUMENT_CORRECT_FORMAT_INCORRECT"
+      ],
+      "validator_status": "INTERCEPTED",
+      "semantic_status": "PASS-SEMANTIC",
+      "provenance_status": "INVALID"
+    },
+    {
+      "run_id": 19,
+      "invalid_ids": [
+        "CORPUS-002#chunk_001"
+      ],
+      "invalid_types": [
+        "F3_DOCUMENT_CORRECT_FORMAT_INCORRECT"
+      ],
+      "validator_status": "INTERCEPTED",
+      "semantic_status": "PASS-SEMANTIC",
+      "provenance_status": "INVALID"
+    },
+    {
+      "run_id": 20,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "PASS-SEMANTIC",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 21,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "PASS-SEMANTIC",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 22,
+      "invalid_ids": [
+        "CORPUS-002#p3_03"
+      ],
+      "invalid_types": [
+        "F4_CHUNK_EXISTS_DOCUMENT_INCORRECT"
+      ],
+      "validator_status": "INTERCEPTED",
+      "semantic_status": "PASS-SEMANTIC",
+      "provenance_status": "INVALID"
+    },
+    {
+      "run_id": 23,
+      "invalid_ids": [
+        "CORPUS-002#chunk_001"
+      ],
+      "invalid_types": [
+        "F3_DOCUMENT_CORRECT_FORMAT_INCORRECT"
+      ],
+      "validator_status": "INTERCEPTED",
+      "semantic_status": "PASS-SEMANTIC",
+      "provenance_status": "INVALID"
+    },
+    {
+      "run_id": 24,
+      "invalid_ids": [
+        "CORPUS-002#chunk_001"
+      ],
+      "invalid_types": [
+        "F3_DOCUMENT_CORRECT_FORMAT_INCORRECT"
+      ],
+      "validator_status": "INTERCEPTED",
+      "semantic_status": "PASS-SEMANTIC",
+      "provenance_status": "INVALID"
+    },
+    {
+      "run_id": 25,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "FAIL-SYSTEM",
+      "provenance_status": "VALID"
+    },
+    {
+      "run_id": 26,
+      "invalid_ids": [
+        "CORPUS-002#chunk_001"
+      ],
+      "invalid_types": [
+        "F3_DOCUMENT_CORRECT_FORMAT_INCORRECT"
+      ],
+      "validator_status": "INTERCEPTED",
+      "semantic_status": "PASS-SEMANTIC",
+      "provenance_status": "INVALID"
+    },
+    {
+      "run_id": 27,
+      "invalid_ids": [
+        "CORPUS-002#chunk_001"
+      ],
+      "invalid_types": [
+        "F3_DOCUMENT_CORRECT_FORMAT_INCORRECT"
+      ],
+      "validator_status": "INTERCEPTED",
+      "semantic_status": "PASS-SEMANTIC",
+      "provenance_status": "INVALID"
+    },
+    {
+      "run_id": 28,
+      "invalid_ids": [
+        "CORPUS-002#chunk_001"
+      ],
+      "invalid_types": [
+        "F3_DOCUMENT_CORRECT_FORMAT_INCORRECT"
+      ],
+      "validator_status": "INTERCEPTED",
+      "semantic_status": "PASS-SEMANTIC",
+      "provenance_status": "INVALID"
+    },
+    {
+      "run_id": 29,
+      "invalid_ids": [
+        "CORPUS-002#chunk_001"
+      ],
+      "invalid_types": [
+        "F3_DOCUMENT_CORRECT_FORMAT_INCORRECT"
+      ],
+      "validator_status": "INTERCEPTED",
+      "semantic_status": "PASS-SEMANTIC",
+      "provenance_status": "INVALID"
+    },
+    {
+      "run_id": 30,
+      "invalid_ids": [],
+      "invalid_types": [],
+      "validator_status": "CLEAN",
+      "semantic_status": "PASS-SEMANTIC",
+      "provenance_status": "VALID"
+    }
+  ],
+  "verdict": "FABRICAÇÃO REPRODUZIDA — F3 reapareceu com prompt correto",
+  "action": "Prosseguir para decomposição causal Prompt × Schema (P0/P1/P2)"
+}

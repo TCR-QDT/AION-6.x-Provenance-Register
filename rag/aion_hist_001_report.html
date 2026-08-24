@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AION-HIST-001 — Reconciliação Histórica</title>
+<style>
+body{font-family:system-ui,sans-serif;max-width:1200px;margin:2rem auto;line-height:1.6;padding:0 1rem;background:#fafafa;color:#111}
+h1,h2,h3{color:#1a252f}
+h2{color:#2c3e50;border-left:4px solid #3498db;padding-left:.8rem;margin-top:2rem}
+.negative-memory{background:#fff3cd;border-left:4px solid #f39c12;padding:1rem;margin:1rem 0}
+.positive-memory{background:#d4edda;border-left:4px solid #28a745;padding:1rem;margin:1rem 0}
+.test-result{background:#fff;padding:1rem;margin:1rem 0;border-left:4px solid #3498db}
+pre{background:#f8f9fa;padding:1rem;overflow-x:auto;border-radius:4px}
+</style>
+</head>
+<body>
+<header>
+<h1>AION-HIST-001 — Reconciliação Histórica</h1>
+<p><strong>Versão:</strong> 1.0.0</p>
+<p><strong>Data:</strong> 17 de agosto de 2026</p>
+<p><strong>Autor da estrutura:</strong> Edson C. Nascimento (Projetista Master)</p>
+<p><strong>Implementação:</strong> IA Curadora</p>
+</header>
+
+<section>
+<h2>Resumo Executivo</h2>
+<div class="positive-memory">
+<strong>Memória Positiva:</strong> 20 estados conceituais documentados em 12 conceitos.
+</div>
+<div class="negative-memory">
+<strong>Memória Negativa:</strong>
+<ul>
+<li>DESCONHECIDO: 5 perguntas não respondíveis</li>
+<li>AUSENTE: 8 termos/conceitos procurados e não encontrados</li>
+<li>CONTRADITO: 2 inferências descreditadas pela auditoria</li>
+<li>REVOGADO: 3 retrações formais pelo autor</li>
+<li>INDETERMINADO: 5 estados com data desconhecida</li>
+</ul>
+</div>
+</section>
+
+<section>
+<h2>Resultados dos Testes HIST-001 a 006</h2>
+
+<div class="test-result">
+<h3>HIST-001: Quais ideias Edson abandonou?</h3>
+<pre>## Resposta a HIST-001: Ideias abandonadas
+
+Total de retrações formais (REVOKED): 3
+Total de contradições documentais (CONTRADICTED): 2
+
+### RETRAÇÕES FORMAIS PELO AUTOR:
+
+**Termo de recursão R^α**
+- Data da retração: 2026-08-12
+- Documento: CORPUS-002 (v6.2)
+- Estado anterior: R^α com α=1.3 como parte da métrica C
+- Estado final: REMOVIDO da métrica C
+- Evidência: ""global sensitivity analysis (Sobol) reveals that R contributes less than 1.1% of the variance in C, rendering it empirically irrelevant. We therefore drop it in this version""
+- Tipo: [E]
+
+**Hipótese η (cross-scale)**
+- Data da retração: 2026-08-12
+- Documento: CORPUS-004 (v6.1)
+- Estado anterior: Hipótese η proposta — comensurabilidade cross-scale
+- Estado final: HIPÓTESE RETIRADA — critério |δβ − δST|/δβ < 0.2 não satisfeito (razão = 0.291)
+- Evidência: ""O critério não é satisfeito (razão = 0.291), levando-nos a retrair a hipótese η da análise presente""
+- Tipo: [E]
+
+**Dependência ontológica Paper A → Parte IV**
+- Data da retração: 2026-08-17
+- Documento: Auditoria da ontologia v1.0.0 (v1.0.0)
+- Estado anterior: Paper A depende ontologicamente da Parte IV
+- Estado final: REVOGADA — substituída por paralelismo epistêmico
+- Evidência: ""deliberately separated to maintain focus and falsifiability" (Paper A v6.2, p.5-6)"
+- Tipo: [E]
+
+### CONTRADIÇÕES DOCUMENTAIS (inferências descreditadas):
+
+**Consciência**
+- Data da contradição: 2026-08-16
+- Documento: Auditoria da ontologia v1.0.0
+- Estado anterior (inferido): Mencionado no Handoff como sinônimo de CORPUS-003
+- Estado final (auditado): AUSÊNCIA CONFIRMADA — termo "consciência" não aparece em nenhum dos 5 textos extraídos. Única ponte: Paper A cita Tononi (Φ-IIT) como referência crítica, não como conceito do programa.
+- Evidência: "Auditoria de corpus: termo "consciência" ausente de CORPUS-001 a 005"
+- Tipo: [E]
+
+**Campo Primordial**
+- Data da contradição: 2026-08-17
+- Documento: Auditoria da ontologia v1.0.0
+- Estado anterior (inferido): Atribuído ao CORPUS-003 no Handoff
+- Estado final (auditado): AUSÊNCIA CONFIRMADA — termo "Campo Primordial" não aparece no texto extraído do CORPUS-003. Conceito removido da ontologia v1.0.0.
+- Evidência: "Auditoria de corpus: termo "Campo Primordial" ausente do CORPUS-003"
+- Tipo: [E]</pre>
+</div>
+
+<div class="test-result">
+<h3>HIST-002: Quais ideias foram apenas refinadas?</h3>
+<pre>## Resposta a HIST-002: Ideias refinadas (não abandonadas)
+
+Total de refinamentos: 3
+
+**Coerência Relacional (C)** (C)
+- Data do refinamento: 2026-08-12
+- Documento: CORPUS-002 (v6.2)
+- Estado anterior: C = I × S × H^β, β canônico não declarado
+- Estado refinado: C = I × S × H^β, β=0.5 calibrado via LOOCV sobre 12 fixtures sintéticas
+- Evidência: ""We adopt β = 0.5 as the canonical value throughout this work""
+- Tipo: [E]
+- Nota: Paper A v6.2 FINAL — β calibrado, termo de recursão R removido por irrelevância empírica (Sobol <1.1%).
+
+**β (calibração LOOCV)** (beta)
+- Data do refinamento: 2026-08-12
+- Documento: CORPUS-002 (v6.2)
+- Estado anterior: β não explicitamente calibrado
+- Estado refinado: β=0.5, calibrado via LOOCV, consistência = 1.0 em [0.1, 1.5]
+- Evidência: ""calibrated via leave-one-out cross-validation (LOOCV) over 12 synthetic connectome fixtures""
+- Tipo: [E]
+- Nota: Inconsistência #1 do Paper A resolvida nesta versão.
+
+**Power-law T₂ (FMO)** (Power_law_T2)
+- Data do refinamento: 2026-08-12
+- Documento: CORPUS-004 (v6.1)
+- Estado anterior: T₂ = K·J^1.205·λ^(-1.114)·γ^(-1.068)·T^(-0.795) (dímero)
+- Estado refinado: T₂ = (1.567×10⁴)·J^0.831·λ^(-0.843)·γ^(-0.766)·T^(-0.261), R²=0.988 (FMO 7 sítios)
+- Evidência: ""obtemos T₂ = K J^0.831 λ^(-0.843) γ^(-0.766) T^(-0.261) com R² = 0.988""
+- Tipo: [E]
+- Nota: Inconsistência #3 do Paper A resolvida — re-derivação a partir do Hamiltoniano FMO completo (375 combinações).
+</pre>
+</div>
+
+<div class="test-result">
+<h3>HIST-003: Quais conceitos permanecem estáveis?</h3>
+<pre>## Resposta a HIST-003: Núcleo de Continuidade Intelectual
+
+Total de conceitos estáveis: 4
+
+### NÚCLEO DE CONTINUIDADE INTELECTUAL:
+
+**Functor Φcat** (Phi_cat)
+- Estável desde: 2026-08-10
+- Tipo: INTRODUCED-ONLY
+- Estado: Φcat : C → Set, X ↦ Hom_C(•, X) — Conjectura (Passo 16)
+
+**Tensor Qµν** (Q_munu)
+- Estável desde: 2026-08-10
+- Tipo: INTRODUCED-ONLY
+- Estado: Forma bilinear simétrica (0,2), 5 axiomas (Q1-Q5) — Proposta (Passo 17)
+
+**Equação de Einstein modificada** (Einstein_mod)
+- Estável desde: 2026-08-10
+- Tipo: INTRODUCED-ONLY
+- Estado: Gµν = 8πG(Tµν + Qµν) — Proposta teórica
+
+**Programa de pesquisa Lakatosiano** (Lakatos_program)
+- Estável desde: 2026-08-10
+- Tipo: INTRODUCED-ONLY
+- Estado: Auto-designação explícita — núcleo firme + cinturão protetor; núcleo = formalização categórico-tensorial unificada
+</pre>
+</div>
+
+<div class="test-result">
+<h3>HIST-004: Quais afirmações aparecem no histórico mas foram posteriormente contraditas?</h3>
+<pre>## Resposta a HIST-004: Afirmações contraditas pela auditoria
+
+Total: 2
+
+**Consciência**
+- Estado anterior (inferido): Mencionado no Handoff como sinônimo de CORPUS-003
+- Estado final (auditado): AUSÊNCIA CONFIRMADA — termo "consciência" não aparece em nenhum dos 5 textos extraídos. Única ponte: Paper A cita Tononi (Φ-IIT) como referência crítica, não como conceito do programa.
+- Razão: Auditoria contradisse presença do conceito no programa.
+- Evidência: "Auditoria de corpus: termo "consciência" ausente de CORPUS-001 a 005"
+- Documento da auditoria: Auditoria da ontologia v1.0.0
+
+**Campo Primordial**
+- Estado anterior (inferido): Atribuído ao CORPUS-003 no Handoff
+- Estado final (auditado): AUSÊNCIA CONFIRMADA — termo "Campo Primordial" não aparece no texto extraído do CORPUS-003. Conceito removido da ontologia v1.0.0.
+- Razão: Auditoria contradisse presença do conceito no programa.
+- Evidência: "Auditoria de corpus: termo "Campo Primordial" ausente do CORPUS-003"
+- Documento da auditoria: Auditoria da ontologia v1.0.0
+</pre>
+</div>
+
+<div class="test-result">
+<h3>HIST-005: O que o AION não consegue determinar devido a lacunas documentais?</h3>
+<pre>## Resposta a HIST-005: Lacunas de determinação
+
+Total de perguntas não respondíveis: 5
+Total de estados com data indeterminada: 5
+
+### PERGUNTAS NÃO RESPONDÍVEIS:
+
+**Pergunta:** Quando exatamente Edson abandonou o termo de recursão R^α?
+- Razão: Não há documento intermediário entre v5.1 (com R) e v6.2 (sem R). A transição ocorreu em algum momento entre as duas versões, mas não pode ser datada.
+- Resolveria com: Inclusão de versões v6.0 e v6.1 do Paper A no corpus.
+
+**Pergunta:** Quando Edson propôs formalmente a hipótese η pela primeira vez?
+- Razão: Hipótese η está descrita como existente em "nosso trabalho anterior (v6.0)" do Paper B v6.1. Documento v6.0 não está no corpus.
+- Resolveria com: Inclusão da versão v6.0 do Paper B no corpus.
+
+**Pergunta:** O Paper C foi efetivamente submetido à Foundations of Physics em 10/08/2026?
+- Razão: T10 — afirmado textualmente na Cover Letter PT-BR [E-textual], mas o evento no mundo não foi confirmado pelo autor [I-pending-author-confirmation].
+- Resolveria com: Confirmação direta do autor ou evidência externa (recibo de submissão).
+
+**Pergunta:** Qual é o conteúdo das Partes I, II e III do Programa de Formalização?
+- Razão: T9 — CORPUS-003 é "Parte IV, Passos 16-18" apenas. Partes I-III não estão no corpus.
+- Resolveria com: Inclusão das Partes I-III no corpus.
+
+**Pergunta:** Qual é o conteúdo da Cover Letter oficial enviada ao PRE?
+- Razão: T6 — versão PT-BR no corpus é rascunho v6.1 aspiracional; versão EN não está no corpus.
+- Resolveria com: Inclusão de Cover_Letter_Paper_A_PRE.md (EN) no corpus.
+
+### ESTADOS COM DATA INDETERMINADA (UNKNOWN):
+
+**Coerência Relacional (C)**
+- Estado: C = I × S × H^β, β canônico não declarado
+- Razão: Data não estabelecida (valid_at=UNKNOWN, document_date=2026-08-10)
+
+**β (calibração LOOCV)**
+- Estado: β não explicitamente calibrado; presunção de β=1 ou valor nominal
+- Razão: Data não estabelecida (valid_at=UNKNOWN, document_date=UNKNOWN)
+
+**Termo de recursão R^α**
+- Estado: R^α com α=1.3 como parte da métrica C
+- Razão: Data não estabelecida (valid_at=UNKNOWN, document_date=UNKNOWN)
+
+**Power-law T₂ (FMO)**
+- Estado: T₂ = K·J^1.205·λ^(-1.114)·γ^(-1.068)·T^(-0.795), R²=0.914 (dímero 2 sítios)
+- Razão: Data não estabelecida (valid_at=UNKNOWN, document_date=UNKNOWN)
+
+**Hipótese η (cross-scale)**
+- Estado: Hipótese η proposta — comensurabilidade cross-scale entre δβ e δST
+- Razão: Data não estabelecida (valid_at=UNKNOWN, document_date=UNKNOWN)</pre>
+</div>
+
+<div class="test-result">
+<h3>HIST-006: Quais documentos seriam necessários para reduzir essas lacunas?</h3>
+<pre>## Resposta a HIST-006: Documentos necessários
+
+Documentos identificados como necessários: 6
+
+### PRIORIZAÇÃO PARA AION-CORPUS-001 v1.3.0:
+
+**Inclusão de versões v6.0 e v6.1 do Paper A no corpus.**
+- Prioridade: MÉDIA
+- Lacunas resolvidas: 1
+  • Quando exatamente Edson abandonou o termo de recursão R^α?
+
+**Inclusão da versão v6.0 do Paper B no corpus.**
+- Prioridade: MÉDIA
+- Lacunas resolvidas: 1
+  • Quando Edson propôs formalmente a hipótese η pela primeira vez?
+
+**Confirmação direta do autor ou evidência externa (recibo de submissão).**
+- Prioridade: MÉDIA
+- Lacunas resolvidas: 1
+  • O Paper C foi efetivamente submetido à Foundations of Physics em 10/08/2026?
+
+**Inclusão das Partes I-III no corpus.**
+- Prioridade: MÉDIA
+- Lacunas resolvidas: 1
+  • Qual é o conteúdo das Partes I, II e III do Programa de Formalização?
+
+**Inclusão de Cover_Letter_Paper_A_PRE.md (EN) no corpus.**
+- Prioridade: MÉDIA
+- Lacunas resolvidas: 1
+  • Qual é o conteúdo da Cover Letter oficial enviada ao PRE?
+
+**Inclusão da versão final do Paper C (submetida) no corpus.**
+- Prioridade: MÉDIA
+- Lacunas resolvidas: 0
+- Termo ausente relacionado: Paper C (versão final submetida à Foundations of Physics)
+
+**Inclusão das Partes I, II e III do programa de formalização no corpus.**
+- Prioridade: MÉDIA
+- Lacunas resolvidas: 0
+- Termo ausente relacionado: Partes I-III do Programa de Formalização Físico-Matemática
+
+**Inclusão da versão v5.1 do Paper A no corpus.**
+- Prioridade: MÉDIA
+- Lacunas resolvidas: 0
+- Termo ausente relacionado: Versão v5.1 do Paper A (submetida ao Brazilian Journal of Physics)
+
+**Inclusão da versão v6.0 do Paper A no corpus.**
+- Prioridade: MÉDIA
+- Lacunas resolvidas: 0
+- Termo ausente relacionado: Versão v6.0 do Paper A (com termo de recursão R^α)
+</pre>
+</div>
+
+</section>
+
+<section>
+<h2>Resposta Experimental: Quem é Edson Carvalho do Nascimento?</h2>
+<pre># Quem é Edson Carvalho do Nascimento?
+
+## Resposta experimental — primeira reconstrução documental
+### (Baseada no corpus AION-CORPUS-001 v1.2.0 + ontologia v1.0.0 + grafo temporal v1.0)
+
+---
+
+### Núcleo de Continuidade Intelectual (4 conceitos estáveis)
+
+Edson é um autor cujo núcleo teórico permaneceu estável desde sua primeira documentação no corpus:
+
+- **Functor Φcat** — Φcat : C → Set, X ↦ Hom_C(•, X) — Conjectura (Passo 16)
+- **Tensor Qµν** — Forma bilinear simétrica (0,2), 5 axiomas (Q1-Q5) — Proposta (Passo 17)
+- **Equação de Einstein modificada** — Gµν = 8πG(Tµν + Qµν) — Proposta teórica
+- **Programa de pesquisa Lakatosiano** — Auto-designação explícita — núcleo firme + cinturão protetor; núcleo = formalização categórico-tensorial unificada
+
+
+### Capacidade de Refinamento (3 conceitos refinados)
+
+Edson refina suas ideias sem abandoná-las — incorpora calibração empírica e abandona componentes não-contributivos:
+
+- **Coerência Relacional (C)**: C = I × S × H^β, β canônico não declarado → C = I × S × H^β, β=0.5 calibrado via LOOCV sobre 12 fixtures sintéticas
+  - Motivo: Paper A v6.2 FINAL — β calibrado, termo de recursão R removido por irrelevância empírica (Sobol <1.1%).
+- **β (calibração LOOCV)**: β não explicitamente calibrado → β=0.5, calibrado via LOOCV, consistência = 1.0 em [0.1, 1.5]
+  - Motivo: Inconsistência #1 do Paper A resolvida nesta versão.
+- **Power-law T₂ (FMO)**: T₂ = K·J^1.205·λ^(-1.114)·γ^(-1.068)·T^(-0.795) (dímero) → T₂ = (1.567×10⁴)·J^0.831·λ^(-0.843)·γ^(-0.766)·T^(-0.261), R²=0.988 (FMO 7 sítios)
+  - Motivo: Inconsistência #3 do Paper A resolvida — re-derivação a partir do Hamiltoniano FMO completo (375 combinações).
+
+
+### Capacidade de Autorretração (3 retrações formais)
+
+Edson abandona formalmente hipóteses quando a evidência as contradiz — marca registrada de seu método:
+
+- **Termo de recursão R^α** (retraído em 2026-08-12)
+  - Estado anterior: R^α com α=1.3 como parte da métrica C
+  - Estado final: REMOVIDO da métrica C
+  - Evidência da retração: ""global sensitivity analysis (Sobol) reveals that R contributes less than 1.1% of the variance in C, rendering it empirically irrelevant. We therefore drop it in this version""
+- **Hipótese η (cross-scale)** (retraído em 2026-08-12)
+  - Estado anterior: Hipótese η proposta — comensurabilidade cross-scale
+  - Estado final: HIPÓTESE RETIRADA — critério |δβ − δST|/δβ < 0.2 não satisfeito (razão = 0.291)
+  - Evidência da retração: ""O critério não é satisfeito (razão = 0.291), levando-nos a retrair a hipótese η da análise presente""
+- **Dependência ontológica Paper A → Parte IV** (retraído em 2026-08-17)
+  - Estado anterior: Paper A depende ontologicamente da Parte IV
+  - Estado final: REVOGADA — substituída por paralelismo epistêmico
+  - Evidência da retração: ""deliberately separated to maintain focus and falsifiability" (Paper A v6.2, p.5-6)"
+
+
+### Rigor Curatorial (2 inferências descreditadas pela própria auditoria)
+
+O programa de curadoria do AION (sobre o trabalho do autor) identificou conceitos que foram inferidos mas não textualmente presentes:
+
+- **Consciência** — inferido em Mencionado no Handoff como sinônimo de CORPUS-003
+  - Auditoria: AUSÊNCIA CONFIRMADA — termo "consciência" não aparece em nenhum dos 5 textos extraídos. Única ponte: Paper A cita Tononi (Φ-IIT) como referência crítica, não como conceito do programa.
+- **Campo Primordial** — inferido em Atribuído ao CORPUS-003 no Handoff
+  - Auditoria: AUSÊNCIA CONFIRMADA — termo "Campo Primordial" não aparece no texto extraído do CORPUS-003. Conceito removido da ontologia v1.0.0.
+
+
+### Lacunas Conhecidas (5 perguntas não respondíveis)
+
+O AION não pode determinar:
+
+- Quando exatamente Edson abandonou o termo de recursão R^α?
+  - Resolveria com: Inclusão de versões v6.0 e v6.1 do Paper A no corpus.
+- Quando Edson propôs formalmente a hipótese η pela primeira vez?
+  - Resolveria com: Inclusão da versão v6.0 do Paper B no corpus.
+- O Paper C foi efetivamente submetido à Foundations of Physics em 10/08/2026?
+  - Resolveria com: Confirmação direta do autor ou evidência externa (recibo de submissão).
+- Qual é o conteúdo das Partes I, II e III do Programa de Formalização?
+  - Resolveria com: Inclusão das Partes I-III no corpus.
+- Qual é o conteúdo da Cover Letter oficial enviada ao PRE?
+  - Resolveria com: Inclusão de Cover_Letter_Paper_A_PRE.md (EN) no corpus.
+
+
+### Documentos Necessários para Reduzir Lacunas
+
+Para uma reconstrução mais completa da trajetória intelectual de Edson, seriam necessários:
+
+- Inclusão das Partes I-III no corpus.
+- Documento relacionado a: Partes I-III do Programa de Formalização Físico-Matemática
+- Inclusão da versão v6.0 do Paper B no corpus.
+- Documento relacionado a: Cover Letter oficial em inglês (Cover_Letter_Paper_A_PRE.md)
+- Documento relacionado a: Versão v6.0 do Paper A (com termo de recursão R^α)
+- Documento relacionado a: Paper C (versão final submetida à Foundations of Physics)
+- Inclusão de Cover_Letter_Paper_A_PRE.md (EN) no corpus.
+- Documento relacionado a: Versão v5.1 do Paper A (submetida ao Brazilian Journal of Physics)
+- Inclusão de versões v6.0 e v6.1 do Paper A no corpus.
+- Documento relacionado a: Versão v6.0 do Paper B (com hipótese η e dímero 2 sítios)
+- Confirmação direta do autor ou evidência externa (recibo de submissão).
+
+
+---
+
+## Síntese
+
+Edson Carvalho do Nascimento, conforme reconstruído documentalmente pelo corpus AION-CORPUS-001 v1.2.0, é:
+
+1. **Um autor com núcleo teórico estável** — formalização categórico-tensorial unificada (Φcat + Qµν + Einstein mod), estruturada lakatosianamente, em estado conjectural/propositivo.
+
+2. **Um pesquisador que calibra empiricamente** — refina β via LOOCV quando a evidência o justifica; re-deriva power-laws quando a extrapolação se mostra injustificável.
+
+3. **Um cientista que retrata formalmente** — abandona hipóteses (η, R^α) quando critérios quantitativos não são satisfeitos, mesmo quando isso enfraquece seu programa.
+
+4. **Um curador intelectual epistemicamente rigoroso** — seu próprio sistema de curadoria (o AION em si) identificou e descreditou inferências que não tinham respaldo textual (consciência, campo primordial).
+
+5. **Um autor com lacunas documentais conhecidas** — versões intermediárias (v5.1, v6.0) e documentos complementares (Cover Letter EN, Partes I-III, Paper C final) não estão no corpus. O AION sabe que não estão, e sabe que precisaria deles para responder certas perguntas.
+
+Esta não é uma biografia. É uma **trajetória documentada de ideias, escolhas, revisões, erros, correções, permanências e lacunas**.
+
+---
+
+*Resposta gerada em 2026-08-17T03:57:41+00:00*
+*Protocolo: AION-HIST-001*
+*Base: corpus AION-CORPUS-001 v1.2.0 + ontologia v1.0.0 + grafo temporal v1.0*
+</pre>
+</section>
+
+<footer>
+<p><em>"Ausência de informação não é autorização para inferência. Estados UNKNOWN são dados, não lacunas a preencher."</em></p>
+</footer>
+</body>
+</html>

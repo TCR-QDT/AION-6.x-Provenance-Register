@@ -1,0 +1,1037 @@
+{
+  "metadata": {
+    "experiment": "AION-6.2.10 — Auditoria de equivalência interversional",
+    "timestamp": "2026-08-20T19:20:44+00:00",
+    "author_structure": "Edson C. Nascimento (Projetista Master)",
+    "author_implementation": "IA Curadora"
+  },
+  "etapa_1_oracle_v2_frozen": [
+    "CORPUS-002#p1_01",
+    "CORPUS-002#p1_02",
+    "CORPUS-002#p2_01",
+    "CORPUS-002#p5_01",
+    "CORPUS-002#p5_02"
+  ],
+  "etapa_2_occurrences_by_doc": {
+    "CORPUS-002": [
+      {
+        "chunk_id": "CORPUS-002#p1_01",
+        "page": "p.1",
+        "equation_text": "C = I×S×Hβ",
+        "epistemic_function": "PRIMARY_INTRODUCTION",
+        "in_oracle_v2": true
+      },
+      {
+        "chunk_id": "CORPUS-002#p1_01",
+        "page": "p.1",
+        "equation_text": "C = I×S×Hβ",
+        "epistemic_function": "PRIMARY_INTRODUCTION",
+        "in_oracle_v2": true
+      },
+      {
+        "chunk_id": "CORPUS-002#p1_02",
+        "page": "p.1",
+        "equation_text": "C = I × S × Hβ",
+        "epistemic_function": "PRIMARY_INTRODUCTION",
+        "in_oracle_v2": true
+      },
+      {
+        "chunk_id": "CORPUS-002#p1_02",
+        "page": "p.1",
+        "equation_text": "C = I × S × Hβ",
+        "epistemic_function": "PRIMARY_INTRODUCTION",
+        "in_oracle_v2": true
+      },
+      {
+        "chunk_id": "CORPUS-002#p1_03",
+        "page": "p.1",
+        "equation_text": "C = I × S × Hβ",
+        "epistemic_function": "DERIVED_CALIBRATION",
+        "in_oracle_v2": false
+      },
+      {
+        "chunk_id": "CORPUS-002#p1_03",
+        "page": "p.1",
+        "equation_text": "C = I × S × Hβ",
+        "epistemic_function": "DERIVED_CALIBRATION",
+        "in_oracle_v2": false
+      },
+      {
+        "chunk_id": "CORPUS-002#p2_01",
+        "page": "p.2",
+        "equation_text": "C = I × S × Hβ",
+        "epistemic_function": "PRIMARY_DEFINITION",
+        "in_oracle_v2": true
+      },
+      {
+        "chunk_id": "CORPUS-002#p2_01",
+        "page": "p.2",
+        "equation_text": "C = I × S × Hβ",
+        "epistemic_function": "PRIMARY_DEFINITION",
+        "in_oracle_v2": true
+      },
+      {
+        "chunk_id": "CORPUS-002#p5_01",
+        "page": "p.5",
+        "equation_text": "C = I × S × Hβ",
+        "epistemic_function": "MENTION",
+        "in_oracle_v2": true
+      },
+      {
+        "chunk_id": "CORPUS-002#p5_01",
+        "page": "p.5",
+        "equation_text": "C = I × S × Hβ",
+        "epistemic_function": "PRIMARY_DEFINITION",
+        "in_oracle_v2": true
+      },
+      {
+        "chunk_id": "CORPUS-002#p5_01",
+        "page": "p.5",
+        "equation_text": "C = I × S × Hβ",
+        "epistemic_function": "MENTION",
+        "in_oracle_v2": true
+      },
+      {
+        "chunk_id": "CORPUS-002#p5_01",
+        "page": "p.5",
+        "equation_text": "C = I × S × Hβ",
+        "epistemic_function": "PRIMARY_DEFINITION",
+        "in_oracle_v2": true
+      },
+      {
+        "chunk_id": "CORPUS-002#p5_02",
+        "page": "p.5",
+        "equation_text": "C = I × S × Hβ",
+        "epistemic_function": "PRIMARY_DEFINITION",
+        "in_oracle_v2": true
+      },
+      {
+        "chunk_id": "CORPUS-002#p5_02",
+        "page": "p.5",
+        "equation_text": "C = I × S × Hβ",
+        "epistemic_function": "PRIMARY_DEFINITION",
+        "in_oracle_v2": true
+      },
+      {
+        "chunk_id": "CORPUS-002#p5_03",
+        "page": "p.5",
+        "equation_text": "C = I × S × Hβ",
+        "epistemic_function": "MENTION",
+        "in_oracle_v2": false
+      },
+      {
+        "chunk_id": "CORPUS-002#p5_03",
+        "page": "p.5",
+        "equation_text": "C = I × S × Hβ",
+        "epistemic_function": "MENTION",
+        "in_oracle_v2": false
+      },
+      {
+        "chunk_id": "CORPUS-002#p5_04",
+        "page": "p.5",
+        "equation_text": "C = I × S × Hβ",
+        "epistemic_function": "MENTION",
+        "in_oracle_v2": false
+      },
+      {
+        "chunk_id": "CORPUS-002#p5_04",
+        "page": "p.5",
+        "equation_text": "C = I × S × Hβ",
+        "epistemic_function": "MENTION",
+        "in_oracle_v2": false
+      }
+    ],
+    "CORPUS-006": [
+      {
+        "chunk_id": "CORPUS-006#p1_01",
+        "page": "p.1",
+        "equation_text": "C = I×S×Hβ",
+        "epistemic_function": "PRIMARY_INTRODUCTION",
+        "in_oracle_v2": false
+      },
+      {
+        "chunk_id": "CORPUS-006#p1_01",
+        "page": "p.1",
+        "equation_text": "C = I×S×Hβ",
+        "epistemic_function": "PRIMARY_INTRODUCTION",
+        "in_oracle_v2": false
+      },
+      {
+        "chunk_id": "CORPUS-006#p1_02",
+        "page": "p.1",
+        "equation_text": "C = I × S × Hβ",
+        "epistemic_function": "PRIMARY_INTRODUCTION",
+        "in_oracle_v2": false
+      },
+      {
+        "chunk_id": "CORPUS-006#p1_02",
+        "page": "p.1",
+        "equation_text": "C = I × S × Hβ",
+        "epistemic_function": "PRIMARY_INTRODUCTION",
+        "in_oracle_v2": false
+      },
+      {
+        "chunk_id": "CORPUS-006#p1_03",
+        "page": "p.1",
+        "equation_text": "C = I × S × Hβ",
+        "epistemic_function": "DERIVED_CALIBRATION",
+        "in_oracle_v2": false
+      },
+      {
+        "chunk_id": "CORPUS-006#p1_03",
+        "page": "p.1",
+        "equation_text": "C = I × S × Hβ",
+        "epistemic_function": "DERIVED_CALIBRATION",
+        "in_oracle_v2": false
+      },
+      {
+        "chunk_id": "CORPUS-006#p2_01",
+        "page": "p.2",
+        "equation_text": "C = I × S × Hβ",
+        "epistemic_function": "PRIMARY_DEFINITION",
+        "in_oracle_v2": false
+      },
+      {
+        "chunk_id": "CORPUS-006#p2_01",
+        "page": "p.2",
+        "equation_text": "C = I × S × Hβ",
+        "epistemic_function": "PRIMARY_DEFINITION",
+        "in_oracle_v2": false
+      },
+      {
+        "chunk_id": "CORPUS-006#p5_01",
+        "page": "p.5",
+        "equation_text": "C = I × S × Hβ",
+        "epistemic_function": "PRIMARY_DEFINITION",
+        "in_oracle_v2": false
+      },
+      {
+        "chunk_id": "CORPUS-006#p5_01",
+        "page": "p.5",
+        "equation_text": "C = I × S × Hβ",
+        "epistemic_function": "PRIMARY_DEFINITION",
+        "in_oracle_v2": false
+      },
+      {
+        "chunk_id": "CORPUS-006#p5_03",
+        "page": "p.5",
+        "equation_text": "C = I × S × Hβ",
+        "epistemic_function": "MENTION",
+        "in_oracle_v2": false
+      },
+      {
+        "chunk_id": "CORPUS-006#p5_03",
+        "page": "p.5",
+        "equation_text": "C = I × S × Hβ",
+        "epistemic_function": "MENTION",
+        "in_oracle_v2": false
+      }
+    ],
+    "CORPUS-007": [
+      {
+        "chunk_id": "CORPUS-007#p1_01",
+        "page": "p.1",
+        "equation_text": "C = I×S×Hβ",
+        "epistemic_function": "PRIMARY_INTRODUCTION",
+        "in_oracle_v2": false
+      },
+      {
+        "chunk_id": "CORPUS-007#p1_01",
+        "page": "p.1",
+        "equation_text": "C = I×S×Hβ",
+        "epistemic_function": "PRIMARY_INTRODUCTION",
+        "in_oracle_v2": false
+      },
+      {
+        "chunk_id": "CORPUS-007#p1_02",
+        "page": "p.1",
+        "equation_text": "C = I × S × Hβ",
+        "epistemic_function": "PRIMARY_INTRODUCTION",
+        "in_oracle_v2": false
+      },
+      {
+        "chunk_id": "CORPUS-007#p1_02",
+        "page": "p.1",
+        "equation_text": "C = I × S × Hβ",
+        "epistemic_function": "PRIMARY_INTRODUCTION",
+        "in_oracle_v2": false
+      },
+      {
+        "chunk_id": "CORPUS-007#p1_03",
+        "page": "p.1",
+        "equation_text": "C = I × S × Hβ",
+        "epistemic_function": "DERIVED_CALIBRATION",
+        "in_oracle_v2": false
+      },
+      {
+        "chunk_id": "CORPUS-007#p1_03",
+        "page": "p.1",
+        "equation_text": "C = I × S × Hβ",
+        "epistemic_function": "DERIVED_CALIBRATION",
+        "in_oracle_v2": false
+      },
+      {
+        "chunk_id": "CORPUS-007#p2_01",
+        "page": "p.2",
+        "equation_text": "C = I × S × Hβ",
+        "epistemic_function": "PRIMARY_DEFINITION",
+        "in_oracle_v2": false
+      },
+      {
+        "chunk_id": "CORPUS-007#p2_01",
+        "page": "p.2",
+        "equation_text": "C = I × S × Hβ",
+        "epistemic_function": "PRIMARY_DEFINITION",
+        "in_oracle_v2": false
+      },
+      {
+        "chunk_id": "CORPUS-007#p5_01",
+        "page": "p.5",
+        "equation_text": "C = I × S × Hβ",
+        "epistemic_function": "MENTION",
+        "in_oracle_v2": false
+      },
+      {
+        "chunk_id": "CORPUS-007#p5_01",
+        "page": "p.5",
+        "equation_text": "C = I × S × Hβ",
+        "epistemic_function": "PRIMARY_DEFINITION",
+        "in_oracle_v2": false
+      },
+      {
+        "chunk_id": "CORPUS-007#p5_01",
+        "page": "p.5",
+        "equation_text": "C = I × S × Hβ",
+        "epistemic_function": "MENTION",
+        "in_oracle_v2": false
+      },
+      {
+        "chunk_id": "CORPUS-007#p5_01",
+        "page": "p.5",
+        "equation_text": "C = I × S × Hβ",
+        "epistemic_function": "PRIMARY_DEFINITION",
+        "in_oracle_v2": false
+      },
+      {
+        "chunk_id": "CORPUS-007#p5_02",
+        "page": "p.5",
+        "equation_text": "C = I × S × Hβ",
+        "epistemic_function": "PRIMARY_DEFINITION",
+        "in_oracle_v2": false
+      },
+      {
+        "chunk_id": "CORPUS-007#p5_02",
+        "page": "p.5",
+        "equation_text": "C = I × S × Hβ",
+        "epistemic_function": "PRIMARY_DEFINITION",
+        "in_oracle_v2": false
+      },
+      {
+        "chunk_id": "CORPUS-007#p5_03",
+        "page": "p.5",
+        "equation_text": "C = I × S × Hβ",
+        "epistemic_function": "MENTION",
+        "in_oracle_v2": false
+      },
+      {
+        "chunk_id": "CORPUS-007#p5_03",
+        "page": "p.5",
+        "equation_text": "C = I × S × Hβ",
+        "epistemic_function": "MENTION",
+        "in_oracle_v2": false
+      },
+      {
+        "chunk_id": "CORPUS-007#p5_04",
+        "page": "p.5",
+        "equation_text": "C = I × S × Hβ",
+        "epistemic_function": "MENTION",
+        "in_oracle_v2": false
+      },
+      {
+        "chunk_id": "CORPUS-007#p5_04",
+        "page": "p.5",
+        "equation_text": "C = I × S × Hβ",
+        "epistemic_function": "MENTION",
+        "in_oracle_v2": false
+      }
+    ]
+  },
+  "etapa_3_semantic_comparison": {
+    "CORPUS-002": {
+      "total_occurrences": 18,
+      "canonical_occurrence": {
+        "chunk_id": "CORPUS-002#p1_01",
+        "page": "p.1",
+        "equation_text": "C = I×S×Hβ",
+        "epistemic_function": "PRIMARY_INTRODUCTION",
+        "function_description": "Introduz a fórmula/métrica pela primeira vez",
+        "context_excerpt": "iological Networks:\nA Quantitative Framework from Connectomes to EEG\nEdson Carvalho do Nascimento1, ∗\n1Independent researcher, Curitiba, Brazil\n(Dated: August 12, 2026)\nWe introduce the Relational Coherence Theory (TCR) for measuring informational coherence in\nbiological networks through the metric ",
+        "in_oracle_v2": true
+      },
+      "all_occurrences_summary": [
+        {
+          "chunk_id": "CORPUS-002#p1_01",
+          "page": "p.1",
+          "equation_text": "C = I×S×Hβ",
+          "epistemic_function": "PRIMARY_INTRODUCTION",
+          "in_oracle_v2": true
+        },
+        {
+          "chunk_id": "CORPUS-002#p1_01",
+          "page": "p.1",
+          "equation_text": "C = I×S×Hβ",
+          "epistemic_function": "PRIMARY_INTRODUCTION",
+          "in_oracle_v2": true
+        },
+        {
+          "chunk_id": "CORPUS-002#p1_02",
+          "page": "p.1",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "PRIMARY_INTRODUCTION",
+          "in_oracle_v2": true
+        },
+        {
+          "chunk_id": "CORPUS-002#p1_02",
+          "page": "p.1",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "PRIMARY_INTRODUCTION",
+          "in_oracle_v2": true
+        },
+        {
+          "chunk_id": "CORPUS-002#p1_03",
+          "page": "p.1",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "DERIVED_CALIBRATION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-002#p1_03",
+          "page": "p.1",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "DERIVED_CALIBRATION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-002#p2_01",
+          "page": "p.2",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "PRIMARY_DEFINITION",
+          "in_oracle_v2": true
+        },
+        {
+          "chunk_id": "CORPUS-002#p2_01",
+          "page": "p.2",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "PRIMARY_DEFINITION",
+          "in_oracle_v2": true
+        },
+        {
+          "chunk_id": "CORPUS-002#p5_01",
+          "page": "p.5",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "MENTION",
+          "in_oracle_v2": true
+        },
+        {
+          "chunk_id": "CORPUS-002#p5_01",
+          "page": "p.5",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "PRIMARY_DEFINITION",
+          "in_oracle_v2": true
+        },
+        {
+          "chunk_id": "CORPUS-002#p5_01",
+          "page": "p.5",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "MENTION",
+          "in_oracle_v2": true
+        },
+        {
+          "chunk_id": "CORPUS-002#p5_01",
+          "page": "p.5",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "PRIMARY_DEFINITION",
+          "in_oracle_v2": true
+        },
+        {
+          "chunk_id": "CORPUS-002#p5_02",
+          "page": "p.5",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "PRIMARY_DEFINITION",
+          "in_oracle_v2": true
+        },
+        {
+          "chunk_id": "CORPUS-002#p5_02",
+          "page": "p.5",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "PRIMARY_DEFINITION",
+          "in_oracle_v2": true
+        },
+        {
+          "chunk_id": "CORPUS-002#p5_03",
+          "page": "p.5",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "MENTION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-002#p5_03",
+          "page": "p.5",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "MENTION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-002#p5_04",
+          "page": "p.5",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "MENTION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-002#p5_04",
+          "page": "p.5",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "MENTION",
+          "in_oracle_v2": false
+        }
+      ]
+    },
+    "CORPUS-006": {
+      "total_occurrences": 12,
+      "canonical_occurrence": {
+        "chunk_id": "CORPUS-006#p1_01",
+        "page": "p.1",
+        "equation_text": "C = I×S×Hβ",
+        "epistemic_function": "PRIMARY_INTRODUCTION",
+        "function_description": "Introduz a fórmula/métrica pela primeira vez",
+        "context_excerpt": "iological Networks:\nA Quantitative Framework from Connectomes to EEG\nEdson Carvalho do Nascimento1, ∗\n1Independent researcher, Curitiba, Brazil\n(Dated: August 10, 2026)\nWe introduce the Relational Coherence Theory (TCR) for measuring informational coherence in\nbiological networks through the metric ",
+        "in_oracle_v2": false
+      },
+      "all_occurrences_summary": [
+        {
+          "chunk_id": "CORPUS-006#p1_01",
+          "page": "p.1",
+          "equation_text": "C = I×S×Hβ",
+          "epistemic_function": "PRIMARY_INTRODUCTION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-006#p1_01",
+          "page": "p.1",
+          "equation_text": "C = I×S×Hβ",
+          "epistemic_function": "PRIMARY_INTRODUCTION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-006#p1_02",
+          "page": "p.1",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "PRIMARY_INTRODUCTION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-006#p1_02",
+          "page": "p.1",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "PRIMARY_INTRODUCTION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-006#p1_03",
+          "page": "p.1",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "DERIVED_CALIBRATION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-006#p1_03",
+          "page": "p.1",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "DERIVED_CALIBRATION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-006#p2_01",
+          "page": "p.2",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "PRIMARY_DEFINITION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-006#p2_01",
+          "page": "p.2",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "PRIMARY_DEFINITION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-006#p5_01",
+          "page": "p.5",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "PRIMARY_DEFINITION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-006#p5_01",
+          "page": "p.5",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "PRIMARY_DEFINITION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-006#p5_03",
+          "page": "p.5",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "MENTION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-006#p5_03",
+          "page": "p.5",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "MENTION",
+          "in_oracle_v2": false
+        }
+      ]
+    },
+    "CORPUS-007": {
+      "total_occurrences": 18,
+      "canonical_occurrence": {
+        "chunk_id": "CORPUS-007#p1_01",
+        "page": "p.1",
+        "equation_text": "C = I×S×Hβ",
+        "epistemic_function": "PRIMARY_INTRODUCTION",
+        "function_description": "Introduz a fórmula/métrica pela primeira vez",
+        "context_excerpt": "iological Networks:\nA Quantitative Framework from Connectomes to EEG\nEdson Carvalho do Nascimento1, ∗\n1Independent researcher, Curitiba, Brazil\n(Dated: August 12, 2026)\nWe introduce the Relational Coherence Theory (TCR) for measuring informational coherence in\nbiological networks through the metric ",
+        "in_oracle_v2": false
+      },
+      "all_occurrences_summary": [
+        {
+          "chunk_id": "CORPUS-007#p1_01",
+          "page": "p.1",
+          "equation_text": "C = I×S×Hβ",
+          "epistemic_function": "PRIMARY_INTRODUCTION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-007#p1_01",
+          "page": "p.1",
+          "equation_text": "C = I×S×Hβ",
+          "epistemic_function": "PRIMARY_INTRODUCTION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-007#p1_02",
+          "page": "p.1",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "PRIMARY_INTRODUCTION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-007#p1_02",
+          "page": "p.1",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "PRIMARY_INTRODUCTION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-007#p1_03",
+          "page": "p.1",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "DERIVED_CALIBRATION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-007#p1_03",
+          "page": "p.1",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "DERIVED_CALIBRATION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-007#p2_01",
+          "page": "p.2",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "PRIMARY_DEFINITION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-007#p2_01",
+          "page": "p.2",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "PRIMARY_DEFINITION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-007#p5_01",
+          "page": "p.5",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "MENTION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-007#p5_01",
+          "page": "p.5",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "PRIMARY_DEFINITION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-007#p5_01",
+          "page": "p.5",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "MENTION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-007#p5_01",
+          "page": "p.5",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "PRIMARY_DEFINITION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-007#p5_02",
+          "page": "p.5",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "PRIMARY_DEFINITION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-007#p5_02",
+          "page": "p.5",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "PRIMARY_DEFINITION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-007#p5_03",
+          "page": "p.5",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "MENTION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-007#p5_03",
+          "page": "p.5",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "MENTION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-007#p5_04",
+          "page": "p.5",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "MENTION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-007#p5_04",
+          "page": "p.5",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "MENTION",
+          "in_oracle_v2": false
+        }
+      ]
+    }
+  },
+  "etapa_4_equivalences": {
+    "CORPUS-006": {
+      "classification": "EQUIVALENT",
+      "reason": "Mesma equação e mesma função epistemológica",
+      "canonical_occurrence": {
+        "chunk_id": "CORPUS-006#p1_01",
+        "page": "p.1",
+        "equation_text": "C = I×S×Hβ",
+        "epistemic_function": "PRIMARY_INTRODUCTION",
+        "function_description": "Introduz a fórmula/métrica pela primeira vez",
+        "context_excerpt": "iological Networks:\nA Quantitative Framework from Connectomes to EEG\nEdson Carvalho do Nascimento1, ∗\n1Independent researcher, Curitiba, Brazil\n(Dated: August 10, 2026)\nWe introduce the Relational Coherence Theory (TCR) for measuring informational coherence in\nbiological networks through the metric ",
+        "in_oracle_v2": false
+      },
+      "all_occurrences_summary": [
+        {
+          "chunk_id": "CORPUS-006#p1_01",
+          "page": "p.1",
+          "equation_text": "C = I×S×Hβ",
+          "epistemic_function": "PRIMARY_INTRODUCTION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-006#p1_01",
+          "page": "p.1",
+          "equation_text": "C = I×S×Hβ",
+          "epistemic_function": "PRIMARY_INTRODUCTION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-006#p1_02",
+          "page": "p.1",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "PRIMARY_INTRODUCTION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-006#p1_02",
+          "page": "p.1",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "PRIMARY_INTRODUCTION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-006#p1_03",
+          "page": "p.1",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "DERIVED_CALIBRATION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-006#p1_03",
+          "page": "p.1",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "DERIVED_CALIBRATION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-006#p2_01",
+          "page": "p.2",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "PRIMARY_DEFINITION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-006#p2_01",
+          "page": "p.2",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "PRIMARY_DEFINITION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-006#p5_01",
+          "page": "p.5",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "PRIMARY_DEFINITION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-006#p5_01",
+          "page": "p.5",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "PRIMARY_DEFINITION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-006#p5_03",
+          "page": "p.5",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "MENTION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-006#p5_03",
+          "page": "p.5",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "MENTION",
+          "in_oracle_v2": false
+        }
+      ],
+      "occurrence_counts": {
+        "PRIMARY": 8,
+        "DERIVED": 2,
+        "CONTEXTUAL": 0
+      },
+      "same_equation_as_reference": true,
+      "same_function_as_reference": true
+    },
+    "CORPUS-007": {
+      "classification": "EQUIVALENT",
+      "reason": "Mesma equação e mesma função epistemológica",
+      "canonical_occurrence": {
+        "chunk_id": "CORPUS-007#p1_01",
+        "page": "p.1",
+        "equation_text": "C = I×S×Hβ",
+        "epistemic_function": "PRIMARY_INTRODUCTION",
+        "function_description": "Introduz a fórmula/métrica pela primeira vez",
+        "context_excerpt": "iological Networks:\nA Quantitative Framework from Connectomes to EEG\nEdson Carvalho do Nascimento1, ∗\n1Independent researcher, Curitiba, Brazil\n(Dated: August 12, 2026)\nWe introduce the Relational Coherence Theory (TCR) for measuring informational coherence in\nbiological networks through the metric ",
+        "in_oracle_v2": false
+      },
+      "all_occurrences_summary": [
+        {
+          "chunk_id": "CORPUS-007#p1_01",
+          "page": "p.1",
+          "equation_text": "C = I×S×Hβ",
+          "epistemic_function": "PRIMARY_INTRODUCTION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-007#p1_01",
+          "page": "p.1",
+          "equation_text": "C = I×S×Hβ",
+          "epistemic_function": "PRIMARY_INTRODUCTION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-007#p1_02",
+          "page": "p.1",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "PRIMARY_INTRODUCTION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-007#p1_02",
+          "page": "p.1",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "PRIMARY_INTRODUCTION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-007#p1_03",
+          "page": "p.1",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "DERIVED_CALIBRATION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-007#p1_03",
+          "page": "p.1",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "DERIVED_CALIBRATION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-007#p2_01",
+          "page": "p.2",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "PRIMARY_DEFINITION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-007#p2_01",
+          "page": "p.2",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "PRIMARY_DEFINITION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-007#p5_01",
+          "page": "p.5",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "MENTION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-007#p5_01",
+          "page": "p.5",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "PRIMARY_DEFINITION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-007#p5_01",
+          "page": "p.5",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "MENTION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-007#p5_01",
+          "page": "p.5",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "PRIMARY_DEFINITION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-007#p5_02",
+          "page": "p.5",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "PRIMARY_DEFINITION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-007#p5_02",
+          "page": "p.5",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "PRIMARY_DEFINITION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-007#p5_03",
+          "page": "p.5",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "MENTION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-007#p5_03",
+          "page": "p.5",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "MENTION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-007#p5_04",
+          "page": "p.5",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "MENTION",
+          "in_oracle_v2": false
+        },
+        {
+          "chunk_id": "CORPUS-007#p5_04",
+          "page": "p.5",
+          "equation_text": "C = I × S × Hβ",
+          "epistemic_function": "MENTION",
+          "in_oracle_v2": false
+        }
+      ],
+      "occurrence_counts": {
+        "PRIMARY": 10,
+        "DERIVED": 2,
+        "CONTEXTUAL": 0
+      },
+      "same_equation_as_reference": true,
+      "same_function_as_reference": true
+    }
+  },
+  "etapa_5_oracle_extension": {
+    "oracle_v2_current": [
+      "CORPUS-002#p1_01",
+      "CORPUS-002#p1_02",
+      "CORPUS-002#p2_01",
+      "CORPUS-002#p5_01",
+      "CORPUS-002#p5_02"
+    ],
+    "extension_candidates_equivalent": [
+      {
+        "chunk_id": "CORPUS-006#p1_01",
+        "corpus_id": "CORPUS-006",
+        "version": "v6.1 oficial",
+        "state": "HISTORICAL",
+        "reason": "EQUIVALENT — Mesma equação e mesma função epistemológica"
+      },
+      {
+        "chunk_id": "CORPUS-007#p1_01",
+        "corpus_id": "CORPUS-007",
+        "version": "v6.1 revisão",
+        "state": "HISTORICAL / SCIENTIFIC_REVISION",
+        "reason": "EQUIVALENT — Mesma equação e mesma função epistemológica"
+      }
+    ],
+    "related_chunks": [],
+    "recommendation": "EXTENDER oracle para incluir chunks EQUIVALENT",
+    "proposed_oracle_v3": [
+      "CORPUS-002#p1_01",
+      "CORPUS-002#p1_02",
+      "CORPUS-002#p2_01",
+      "CORPUS-002#p5_01",
+      "CORPUS-002#p5_02",
+      "CORPUS-006#p1_01",
+      "CORPUS-007#p1_01"
+    ]
+  },
+  "next_steps": [
+    "Aguardar determinação do Projetista Master sobre:",
+    "1. Aceitar extensão do oracle para v3 (se EQUIVALENT encontrado)?",
+    "2. Rebenchmark J com oracle v3?",
+    "3. Investivar combinação J+E?"
+  ]
+}

@@ -1,0 +1,403 @@
+{
+  "metadata": {
+    "experiment": "AION-6.3.1-C — Provenance Evidence-Bound",
+    "timestamp": "2026-08-21T15:12:40+00:00",
+    "n_per_condition": 10,
+    "total_runs": 30
+  },
+  "results": {
+    "C0": {
+      "condition": "C0",
+      "n_runs": 10,
+      "metrics": {
+        "FR": 0.0,
+        "IR": 0,
+        "VR": 1.0,
+        "SR": 0.0,
+        "F3R": 0.0,
+        "PER": 1.0,
+        "PC": 0.0,
+        "total_ids": 0,
+        "total_invalid": 0,
+        "f3_count": 0
+      },
+      "context_hash": "f84c3cb2fefd0d2a",
+      "retrieval_top1": "CORPUS-005#chunk_001",
+      "fabrication_types": {},
+      "crosstab": {
+        "PASS_VALID": 0,
+        "PASS_INVALID": 0,
+        "FAIL_VALID": 10,
+        "FAIL_INVALID": 0
+      },
+      "runs_summary": [
+        {
+          "run_id": 1,
+          "invalid_ids": [],
+          "invalid_types": [],
+          "validator_status": "CLEAN",
+          "semantic_status": "FAIL-SYSTEM",
+          "provenance_status": "VALID",
+          "per_run": 1.0,
+          "pc_run": 0.0
+        },
+        {
+          "run_id": 2,
+          "invalid_ids": [],
+          "invalid_types": [],
+          "validator_status": "CLEAN",
+          "semantic_status": "FAIL-SYSTEM",
+          "provenance_status": "VALID",
+          "per_run": 1.0,
+          "pc_run": 0.0
+        },
+        {
+          "run_id": 3,
+          "invalid_ids": [],
+          "invalid_types": [],
+          "validator_status": "CLEAN",
+          "semantic_status": "FAIL-SYSTEM",
+          "provenance_status": "VALID",
+          "per_run": 1.0,
+          "pc_run": 0.0
+        },
+        {
+          "run_id": 4,
+          "invalid_ids": [],
+          "invalid_types": [],
+          "validator_status": "CLEAN",
+          "semantic_status": "FAIL-SYSTEM",
+          "provenance_status": "VALID",
+          "per_run": 1.0,
+          "pc_run": 0.0
+        },
+        {
+          "run_id": 5,
+          "invalid_ids": [],
+          "invalid_types": [],
+          "validator_status": "CLEAN",
+          "semantic_status": "FAIL-SYSTEM",
+          "provenance_status": "VALID",
+          "per_run": 1.0,
+          "pc_run": 0.0
+        },
+        {
+          "run_id": 6,
+          "invalid_ids": [],
+          "invalid_types": [],
+          "validator_status": "CLEAN",
+          "semantic_status": "FAIL-SYSTEM",
+          "provenance_status": "VALID",
+          "per_run": 1.0,
+          "pc_run": 0.0
+        },
+        {
+          "run_id": 7,
+          "invalid_ids": [],
+          "invalid_types": [],
+          "validator_status": "CLEAN",
+          "semantic_status": "FAIL-SYSTEM",
+          "provenance_status": "VALID",
+          "per_run": 1.0,
+          "pc_run": 0.0
+        },
+        {
+          "run_id": 8,
+          "invalid_ids": [],
+          "invalid_types": [],
+          "validator_status": "CLEAN",
+          "semantic_status": "FAIL-SYSTEM",
+          "provenance_status": "VALID",
+          "per_run": 1.0,
+          "pc_run": 0.0
+        },
+        {
+          "run_id": 9,
+          "invalid_ids": [],
+          "invalid_types": [],
+          "validator_status": "CLEAN",
+          "semantic_status": "FAIL-SYSTEM",
+          "provenance_status": "VALID",
+          "per_run": 1.0,
+          "pc_run": 0.0
+        },
+        {
+          "run_id": 10,
+          "invalid_ids": [],
+          "invalid_types": [],
+          "validator_status": "CLEAN",
+          "semantic_status": "FAIL-SYSTEM",
+          "provenance_status": "VALID",
+          "per_run": 1.0,
+          "pc_run": 0.0
+        }
+      ]
+    },
+    "C1": {
+      "condition": "C1",
+      "n_runs": 10,
+      "metrics": {
+        "FR": 0.0,
+        "IR": 0,
+        "VR": 1.0,
+        "SR": 0.0,
+        "F3R": 0.0,
+        "PER": 1.0,
+        "PC": 0.0,
+        "total_ids": 0,
+        "total_invalid": 0,
+        "f3_count": 0
+      },
+      "context_hash": "f84c3cb2fefd0d2a",
+      "retrieval_top1": "CORPUS-005#chunk_001",
+      "fabrication_types": {},
+      "crosstab": {
+        "PASS_VALID": 0,
+        "PASS_INVALID": 0,
+        "FAIL_VALID": 10,
+        "FAIL_INVALID": 0
+      },
+      "runs_summary": [
+        {
+          "run_id": 1,
+          "invalid_ids": [],
+          "invalid_types": [],
+          "validator_status": "CLEAN",
+          "semantic_status": "FAIL-SYSTEM",
+          "provenance_status": "VALID",
+          "per_run": 1.0,
+          "pc_run": 0.0
+        },
+        {
+          "run_id": 2,
+          "invalid_ids": [],
+          "invalid_types": [],
+          "validator_status": "CLEAN",
+          "semantic_status": "FAIL-SYSTEM",
+          "provenance_status": "VALID",
+          "per_run": 1.0,
+          "pc_run": 0.0
+        },
+        {
+          "run_id": 3,
+          "invalid_ids": [],
+          "invalid_types": [],
+          "validator_status": "CLEAN",
+          "semantic_status": "FAIL-SYSTEM",
+          "provenance_status": "VALID",
+          "per_run": 1.0,
+          "pc_run": 0.0
+        },
+        {
+          "run_id": 4,
+          "invalid_ids": [],
+          "invalid_types": [],
+          "validator_status": "CLEAN",
+          "semantic_status": "FAIL-SYSTEM",
+          "provenance_status": "VALID",
+          "per_run": 1.0,
+          "pc_run": 0.0
+        },
+        {
+          "run_id": 5,
+          "invalid_ids": [],
+          "invalid_types": [],
+          "validator_status": "CLEAN",
+          "semantic_status": "FAIL-SYSTEM",
+          "provenance_status": "VALID",
+          "per_run": 1.0,
+          "pc_run": 0.0
+        },
+        {
+          "run_id": 6,
+          "invalid_ids": [],
+          "invalid_types": [],
+          "validator_status": "CLEAN",
+          "semantic_status": "FAIL-SYSTEM",
+          "provenance_status": "VALID",
+          "per_run": 1.0,
+          "pc_run": 0.0
+        },
+        {
+          "run_id": 7,
+          "invalid_ids": [],
+          "invalid_types": [],
+          "validator_status": "CLEAN",
+          "semantic_status": "FAIL-SYSTEM",
+          "provenance_status": "VALID",
+          "per_run": 1.0,
+          "pc_run": 0.0
+        },
+        {
+          "run_id": 8,
+          "invalid_ids": [],
+          "invalid_types": [],
+          "validator_status": "CLEAN",
+          "semantic_status": "FAIL-SYSTEM",
+          "provenance_status": "VALID",
+          "per_run": 1.0,
+          "pc_run": 0.0
+        },
+        {
+          "run_id": 9,
+          "invalid_ids": [],
+          "invalid_types": [],
+          "validator_status": "CLEAN",
+          "semantic_status": "FAIL-SYSTEM",
+          "provenance_status": "VALID",
+          "per_run": 1.0,
+          "pc_run": 0.0
+        },
+        {
+          "run_id": 10,
+          "invalid_ids": [],
+          "invalid_types": [],
+          "validator_status": "CLEAN",
+          "semantic_status": "FAIL-SYSTEM",
+          "provenance_status": "VALID",
+          "per_run": 1.0,
+          "pc_run": 0.0
+        }
+      ]
+    },
+    "C2": {
+      "condition": "C2",
+      "n_runs": 10,
+      "metrics": {
+        "FR": 0.0,
+        "IR": 0,
+        "VR": 1.0,
+        "SR": 0.0,
+        "F3R": 0.0,
+        "PER": 1.0,
+        "PC": 0.0,
+        "total_ids": 0,
+        "total_invalid": 0,
+        "f3_count": 0
+      },
+      "context_hash": "f84c3cb2fefd0d2a",
+      "retrieval_top1": "CORPUS-005#chunk_001",
+      "fabrication_types": {},
+      "crosstab": {
+        "PASS_VALID": 0,
+        "PASS_INVALID": 0,
+        "FAIL_VALID": 10,
+        "FAIL_INVALID": 0
+      },
+      "runs_summary": [
+        {
+          "run_id": 1,
+          "invalid_ids": [],
+          "invalid_types": [],
+          "validator_status": "CLEAN",
+          "semantic_status": "FAIL-SYSTEM",
+          "provenance_status": "VALID",
+          "per_run": 1.0,
+          "pc_run": 0.0
+        },
+        {
+          "run_id": 2,
+          "invalid_ids": [],
+          "invalid_types": [],
+          "validator_status": "CLEAN",
+          "semantic_status": "FAIL-SYSTEM",
+          "provenance_status": "VALID",
+          "per_run": 1.0,
+          "pc_run": 0.0
+        },
+        {
+          "run_id": 3,
+          "invalid_ids": [],
+          "invalid_types": [],
+          "validator_status": "CLEAN",
+          "semantic_status": "FAIL-SYSTEM",
+          "provenance_status": "VALID",
+          "per_run": 1.0,
+          "pc_run": 0.0
+        },
+        {
+          "run_id": 4,
+          "invalid_ids": [],
+          "invalid_types": [],
+          "validator_status": "CLEAN",
+          "semantic_status": "FAIL-SYSTEM",
+          "provenance_status": "VALID",
+          "per_run": 1.0,
+          "pc_run": 0.0
+        },
+        {
+          "run_id": 5,
+          "invalid_ids": [],
+          "invalid_types": [],
+          "validator_status": "CLEAN",
+          "semantic_status": "FAIL-SYSTEM",
+          "provenance_status": "VALID",
+          "per_run": 1.0,
+          "pc_run": 0.0
+        },
+        {
+          "run_id": 6,
+          "invalid_ids": [],
+          "invalid_types": [],
+          "validator_status": "CLEAN",
+          "semantic_status": "FAIL-SYSTEM",
+          "provenance_status": "VALID",
+          "per_run": 1.0,
+          "pc_run": 0.0
+        },
+        {
+          "run_id": 7,
+          "invalid_ids": [],
+          "invalid_types": [],
+          "validator_status": "CLEAN",
+          "semantic_status": "FAIL-SYSTEM",
+          "provenance_status": "VALID",
+          "per_run": 1.0,
+          "pc_run": 0.0
+        },
+        {
+          "run_id": 8,
+          "invalid_ids": [],
+          "invalid_types": [],
+          "validator_status": "CLEAN",
+          "semantic_status": "FAIL-SYSTEM",
+          "provenance_status": "VALID",
+          "per_run": 1.0,
+          "pc_run": 0.0
+        },
+        {
+          "run_id": 9,
+          "invalid_ids": [],
+          "invalid_types": [],
+          "validator_status": "CLEAN",
+          "semantic_status": "FAIL-SYSTEM",
+          "provenance_status": "VALID",
+          "per_run": 1.0,
+          "pc_run": 0.0
+        },
+        {
+          "run_id": 10,
+          "invalid_ids": [],
+          "invalid_types": [],
+          "validator_status": "CLEAN",
+          "semantic_status": "FAIL-SYSTEM",
+          "provenance_status": "VALID",
+          "per_run": 1.0,
+          "pc_run": 0.0
+        }
+      ]
+    }
+  },
+  "preservation_analysis": {
+    "C1": {
+      "fr_reduced": false,
+      "pc_preserved": true,
+      "sr_preserved": true
+    },
+    "C2": {
+      "fr_reduced": false,
+      "pc_preserved": true,
+      "sr_preserved": true
+    }
+  }
+}

@@ -1,0 +1,468 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "generated_at": "2026-08-17T04:06:26+00:00",
+    "author_structure": "Edson C. Nascimento (Projetista Master)",
+    "author_implementation": "IA Curadora",
+    "protocol": "AION-BENCH-001"
+  },
+  "bench_definition": {
+    "B1": {
+      "categoria": "Proveniência",
+      "pergunta": "Qual é a fonte exata da afirmação de que a métrica TCR é C = I × S × H^β?",
+      "gabarito": {
+        "documento": "CORPUS-002",
+        "versao": "v6.2",
+        "secao": "Abstract, p.1",
+        "linha": 46,
+        "chunk_id": "CORPUS-002#p1_01",
+        "evidence_type": "[E]"
+      }
+    },
+    "B2": {
+      "categoria": "Temporalidade",
+      "pergunta": "Quando a métrica C = I × S × H^β apareceu pela primeira vez no corpus e qual foi sua última modificação documentada?",
+      "gabarito": {
+        "introduced_at": "2026-08-10 (Cover Letter v6.1 aspiracional)",
+        "last_refined_at": "2026-08-12 (Paper A v6.2 — β calibrado)",
+        "change_type": "STABLE → REFINED"
+      }
+    },
+    "B3": {
+      "categoria": "Revogação",
+      "pergunta": "A hipótese de comensurabilidade cross-scale η continua válida ou foi posteriormente abandonada?",
+      "gabarito": {
+        "status": "REVOKED",
+        "data_revogacao": "2026-08-12",
+        "documento_revogacao": "CORPUS-004 (Paper B v6.1)",
+        "evidence": "razão |δβ − δST|/δβ = 0.291 > 0.2 não satisfeito"
+      }
+    },
+    "B4": {
+      "categoria": "Ausência",
+      "pergunta": "O corpus contém evidência de que Edson defende o conceito de 'consciência' como parte do programa TCR?",
+      "gabarito": {
+        "resposta_esperada": "NÃO",
+        "razao": "Termo \"consciência\" não aparece em nenhum dos 5 textos extraídos. Única referência: Paper A cita Tononi (Φ-IIT) como referência externa, não como conceito do programa.",
+        "evidence_type": "[E] — ausência confirmada por auditoria T4"
+      }
+    },
+    "B5": {
+      "categoria": "Contradição",
+      "pergunta": "Existem documentos do corpus que apresentam posições incompatíveis sobre os resultados P3 do Paper A?",
+      "gabarito": {
+        "contradicao_identificada": "SIM — C2",
+        "doc1": "CORPUS-005 Cover Letter PT-BR: AUC 0.968, 91.2% acurácia, PhysioNet Sleep-EDF",
+        "doc2": "CORPUS-002 Paper A v6.2: AUC 0.793±0.133, 4 sujeitos, OpenNeuro ds003768",
+        "interpretacao": "Defasagem de versionamento — Cover Letter é rascunho v6.1 aspiracional"
+      }
+    },
+    "B6": {
+      "categoria": "Lacuna",
+      "pergunta": "O que seria necessário consultar para responder com maior confiança quando Edson abandonou o termo de recursão R^α?",
+      "gabarito": {
+        "documento_necessario": "Versões v6.0 e v6.1 do Paper A (não no corpus)",
+        "razao": "Não há documento intermediário entre v5.1 (com R) e v6.2 (sem R)",
+        "tipo_lacuna": "T9 (estrutural) + lacuna documental de versão"
+      }
+    },
+    "B7": {
+      "categoria": "Síntese",
+      "pergunta": "Reconstrua a evolução do conceito de Power-law T₂ sem misturar versões.",
+      "gabarito": {
+        "estado_v6.0": "T₂ = K·J^1.205·λ^(-1.114)·γ^(-1.068)·T^(-0.795), R²=0.914 (dímero 2 sítios)",
+        "estado_v6.1": "T₂ = (1.567×10⁴)·J^0.831·λ^(-0.843)·γ^(-0.766)·T^(-0.261), R²=0.988 (FMO 7 sítios)",
+        "change_type": "REFINED",
+        "data_refinamento": "2026-08-12",
+        "razao_refinamento": "Re-derivação a partir do Hamiltoniano FMO completo (375 combinações)"
+      }
+    }
+  },
+  "sistema_A": {
+    "description": "AION atual: TF-IDF + GraphRAG + temporal + memória negativa + LLM z-ai",
+    "results": {
+      "B1": {
+        "test_id": "B1",
+        "categoria": "Proveniência",
+        "pergunta": "Qual é a fonte exata da afirmação de que a métrica TCR é C = I × S × H^β?",
+        "resposta": "🚀 Initializing Z-AI SDK...\n🚀 Sending chat request...\n{\n  \"choices\": [\n    {\n      \"finish_reason\": \"stop\",\n      \"index\": 0,\n      \"message\": {\n        \"content\": \"A afirmação de que a métrica TCR é C = I × S × H^β vem do seguinte contexto:\\n\\n[CORPUS-005#chunk_001 | Cover Letter | full | integral | score=0.087]\\n\\n\\\"O manuscrito introduz a camada biológica empírica do programa TCR/QDT: uma estrutura quantitativa — Teoria da Coerência Relacional (TCR) — propondo uma métrica unificada $\\\\mathcal{C} = I \\\\times S \\\\times H^{\\\\beta}$ para a coerência informacional de redes complexas. A métrica combina três componentes operacionalmente definidos: integração $I$ (informação mútua multivariada normalizada), simetria $S$ (índice de automorfismo de grafo), e entropia $H$ (entropia espectral normalizada). O expoente $\\\\beta$ é calibrado via validação cruzada leave-one-out (LOOCV) sobre 12 fixtures sintéticas de conectomas, produzindo consistência de ranking perfeita ($\\\\rho = 1.0$) para $\\\\beta \\\\in [0.1, 1.5]$; adotamos $\\\\beta = 0.5$ como valor canônico.\\\"\",\n        \"role\": \"assistant\"\n      }\n    }\n  ],\n  \"created\": 1786939552,\n  \"id\": \"20260817120546218f0ce6fc2e49e9\",\n  \"model\": \"glm-4-plus\",\n  \"object\": \"chat.completion\",\n  \"request_id\": \"20260817120546218f0ce6fc2e49e9\",\n  \"usage\": {\n    \"completion_tokens\": 283,\n    \"prompt_tokens\": 7027,\n    \"total_tokens\": 7310\n  }\n}",
+        "tempo_segundos": 5.76,
+        "retrieved_chunks_count": 8,
+        "retrieved_chunks_top5": [
+          {
+            "chunk_id": "CORPUS-003#p8_02",
+            "score": 0.1068989949086633,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "chunk_id": "CORPUS-004#p3_01",
+            "score": 0.09628058235160475,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "chunk_id": "CORPUS-003#p3_02",
+            "score": 0.09376228671967034,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "chunk_id": "CORPUS-003#p4_01",
+            "score": 0.0903240077379034,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "chunk_id": "CORPUS-005#chunk_001",
+            "score": 0.08658676073994144,
+            "corpus_id": "CORPUS-005"
+          }
+        ],
+        "evaluation": {
+          "test_id": "B1",
+          "categoria": "Proveniência",
+          "criterion_pass": false,
+          "evidence_found": []
+        },
+        "gabarito": {
+          "documento": "CORPUS-002",
+          "versao": "v6.2",
+          "secao": "Abstract, p.1",
+          "linha": 46,
+          "chunk_id": "CORPUS-002#p1_01",
+          "evidence_type": "[E]"
+        }
+      },
+      "B2": {
+        "test_id": "B2",
+        "categoria": "Temporalidade",
+        "pergunta": "Quando a métrica C = I × S × H^β apareceu pela primeira vez no corpus e qual foi sua última modificação documentada?",
+        "resposta": "🚀 Initializing Z-AI SDK...\n🚀 Sending chat request...\n{\n  \"choices\": [\n    {\n      \"finish_reason\": \"stop\",\n      \"index\": 0,\n      \"message\": {\n        \"content\": \"Com base no contexto fornecido:\\n\\n1. A métrica C = I × S × H^β apareceu pela primeira vez no documento CORPUS-005 (Cover Letter), na versão aspiracional v6.1. [CORPUS-005#chunk_001]\\n\\n2. Sua última modificação documentada foi em CORPUS-002 (Paper A v6.2), onde o expoente β foi calibrado via LOOCV com valor de 0.5. [CORPUS-005#chunk_001]\",\n        \"role\": \"assistant\"\n      }\n    }\n  ],\n  \"created\": 1786939555,\n  \"id\": \"2026081712055235353faa82d04dce\",\n  \"model\": \"glm-4-plus\",\n  \"object\": \"chat.completion\",\n  \"request_id\": \"2026081712055235353faa82d04dce\",\n  \"usage\": {\n    \"completion_tokens\": 120,\n    \"prompt_tokens\": 7381,\n    \"total_tokens\": 7501\n  }\n}",
+        "tempo_segundos": 2.62,
+        "retrieved_chunks_count": 8,
+        "retrieved_chunks_top5": [
+          {
+            "chunk_id": "CORPUS-005#chunk_001",
+            "score": 0.09858609732619998,
+            "corpus_id": "CORPUS-005"
+          },
+          {
+            "chunk_id": "CORPUS-003#p3_03",
+            "score": 0.078015662455431,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "chunk_id": "CORPUS-003#p3_02",
+            "score": 0.07028902578002338,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "chunk_id": "CORPUS-004#p2_04",
+            "score": 0.061723475104804755,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "chunk_id": "CORPUS-001#chunk_001",
+            "score": 0.06149570555472931,
+            "corpus_id": "CORPUS-001"
+          }
+        ],
+        "evaluation": {
+          "test_id": "B2",
+          "categoria": "Temporalidade",
+          "criterion_pass": false,
+          "evidence_found": []
+        },
+        "gabarito": {
+          "introduced_at": "2026-08-10 (Cover Letter v6.1 aspiracional)",
+          "last_refined_at": "2026-08-12 (Paper A v6.2 — β calibrado)",
+          "change_type": "STABLE → REFINED"
+        }
+      },
+      "B3": {
+        "test_id": "B3",
+        "categoria": "Revogação",
+        "pergunta": "A hipótese de comensurabilidade cross-scale η continua válida ou foi posteriormente abandonada?",
+        "resposta": "🚀 Initializing Z-AI SDK...\n🚀 Sending chat request...\n{\n  \"choices\": [\n    {\n      \"finish_reason\": \"stop\",\n      \"index\": 0,\n      \"message\": {\n        \"content\": \"A hipótese de comensurabilidade cross-scale η foi abandonada. Conforme mencionado no contexto:\\n\\n\\\"A retraímos portanto a hipótese de comensurabilidade η da análise presente.\\\" [CORPUS-004#p2_04 | Paper B | p.2 | — | score=0.172]\\n\\n\\\"A retração aplica-se apenas à afirmação específica de comensurabilidade entre δβ e δST.\\\" [CORPUS-004#p3_01 | Paper B | p.3 | — | score=0.157]\\n\\n\\\"O critério não é satisfeito (razão = 0.291), levando-nos a retrair a hipótese η da análise presente.\\\" [CORPUS-004#p3_01 | Paper B | p.3 | — | score=0.157]\\n\\n\\\"A hipótese pode ser revisitada em trabalho futuro se uma derivação teórica predisser uma relação quantitativa específica entre δβ e δST; na ausência de tal derivação, a afirmação empírica não é suportada.\\\" [CORPUS-004#p2_03 | Paper B | p.2 | — | score=0.126]\",\n        \"role\": \"assistant\"\n      }\n    }\n  ],\n  \"created\": 1786939559,\n  \"id\": \"202608171205553bd0c593c1014aed\",\n  \"model\": \"glm-4-plus\",\n  \"object\": \"chat.completion\",\n  \"request_id\": \"202608171205553bd0c593c1014aed\",\n  \"usage\": {\n    \"completion_tokens\": 275,\n    \"prompt_tokens\": 2954,\n    \"total_tokens\": 3229\n  }\n}",
+        "tempo_segundos": 4.31,
+        "retrieved_chunks_count": 8,
+        "retrieved_chunks_top5": [
+          {
+            "chunk_id": "CORPUS-004#p2_02",
+            "score": 0.25236997259195826,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "chunk_id": "CORPUS-004#p3_04",
+            "score": 0.17173007410946384,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "chunk_id": "CORPUS-004#p3_01",
+            "score": 0.15705863190616878,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "chunk_id": "CORPUS-004#p1_03",
+            "score": 0.13073960019808875,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "chunk_id": "CORPUS-004#p2_03",
+            "score": 0.12577234646967717,
+            "corpus_id": "CORPUS-004"
+          }
+        ],
+        "evaluation": {
+          "test_id": "B3",
+          "categoria": "Revogação",
+          "criterion_pass": false,
+          "evidence_found": []
+        },
+        "gabarito": {
+          "status": "REVOKED",
+          "data_revogacao": "2026-08-12",
+          "documento_revogacao": "CORPUS-004 (Paper B v6.1)",
+          "evidence": "razão |δβ − δST|/δβ = 0.291 > 0.2 não satisfeito"
+        }
+      },
+      "B4": {
+        "test_id": "B4",
+        "categoria": "Ausência",
+        "pergunta": "O corpus contém evidência de que Edson defende o conceito de 'consciência' como parte do programa TCR?",
+        "resposta": "🚀 Initializing Z-AI SDK...\n🚀 Sending chat request...\n{\n  \"choices\": [\n    {\n      \"finish_reason\": \"stop\",\n      \"index\": 0,\n      \"message\": {\n        \"content\": \"Não, o corpus não contém evidências de que Edson defende o conceito de 'consciência' como parte do programa TCR.\\n\\nAnalisando os chunks fornecidos:\\n\\n- [CORPUS-005#chunk_001] descreve o programa TCR/QDT e sua estrutura quantitativa para redes complexas, mencionando componentes como integração, simetria e entropia, mas não faz referência à consciência.\\n\\n- [CORPUS-003#p1_01] e [CORPUS-003#p11_01] apresentam a Parte IV do programa, focada em aspectos teóricos como o functor Φcat, tensor Qμν e conexões com outros trabalhos, mas sem menção à consciência.\\n\\n- [CORPUS-004#p3_01] aborda o Paper B sobre aspectos quântico-dissipativos, mas também não relaciona com o conceito de consciência.\\n\\n- [CORPUS-001#chunk_001] é apenas uma especificação documental do projeto AION, sem conteúdo sobre consciência.\\n\\nPortanto, não há nenhuma menção ou defesa do conceito de 'consciência' como parte do programa TCR/QDT nos documentos fornecidos.\",\n        \"role\": \"assistant\"\n      }\n    }\n  ],\n  \"created\": 1786939564,\n  \"id\": \"202608171205590bb8dfd9b718438a\",\n  \"model\": \"glm-4-plus\",\n  \"object\": \"chat.completion\",\n  \"request_id\": \"202608171205590bb8dfd9b718438a\",\n  \"usage\": {\n    \"completion_tokens\": 277,\n    \"prompt_tokens\": 7053,\n    \"total_tokens\": 7330\n  }\n}",
+        "tempo_segundos": 5.4,
+        "retrieved_chunks_count": 8,
+        "retrieved_chunks_top5": [
+          {
+            "chunk_id": "CORPUS-005#chunk_001",
+            "score": 0.12116543735779291,
+            "corpus_id": "CORPUS-005"
+          },
+          {
+            "chunk_id": "CORPUS-003#p1_01",
+            "score": 0.11994227291223632,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "chunk_id": "CORPUS-003#p11_01",
+            "score": 0.11986631515206382,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "chunk_id": "CORPUS-004#p3_01",
+            "score": 0.1179088517922866,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "chunk_id": "CORPUS-001#chunk_001",
+            "score": 0.10415393273198084,
+            "corpus_id": "CORPUS-001"
+          }
+        ],
+        "evaluation": {
+          "test_id": "B4",
+          "categoria": "Ausência",
+          "criterion_pass": true,
+          "evidence_found": [
+            "ausência confirmada"
+          ]
+        },
+        "gabarito": {
+          "resposta_esperada": "NÃO",
+          "razao": "Termo \"consciência\" não aparece em nenhum dos 5 textos extraídos. Única referência: Paper A cita Tononi (Φ-IIT) como referência externa, não como conceito do programa.",
+          "evidence_type": "[E] — ausência confirmada por auditoria T4"
+        }
+      },
+      "B5": {
+        "test_id": "B5",
+        "categoria": "Contradição",
+        "pergunta": "Existem documentos do corpus que apresentam posições incompatíveis sobre os resultados P3 do Paper A?",
+        "resposta": "🚀 Initializing Z-AI SDK...\n🚀 Sending chat request...\n{\n  \"choices\": [\n    {\n      \"finish_reason\": \"stop\",\n      \"index\": 0,\n      \"message\": {\n        \"content\": \"Sim, existem documentos do corpus que apresentam posições incompatíveis sobre os resultados P3 do Paper A. As contradições são documentadas na seção de verificação cruzada entre a Cover Letter (CORPUS-005#chunk_001) e o Paper A (CORPUS-002):\\n\\n1. A Cover Letter (CORPUS-005#chunk_001) apresenta resultados P3 otimistas: \\\"banco de dados PhysioNet Sleep-EDF com reconstrução de fontes sLORETA, 91.2% ± 1.9% acurácia, F1 = 0.912, AUC = 0.968, p < 10⁻⁴\\\".\\n\\n2. O Paper A (CORPUS-002) apresenta resultados P3 mais modestos: \\\"P3, AUC = 0.793 ± 0.133 across 4 subjects, p < 0.05\\\".\\n\\n3. Além disso, há incompatibilidade sobre o dataset utilizado: a Cover Letter menciona \\\"PhysioNet Sleep-EDF\\\", enquanto o Paper A usa \\\"OpenNeuro ds003768\\\" com \\\"preliminary sample of 4 subjects\\\".\\n\\nEssas contradições indicam que a Cover Letter descreve o plano aspiracional da versão v6.1, enquanto o Paper A v6.2 FINAL contém os resultados reais, mais modestos.\",\n        \"role\": \"assistant\"\n      }\n    }\n  ],\n  \"created\": 1786939577,\n  \"id\": \"20260817120604625d6d7caa994cb6\",\n  \"model\": \"glm-4-plus\",\n  \"object\": \"chat.completion\",\n  \"request_id\": \"20260817120604625d6d7caa994cb6\",\n  \"usage\": {\n    \"completion_tokens\": 308,\n    \"prompt_tokens\": 7343,\n    \"total_tokens\": 7651\n  }\n}",
+        "tempo_segundos": 12.34,
+        "retrieved_chunks_count": 8,
+        "retrieved_chunks_top5": [
+          {
+            "chunk_id": "CORPUS-001#chunk_001",
+            "score": 0.16544476930014332,
+            "corpus_id": "CORPUS-001"
+          },
+          {
+            "chunk_id": "CORPUS-005#chunk_001",
+            "score": 0.14141035968151836,
+            "corpus_id": "CORPUS-005"
+          },
+          {
+            "chunk_id": "CORPUS-003#p10_01",
+            "score": 0.06987810156582133,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "chunk_id": "CORPUS-003#p11_01",
+            "score": 0.06533365594150053,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "chunk_id": "CORPUS-003#p3_02",
+            "score": 0.06076298443034385,
+            "corpus_id": "CORPUS-003"
+          }
+        ],
+        "evaluation": {
+          "test_id": "B5",
+          "categoria": "Contradição",
+          "criterion_pass": true,
+          "evidence_found": [
+            "contradição identificada",
+            "citação dupla"
+          ]
+        },
+        "gabarito": {
+          "contradicao_identificada": "SIM — C2",
+          "doc1": "CORPUS-005 Cover Letter PT-BR: AUC 0.968, 91.2% acurácia, PhysioNet Sleep-EDF",
+          "doc2": "CORPUS-002 Paper A v6.2: AUC 0.793±0.133, 4 sujeitos, OpenNeuro ds003768",
+          "interpretacao": "Defasagem de versionamento — Cover Letter é rascunho v6.1 aspiracional"
+        }
+      },
+      "B6": {
+        "test_id": "B6",
+        "categoria": "Lacuna",
+        "pergunta": "O que seria necessário consultar para responder com maior confiança quando Edson abandonou o termo de recursão R^α?",
+        "resposta": "🚀 Initializing Z-AI SDK...\n🚀 Sending chat request...\n{\n  \"choices\": [\n    {\n      \"finish_reason\": \"stop\",\n      \"index\": 0,\n      \"message\": {\n        \"content\": \"INFORMAÇÃO NÃO ENCONTRADA NO CONTEXTO. O contexto não contém informações sobre quando exatamente Edson abandonou o termo de recursão R^α. A memória negativa indica que não há documento intermediário entre v5.1 (com R) e v6.2 (sem R), e que a transição ocorreu em algum momento entre essas duas versões, mas não pode ser datada sem a inclusão das versões v6.0 e v6.1 do Paper A no corpus.\",\n        \"role\": \"assistant\"\n      }\n    }\n  ],\n  \"created\": 1786939579,\n  \"id\": \"20260817120617d5e4c7778c0243c1\",\n  \"model\": \"glm-4-plus\",\n  \"object\": \"chat.completion\",\n  \"request_id\": \"20260817120617d5e4c7778c0243c1\",\n  \"usage\": {\n    \"completion_tokens\": 115,\n    \"prompt_tokens\": 7577,\n    \"total_tokens\": 7692\n  }\n}",
+        "tempo_segundos": 2.83,
+        "retrieved_chunks_count": 8,
+        "retrieved_chunks_top5": [
+          {
+            "chunk_id": "CORPUS-003#p7_01",
+            "score": 0.10050007053501603,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "chunk_id": "CORPUS-003#p10_02",
+            "score": 0.09897409951730182,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "chunk_id": "CORPUS-003#p4_01",
+            "score": 0.09841652172075044,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "chunk_id": "CORPUS-003#p10_01",
+            "score": 0.08052154227880523,
+            "corpus_id": "CORPUS-003"
+          },
+          {
+            "chunk_id": "CORPUS-005#chunk_001",
+            "score": 0.07744017331387311,
+            "corpus_id": "CORPUS-005"
+          }
+        ],
+        "evaluation": {
+          "test_id": "B6",
+          "categoria": "Lacuna",
+          "criterion_pass": true,
+          "evidence_found": [
+            "documento necessário identificado"
+          ]
+        },
+        "gabarito": {
+          "documento_necessario": "Versões v6.0 e v6.1 do Paper A (não no corpus)",
+          "razao": "Não há documento intermediário entre v5.1 (com R) e v6.2 (sem R)",
+          "tipo_lacuna": "T9 (estrutural) + lacuna documental de versão"
+        }
+      },
+      "B7": {
+        "test_id": "B7",
+        "categoria": "Síntese",
+        "pergunta": "Reconstrua a evolução do conceito de Power-law T₂ sem misturar versões.",
+        "resposta": "🚀 Initializing Z-AI SDK...\n🚀 Sending chat request...\n{\n  \"choices\": [\n    {\n      \"finish_reason\": \"stop\",\n      \"index\": 0,\n      \"message\": {\n        \"content\": \"A evolução do conceito de Power-law T₂ pode ser reconstruída da seguinte forma:\\n\\nNo trabalho anterior (v6.0), o expoente de temperatura ST = −0.795 foi derivado de um dímero de 2 sítios e extrapolado para o complexo FMO de 7 sítios [CORPUS-004#p1_03]. Esta extrapolação foi considerada matematicamente questionável, pois a topologia estrutural, a densidade de estados e a rede de acoplamento sítio-a-sítio diferem qualitativamente entre os dois casos [CORPUS-004#p1_03].\\n\\nNo presente trabalho (Paper B, v6.1), os expoentes foram re-derivados diretamente do Hamiltoniano FMO de 7 sítios usando 375 combinações de parâmetros [CORPUS-004#p1_03]. Isso resultou em um novo power-law completo: T2 = K J0.831 λ−0.843 γ−0.766 T −0.261 com R2 = 0.988 [CORPUS-004#p1_01]. O novo expoente de temperatura ST = −0.261 difere em 67% do valor derivado do dímero anteriormente [CORPUS-004#p1_01], confirmando que a extrapolação de 2 para 7 sítios era matematicamente injustificável [CORPUS-004#p1_03]. A qualidade do ajuste também melhorou substancialmente, passando de R2 = 0.914 para R2 = 0.988 [CORPUS-004#p1_01]. A extrapolação do dímero de v6.0 foi formalmente retraída [CORPUS-004#p3_01].\",\n        \"role\": \"assistant\"\n      }\n    }\n  ],\n  \"created\": 1786939586,\n  \"id\": \"202608171206205ff8ba4602e74a24\",\n  \"model\": \"glm-4-plus\",\n  \"object\": \"chat.completion\",\n  \"request_id\": \"202608171206205ff8ba4602e74a24\",\n  \"usage\": {\n    \"completion_tokens\": 421,\n    \"prompt_tokens\": 2703,\n    \"total_tokens\": 3124\n  }\n}",
+        "tempo_segundos": 6.29,
+        "retrieved_chunks_count": 8,
+        "retrieved_chunks_top5": [
+          {
+            "chunk_id": "CORPUS-004#p2_03",
+            "score": 0.1074615473492783,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "chunk_id": "CORPUS-004#p1_03",
+            "score": 0.10636470450621775,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "chunk_id": "CORPUS-004#p1_01",
+            "score": 0.09242585224539569,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "chunk_id": "CORPUS-004#p1_04",
+            "score": 0.08824862952951579,
+            "corpus_id": "CORPUS-004"
+          },
+          {
+            "chunk_id": "CORPUS-004#p3_01",
+            "score": 0.08807186808963043,
+            "corpus_id": "CORPUS-004"
+          }
+        ],
+        "evaluation": {
+          "test_id": "B7",
+          "categoria": "Síntese",
+          "criterion_pass": true,
+          "evidence_found": [
+            "v6.0 (dímero)",
+            "v6.1 (FMO 7 sítios)",
+            "distinção mantida"
+          ]
+        },
+        "gabarito": {
+          "estado_v6.0": "T₂ = K·J^1.205·λ^(-1.114)·γ^(-1.068)·T^(-0.795), R²=0.914 (dímero 2 sítios)",
+          "estado_v6.1": "T₂ = (1.567×10⁴)·J^0.831·λ^(-0.843)·γ^(-0.766)·T^(-0.261), R²=0.988 (FMO 7 sítios)",
+          "change_type": "REFINED",
+          "data_refinamento": "2026-08-12",
+          "razao_refinamento": "Re-derivação a partir do Hamiltoniano FMO completo (375 combinações)"
+        }
+      }
+    }
+  },
+  "sistema_B_candidato": {
+    "description": "PENDENTE — candidato a ser avaliado (AnythingLLM real com embeddings semânticos, ou outra arquitetura)",
+    "status": "AGUARDANDO DECISÃO DO PROJETISTA MASTER",
+    "prerequisite": "Apenas proceder com Sistema B se Sistema A falhar em critério crítico identificado pelo Projetista Master"
+  },
+  "ab_matrix": {
+    "criterios": [
+      "Recuperação correta",
+      "Proveniência",
+      "Respeito à temporalidade",
+      "Detecção de contradições",
+      "Tratamento de ausência",
+      "Reconstrução histórica",
+      "Latência (s)",
+      "Complexidade operacional"
+    ],
+    "sistema_A": {
+      "Recuperação correta": "4/7 (57%)",
+      "Proveniência": "❌",
+      "Respeito à temporalidade": "❌",
+      "Detecção de contradições": "✅",
+      "Tratamento de ausência": "✅",
+      "Reconstrução histórica": "✅",
+      "Latência (s)": "5.6s médios",
+      "Complexidade operacional": "BAIXA (proxy Python + z-ai CLI, sem Docker)"
+    },
+    "sistema_B_candidato": {
+      "Recuperação correta": "PENDENTE",
+      "Proveniência": "PENDENTE",
+      "Respeito à temporalidade": "PENDENTE",
+      "Detecção de contradições": "PENDENTE",
+      "Tratamento de ausência": "PENDENTE",
+      "Reconstrução histórica": "PENDENTE",
+      "Latência (s)": "PENDENTE",
+      "Complexidade operacional": "PENDENTE"
+    }
+  },
+  "recommendation": {
+    "sistema_A_pass_count": 4,
+    "sistema_A_total": 7,
+    "veredito": "PENDENTE — aguarda análise do Projetista Master sobre se há critério crítico falhando"
+  }
+}

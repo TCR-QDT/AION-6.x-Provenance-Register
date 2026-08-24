@@ -1,0 +1,733 @@
+{
+  "metadata": {
+    "experiment": "AION-6.4.1-A — Evidence-Bound Provenance (piloto intercalado)",
+    "timestamp": "2026-08-21T21:45:06+00:00",
+    "n_per_condition": 25,
+    "total_runs": 50,
+    "interleaved": true
+  },
+  "a0_metrics": {
+    "PER": 0.6,
+    "CFR_ID": 0.3181818181818182,
+    "CFR_RUN": 0.4666666666666667,
+    "EBA": 0.6818181818181818,
+    "VR": 1.0,
+    "F3R": 0.28,
+    "SR": 0.6,
+    "FR": 0.28,
+    "runs_with_prov": 15,
+    "empty_prov": 10,
+    "total_ids": 22,
+    "total_invalid": 7,
+    "runs_prov_invalid": 7
+  },
+  "a1_metrics": {
+    "PER": 0.36,
+    "CFR_ID": 0.3076923076923077,
+    "CFR_RUN": 0.4444444444444444,
+    "EBA": 0.6923076923076923,
+    "VR": 1.0,
+    "F3R": 0.16,
+    "SR": 0.32,
+    "FR": 0.16,
+    "runs_with_prov": 9,
+    "empty_prov": 16,
+    "total_ids": 13,
+    "total_invalid": 4,
+    "runs_prov_invalid": 4
+  },
+  "preservation": {
+    "cfr_reduced": true,
+    "eba_increased": true,
+    "per_preserved": true,
+    "sr_preserved": true,
+    "f3_reduced": true
+  },
+  "verdict": "CENÁRIO A — A1 PROMISSORA ✅ (CFR↓ + EBA↑ + PER≈ + SR≈)",
+  "action": "Prosseguir para confirmação com N maior",
+  "a0_runs": [
+    {
+      "run_id": "A0-1",
+      "provenance_emitted": true,
+      "provenance_count": 1,
+      "valid_id_count": 1,
+      "invalid_id_count": 0,
+      "f3_count": 0,
+      "semantic_pass": true,
+      "eba_valid": 1,
+      "cited_ids": [
+        "CORPUS-005#chunk_001"
+      ],
+      "invalid_ids": []
+    },
+    {
+      "run_id": "A0-2",
+      "provenance_emitted": true,
+      "provenance_count": 1,
+      "valid_id_count": 1,
+      "invalid_id_count": 0,
+      "f3_count": 0,
+      "semantic_pass": true,
+      "eba_valid": 1,
+      "cited_ids": [
+        "CORPUS-005#chunk_001"
+      ],
+      "invalid_ids": []
+    },
+    {
+      "run_id": "A0-3",
+      "provenance_emitted": true,
+      "provenance_count": 1,
+      "valid_id_count": 1,
+      "invalid_id_count": 0,
+      "f3_count": 0,
+      "semantic_pass": true,
+      "eba_valid": 1,
+      "cited_ids": [
+        "CORPUS-005#chunk_001"
+      ],
+      "invalid_ids": []
+    },
+    {
+      "run_id": "A0-4",
+      "provenance_emitted": true,
+      "provenance_count": 1,
+      "valid_id_count": 1,
+      "invalid_id_count": 0,
+      "f3_count": 0,
+      "semantic_pass": true,
+      "eba_valid": 1,
+      "cited_ids": [
+        "CORPUS-005#chunk_001"
+      ],
+      "invalid_ids": []
+    },
+    {
+      "run_id": "A0-5",
+      "provenance_emitted": true,
+      "provenance_count": 2,
+      "valid_id_count": 1,
+      "invalid_id_count": 1,
+      "f3_count": 1,
+      "semantic_pass": true,
+      "eba_valid": 1,
+      "cited_ids": [
+        "CORPUS-005#chunk_001",
+        "CORPUS-002#chunk_001"
+      ],
+      "invalid_ids": [
+        "CORPUS-002#chunk_001"
+      ]
+    },
+    {
+      "run_id": "A0-6",
+      "provenance_emitted": true,
+      "provenance_count": 1,
+      "valid_id_count": 1,
+      "invalid_id_count": 0,
+      "f3_count": 0,
+      "semantic_pass": true,
+      "eba_valid": 1,
+      "cited_ids": [
+        "CORPUS-005#chunk_001"
+      ],
+      "invalid_ids": []
+    },
+    {
+      "run_id": "A0-7",
+      "provenance_emitted": true,
+      "provenance_count": 2,
+      "valid_id_count": 1,
+      "invalid_id_count": 1,
+      "f3_count": 1,
+      "semantic_pass": true,
+      "eba_valid": 1,
+      "cited_ids": [
+        "CORPUS-005#chunk_001",
+        "CORPUS-002#chunk_001"
+      ],
+      "invalid_ids": [
+        "CORPUS-002#chunk_001"
+      ]
+    },
+    {
+      "run_id": "A0-8",
+      "provenance_emitted": true,
+      "provenance_count": 1,
+      "valid_id_count": 1,
+      "invalid_id_count": 0,
+      "f3_count": 0,
+      "semantic_pass": true,
+      "eba_valid": 1,
+      "cited_ids": [
+        "CORPUS-005#chunk_001"
+      ],
+      "invalid_ids": []
+    },
+    {
+      "run_id": "A0-9",
+      "provenance_emitted": true,
+      "provenance_count": 2,
+      "valid_id_count": 1,
+      "invalid_id_count": 1,
+      "f3_count": 1,
+      "semantic_pass": true,
+      "eba_valid": 1,
+      "cited_ids": [
+        "CORPUS-005#chunk_001",
+        "CORPUS-002#chunk_001"
+      ],
+      "invalid_ids": [
+        "CORPUS-002#chunk_001"
+      ]
+    },
+    {
+      "run_id": "A0-10",
+      "provenance_emitted": true,
+      "provenance_count": 2,
+      "valid_id_count": 1,
+      "invalid_id_count": 1,
+      "f3_count": 1,
+      "semantic_pass": true,
+      "eba_valid": 1,
+      "cited_ids": [
+        "CORPUS-005#chunk_001",
+        "CORPUS-002#chunk_001"
+      ],
+      "invalid_ids": [
+        "CORPUS-002#chunk_001"
+      ]
+    },
+    {
+      "run_id": "A0-11",
+      "provenance_emitted": true,
+      "provenance_count": 2,
+      "valid_id_count": 1,
+      "invalid_id_count": 1,
+      "f3_count": 1,
+      "semantic_pass": true,
+      "eba_valid": 1,
+      "cited_ids": [
+        "CORPUS-005#chunk_001",
+        "CORPUS-002#chunk_001"
+      ],
+      "invalid_ids": [
+        "CORPUS-002#chunk_001"
+      ]
+    },
+    {
+      "run_id": "A0-12",
+      "provenance_emitted": true,
+      "provenance_count": 2,
+      "valid_id_count": 1,
+      "invalid_id_count": 1,
+      "f3_count": 1,
+      "semantic_pass": true,
+      "eba_valid": 1,
+      "cited_ids": [
+        "CORPUS-005#chunk_001",
+        "CORPUS-002#chunk_001"
+      ],
+      "invalid_ids": [
+        "CORPUS-002#chunk_001"
+      ]
+    },
+    {
+      "run_id": "A0-13",
+      "provenance_emitted": true,
+      "provenance_count": 2,
+      "valid_id_count": 1,
+      "invalid_id_count": 1,
+      "f3_count": 1,
+      "semantic_pass": true,
+      "eba_valid": 1,
+      "cited_ids": [
+        "CORPUS-005#chunk_001",
+        "CORPUS-002#chunk_001"
+      ],
+      "invalid_ids": [
+        "CORPUS-002#chunk_001"
+      ]
+    },
+    {
+      "run_id": "A0-14",
+      "provenance_emitted": true,
+      "provenance_count": 1,
+      "valid_id_count": 1,
+      "invalid_id_count": 0,
+      "f3_count": 0,
+      "semantic_pass": true,
+      "eba_valid": 1,
+      "cited_ids": [
+        "CORPUS-005#chunk_001"
+      ],
+      "invalid_ids": []
+    },
+    {
+      "run_id": "A0-15",
+      "provenance_emitted": true,
+      "provenance_count": 1,
+      "valid_id_count": 1,
+      "invalid_id_count": 0,
+      "f3_count": 0,
+      "semantic_pass": true,
+      "eba_valid": 1,
+      "cited_ids": [
+        "CORPUS-005#chunk_001"
+      ],
+      "invalid_ids": []
+    },
+    {
+      "run_id": "A0-16",
+      "provenance_emitted": false,
+      "provenance_count": 0,
+      "valid_id_count": 0,
+      "invalid_id_count": 0,
+      "f3_count": 0,
+      "semantic_pass": false,
+      "eba_valid": 0,
+      "cited_ids": [],
+      "invalid_ids": []
+    },
+    {
+      "run_id": "A0-17",
+      "provenance_emitted": false,
+      "provenance_count": 0,
+      "valid_id_count": 0,
+      "invalid_id_count": 0,
+      "f3_count": 0,
+      "semantic_pass": false,
+      "eba_valid": 0,
+      "cited_ids": [],
+      "invalid_ids": []
+    },
+    {
+      "run_id": "A0-18",
+      "provenance_emitted": false,
+      "provenance_count": 0,
+      "valid_id_count": 0,
+      "invalid_id_count": 0,
+      "f3_count": 0,
+      "semantic_pass": false,
+      "eba_valid": 0,
+      "cited_ids": [],
+      "invalid_ids": []
+    },
+    {
+      "run_id": "A0-19",
+      "provenance_emitted": false,
+      "provenance_count": 0,
+      "valid_id_count": 0,
+      "invalid_id_count": 0,
+      "f3_count": 0,
+      "semantic_pass": false,
+      "eba_valid": 0,
+      "cited_ids": [],
+      "invalid_ids": []
+    },
+    {
+      "run_id": "A0-20",
+      "provenance_emitted": false,
+      "provenance_count": 0,
+      "valid_id_count": 0,
+      "invalid_id_count": 0,
+      "f3_count": 0,
+      "semantic_pass": false,
+      "eba_valid": 0,
+      "cited_ids": [],
+      "invalid_ids": []
+    },
+    {
+      "run_id": "A0-21",
+      "provenance_emitted": false,
+      "provenance_count": 0,
+      "valid_id_count": 0,
+      "invalid_id_count": 0,
+      "f3_count": 0,
+      "semantic_pass": false,
+      "eba_valid": 0,
+      "cited_ids": [],
+      "invalid_ids": []
+    },
+    {
+      "run_id": "A0-22",
+      "provenance_emitted": false,
+      "provenance_count": 0,
+      "valid_id_count": 0,
+      "invalid_id_count": 0,
+      "f3_count": 0,
+      "semantic_pass": false,
+      "eba_valid": 0,
+      "cited_ids": [],
+      "invalid_ids": []
+    },
+    {
+      "run_id": "A0-23",
+      "provenance_emitted": false,
+      "provenance_count": 0,
+      "valid_id_count": 0,
+      "invalid_id_count": 0,
+      "f3_count": 0,
+      "semantic_pass": false,
+      "eba_valid": 0,
+      "cited_ids": [],
+      "invalid_ids": []
+    },
+    {
+      "run_id": "A0-24",
+      "provenance_emitted": false,
+      "provenance_count": 0,
+      "valid_id_count": 0,
+      "invalid_id_count": 0,
+      "f3_count": 0,
+      "semantic_pass": false,
+      "eba_valid": 0,
+      "cited_ids": [],
+      "invalid_ids": []
+    },
+    {
+      "run_id": "A0-25",
+      "provenance_emitted": false,
+      "provenance_count": 0,
+      "valid_id_count": 0,
+      "invalid_id_count": 0,
+      "f3_count": 0,
+      "semantic_pass": false,
+      "eba_valid": 0,
+      "cited_ids": [],
+      "invalid_ids": []
+    }
+  ],
+  "a1_runs": [
+    {
+      "run_id": "A1-1",
+      "provenance_emitted": true,
+      "provenance_count": 2,
+      "valid_id_count": 1,
+      "invalid_id_count": 1,
+      "f3_count": 1,
+      "semantic_pass": true,
+      "eba_valid": 1,
+      "cited_ids": [
+        "CORPUS-005#chunk_001",
+        "CORPUS-002#chunk_001"
+      ],
+      "invalid_ids": [
+        "CORPUS-002#chunk_001"
+      ]
+    },
+    {
+      "run_id": "A1-2",
+      "provenance_emitted": false,
+      "provenance_count": 0,
+      "valid_id_count": 0,
+      "invalid_id_count": 0,
+      "f3_count": 0,
+      "semantic_pass": false,
+      "eba_valid": 0,
+      "cited_ids": [],
+      "invalid_ids": []
+    },
+    {
+      "run_id": "A1-3",
+      "provenance_emitted": false,
+      "provenance_count": 0,
+      "valid_id_count": 0,
+      "invalid_id_count": 0,
+      "f3_count": 0,
+      "semantic_pass": false,
+      "eba_valid": 0,
+      "cited_ids": [],
+      "invalid_ids": []
+    },
+    {
+      "run_id": "A1-4",
+      "provenance_emitted": true,
+      "provenance_count": 1,
+      "valid_id_count": 1,
+      "invalid_id_count": 0,
+      "f3_count": 0,
+      "semantic_pass": true,
+      "eba_valid": 1,
+      "cited_ids": [
+        "CORPUS-005#chunk_001"
+      ],
+      "invalid_ids": []
+    },
+    {
+      "run_id": "A1-5",
+      "provenance_emitted": true,
+      "provenance_count": 2,
+      "valid_id_count": 1,
+      "invalid_id_count": 1,
+      "f3_count": 1,
+      "semantic_pass": true,
+      "eba_valid": 1,
+      "cited_ids": [
+        "CORPUS-005#chunk_001",
+        "CORPUS-002#chunk_001"
+      ],
+      "invalid_ids": [
+        "CORPUS-002#chunk_001"
+      ]
+    },
+    {
+      "run_id": "A1-6",
+      "provenance_emitted": true,
+      "provenance_count": 1,
+      "valid_id_count": 1,
+      "invalid_id_count": 0,
+      "f3_count": 0,
+      "semantic_pass": false,
+      "eba_valid": 1,
+      "cited_ids": [
+        "CORPUS-005#chunk_001"
+      ],
+      "invalid_ids": []
+    },
+    {
+      "run_id": "A1-7",
+      "provenance_emitted": true,
+      "provenance_count": 1,
+      "valid_id_count": 1,
+      "invalid_id_count": 0,
+      "f3_count": 0,
+      "semantic_pass": true,
+      "eba_valid": 1,
+      "cited_ids": [
+        "CORPUS-005#chunk_001"
+      ],
+      "invalid_ids": []
+    },
+    {
+      "run_id": "A1-8",
+      "provenance_emitted": false,
+      "provenance_count": 0,
+      "valid_id_count": 0,
+      "invalid_id_count": 0,
+      "f3_count": 0,
+      "semantic_pass": false,
+      "eba_valid": 0,
+      "cited_ids": [],
+      "invalid_ids": []
+    },
+    {
+      "run_id": "A1-9",
+      "provenance_emitted": false,
+      "provenance_count": 0,
+      "valid_id_count": 0,
+      "invalid_id_count": 0,
+      "f3_count": 0,
+      "semantic_pass": false,
+      "eba_valid": 0,
+      "cited_ids": [],
+      "invalid_ids": []
+    },
+    {
+      "run_id": "A1-10",
+      "provenance_emitted": true,
+      "provenance_count": 1,
+      "valid_id_count": 1,
+      "invalid_id_count": 0,
+      "f3_count": 0,
+      "semantic_pass": true,
+      "eba_valid": 1,
+      "cited_ids": [
+        "CORPUS-005#chunk_001"
+      ],
+      "invalid_ids": []
+    },
+    {
+      "run_id": "A1-11",
+      "provenance_emitted": true,
+      "provenance_count": 1,
+      "valid_id_count": 1,
+      "invalid_id_count": 0,
+      "f3_count": 0,
+      "semantic_pass": true,
+      "eba_valid": 1,
+      "cited_ids": [
+        "CORPUS-005#chunk_001"
+      ],
+      "invalid_ids": []
+    },
+    {
+      "run_id": "A1-12",
+      "provenance_emitted": true,
+      "provenance_count": 2,
+      "valid_id_count": 1,
+      "invalid_id_count": 1,
+      "f3_count": 1,
+      "semantic_pass": true,
+      "eba_valid": 1,
+      "cited_ids": [
+        "CORPUS-005#chunk_001",
+        "CORPUS-002#chunk_001"
+      ],
+      "invalid_ids": [
+        "CORPUS-002#chunk_001"
+      ]
+    },
+    {
+      "run_id": "A1-13",
+      "provenance_emitted": false,
+      "provenance_count": 0,
+      "valid_id_count": 0,
+      "invalid_id_count": 0,
+      "f3_count": 0,
+      "semantic_pass": false,
+      "eba_valid": 0,
+      "cited_ids": [],
+      "invalid_ids": []
+    },
+    {
+      "run_id": "A1-14",
+      "provenance_emitted": true,
+      "provenance_count": 2,
+      "valid_id_count": 1,
+      "invalid_id_count": 1,
+      "f3_count": 1,
+      "semantic_pass": true,
+      "eba_valid": 1,
+      "cited_ids": [
+        "CORPUS-005#chunk_001",
+        "CORPUS-002#chunk_001"
+      ],
+      "invalid_ids": [
+        "CORPUS-002#chunk_001"
+      ]
+    },
+    {
+      "run_id": "A1-15",
+      "provenance_emitted": false,
+      "provenance_count": 0,
+      "valid_id_count": 0,
+      "invalid_id_count": 0,
+      "f3_count": 0,
+      "semantic_pass": false,
+      "eba_valid": 0,
+      "cited_ids": [],
+      "invalid_ids": []
+    },
+    {
+      "run_id": "A1-16",
+      "provenance_emitted": false,
+      "provenance_count": 0,
+      "valid_id_count": 0,
+      "invalid_id_count": 0,
+      "f3_count": 0,
+      "semantic_pass": false,
+      "eba_valid": 0,
+      "cited_ids": [],
+      "invalid_ids": []
+    },
+    {
+      "run_id": "A1-17",
+      "provenance_emitted": false,
+      "provenance_count": 0,
+      "valid_id_count": 0,
+      "invalid_id_count": 0,
+      "f3_count": 0,
+      "semantic_pass": false,
+      "eba_valid": 0,
+      "cited_ids": [],
+      "invalid_ids": []
+    },
+    {
+      "run_id": "A1-18",
+      "provenance_emitted": false,
+      "provenance_count": 0,
+      "valid_id_count": 0,
+      "invalid_id_count": 0,
+      "f3_count": 0,
+      "semantic_pass": false,
+      "eba_valid": 0,
+      "cited_ids": [],
+      "invalid_ids": []
+    },
+    {
+      "run_id": "A1-19",
+      "provenance_emitted": false,
+      "provenance_count": 0,
+      "valid_id_count": 0,
+      "invalid_id_count": 0,
+      "f3_count": 0,
+      "semantic_pass": false,
+      "eba_valid": 0,
+      "cited_ids": [],
+      "invalid_ids": []
+    },
+    {
+      "run_id": "A1-20",
+      "provenance_emitted": false,
+      "provenance_count": 0,
+      "valid_id_count": 0,
+      "invalid_id_count": 0,
+      "f3_count": 0,
+      "semantic_pass": false,
+      "eba_valid": 0,
+      "cited_ids": [],
+      "invalid_ids": []
+    },
+    {
+      "run_id": "A1-21",
+      "provenance_emitted": false,
+      "provenance_count": 0,
+      "valid_id_count": 0,
+      "invalid_id_count": 0,
+      "f3_count": 0,
+      "semantic_pass": false,
+      "eba_valid": 0,
+      "cited_ids": [],
+      "invalid_ids": []
+    },
+    {
+      "run_id": "A1-22",
+      "provenance_emitted": false,
+      "provenance_count": 0,
+      "valid_id_count": 0,
+      "invalid_id_count": 0,
+      "f3_count": 0,
+      "semantic_pass": false,
+      "eba_valid": 0,
+      "cited_ids": [],
+      "invalid_ids": []
+    },
+    {
+      "run_id": "A1-23",
+      "provenance_emitted": false,
+      "provenance_count": 0,
+      "valid_id_count": 0,
+      "invalid_id_count": 0,
+      "f3_count": 0,
+      "semantic_pass": false,
+      "eba_valid": 0,
+      "cited_ids": [],
+      "invalid_ids": []
+    },
+    {
+      "run_id": "A1-24",
+      "provenance_emitted": false,
+      "provenance_count": 0,
+      "valid_id_count": 0,
+      "invalid_id_count": 0,
+      "f3_count": 0,
+      "semantic_pass": false,
+      "eba_valid": 0,
+      "cited_ids": [],
+      "invalid_ids": []
+    },
+    {
+      "run_id": "A1-25",
+      "provenance_emitted": false,
+      "provenance_count": 0,
+      "valid_id_count": 0,
+      "invalid_id_count": 0,
+      "f3_count": 0,
+      "semantic_pass": false,
+      "eba_valid": 0,
+      "cited_ids": [],
+      "invalid_ids": []
+    }
+  ]
+}

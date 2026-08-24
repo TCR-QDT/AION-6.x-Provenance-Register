@@ -1,0 +1,4658 @@
+{
+  "timestamp": "2026-08-17T03:23:55+00:00",
+  "graph_summary": {
+    "nodes_total": 22,
+    "edges_total": 187,
+    "edges_ontology_E": 25,
+    "edges_cooccurrence": 162,
+    "density": 0.40476190476190477,
+    "strongly_connected_components": 7
+  },
+  "clusters": {
+    "A": {
+      "nodes": 5,
+      "node_ids": [
+        "C",
+        "I",
+        "S",
+        "H",
+        "beta"
+      ]
+    },
+    "B": {
+      "nodes": 7,
+      "node_ids": [
+        "Phi_cat",
+        "Yoneda",
+        "Q_munu",
+        "Einstein_mod",
+        "Chanyal",
+        "Sun",
+        "Pradhan"
+      ]
+    },
+    "C": {
+      "nodes": 4,
+      "node_ids": [
+        "QDT",
+        "FMO",
+        "Power_law_T2",
+        "eta_hyp"
+      ]
+    },
+    "D": {
+      "nodes": 6,
+      "node_ids": [
+        "Lakatos",
+        "Conjecture",
+        "Proposal",
+        "Validation",
+        "Nucleus_firm",
+        "Protective_belt"
+      ]
+    }
+  },
+  "ontology_edge_validation": {
+    "expected_e_edges": 25,
+    "found_e_edges": 25,
+    "missing_e_edges": [],
+    "extra_e_edges": []
+  },
+  "cooccurrence_enrichment": {
+    "total_cooc_pairs": 162,
+    "edges_added": 162,
+    "edges_already_in_ontology": 24,
+    "new_edges": 138,
+    "new_edges_list": [
+      {
+        "source": "H",
+        "target": "I",
+        "cooc_count": 4,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-002#p1_01",
+            "corpus_id": "CORPUS-002",
+            "page": "p.1"
+          },
+          {
+            "chunk_id": "CORPUS-002#p1_03",
+            "corpus_id": "CORPUS-002",
+            "page": "p.1"
+          },
+          {
+            "chunk_id": "CORPUS-002#p2_01",
+            "corpus_id": "CORPUS-002",
+            "page": "p.2"
+          }
+        ]
+      },
+      {
+        "source": "H",
+        "target": "S",
+        "cooc_count": 5,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-002#p1_01",
+            "corpus_id": "CORPUS-002",
+            "page": "p.1"
+          },
+          {
+            "chunk_id": "CORPUS-002#p1_03",
+            "corpus_id": "CORPUS-002",
+            "page": "p.1"
+          },
+          {
+            "chunk_id": "CORPUS-002#p2_01",
+            "corpus_id": "CORPUS-002",
+            "page": "p.2"
+          }
+        ]
+      },
+      {
+        "source": "H",
+        "target": "beta",
+        "cooc_count": 5,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-002#p1_01",
+            "corpus_id": "CORPUS-002",
+            "page": "p.1"
+          },
+          {
+            "chunk_id": "CORPUS-002#p1_03",
+            "corpus_id": "CORPUS-002",
+            "page": "p.1"
+          },
+          {
+            "chunk_id": "CORPUS-002#p2_01",
+            "corpus_id": "CORPUS-002",
+            "page": "p.2"
+          }
+        ]
+      },
+      {
+        "source": "I",
+        "target": "S",
+        "cooc_count": 5,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-002#p1_01",
+            "corpus_id": "CORPUS-002",
+            "page": "p.1"
+          },
+          {
+            "chunk_id": "CORPUS-002#p1_03",
+            "corpus_id": "CORPUS-002",
+            "page": "p.1"
+          },
+          {
+            "chunk_id": "CORPUS-002#p2_01",
+            "corpus_id": "CORPUS-002",
+            "page": "p.2"
+          }
+        ]
+      },
+      {
+        "source": "I",
+        "target": "beta",
+        "cooc_count": 4,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-002#p1_01",
+            "corpus_id": "CORPUS-002",
+            "page": "p.1"
+          },
+          {
+            "chunk_id": "CORPUS-002#p1_03",
+            "corpus_id": "CORPUS-002",
+            "page": "p.1"
+          },
+          {
+            "chunk_id": "CORPUS-002#p2_01",
+            "corpus_id": "CORPUS-002",
+            "page": "p.2"
+          }
+        ]
+      },
+      {
+        "source": "S",
+        "target": "beta",
+        "cooc_count": 5,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-002#p1_01",
+            "corpus_id": "CORPUS-002",
+            "page": "p.1"
+          },
+          {
+            "chunk_id": "CORPUS-002#p1_03",
+            "corpus_id": "CORPUS-002",
+            "page": "p.1"
+          },
+          {
+            "chunk_id": "CORPUS-002#p2_01",
+            "corpus_id": "CORPUS-002",
+            "page": "p.2"
+          }
+        ]
+      },
+      {
+        "source": "C",
+        "target": "FMO",
+        "cooc_count": 8,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-002#p5_02",
+            "corpus_id": "CORPUS-002",
+            "page": "p.5"
+          },
+          {
+            "chunk_id": "CORPUS-002#p6_01",
+            "corpus_id": "CORPUS-002",
+            "page": "p.6"
+          },
+          {
+            "chunk_id": "CORPUS-004#p1_04",
+            "corpus_id": "CORPUS-004",
+            "page": "p.1"
+          }
+        ]
+      },
+      {
+        "source": "C",
+        "target": "eta_hyp",
+        "cooc_count": 5,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-002#p5_02",
+            "corpus_id": "CORPUS-002",
+            "page": "p.5"
+          },
+          {
+            "chunk_id": "CORPUS-004#p1_04",
+            "corpus_id": "CORPUS-004",
+            "page": "p.1"
+          },
+          {
+            "chunk_id": "CORPUS-004#p2_02",
+            "corpus_id": "CORPUS-004",
+            "page": "p.2"
+          }
+        ]
+      },
+      {
+        "source": "FMO",
+        "target": "eta_hyp",
+        "cooc_count": 9,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-002#p5_02",
+            "corpus_id": "CORPUS-002",
+            "page": "p.5"
+          },
+          {
+            "chunk_id": "CORPUS-004#p1_01",
+            "corpus_id": "CORPUS-004",
+            "page": "p.1"
+          },
+          {
+            "chunk_id": "CORPUS-004#p1_02",
+            "corpus_id": "CORPUS-004",
+            "page": "p.1"
+          }
+        ]
+      },
+      {
+        "source": "C",
+        "target": "Chanyal",
+        "cooc_count": 3,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-002#p6_01",
+            "corpus_id": "CORPUS-002",
+            "page": "p.6"
+          },
+          {
+            "chunk_id": "CORPUS-004#p3_02",
+            "corpus_id": "CORPUS-004",
+            "page": "p.3"
+          },
+          {
+            "chunk_id": "CORPUS-005#chunk_001",
+            "corpus_id": "CORPUS-005",
+            "page": "full"
+          }
+        ]
+      },
+      {
+        "source": "C",
+        "target": "Q_munu",
+        "cooc_count": 2,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-002#p6_01",
+            "corpus_id": "CORPUS-002",
+            "page": "p.6"
+          },
+          {
+            "chunk_id": "CORPUS-004#p1_04",
+            "corpus_id": "CORPUS-004",
+            "page": "p.1"
+          }
+        ]
+      },
+      {
+        "source": "C",
+        "target": "Yoneda",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-002#p6_01",
+            "corpus_id": "CORPUS-002",
+            "page": "p.6"
+          }
+        ]
+      },
+      {
+        "source": "Chanyal",
+        "target": "FMO",
+        "cooc_count": 3,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-002#p6_01",
+            "corpus_id": "CORPUS-002",
+            "page": "p.6"
+          },
+          {
+            "chunk_id": "CORPUS-004#p3_02",
+            "corpus_id": "CORPUS-004",
+            "page": "p.3"
+          },
+          {
+            "chunk_id": "CORPUS-005#chunk_001",
+            "corpus_id": "CORPUS-005",
+            "page": "full"
+          }
+        ]
+      },
+      {
+        "source": "Chanyal",
+        "target": "Yoneda",
+        "cooc_count": 6,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-002#p6_01",
+            "corpus_id": "CORPUS-002",
+            "page": "p.6"
+          },
+          {
+            "chunk_id": "CORPUS-003#p1_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.1"
+          },
+          {
+            "chunk_id": "CORPUS-003#p2_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.2"
+          }
+        ]
+      },
+      {
+        "source": "FMO",
+        "target": "Q_munu",
+        "cooc_count": 2,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-002#p6_01",
+            "corpus_id": "CORPUS-002",
+            "page": "p.6"
+          },
+          {
+            "chunk_id": "CORPUS-004#p1_04",
+            "corpus_id": "CORPUS-004",
+            "page": "p.1"
+          }
+        ]
+      },
+      {
+        "source": "FMO",
+        "target": "Yoneda",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-002#p6_01",
+            "corpus_id": "CORPUS-002",
+            "page": "p.6"
+          }
+        ]
+      },
+      {
+        "source": "Q_munu",
+        "target": "Yoneda",
+        "cooc_count": 6,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-002#p6_01",
+            "corpus_id": "CORPUS-002",
+            "page": "p.6"
+          },
+          {
+            "chunk_id": "CORPUS-003#p1_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.1"
+          },
+          {
+            "chunk_id": "CORPUS-003#p2_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.2"
+          }
+        ]
+      },
+      {
+        "source": "Chanyal",
+        "target": "Conjecture",
+        "cooc_count": 6,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p1_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.1"
+          },
+          {
+            "chunk_id": "CORPUS-003#p2_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.2"
+          },
+          {
+            "chunk_id": "CORPUS-003#p3_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.3"
+          }
+        ]
+      },
+      {
+        "source": "Chanyal",
+        "target": "Phi_cat",
+        "cooc_count": 5,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p1_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.1"
+          },
+          {
+            "chunk_id": "CORPUS-003#p2_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.2"
+          },
+          {
+            "chunk_id": "CORPUS-003#p3_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.3"
+          }
+        ]
+      },
+      {
+        "source": "Chanyal",
+        "target": "Pradhan",
+        "cooc_count": 12,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p1_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.1"
+          },
+          {
+            "chunk_id": "CORPUS-003#p2_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.2"
+          },
+          {
+            "chunk_id": "CORPUS-003#p2_02",
+            "corpus_id": "CORPUS-003",
+            "page": "p.2"
+          }
+        ]
+      },
+      {
+        "source": "Chanyal",
+        "target": "Sun",
+        "cooc_count": 12,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p1_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.1"
+          },
+          {
+            "chunk_id": "CORPUS-003#p2_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.2"
+          },
+          {
+            "chunk_id": "CORPUS-003#p2_02",
+            "corpus_id": "CORPUS-003",
+            "page": "p.2"
+          }
+        ]
+      },
+      {
+        "source": "Conjecture",
+        "target": "Pradhan",
+        "cooc_count": 6,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p1_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.1"
+          },
+          {
+            "chunk_id": "CORPUS-003#p2_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.2"
+          },
+          {
+            "chunk_id": "CORPUS-003#p3_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.3"
+          }
+        ]
+      },
+      {
+        "source": "Conjecture",
+        "target": "Q_munu",
+        "cooc_count": 9,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p1_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.1"
+          },
+          {
+            "chunk_id": "CORPUS-003#p2_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.2"
+          },
+          {
+            "chunk_id": "CORPUS-003#p3_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.3"
+          }
+        ]
+      },
+      {
+        "source": "Conjecture",
+        "target": "Sun",
+        "cooc_count": 6,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p1_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.1"
+          },
+          {
+            "chunk_id": "CORPUS-003#p2_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.2"
+          },
+          {
+            "chunk_id": "CORPUS-003#p3_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.3"
+          }
+        ]
+      },
+      {
+        "source": "Conjecture",
+        "target": "Yoneda",
+        "cooc_count": 7,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p1_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.1"
+          },
+          {
+            "chunk_id": "CORPUS-003#p2_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.2"
+          },
+          {
+            "chunk_id": "CORPUS-003#p3_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.3"
+          }
+        ]
+      },
+      {
+        "source": "Phi_cat",
+        "target": "Pradhan",
+        "cooc_count": 6,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p1_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.1"
+          },
+          {
+            "chunk_id": "CORPUS-003#p2_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.2"
+          },
+          {
+            "chunk_id": "CORPUS-003#p3_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.3"
+          }
+        ]
+      },
+      {
+        "source": "Phi_cat",
+        "target": "Q_munu",
+        "cooc_count": 8,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p1_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.1"
+          },
+          {
+            "chunk_id": "CORPUS-003#p2_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.2"
+          },
+          {
+            "chunk_id": "CORPUS-003#p3_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.3"
+          }
+        ]
+      },
+      {
+        "source": "Phi_cat",
+        "target": "Sun",
+        "cooc_count": 5,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p1_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.1"
+          },
+          {
+            "chunk_id": "CORPUS-003#p2_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.2"
+          },
+          {
+            "chunk_id": "CORPUS-003#p3_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.3"
+          }
+        ]
+      },
+      {
+        "source": "Pradhan",
+        "target": "Sun",
+        "cooc_count": 14,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p1_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.1"
+          },
+          {
+            "chunk_id": "CORPUS-003#p2_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.2"
+          },
+          {
+            "chunk_id": "CORPUS-003#p2_02",
+            "corpus_id": "CORPUS-003",
+            "page": "p.2"
+          }
+        ]
+      },
+      {
+        "source": "Pradhan",
+        "target": "Yoneda",
+        "cooc_count": 5,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p1_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.1"
+          },
+          {
+            "chunk_id": "CORPUS-003#p2_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.2"
+          },
+          {
+            "chunk_id": "CORPUS-003#p3_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.3"
+          }
+        ]
+      },
+      {
+        "source": "Sun",
+        "target": "Yoneda",
+        "cooc_count": 4,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p1_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.1"
+          },
+          {
+            "chunk_id": "CORPUS-003#p2_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.2"
+          },
+          {
+            "chunk_id": "CORPUS-003#p3_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.3"
+          }
+        ]
+      },
+      {
+        "source": "Chanyal",
+        "target": "Einstein_mod",
+        "cooc_count": 2,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p3_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.3"
+          },
+          {
+            "chunk_id": "CORPUS-003#p3_02",
+            "corpus_id": "CORPUS-003",
+            "page": "p.3"
+          }
+        ]
+      },
+      {
+        "source": "Chanyal",
+        "target": "Proposal",
+        "cooc_count": 3,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p3_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.3"
+          },
+          {
+            "chunk_id": "CORPUS-003#p3_02",
+            "corpus_id": "CORPUS-003",
+            "page": "p.3"
+          },
+          {
+            "chunk_id": "CORPUS-003#p11_02",
+            "corpus_id": "CORPUS-003",
+            "page": "p.11"
+          }
+        ]
+      },
+      {
+        "source": "Conjecture",
+        "target": "Einstein_mod",
+        "cooc_count": 2,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p3_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.3"
+          },
+          {
+            "chunk_id": "CORPUS-003#p3_02",
+            "corpus_id": "CORPUS-003",
+            "page": "p.3"
+          }
+        ]
+      },
+      {
+        "source": "Conjecture",
+        "target": "Validation",
+        "cooc_count": 4,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p3_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.3"
+          },
+          {
+            "chunk_id": "CORPUS-003#p3_02",
+            "corpus_id": "CORPUS-003",
+            "page": "p.3"
+          },
+          {
+            "chunk_id": "CORPUS-003#p11_02",
+            "corpus_id": "CORPUS-003",
+            "page": "p.11"
+          }
+        ]
+      },
+      {
+        "source": "Einstein_mod",
+        "target": "Phi_cat",
+        "cooc_count": 2,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p3_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.3"
+          },
+          {
+            "chunk_id": "CORPUS-003#p14_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.14"
+          }
+        ]
+      },
+      {
+        "source": "Einstein_mod",
+        "target": "Pradhan",
+        "cooc_count": 3,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p3_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.3"
+          },
+          {
+            "chunk_id": "CORPUS-003#p3_02",
+            "corpus_id": "CORPUS-003",
+            "page": "p.3"
+          },
+          {
+            "chunk_id": "CORPUS-003#p14_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.14"
+          }
+        ]
+      },
+      {
+        "source": "Einstein_mod",
+        "target": "Proposal",
+        "cooc_count": 3,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p3_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.3"
+          },
+          {
+            "chunk_id": "CORPUS-003#p3_02",
+            "corpus_id": "CORPUS-003",
+            "page": "p.3"
+          },
+          {
+            "chunk_id": "CORPUS-003#p14_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.14"
+          }
+        ]
+      },
+      {
+        "source": "Einstein_mod",
+        "target": "Sun",
+        "cooc_count": 2,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p3_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.3"
+          },
+          {
+            "chunk_id": "CORPUS-003#p3_02",
+            "corpus_id": "CORPUS-003",
+            "page": "p.3"
+          }
+        ]
+      },
+      {
+        "source": "Einstein_mod",
+        "target": "Validation",
+        "cooc_count": 2,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p3_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.3"
+          },
+          {
+            "chunk_id": "CORPUS-003#p3_02",
+            "corpus_id": "CORPUS-003",
+            "page": "p.3"
+          }
+        ]
+      },
+      {
+        "source": "Einstein_mod",
+        "target": "Yoneda",
+        "cooc_count": 2,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p3_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.3"
+          },
+          {
+            "chunk_id": "CORPUS-003#p14_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.14"
+          }
+        ]
+      },
+      {
+        "source": "Phi_cat",
+        "target": "Proposal",
+        "cooc_count": 4,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p3_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.3"
+          },
+          {
+            "chunk_id": "CORPUS-003#p5_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.5"
+          },
+          {
+            "chunk_id": "CORPUS-003#p11_02",
+            "corpus_id": "CORPUS-003",
+            "page": "p.11"
+          }
+        ]
+      },
+      {
+        "source": "Phi_cat",
+        "target": "Validation",
+        "cooc_count": 4,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p3_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.3"
+          },
+          {
+            "chunk_id": "CORPUS-003#p11_02",
+            "corpus_id": "CORPUS-003",
+            "page": "p.11"
+          },
+          {
+            "chunk_id": "CORPUS-003#p12_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.12"
+          }
+        ]
+      },
+      {
+        "source": "Pradhan",
+        "target": "Proposal",
+        "cooc_count": 4,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p3_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.3"
+          },
+          {
+            "chunk_id": "CORPUS-003#p3_02",
+            "corpus_id": "CORPUS-003",
+            "page": "p.3"
+          },
+          {
+            "chunk_id": "CORPUS-003#p11_02",
+            "corpus_id": "CORPUS-003",
+            "page": "p.11"
+          }
+        ]
+      },
+      {
+        "source": "Proposal",
+        "target": "Sun",
+        "cooc_count": 3,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p3_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.3"
+          },
+          {
+            "chunk_id": "CORPUS-003#p3_02",
+            "corpus_id": "CORPUS-003",
+            "page": "p.3"
+          },
+          {
+            "chunk_id": "CORPUS-003#p11_02",
+            "corpus_id": "CORPUS-003",
+            "page": "p.11"
+          }
+        ]
+      },
+      {
+        "source": "Proposal",
+        "target": "Yoneda",
+        "cooc_count": 4,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p3_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.3"
+          },
+          {
+            "chunk_id": "CORPUS-003#p5_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.5"
+          },
+          {
+            "chunk_id": "CORPUS-003#p11_02",
+            "corpus_id": "CORPUS-003",
+            "page": "p.11"
+          }
+        ]
+      },
+      {
+        "source": "Q_munu",
+        "target": "Validation",
+        "cooc_count": 6,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p3_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.3"
+          },
+          {
+            "chunk_id": "CORPUS-003#p3_02",
+            "corpus_id": "CORPUS-003",
+            "page": "p.3"
+          },
+          {
+            "chunk_id": "CORPUS-003#p10_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.10"
+          }
+        ]
+      },
+      {
+        "source": "Validation",
+        "target": "Yoneda",
+        "cooc_count": 2,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p3_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.3"
+          },
+          {
+            "chunk_id": "CORPUS-003#p11_02",
+            "corpus_id": "CORPUS-003",
+            "page": "p.11"
+          }
+        ]
+      },
+      {
+        "source": "Conjecture",
+        "target": "eta_hyp",
+        "cooc_count": 2,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p4_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.4"
+          },
+          {
+            "chunk_id": "CORPUS-003#p6_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.6"
+          }
+        ]
+      },
+      {
+        "source": "Phi_cat",
+        "target": "eta_hyp",
+        "cooc_count": 6,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p4_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.4"
+          },
+          {
+            "chunk_id": "CORPUS-003#p5_02",
+            "corpus_id": "CORPUS-003",
+            "page": "p.5"
+          },
+          {
+            "chunk_id": "CORPUS-003#p6_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.6"
+          }
+        ]
+      },
+      {
+        "source": "Yoneda",
+        "target": "eta_hyp",
+        "cooc_count": 2,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p4_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.4"
+          },
+          {
+            "chunk_id": "CORPUS-003#p14_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.14"
+          }
+        ]
+      },
+      {
+        "source": "Pradhan",
+        "target": "S",
+        "cooc_count": 2,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p9_02",
+            "corpus_id": "CORPUS-003",
+            "page": "p.9"
+          },
+          {
+            "chunk_id": "CORPUS-005#chunk_001",
+            "corpus_id": "CORPUS-005",
+            "page": "full"
+          }
+        ]
+      },
+      {
+        "source": "Q_munu",
+        "target": "S",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p9_02",
+            "corpus_id": "CORPUS-003",
+            "page": "p.9"
+          }
+        ]
+      },
+      {
+        "source": "S",
+        "target": "Sun",
+        "cooc_count": 2,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p9_02",
+            "corpus_id": "CORPUS-003",
+            "page": "p.9"
+          },
+          {
+            "chunk_id": "CORPUS-005#chunk_001",
+            "corpus_id": "CORPUS-005",
+            "page": "full"
+          }
+        ]
+      },
+      {
+        "source": "Chanyal",
+        "target": "Lakatos",
+        "cooc_count": 2,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p11_02",
+            "corpus_id": "CORPUS-003",
+            "page": "p.11"
+          },
+          {
+            "chunk_id": "CORPUS-003#p13_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.13"
+          }
+        ]
+      },
+      {
+        "source": "Chanyal",
+        "target": "Nucleus_firm",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p11_02",
+            "corpus_id": "CORPUS-003",
+            "page": "p.11"
+          }
+        ]
+      },
+      {
+        "source": "Chanyal",
+        "target": "Protective_belt",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p11_02",
+            "corpus_id": "CORPUS-003",
+            "page": "p.11"
+          }
+        ]
+      },
+      {
+        "source": "Conjecture",
+        "target": "Lakatos",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p11_02",
+            "corpus_id": "CORPUS-003",
+            "page": "p.11"
+          }
+        ]
+      },
+      {
+        "source": "Conjecture",
+        "target": "Nucleus_firm",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p11_02",
+            "corpus_id": "CORPUS-003",
+            "page": "p.11"
+          }
+        ]
+      },
+      {
+        "source": "Conjecture",
+        "target": "Protective_belt",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p11_02",
+            "corpus_id": "CORPUS-003",
+            "page": "p.11"
+          }
+        ]
+      },
+      {
+        "source": "Lakatos",
+        "target": "Phi_cat",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p11_02",
+            "corpus_id": "CORPUS-003",
+            "page": "p.11"
+          }
+        ]
+      },
+      {
+        "source": "Lakatos",
+        "target": "Pradhan",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p11_02",
+            "corpus_id": "CORPUS-003",
+            "page": "p.11"
+          }
+        ]
+      },
+      {
+        "source": "Lakatos",
+        "target": "Proposal",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p11_02",
+            "corpus_id": "CORPUS-003",
+            "page": "p.11"
+          }
+        ]
+      },
+      {
+        "source": "Lakatos",
+        "target": "Q_munu",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p11_02",
+            "corpus_id": "CORPUS-003",
+            "page": "p.11"
+          }
+        ]
+      },
+      {
+        "source": "Lakatos",
+        "target": "Sun",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p11_02",
+            "corpus_id": "CORPUS-003",
+            "page": "p.11"
+          }
+        ]
+      },
+      {
+        "source": "Lakatos",
+        "target": "Validation",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p11_02",
+            "corpus_id": "CORPUS-003",
+            "page": "p.11"
+          }
+        ]
+      },
+      {
+        "source": "Lakatos",
+        "target": "Yoneda",
+        "cooc_count": 2,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p11_02",
+            "corpus_id": "CORPUS-003",
+            "page": "p.11"
+          },
+          {
+            "chunk_id": "CORPUS-003#p13_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.13"
+          }
+        ]
+      },
+      {
+        "source": "Nucleus_firm",
+        "target": "Phi_cat",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p11_02",
+            "corpus_id": "CORPUS-003",
+            "page": "p.11"
+          }
+        ]
+      },
+      {
+        "source": "Nucleus_firm",
+        "target": "Pradhan",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p11_02",
+            "corpus_id": "CORPUS-003",
+            "page": "p.11"
+          }
+        ]
+      },
+      {
+        "source": "Nucleus_firm",
+        "target": "Proposal",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p11_02",
+            "corpus_id": "CORPUS-003",
+            "page": "p.11"
+          }
+        ]
+      },
+      {
+        "source": "Nucleus_firm",
+        "target": "Q_munu",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p11_02",
+            "corpus_id": "CORPUS-003",
+            "page": "p.11"
+          }
+        ]
+      },
+      {
+        "source": "Nucleus_firm",
+        "target": "Sun",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p11_02",
+            "corpus_id": "CORPUS-003",
+            "page": "p.11"
+          }
+        ]
+      },
+      {
+        "source": "Nucleus_firm",
+        "target": "Validation",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p11_02",
+            "corpus_id": "CORPUS-003",
+            "page": "p.11"
+          }
+        ]
+      },
+      {
+        "source": "Nucleus_firm",
+        "target": "Yoneda",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p11_02",
+            "corpus_id": "CORPUS-003",
+            "page": "p.11"
+          }
+        ]
+      },
+      {
+        "source": "Pradhan",
+        "target": "Protective_belt",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p11_02",
+            "corpus_id": "CORPUS-003",
+            "page": "p.11"
+          }
+        ]
+      },
+      {
+        "source": "Proposal",
+        "target": "Protective_belt",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p11_02",
+            "corpus_id": "CORPUS-003",
+            "page": "p.11"
+          }
+        ]
+      },
+      {
+        "source": "Protective_belt",
+        "target": "Sun",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p11_02",
+            "corpus_id": "CORPUS-003",
+            "page": "p.11"
+          }
+        ]
+      },
+      {
+        "source": "Protective_belt",
+        "target": "Validation",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p11_02",
+            "corpus_id": "CORPUS-003",
+            "page": "p.11"
+          }
+        ]
+      },
+      {
+        "source": "Protective_belt",
+        "target": "Yoneda",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p11_02",
+            "corpus_id": "CORPUS-003",
+            "page": "p.11"
+          }
+        ]
+      },
+      {
+        "source": "Einstein_mod",
+        "target": "eta_hyp",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p14_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.14"
+          }
+        ]
+      },
+      {
+        "source": "Pradhan",
+        "target": "eta_hyp",
+        "cooc_count": 2,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p14_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.14"
+          },
+          {
+            "chunk_id": "CORPUS-005#chunk_001",
+            "corpus_id": "CORPUS-005",
+            "page": "full"
+          }
+        ]
+      },
+      {
+        "source": "Proposal",
+        "target": "eta_hyp",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p14_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.14"
+          }
+        ]
+      },
+      {
+        "source": "Q_munu",
+        "target": "eta_hyp",
+        "cooc_count": 3,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-003#p14_01",
+            "corpus_id": "CORPUS-003",
+            "page": "p.14"
+          },
+          {
+            "chunk_id": "CORPUS-004#p1_04",
+            "corpus_id": "CORPUS-004",
+            "page": "p.1"
+          },
+          {
+            "chunk_id": "CORPUS-004#p3_04",
+            "corpus_id": "CORPUS-004",
+            "page": "p.3"
+          }
+        ]
+      },
+      {
+        "source": "Power_law_T2",
+        "target": "QDT",
+        "cooc_count": 4,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-004#p1_01",
+            "corpus_id": "CORPUS-004",
+            "page": "p.1"
+          },
+          {
+            "chunk_id": "CORPUS-004#p3_01",
+            "corpus_id": "CORPUS-004",
+            "page": "p.3"
+          },
+          {
+            "chunk_id": "CORPUS-004#p3_02",
+            "corpus_id": "CORPUS-004",
+            "page": "p.3"
+          }
+        ]
+      },
+      {
+        "source": "QDT",
+        "target": "eta_hyp",
+        "cooc_count": 4,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-004#p1_01",
+            "corpus_id": "CORPUS-004",
+            "page": "p.1"
+          },
+          {
+            "chunk_id": "CORPUS-004#p2_02",
+            "corpus_id": "CORPUS-004",
+            "page": "p.2"
+          },
+          {
+            "chunk_id": "CORPUS-004#p3_01",
+            "corpus_id": "CORPUS-004",
+            "page": "p.3"
+          }
+        ]
+      },
+      {
+        "source": "FMO",
+        "target": "Validation",
+        "cooc_count": 4,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-004#p1_02",
+            "corpus_id": "CORPUS-004",
+            "page": "p.1"
+          },
+          {
+            "chunk_id": "CORPUS-004#p1_04",
+            "corpus_id": "CORPUS-004",
+            "page": "p.1"
+          },
+          {
+            "chunk_id": "CORPUS-004#p2_03",
+            "corpus_id": "CORPUS-004",
+            "page": "p.2"
+          }
+        ]
+      },
+      {
+        "source": "Power_law_T2",
+        "target": "Validation",
+        "cooc_count": 4,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-004#p1_02",
+            "corpus_id": "CORPUS-004",
+            "page": "p.1"
+          },
+          {
+            "chunk_id": "CORPUS-004#p1_04",
+            "corpus_id": "CORPUS-004",
+            "page": "p.1"
+          },
+          {
+            "chunk_id": "CORPUS-004#p2_03",
+            "corpus_id": "CORPUS-004",
+            "page": "p.2"
+          }
+        ]
+      },
+      {
+        "source": "Validation",
+        "target": "eta_hyp",
+        "cooc_count": 4,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-004#p1_02",
+            "corpus_id": "CORPUS-004",
+            "page": "p.1"
+          },
+          {
+            "chunk_id": "CORPUS-004#p1_04",
+            "corpus_id": "CORPUS-004",
+            "page": "p.1"
+          },
+          {
+            "chunk_id": "CORPUS-004#p2_03",
+            "corpus_id": "CORPUS-004",
+            "page": "p.2"
+          }
+        ]
+      },
+      {
+        "source": "C",
+        "target": "Phi_cat",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-004#p1_04",
+            "corpus_id": "CORPUS-004",
+            "page": "p.1"
+          }
+        ]
+      },
+      {
+        "source": "C",
+        "target": "Power_law_T2",
+        "cooc_count": 4,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-004#p1_04",
+            "corpus_id": "CORPUS-004",
+            "page": "p.1"
+          },
+          {
+            "chunk_id": "CORPUS-004#p3_01",
+            "corpus_id": "CORPUS-004",
+            "page": "p.3"
+          },
+          {
+            "chunk_id": "CORPUS-004#p3_02",
+            "corpus_id": "CORPUS-004",
+            "page": "p.3"
+          }
+        ]
+      },
+      {
+        "source": "C",
+        "target": "Validation",
+        "cooc_count": 2,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-004#p1_04",
+            "corpus_id": "CORPUS-004",
+            "page": "p.1"
+          },
+          {
+            "chunk_id": "CORPUS-005#chunk_001",
+            "corpus_id": "CORPUS-005",
+            "page": "full"
+          }
+        ]
+      },
+      {
+        "source": "FMO",
+        "target": "Phi_cat",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-004#p1_04",
+            "corpus_id": "CORPUS-004",
+            "page": "p.1"
+          }
+        ]
+      },
+      {
+        "source": "Phi_cat",
+        "target": "Power_law_T2",
+        "cooc_count": 2,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-004#p1_04",
+            "corpus_id": "CORPUS-004",
+            "page": "p.1"
+          },
+          {
+            "chunk_id": "CORPUS-004#p3_04",
+            "corpus_id": "CORPUS-004",
+            "page": "p.3"
+          }
+        ]
+      },
+      {
+        "source": "Power_law_T2",
+        "target": "Q_munu",
+        "cooc_count": 2,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-004#p1_04",
+            "corpus_id": "CORPUS-004",
+            "page": "p.1"
+          },
+          {
+            "chunk_id": "CORPUS-004#p3_04",
+            "corpus_id": "CORPUS-004",
+            "page": "p.3"
+          }
+        ]
+      },
+      {
+        "source": "C",
+        "target": "QDT",
+        "cooc_count": 4,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-004#p2_02",
+            "corpus_id": "CORPUS-004",
+            "page": "p.2"
+          },
+          {
+            "chunk_id": "CORPUS-004#p3_01",
+            "corpus_id": "CORPUS-004",
+            "page": "p.3"
+          },
+          {
+            "chunk_id": "CORPUS-004#p3_02",
+            "corpus_id": "CORPUS-004",
+            "page": "p.3"
+          }
+        ]
+      },
+      {
+        "source": "Chanyal",
+        "target": "Power_law_T2",
+        "cooc_count": 2,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-004#p3_02",
+            "corpus_id": "CORPUS-004",
+            "page": "p.3"
+          },
+          {
+            "chunk_id": "CORPUS-005#chunk_001",
+            "corpus_id": "CORPUS-005",
+            "page": "full"
+          }
+        ]
+      },
+      {
+        "source": "Chanyal",
+        "target": "QDT",
+        "cooc_count": 2,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-004#p3_02",
+            "corpus_id": "CORPUS-004",
+            "page": "p.3"
+          },
+          {
+            "chunk_id": "CORPUS-005#chunk_001",
+            "corpus_id": "CORPUS-005",
+            "page": "full"
+          }
+        ]
+      },
+      {
+        "source": "C",
+        "target": "Pradhan",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-005#chunk_001",
+            "corpus_id": "CORPUS-005",
+            "page": "full"
+          }
+        ]
+      },
+      {
+        "source": "C",
+        "target": "Sun",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-005#chunk_001",
+            "corpus_id": "CORPUS-005",
+            "page": "full"
+          }
+        ]
+      },
+      {
+        "source": "Chanyal",
+        "target": "H",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-005#chunk_001",
+            "corpus_id": "CORPUS-005",
+            "page": "full"
+          }
+        ]
+      },
+      {
+        "source": "Chanyal",
+        "target": "I",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-005#chunk_001",
+            "corpus_id": "CORPUS-005",
+            "page": "full"
+          }
+        ]
+      },
+      {
+        "source": "Chanyal",
+        "target": "S",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-005#chunk_001",
+            "corpus_id": "CORPUS-005",
+            "page": "full"
+          }
+        ]
+      },
+      {
+        "source": "Chanyal",
+        "target": "beta",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-005#chunk_001",
+            "corpus_id": "CORPUS-005",
+            "page": "full"
+          }
+        ]
+      },
+      {
+        "source": "Chanyal",
+        "target": "eta_hyp",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-005#chunk_001",
+            "corpus_id": "CORPUS-005",
+            "page": "full"
+          }
+        ]
+      },
+      {
+        "source": "FMO",
+        "target": "H",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-005#chunk_001",
+            "corpus_id": "CORPUS-005",
+            "page": "full"
+          }
+        ]
+      },
+      {
+        "source": "FMO",
+        "target": "I",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-005#chunk_001",
+            "corpus_id": "CORPUS-005",
+            "page": "full"
+          }
+        ]
+      },
+      {
+        "source": "FMO",
+        "target": "Pradhan",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-005#chunk_001",
+            "corpus_id": "CORPUS-005",
+            "page": "full"
+          }
+        ]
+      },
+      {
+        "source": "FMO",
+        "target": "S",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-005#chunk_001",
+            "corpus_id": "CORPUS-005",
+            "page": "full"
+          }
+        ]
+      },
+      {
+        "source": "FMO",
+        "target": "Sun",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-005#chunk_001",
+            "corpus_id": "CORPUS-005",
+            "page": "full"
+          }
+        ]
+      },
+      {
+        "source": "FMO",
+        "target": "beta",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-005#chunk_001",
+            "corpus_id": "CORPUS-005",
+            "page": "full"
+          }
+        ]
+      },
+      {
+        "source": "H",
+        "target": "Power_law_T2",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-005#chunk_001",
+            "corpus_id": "CORPUS-005",
+            "page": "full"
+          }
+        ]
+      },
+      {
+        "source": "H",
+        "target": "Pradhan",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-005#chunk_001",
+            "corpus_id": "CORPUS-005",
+            "page": "full"
+          }
+        ]
+      },
+      {
+        "source": "H",
+        "target": "QDT",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-005#chunk_001",
+            "corpus_id": "CORPUS-005",
+            "page": "full"
+          }
+        ]
+      },
+      {
+        "source": "H",
+        "target": "Sun",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-005#chunk_001",
+            "corpus_id": "CORPUS-005",
+            "page": "full"
+          }
+        ]
+      },
+      {
+        "source": "H",
+        "target": "Validation",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-005#chunk_001",
+            "corpus_id": "CORPUS-005",
+            "page": "full"
+          }
+        ]
+      },
+      {
+        "source": "H",
+        "target": "eta_hyp",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-005#chunk_001",
+            "corpus_id": "CORPUS-005",
+            "page": "full"
+          }
+        ]
+      },
+      {
+        "source": "I",
+        "target": "Power_law_T2",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-005#chunk_001",
+            "corpus_id": "CORPUS-005",
+            "page": "full"
+          }
+        ]
+      },
+      {
+        "source": "I",
+        "target": "Pradhan",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-005#chunk_001",
+            "corpus_id": "CORPUS-005",
+            "page": "full"
+          }
+        ]
+      },
+      {
+        "source": "I",
+        "target": "QDT",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-005#chunk_001",
+            "corpus_id": "CORPUS-005",
+            "page": "full"
+          }
+        ]
+      },
+      {
+        "source": "I",
+        "target": "Sun",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-005#chunk_001",
+            "corpus_id": "CORPUS-005",
+            "page": "full"
+          }
+        ]
+      },
+      {
+        "source": "I",
+        "target": "Validation",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-005#chunk_001",
+            "corpus_id": "CORPUS-005",
+            "page": "full"
+          }
+        ]
+      },
+      {
+        "source": "I",
+        "target": "eta_hyp",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-005#chunk_001",
+            "corpus_id": "CORPUS-005",
+            "page": "full"
+          }
+        ]
+      },
+      {
+        "source": "Power_law_T2",
+        "target": "Pradhan",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-005#chunk_001",
+            "corpus_id": "CORPUS-005",
+            "page": "full"
+          }
+        ]
+      },
+      {
+        "source": "Power_law_T2",
+        "target": "S",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-005#chunk_001",
+            "corpus_id": "CORPUS-005",
+            "page": "full"
+          }
+        ]
+      },
+      {
+        "source": "Power_law_T2",
+        "target": "Sun",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-005#chunk_001",
+            "corpus_id": "CORPUS-005",
+            "page": "full"
+          }
+        ]
+      },
+      {
+        "source": "Power_law_T2",
+        "target": "beta",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-005#chunk_001",
+            "corpus_id": "CORPUS-005",
+            "page": "full"
+          }
+        ]
+      },
+      {
+        "source": "Pradhan",
+        "target": "QDT",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-005#chunk_001",
+            "corpus_id": "CORPUS-005",
+            "page": "full"
+          }
+        ]
+      },
+      {
+        "source": "Pradhan",
+        "target": "beta",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-005#chunk_001",
+            "corpus_id": "CORPUS-005",
+            "page": "full"
+          }
+        ]
+      },
+      {
+        "source": "QDT",
+        "target": "S",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-005#chunk_001",
+            "corpus_id": "CORPUS-005",
+            "page": "full"
+          }
+        ]
+      },
+      {
+        "source": "QDT",
+        "target": "Sun",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-005#chunk_001",
+            "corpus_id": "CORPUS-005",
+            "page": "full"
+          }
+        ]
+      },
+      {
+        "source": "QDT",
+        "target": "Validation",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-005#chunk_001",
+            "corpus_id": "CORPUS-005",
+            "page": "full"
+          }
+        ]
+      },
+      {
+        "source": "QDT",
+        "target": "beta",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-005#chunk_001",
+            "corpus_id": "CORPUS-005",
+            "page": "full"
+          }
+        ]
+      },
+      {
+        "source": "S",
+        "target": "Validation",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-005#chunk_001",
+            "corpus_id": "CORPUS-005",
+            "page": "full"
+          }
+        ]
+      },
+      {
+        "source": "S",
+        "target": "eta_hyp",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-005#chunk_001",
+            "corpus_id": "CORPUS-005",
+            "page": "full"
+          }
+        ]
+      },
+      {
+        "source": "Sun",
+        "target": "beta",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-005#chunk_001",
+            "corpus_id": "CORPUS-005",
+            "page": "full"
+          }
+        ]
+      },
+      {
+        "source": "Sun",
+        "target": "eta_hyp",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-005#chunk_001",
+            "corpus_id": "CORPUS-005",
+            "page": "full"
+          }
+        ]
+      },
+      {
+        "source": "Validation",
+        "target": "beta",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-005#chunk_001",
+            "corpus_id": "CORPUS-005",
+            "page": "full"
+          }
+        ]
+      },
+      {
+        "source": "beta",
+        "target": "eta_hyp",
+        "cooc_count": 1,
+        "chunks": [
+          {
+            "chunk_id": "CORPUS-005#chunk_001",
+            "corpus_id": "CORPUS-005",
+            "page": "full"
+          }
+        ]
+      }
+    ]
+  },
+  "revoked_edges_status": [
+    {
+      "revoked_edge": [
+        "CORPUS-002",
+        "CORPUS-003"
+      ],
+      "reason": "Dependência ontológica revogada — paralelismo epistêmico confirmado",
+      "note": "Aresta revogada é entre documentos; no grafo conceitual, verificamos se conceitos destes documentos co-ocorrem apenas via chunks (sem relação ontológica direta)."
+    }
+  ],
+  "top_concepts_by_degree": [
+    {
+      "id": "Validation",
+      "label": "Validação (Passo 18)",
+      "cluster": "D",
+      "degree": 26
+    },
+    {
+      "id": "Chanyal",
+      "label": "Chanyal (validação)",
+      "cluster": "B",
+      "degree": 24
+    },
+    {
+      "id": "Q_munu",
+      "label": "Tensor Qµν",
+      "cluster": "B",
+      "degree": 23
+    },
+    {
+      "id": "Sun",
+      "label": "Sun (validação)",
+      "cluster": "B",
+      "degree": 23
+    },
+    {
+      "id": "Pradhan",
+      "label": "Pradhan (validação)",
+      "cluster": "B",
+      "degree": 23
+    },
+    {
+      "id": "C",
+      "label": "Coerência Relacional (C)",
+      "cluster": "A",
+      "degree": 19
+    },
+    {
+      "id": "Phi_cat",
+      "label": "Functor Φcat",
+      "cluster": "B",
+      "degree": 19
+    },
+    {
+      "id": "eta_hyp",
+      "label": "Hipótese η (RETRATADA)",
+      "cluster": "C",
+      "degree": 19
+    },
+    {
+      "id": "FMO",
+      "label": "Complexo FMO 7-sítios",
+      "cluster": "C",
+      "degree": 17
+    },
+    {
+      "id": "Yoneda",
+      "label": "Lema de Yoneda",
+      "cluster": "B",
+      "degree": 16
+    }
+  ],
+  "graph_data": {
+    "directed": true,
+    "multigraph": true,
+    "graph": {},
+    "nodes": [
+      {
+        "id": "C",
+        "label": "Coerência Relacional (C)",
+        "cluster": "A",
+        "corpus": "CORPUS-002",
+        "definition": "C = I × S × H^β, β=0.5 (LOOCV)"
+      },
+      {
+        "id": "I",
+        "label": "Integração (I)",
+        "cluster": "A",
+        "corpus": "CORPUS-002",
+        "definition": "Informação mútua multivariada normalizada"
+      },
+      {
+        "id": "S",
+        "label": "Simetria (S)",
+        "cluster": "A",
+        "corpus": "CORPUS-002",
+        "definition": "log(|Aut(G)|+1)/log(N!)"
+      },
+      {
+        "id": "H",
+        "label": "Entropia Espectral (H)",
+        "cluster": "A",
+        "corpus": "CORPUS-002",
+        "definition": "Entropia espectral Laplaciana normalizada"
+      },
+      {
+        "id": "beta",
+        "label": "β (calibração LOOCV)",
+        "cluster": "A",
+        "corpus": "CORPUS-002",
+        "definition": "β = 0.5, consistência = 1.0 em [0.1, 1.5]"
+      },
+      {
+        "id": "Phi_cat",
+        "label": "Functor Φcat",
+        "cluster": "B",
+        "corpus": "CORPUS-003",
+        "definition": "Φcat : C → Set, X ↦ Hom_C(•, X) — Conjectura (Passo 16)"
+      },
+      {
+        "id": "Yoneda",
+        "label": "Lema de Yoneda",
+        "cluster": "B",
+        "corpus": "CORPUS-003",
+        "definition": "Nat(Hom(A,−), F) ≅ F(A) — aplicação conjectural"
+      },
+      {
+        "id": "Q_munu",
+        "label": "Tensor Qµν",
+        "cluster": "B",
+        "corpus": "CORPUS-003",
+        "definition": "Forma bilinear simétrica (0,2) — 5 axiomas — Proposta (Passo 17)"
+      },
+      {
+        "id": "Einstein_mod",
+        "label": "Equação de Einstein modificada",
+        "cluster": "B",
+        "corpus": "CORPUS-003",
+        "definition": "Gµν = 8πG(Tµν + Qµν) — Proposta teórica"
+      },
+      {
+        "id": "Chanyal",
+        "label": "Chanyal (validação)",
+        "cluster": "B",
+        "corpus": "CORPUS-003",
+        "definition": "Bianchi + campo magnético — validação externa Passo 18"
+      },
+      {
+        "id": "Sun",
+        "label": "Sun (validação)",
+        "cluster": "B",
+        "corpus": "CORPUS-003",
+        "definition": "Dynamical systems + anisotropia — validação externa Passo 18"
+      },
+      {
+        "id": "Pradhan",
+        "label": "Pradhan (validação)",
+        "cluster": "B",
+        "corpus": "CORPUS-003",
+        "definition": "Λ(t) variável — validação externa Passo 18"
+      },
+      {
+        "id": "QDT",
+        "label": "Dinâmica Quântica Dissipativa (QDT)",
+        "cluster": "C",
+        "corpus": "CORPUS-004",
+        "definition": "Regime quântico dissipativo em sistemas abertos"
+      },
+      {
+        "id": "FMO",
+        "label": "Complexo FMO 7-sítios",
+        "cluster": "C",
+        "corpus": "CORPUS-004",
+        "definition": "Fenna-Matthews-Olson — caso de estudo"
+      },
+      {
+        "id": "Power_law_T2",
+        "label": "Power-law T₂",
+        "cluster": "C",
+        "corpus": "CORPUS-004",
+        "definition": "T₂ = K·J^0.831·λ^(-0.843)·γ^(-0.766)·T^(-0.261), R²=0.988"
+      },
+      {
+        "id": "eta_hyp",
+        "label": "Hipótese η (RETRATADA)",
+        "cluster": "C",
+        "corpus": "CORPUS-004",
+        "definition": "Comensurabilidade cross-scale — RETIRADA em v6.1 (razão 0.291 > 0.2)"
+      },
+      {
+        "id": "Lakatos",
+        "label": "Lakatos / Programa de pesquisa",
+        "cluster": "D",
+        "corpus": "CORPUS-003",
+        "definition": "Núcleo firme + cinturão protetor — estrutura epistêmica"
+      },
+      {
+        "id": "Conjecture",
+        "label": "Conjectura (Passo 16)",
+        "cluster": "D",
+        "corpus": "CORPUS-003",
+        "definition": "Status epistêmico mais fraco"
+      },
+      {
+        "id": "Proposal",
+        "label": "Proposta (Passo 17)",
+        "cluster": "D",
+        "corpus": "CORPUS-003",
+        "definition": "Status epistêmico intermediário"
+      },
+      {
+        "id": "Validation",
+        "label": "Validação (Passo 18)",
+        "cluster": "D",
+        "corpus": "CORPUS-003",
+        "definition": "Status epistêmico mais forte"
+      },
+      {
+        "id": "Nucleus_firm",
+        "label": "Núcleo firme",
+        "cluster": "D",
+        "corpus": "CORPUS-003",
+        "definition": "Hipótese: estrutura física admite formalização categórico-tensorial unificada"
+      },
+      {
+        "id": "Protective_belt",
+        "label": "Cinturão protetor",
+        "cluster": "D",
+        "corpus": "CORPUS-003",
+        "definition": "Conjecturas Φcat + Qµν (vulneráveis, compensadas por validação externa)"
+      }
+    ],
+    "edges": [
+      {
+        "type": "composes",
+        "evidence": "[E] CORPUS-002 p.1",
+        "weight": 1.0,
+        "source": "C",
+        "target": "I",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 4,
+        "source": "C",
+        "chunk_count": 4,
+        "sample_chunks": [
+          "CORPUS-002#p1_01",
+          "CORPUS-002#p1_03",
+          "CORPUS-002#p2_01"
+        ],
+        "target": "I",
+        "key": 1
+      },
+      {
+        "type": "composes",
+        "evidence": "[E] CORPUS-002 p.1",
+        "weight": 1.0,
+        "source": "C",
+        "target": "S",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 7,
+        "source": "C",
+        "chunk_count": 7,
+        "sample_chunks": [
+          "CORPUS-002#p1_01",
+          "CORPUS-002#p1_02",
+          "CORPUS-002#p1_03"
+        ],
+        "target": "S",
+        "key": 1
+      },
+      {
+        "type": "composes",
+        "evidence": "[E] CORPUS-002 p.1",
+        "weight": 1.0,
+        "source": "C",
+        "target": "H",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 5,
+        "source": "C",
+        "chunk_count": 5,
+        "sample_chunks": [
+          "CORPUS-002#p1_01",
+          "CORPUS-002#p1_03",
+          "CORPUS-002#p2_01"
+        ],
+        "target": "H",
+        "key": 1
+      },
+      {
+        "type": "calibrates",
+        "evidence": "[E] CORPUS-002 p.1-2 LOOCV",
+        "weight": 1.0,
+        "source": "C",
+        "target": "beta",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 8,
+        "source": "C",
+        "chunk_count": 8,
+        "sample_chunks": [
+          "CORPUS-002#p1_01",
+          "CORPUS-002#p1_03",
+          "CORPUS-002#p2_01"
+        ],
+        "target": "beta",
+        "key": 1
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 8,
+        "source": "C",
+        "chunk_count": 8,
+        "sample_chunks": [
+          "CORPUS-002#p5_02",
+          "CORPUS-002#p6_01",
+          "CORPUS-004#p1_04"
+        ],
+        "target": "FMO",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 5,
+        "source": "C",
+        "chunk_count": 5,
+        "sample_chunks": [
+          "CORPUS-002#p5_02",
+          "CORPUS-004#p1_04",
+          "CORPUS-004#p2_02"
+        ],
+        "target": "eta_hyp",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 3,
+        "source": "C",
+        "chunk_count": 3,
+        "sample_chunks": [
+          "CORPUS-002#p6_01",
+          "CORPUS-004#p3_02",
+          "CORPUS-005#chunk_001"
+        ],
+        "target": "Chanyal",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 2,
+        "source": "C",
+        "chunk_count": 2,
+        "sample_chunks": [
+          "CORPUS-002#p6_01",
+          "CORPUS-004#p1_04"
+        ],
+        "target": "Q_munu",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "C",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-002#p6_01"
+        ],
+        "target": "Yoneda",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "C",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-004#p1_04"
+        ],
+        "target": "Phi_cat",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 4,
+        "source": "C",
+        "chunk_count": 4,
+        "sample_chunks": [
+          "CORPUS-004#p1_04",
+          "CORPUS-004#p3_01",
+          "CORPUS-004#p3_02"
+        ],
+        "target": "Power_law_T2",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 2,
+        "source": "C",
+        "chunk_count": 2,
+        "sample_chunks": [
+          "CORPUS-004#p1_04",
+          "CORPUS-005#chunk_001"
+        ],
+        "target": "Validation",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 4,
+        "source": "C",
+        "chunk_count": 4,
+        "sample_chunks": [
+          "CORPUS-004#p2_02",
+          "CORPUS-004#p3_01",
+          "CORPUS-004#p3_02"
+        ],
+        "target": "QDT",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "C",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-005#chunk_001"
+        ],
+        "target": "Pradhan",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "C",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-005#chunk_001"
+        ],
+        "target": "Sun",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 5,
+        "source": "I",
+        "chunk_count": 5,
+        "sample_chunks": [
+          "CORPUS-002#p1_01",
+          "CORPUS-002#p1_03",
+          "CORPUS-002#p2_01"
+        ],
+        "target": "S",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 4,
+        "source": "I",
+        "chunk_count": 4,
+        "sample_chunks": [
+          "CORPUS-002#p1_01",
+          "CORPUS-002#p1_03",
+          "CORPUS-002#p2_01"
+        ],
+        "target": "beta",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "I",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-005#chunk_001"
+        ],
+        "target": "Power_law_T2",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "I",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-005#chunk_001"
+        ],
+        "target": "Pradhan",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "I",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-005#chunk_001"
+        ],
+        "target": "QDT",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "I",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-005#chunk_001"
+        ],
+        "target": "Sun",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "I",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-005#chunk_001"
+        ],
+        "target": "Validation",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "I",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-005#chunk_001"
+        ],
+        "target": "eta_hyp",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 5,
+        "source": "S",
+        "chunk_count": 5,
+        "sample_chunks": [
+          "CORPUS-002#p1_01",
+          "CORPUS-002#p1_03",
+          "CORPUS-002#p2_01"
+        ],
+        "target": "beta",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 2,
+        "source": "S",
+        "chunk_count": 2,
+        "sample_chunks": [
+          "CORPUS-003#p9_02",
+          "CORPUS-005#chunk_001"
+        ],
+        "target": "Sun",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "S",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-005#chunk_001"
+        ],
+        "target": "Validation",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "S",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-005#chunk_001"
+        ],
+        "target": "eta_hyp",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 4,
+        "source": "H",
+        "chunk_count": 4,
+        "sample_chunks": [
+          "CORPUS-002#p1_01",
+          "CORPUS-002#p1_03",
+          "CORPUS-002#p2_01"
+        ],
+        "target": "I",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 5,
+        "source": "H",
+        "chunk_count": 5,
+        "sample_chunks": [
+          "CORPUS-002#p1_01",
+          "CORPUS-002#p1_03",
+          "CORPUS-002#p2_01"
+        ],
+        "target": "S",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 5,
+        "source": "H",
+        "chunk_count": 5,
+        "sample_chunks": [
+          "CORPUS-002#p1_01",
+          "CORPUS-002#p1_03",
+          "CORPUS-002#p2_01"
+        ],
+        "target": "beta",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "H",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-005#chunk_001"
+        ],
+        "target": "Power_law_T2",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "H",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-005#chunk_001"
+        ],
+        "target": "Pradhan",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "H",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-005#chunk_001"
+        ],
+        "target": "QDT",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "H",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-005#chunk_001"
+        ],
+        "target": "Sun",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "H",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-005#chunk_001"
+        ],
+        "target": "Validation",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "H",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-005#chunk_001"
+        ],
+        "target": "eta_hyp",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "beta",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-005#chunk_001"
+        ],
+        "target": "eta_hyp",
+        "key": 0
+      },
+      {
+        "type": "applies_invokes",
+        "evidence": "[E] CORPUS-003 p.4-5",
+        "weight": 1.0,
+        "source": "Phi_cat",
+        "target": "Yoneda",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 8,
+        "source": "Phi_cat",
+        "chunk_count": 8,
+        "sample_chunks": [
+          "CORPUS-003#p1_01",
+          "CORPUS-003#p2_01",
+          "CORPUS-003#p3_01"
+        ],
+        "target": "Yoneda",
+        "key": 1
+      },
+      {
+        "type": "has_status",
+        "evidence": "[E] CORPUS-003 Tabela 2",
+        "weight": 1.0,
+        "source": "Phi_cat",
+        "target": "Conjecture",
+        "key": 0
+      },
+      {
+        "type": "belongs_to",
+        "evidence": "[E] CORPUS-003 p.11",
+        "weight": 1.0,
+        "source": "Phi_cat",
+        "target": "Protective_belt",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "Phi_cat",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-003#p11_02"
+        ],
+        "target": "Protective_belt",
+        "key": 1
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 6,
+        "source": "Phi_cat",
+        "chunk_count": 6,
+        "sample_chunks": [
+          "CORPUS-003#p1_01",
+          "CORPUS-003#p2_01",
+          "CORPUS-003#p3_01"
+        ],
+        "target": "Pradhan",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 8,
+        "source": "Phi_cat",
+        "chunk_count": 8,
+        "sample_chunks": [
+          "CORPUS-003#p1_01",
+          "CORPUS-003#p2_01",
+          "CORPUS-003#p3_01"
+        ],
+        "target": "Q_munu",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 5,
+        "source": "Phi_cat",
+        "chunk_count": 5,
+        "sample_chunks": [
+          "CORPUS-003#p1_01",
+          "CORPUS-003#p2_01",
+          "CORPUS-003#p3_01"
+        ],
+        "target": "Sun",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 4,
+        "source": "Phi_cat",
+        "chunk_count": 4,
+        "sample_chunks": [
+          "CORPUS-003#p3_01",
+          "CORPUS-003#p5_01",
+          "CORPUS-003#p11_02"
+        ],
+        "target": "Proposal",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 4,
+        "source": "Phi_cat",
+        "chunk_count": 4,
+        "sample_chunks": [
+          "CORPUS-003#p3_01",
+          "CORPUS-003#p11_02",
+          "CORPUS-003#p12_01"
+        ],
+        "target": "Validation",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 6,
+        "source": "Phi_cat",
+        "chunk_count": 6,
+        "sample_chunks": [
+          "CORPUS-003#p4_01",
+          "CORPUS-003#p5_02",
+          "CORPUS-003#p6_01"
+        ],
+        "target": "eta_hyp",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 2,
+        "source": "Phi_cat",
+        "chunk_count": 2,
+        "sample_chunks": [
+          "CORPUS-004#p1_04",
+          "CORPUS-004#p3_04"
+        ],
+        "target": "Power_law_T2",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 2,
+        "source": "Yoneda",
+        "chunk_count": 2,
+        "sample_chunks": [
+          "CORPUS-003#p4_01",
+          "CORPUS-003#p14_01"
+        ],
+        "target": "eta_hyp",
+        "key": 0
+      },
+      {
+        "type": "modifies",
+        "evidence": "[E] CORPUS-003 p.3 Eq.2",
+        "weight": 1.0,
+        "source": "Q_munu",
+        "target": "Einstein_mod",
+        "key": 0
+      },
+      {
+        "type": "has_status",
+        "evidence": "[E] CORPUS-003 Tabela 2",
+        "weight": 1.0,
+        "source": "Q_munu",
+        "target": "Proposal",
+        "key": 0
+      },
+      {
+        "type": "belongs_to",
+        "evidence": "[E] CORPUS-003 p.11",
+        "weight": 1.0,
+        "source": "Q_munu",
+        "target": "Protective_belt",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 6,
+        "source": "Q_munu",
+        "chunk_count": 6,
+        "sample_chunks": [
+          "CORPUS-002#p6_01",
+          "CORPUS-003#p1_01",
+          "CORPUS-003#p2_01"
+        ],
+        "target": "Yoneda",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 11,
+        "source": "Q_munu",
+        "chunk_count": 11,
+        "sample_chunks": [
+          "CORPUS-003#p1_01",
+          "CORPUS-003#p2_01",
+          "CORPUS-003#p3_01"
+        ],
+        "target": "Sun",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 6,
+        "source": "Q_munu",
+        "chunk_count": 6,
+        "sample_chunks": [
+          "CORPUS-003#p3_01",
+          "CORPUS-003#p3_02",
+          "CORPUS-003#p10_01"
+        ],
+        "target": "Validation",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "Q_munu",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-003#p9_02"
+        ],
+        "target": "S",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 3,
+        "source": "Q_munu",
+        "chunk_count": 3,
+        "sample_chunks": [
+          "CORPUS-003#p14_01",
+          "CORPUS-004#p1_04",
+          "CORPUS-004#p3_04"
+        ],
+        "target": "eta_hyp",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 2,
+        "source": "Einstein_mod",
+        "chunk_count": 2,
+        "sample_chunks": [
+          "CORPUS-003#p3_01",
+          "CORPUS-003#p14_01"
+        ],
+        "target": "Phi_cat",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 3,
+        "source": "Einstein_mod",
+        "chunk_count": 3,
+        "sample_chunks": [
+          "CORPUS-003#p3_01",
+          "CORPUS-003#p3_02",
+          "CORPUS-003#p14_01"
+        ],
+        "target": "Pradhan",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 3,
+        "source": "Einstein_mod",
+        "chunk_count": 3,
+        "sample_chunks": [
+          "CORPUS-003#p3_01",
+          "CORPUS-003#p3_02",
+          "CORPUS-003#p14_01"
+        ],
+        "target": "Proposal",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 4,
+        "source": "Einstein_mod",
+        "chunk_count": 4,
+        "sample_chunks": [
+          "CORPUS-003#p3_01",
+          "CORPUS-003#p3_02",
+          "CORPUS-003#p7_01"
+        ],
+        "target": "Q_munu",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 2,
+        "source": "Einstein_mod",
+        "chunk_count": 2,
+        "sample_chunks": [
+          "CORPUS-003#p3_01",
+          "CORPUS-003#p3_02"
+        ],
+        "target": "Sun",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 2,
+        "source": "Einstein_mod",
+        "chunk_count": 2,
+        "sample_chunks": [
+          "CORPUS-003#p3_01",
+          "CORPUS-003#p3_02"
+        ],
+        "target": "Validation",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 2,
+        "source": "Einstein_mod",
+        "chunk_count": 2,
+        "sample_chunks": [
+          "CORPUS-003#p3_01",
+          "CORPUS-003#p14_01"
+        ],
+        "target": "Yoneda",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "Einstein_mod",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-003#p14_01"
+        ],
+        "target": "eta_hyp",
+        "key": 0
+      },
+      {
+        "type": "validates",
+        "evidence": "[E] CORPUS-003 p.10",
+        "weight": 1.0,
+        "source": "Chanyal",
+        "target": "Validation",
+        "key": 0
+      },
+      {
+        "type": "has_status",
+        "evidence": "[E] CORPUS-003 Tabela 2",
+        "weight": 1.0,
+        "source": "Chanyal",
+        "target": "Validation",
+        "key": 1
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 6,
+        "source": "Chanyal",
+        "chunk_count": 6,
+        "sample_chunks": [
+          "CORPUS-003#p3_01",
+          "CORPUS-003#p3_02",
+          "CORPUS-003#p10_01"
+        ],
+        "target": "Validation",
+        "key": 2
+      },
+      {
+        "type": "analogous_to",
+        "evidence": "[E] CORPUS-003 p.10 (T_mag)",
+        "weight": 0.8,
+        "source": "Chanyal",
+        "target": "Q_munu",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 10,
+        "source": "Chanyal",
+        "chunk_count": 10,
+        "sample_chunks": [
+          "CORPUS-002#p6_01",
+          "CORPUS-003#p1_01",
+          "CORPUS-003#p2_01"
+        ],
+        "target": "Q_munu",
+        "key": 1
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 3,
+        "source": "Chanyal",
+        "chunk_count": 3,
+        "sample_chunks": [
+          "CORPUS-002#p6_01",
+          "CORPUS-004#p3_02",
+          "CORPUS-005#chunk_001"
+        ],
+        "target": "FMO",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 6,
+        "source": "Chanyal",
+        "chunk_count": 6,
+        "sample_chunks": [
+          "CORPUS-002#p6_01",
+          "CORPUS-003#p1_01",
+          "CORPUS-003#p2_01"
+        ],
+        "target": "Yoneda",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 6,
+        "source": "Chanyal",
+        "chunk_count": 6,
+        "sample_chunks": [
+          "CORPUS-003#p1_01",
+          "CORPUS-003#p2_01",
+          "CORPUS-003#p3_01"
+        ],
+        "target": "Conjecture",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 5,
+        "source": "Chanyal",
+        "chunk_count": 5,
+        "sample_chunks": [
+          "CORPUS-003#p1_01",
+          "CORPUS-003#p2_01",
+          "CORPUS-003#p3_01"
+        ],
+        "target": "Phi_cat",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 12,
+        "source": "Chanyal",
+        "chunk_count": 12,
+        "sample_chunks": [
+          "CORPUS-003#p1_01",
+          "CORPUS-003#p2_01",
+          "CORPUS-003#p2_02"
+        ],
+        "target": "Pradhan",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 12,
+        "source": "Chanyal",
+        "chunk_count": 12,
+        "sample_chunks": [
+          "CORPUS-003#p1_01",
+          "CORPUS-003#p2_01",
+          "CORPUS-003#p2_02"
+        ],
+        "target": "Sun",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 2,
+        "source": "Chanyal",
+        "chunk_count": 2,
+        "sample_chunks": [
+          "CORPUS-003#p3_01",
+          "CORPUS-003#p3_02"
+        ],
+        "target": "Einstein_mod",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 3,
+        "source": "Chanyal",
+        "chunk_count": 3,
+        "sample_chunks": [
+          "CORPUS-003#p3_01",
+          "CORPUS-003#p3_02",
+          "CORPUS-003#p11_02"
+        ],
+        "target": "Proposal",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 2,
+        "source": "Chanyal",
+        "chunk_count": 2,
+        "sample_chunks": [
+          "CORPUS-003#p11_02",
+          "CORPUS-003#p13_01"
+        ],
+        "target": "Lakatos",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "Chanyal",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-003#p11_02"
+        ],
+        "target": "Nucleus_firm",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "Chanyal",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-003#p11_02"
+        ],
+        "target": "Protective_belt",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 2,
+        "source": "Chanyal",
+        "chunk_count": 2,
+        "sample_chunks": [
+          "CORPUS-004#p3_02",
+          "CORPUS-005#chunk_001"
+        ],
+        "target": "Power_law_T2",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 2,
+        "source": "Chanyal",
+        "chunk_count": 2,
+        "sample_chunks": [
+          "CORPUS-004#p3_02",
+          "CORPUS-005#chunk_001"
+        ],
+        "target": "QDT",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "Chanyal",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-005#chunk_001"
+        ],
+        "target": "H",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "Chanyal",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-005#chunk_001"
+        ],
+        "target": "I",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "Chanyal",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-005#chunk_001"
+        ],
+        "target": "S",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "Chanyal",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-005#chunk_001"
+        ],
+        "target": "beta",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "Chanyal",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-005#chunk_001"
+        ],
+        "target": "eta_hyp",
+        "key": 0
+      },
+      {
+        "type": "validates",
+        "evidence": "[E] CORPUS-003 p.10",
+        "weight": 1.0,
+        "source": "Sun",
+        "target": "Validation",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 6,
+        "source": "Sun",
+        "chunk_count": 6,
+        "sample_chunks": [
+          "CORPUS-003#p3_01",
+          "CORPUS-003#p3_02",
+          "CORPUS-003#p10_01"
+        ],
+        "target": "Validation",
+        "key": 1
+      },
+      {
+        "type": "compatible_with",
+        "evidence": "[E] CORPUS-003 p.10 (Kasner)",
+        "weight": 0.7,
+        "source": "Sun",
+        "target": "Q_munu",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 4,
+        "source": "Sun",
+        "chunk_count": 4,
+        "sample_chunks": [
+          "CORPUS-003#p1_01",
+          "CORPUS-003#p2_01",
+          "CORPUS-003#p3_01"
+        ],
+        "target": "Yoneda",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "Sun",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-005#chunk_001"
+        ],
+        "target": "beta",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "Sun",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-005#chunk_001"
+        ],
+        "target": "eta_hyp",
+        "key": 0
+      },
+      {
+        "type": "validates",
+        "evidence": "[E] CORPUS-003 p.10-11",
+        "weight": 1.0,
+        "source": "Pradhan",
+        "target": "Validation",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 6,
+        "source": "Pradhan",
+        "chunk_count": 6,
+        "sample_chunks": [
+          "CORPUS-003#p3_01",
+          "CORPUS-003#p3_02",
+          "CORPUS-003#p10_01"
+        ],
+        "target": "Validation",
+        "key": 1
+      },
+      {
+        "type": "analogous_to",
+        "evidence": "[E] CORPUS-003 p.11 (Λ(t)gµν)",
+        "weight": 0.8,
+        "source": "Pradhan",
+        "target": "Q_munu",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 13,
+        "source": "Pradhan",
+        "chunk_count": 13,
+        "sample_chunks": [
+          "CORPUS-003#p1_01",
+          "CORPUS-003#p2_01",
+          "CORPUS-003#p3_01"
+        ],
+        "target": "Q_munu",
+        "key": 1
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 14,
+        "source": "Pradhan",
+        "chunk_count": 14,
+        "sample_chunks": [
+          "CORPUS-003#p1_01",
+          "CORPUS-003#p2_01",
+          "CORPUS-003#p2_02"
+        ],
+        "target": "Sun",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 5,
+        "source": "Pradhan",
+        "chunk_count": 5,
+        "sample_chunks": [
+          "CORPUS-003#p1_01",
+          "CORPUS-003#p2_01",
+          "CORPUS-003#p3_01"
+        ],
+        "target": "Yoneda",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 4,
+        "source": "Pradhan",
+        "chunk_count": 4,
+        "sample_chunks": [
+          "CORPUS-003#p3_01",
+          "CORPUS-003#p3_02",
+          "CORPUS-003#p11_02"
+        ],
+        "target": "Proposal",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 2,
+        "source": "Pradhan",
+        "chunk_count": 2,
+        "sample_chunks": [
+          "CORPUS-003#p9_02",
+          "CORPUS-005#chunk_001"
+        ],
+        "target": "S",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "Pradhan",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-003#p11_02"
+        ],
+        "target": "Protective_belt",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 2,
+        "source": "Pradhan",
+        "chunk_count": 2,
+        "sample_chunks": [
+          "CORPUS-003#p14_01",
+          "CORPUS-005#chunk_001"
+        ],
+        "target": "eta_hyp",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "Pradhan",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-005#chunk_001"
+        ],
+        "target": "QDT",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "Pradhan",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-005#chunk_001"
+        ],
+        "target": "beta",
+        "key": 0
+      },
+      {
+        "type": "applies_to",
+        "evidence": "[E] CORPUS-004",
+        "weight": 1.0,
+        "source": "QDT",
+        "target": "FMO",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 4,
+        "source": "QDT",
+        "chunk_count": 4,
+        "sample_chunks": [
+          "CORPUS-004#p1_01",
+          "CORPUS-004#p2_02",
+          "CORPUS-004#p3_01"
+        ],
+        "target": "eta_hyp",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "QDT",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-005#chunk_001"
+        ],
+        "target": "S",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "QDT",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-005#chunk_001"
+        ],
+        "target": "Sun",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "QDT",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-005#chunk_001"
+        ],
+        "target": "Validation",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "QDT",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-005#chunk_001"
+        ],
+        "target": "beta",
+        "key": 0
+      },
+      {
+        "type": "characterized_by",
+        "evidence": "[E] CORPUS-004 p.1-2",
+        "weight": 1.0,
+        "source": "FMO",
+        "target": "Power_law_T2",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 9,
+        "source": "FMO",
+        "chunk_count": 9,
+        "sample_chunks": [
+          "CORPUS-004#p1_01",
+          "CORPUS-004#p1_02",
+          "CORPUS-004#p1_03"
+        ],
+        "target": "Power_law_T2",
+        "key": 1
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 9,
+        "source": "FMO",
+        "chunk_count": 9,
+        "sample_chunks": [
+          "CORPUS-002#p5_02",
+          "CORPUS-004#p1_01",
+          "CORPUS-004#p1_02"
+        ],
+        "target": "eta_hyp",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 2,
+        "source": "FMO",
+        "chunk_count": 2,
+        "sample_chunks": [
+          "CORPUS-002#p6_01",
+          "CORPUS-004#p1_04"
+        ],
+        "target": "Q_munu",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "FMO",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-002#p6_01"
+        ],
+        "target": "Yoneda",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 5,
+        "source": "FMO",
+        "chunk_count": 5,
+        "sample_chunks": [
+          "CORPUS-004#p1_01",
+          "CORPUS-004#p2_02",
+          "CORPUS-004#p3_01"
+        ],
+        "target": "QDT",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 4,
+        "source": "FMO",
+        "chunk_count": 4,
+        "sample_chunks": [
+          "CORPUS-004#p1_02",
+          "CORPUS-004#p1_04",
+          "CORPUS-004#p2_03"
+        ],
+        "target": "Validation",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "FMO",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-004#p1_04"
+        ],
+        "target": "Phi_cat",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "FMO",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-005#chunk_001"
+        ],
+        "target": "H",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "FMO",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-005#chunk_001"
+        ],
+        "target": "I",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "FMO",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-005#chunk_001"
+        ],
+        "target": "Pradhan",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "FMO",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-005#chunk_001"
+        ],
+        "target": "S",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "FMO",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-005#chunk_001"
+        ],
+        "target": "Sun",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "FMO",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-005#chunk_001"
+        ],
+        "target": "beta",
+        "key": 0
+      },
+      {
+        "type": "tested_hypothesis",
+        "evidence": "[E] CORPUS-004 p.2",
+        "weight": 1.0,
+        "source": "Power_law_T2",
+        "target": "eta_hyp",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 8,
+        "source": "Power_law_T2",
+        "chunk_count": 8,
+        "sample_chunks": [
+          "CORPUS-004#p1_01",
+          "CORPUS-004#p1_02",
+          "CORPUS-004#p1_03"
+        ],
+        "target": "eta_hyp",
+        "key": 1
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 4,
+        "source": "Power_law_T2",
+        "chunk_count": 4,
+        "sample_chunks": [
+          "CORPUS-004#p1_01",
+          "CORPUS-004#p3_01",
+          "CORPUS-004#p3_02"
+        ],
+        "target": "QDT",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 4,
+        "source": "Power_law_T2",
+        "chunk_count": 4,
+        "sample_chunks": [
+          "CORPUS-004#p1_02",
+          "CORPUS-004#p1_04",
+          "CORPUS-004#p2_03"
+        ],
+        "target": "Validation",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 2,
+        "source": "Power_law_T2",
+        "chunk_count": 2,
+        "sample_chunks": [
+          "CORPUS-004#p1_04",
+          "CORPUS-004#p3_04"
+        ],
+        "target": "Q_munu",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "Power_law_T2",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-005#chunk_001"
+        ],
+        "target": "Pradhan",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "Power_law_T2",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-005#chunk_001"
+        ],
+        "target": "S",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "Power_law_T2",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-005#chunk_001"
+        ],
+        "target": "Sun",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "Power_law_T2",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-005#chunk_001"
+        ],
+        "target": "beta",
+        "key": 0
+      },
+      {
+        "type": "structures",
+        "evidence": "[E] CORPUS-003 p.11",
+        "weight": 1.0,
+        "source": "Lakatos",
+        "target": "Nucleus_firm",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "Lakatos",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-003#p11_02"
+        ],
+        "target": "Nucleus_firm",
+        "key": 1
+      },
+      {
+        "type": "structures",
+        "evidence": "[E] CORPUS-003 p.11",
+        "weight": 1.0,
+        "source": "Lakatos",
+        "target": "Protective_belt",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "Lakatos",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-003#p11_02"
+        ],
+        "target": "Protective_belt",
+        "key": 1
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "Lakatos",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-003#p11_02"
+        ],
+        "target": "Phi_cat",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "Lakatos",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-003#p11_02"
+        ],
+        "target": "Pradhan",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "Lakatos",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-003#p11_02"
+        ],
+        "target": "Proposal",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "Lakatos",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-003#p11_02"
+        ],
+        "target": "Q_munu",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "Lakatos",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-003#p11_02"
+        ],
+        "target": "Sun",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "Lakatos",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-003#p11_02"
+        ],
+        "target": "Validation",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 2,
+        "source": "Lakatos",
+        "chunk_count": 2,
+        "sample_chunks": [
+          "CORPUS-003#p11_02",
+          "CORPUS-003#p13_01"
+        ],
+        "target": "Yoneda",
+        "key": 0
+      },
+      {
+        "type": "precedes_epistemically",
+        "evidence": "[E] CORPUS-003 Passo 16→17",
+        "weight": 1.0,
+        "source": "Conjecture",
+        "target": "Proposal",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 5,
+        "source": "Conjecture",
+        "chunk_count": 5,
+        "sample_chunks": [
+          "CORPUS-003#p3_01",
+          "CORPUS-003#p3_02",
+          "CORPUS-003#p5_01"
+        ],
+        "target": "Proposal",
+        "key": 1
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 9,
+        "source": "Conjecture",
+        "chunk_count": 9,
+        "sample_chunks": [
+          "CORPUS-003#p1_01",
+          "CORPUS-003#p2_01",
+          "CORPUS-003#p3_01"
+        ],
+        "target": "Phi_cat",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 6,
+        "source": "Conjecture",
+        "chunk_count": 6,
+        "sample_chunks": [
+          "CORPUS-003#p1_01",
+          "CORPUS-003#p2_01",
+          "CORPUS-003#p3_01"
+        ],
+        "target": "Pradhan",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 9,
+        "source": "Conjecture",
+        "chunk_count": 9,
+        "sample_chunks": [
+          "CORPUS-003#p1_01",
+          "CORPUS-003#p2_01",
+          "CORPUS-003#p3_01"
+        ],
+        "target": "Q_munu",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 6,
+        "source": "Conjecture",
+        "chunk_count": 6,
+        "sample_chunks": [
+          "CORPUS-003#p1_01",
+          "CORPUS-003#p2_01",
+          "CORPUS-003#p3_01"
+        ],
+        "target": "Sun",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 7,
+        "source": "Conjecture",
+        "chunk_count": 7,
+        "sample_chunks": [
+          "CORPUS-003#p1_01",
+          "CORPUS-003#p2_01",
+          "CORPUS-003#p3_01"
+        ],
+        "target": "Yoneda",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 2,
+        "source": "Conjecture",
+        "chunk_count": 2,
+        "sample_chunks": [
+          "CORPUS-003#p3_01",
+          "CORPUS-003#p3_02"
+        ],
+        "target": "Einstein_mod",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 4,
+        "source": "Conjecture",
+        "chunk_count": 4,
+        "sample_chunks": [
+          "CORPUS-003#p3_01",
+          "CORPUS-003#p3_02",
+          "CORPUS-003#p11_02"
+        ],
+        "target": "Validation",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 2,
+        "source": "Conjecture",
+        "chunk_count": 2,
+        "sample_chunks": [
+          "CORPUS-003#p4_01",
+          "CORPUS-003#p6_01"
+        ],
+        "target": "eta_hyp",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "Conjecture",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-003#p11_02"
+        ],
+        "target": "Lakatos",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "Conjecture",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-003#p11_02"
+        ],
+        "target": "Nucleus_firm",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "Conjecture",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-003#p11_02"
+        ],
+        "target": "Protective_belt",
+        "key": 0
+      },
+      {
+        "type": "precedes_epistemically",
+        "evidence": "[E] CORPUS-003 Passo 17→18",
+        "weight": 1.0,
+        "source": "Proposal",
+        "target": "Validation",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 3,
+        "source": "Proposal",
+        "chunk_count": 3,
+        "sample_chunks": [
+          "CORPUS-003#p3_01",
+          "CORPUS-003#p3_02",
+          "CORPUS-003#p11_02"
+        ],
+        "target": "Validation",
+        "key": 1
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 5,
+        "source": "Proposal",
+        "chunk_count": 5,
+        "sample_chunks": [
+          "CORPUS-003#p3_01",
+          "CORPUS-003#p3_02",
+          "CORPUS-003#p7_02"
+        ],
+        "target": "Q_munu",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 3,
+        "source": "Proposal",
+        "chunk_count": 3,
+        "sample_chunks": [
+          "CORPUS-003#p3_01",
+          "CORPUS-003#p3_02",
+          "CORPUS-003#p11_02"
+        ],
+        "target": "Sun",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 4,
+        "source": "Proposal",
+        "chunk_count": 4,
+        "sample_chunks": [
+          "CORPUS-003#p3_01",
+          "CORPUS-003#p5_01",
+          "CORPUS-003#p11_02"
+        ],
+        "target": "Yoneda",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "Proposal",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-003#p11_02"
+        ],
+        "target": "Protective_belt",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "Proposal",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-003#p14_01"
+        ],
+        "target": "eta_hyp",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 2,
+        "source": "Validation",
+        "chunk_count": 2,
+        "sample_chunks": [
+          "CORPUS-003#p3_01",
+          "CORPUS-003#p11_02"
+        ],
+        "target": "Yoneda",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 4,
+        "source": "Validation",
+        "chunk_count": 4,
+        "sample_chunks": [
+          "CORPUS-004#p1_02",
+          "CORPUS-004#p1_04",
+          "CORPUS-004#p2_03"
+        ],
+        "target": "eta_hyp",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "Validation",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-005#chunk_001"
+        ],
+        "target": "beta",
+        "key": 0
+      },
+      {
+        "type": "sustained_by",
+        "evidence": "[E] CORPUS-003 p.11",
+        "weight": 1.0,
+        "source": "Nucleus_firm",
+        "target": "Protective_belt",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "Nucleus_firm",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-003#p11_02"
+        ],
+        "target": "Protective_belt",
+        "key": 1
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "Nucleus_firm",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-003#p11_02"
+        ],
+        "target": "Phi_cat",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "Nucleus_firm",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-003#p11_02"
+        ],
+        "target": "Pradhan",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "Nucleus_firm",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-003#p11_02"
+        ],
+        "target": "Proposal",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "Nucleus_firm",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-003#p11_02"
+        ],
+        "target": "Q_munu",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "Nucleus_firm",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-003#p11_02"
+        ],
+        "target": "Sun",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "Nucleus_firm",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-003#p11_02"
+        ],
+        "target": "Validation",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "Nucleus_firm",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-003#p11_02"
+        ],
+        "target": "Yoneda",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "Protective_belt",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-003#p11_02"
+        ],
+        "target": "Q_munu",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "Protective_belt",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-003#p11_02"
+        ],
+        "target": "Sun",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "Protective_belt",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-003#p11_02"
+        ],
+        "target": "Validation",
+        "key": 0
+      },
+      {
+        "type": "co_occurs_with",
+        "weight": 1,
+        "source": "Protective_belt",
+        "chunk_count": 1,
+        "sample_chunks": [
+          "CORPUS-003#p11_02"
+        ],
+        "target": "Yoneda",
+        "key": 0
+      }
+    ]
+  }
+}

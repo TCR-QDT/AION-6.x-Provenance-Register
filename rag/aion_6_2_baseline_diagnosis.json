@@ -1,0 +1,509 @@
+{
+  "metadata": {
+    "experiment": "AION-6.2 Etapas 6.2.0, 6.2.1, 6.2.2",
+    "timestamp": "2026-08-17T22:29:34+00:00",
+    "author_structure": "Edson C. Nascimento (Projetista Master)",
+    "author_implementation": "IA Curadora"
+  },
+  "stage_6_2_0_baseline": {
+    "snapshot_timestamp": "2026-08-17T22:29:34+00:00",
+    "frozen_components": {
+      "corpus": "v1.3.0 (9 registros documentais + 2 inexistentes)",
+      "graphrag": "v1.0.0 (22 nós, 187 arestas)",
+      "p_resp_001": "v0.3 (validator determinístico)",
+      "aion_eval_002": "v0.2 (FAIL-SYSTEM vs FAIL-EVALUATOR)",
+      "aion_dify_001": "APROVADO"
+    },
+    "baseline_benchmarks": {
+      "B1": "FAIL-SYSTEM",
+      "B2": "PASS-SEMANTIC",
+      "B3": "FAIL-SYSTEM",
+      "B4": "PARTIAL",
+      "B5": "PASS-SEMANTIC",
+      "B6": "PARTIAL (TEMPORALLY BOUNDED, NOT CLOSED)",
+      "B7": "PASS-SEMANTIC"
+    },
+    "restraint_principles": [
+      "NÃO alterar corpus v1.3.0",
+      "NÃO alterar GraphRAG",
+      "NÃO alterar P-RESP-001 v0.3",
+      "NÃO alterar AION-EVAL-002 v0.2",
+      "NÃO alterar AION-DIFY-001",
+      "NÃO mascarar B1 como PASS artificial",
+      "Intervir SOMENTE entre EVIDÊNCIA e RETRIEVAL/REPRESENTAÇÃO"
+    ],
+    "snapshot_hash": "f39d71bff2f1a7b06dceffbe3ff955fa2ce910500c088b893d20b94ecbd7a3c0"
+  },
+  "stage_6_2_1_b1_reproduction": {
+    "runs": [
+      {
+        "run_idx": 1,
+        "timestamp": "2026-08-17T22:29:34+00:00",
+        "pergunta": "Qual é a fonte exata da afirmação de que a métrica TCR é C = I × S × H^β?",
+        "retrieval": {
+          "top3_chunks": [
+            {
+              "rank": 1,
+              "chunk_id": "CORPUS-011#p4_04",
+              "score": 0.1562777391196012,
+              "corpus_id": "CORPUS-011"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "CORPUS-003#p8_02",
+              "score": 0.13498629108882412,
+              "corpus_id": "CORPUS-003"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "CORPUS-003#p3_02",
+              "score": 0.12392522852967908,
+              "corpus_id": "CORPUS-003"
+            }
+          ],
+          "top5_chunks": [
+            {
+              "rank": 1,
+              "chunk_id": "CORPUS-011#p4_04",
+              "score": 0.1562777391196012,
+              "corpus_id": "CORPUS-011"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "CORPUS-003#p8_02",
+              "score": 0.13498629108882412,
+              "corpus_id": "CORPUS-003"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "CORPUS-003#p3_02",
+              "score": 0.12392522852967908,
+              "corpus_id": "CORPUS-003"
+            },
+            {
+              "rank": 4,
+              "chunk_id": "CORPUS-003#p11_01",
+              "score": 0.11255810751482298,
+              "corpus_id": "CORPUS-003"
+            },
+            {
+              "rank": 5,
+              "chunk_id": "CORPUS-004#p3_01",
+              "score": 0.1121163308521496,
+              "corpus_id": "CORPUS-004"
+            }
+          ],
+          "expected_chunk_prefix": "CORPUS-002#p1",
+          "expected_in_top3": false,
+          "expected_in_top5": false,
+          "expected_rank": null,
+          "retrieval_hit": false
+        },
+        "B1_status_retrieval_only": "FAIL-SYSTEM"
+      },
+      {
+        "run_idx": 2,
+        "timestamp": "2026-08-17T22:29:34+00:00",
+        "pergunta": "Qual é a fonte exata da afirmação de que a métrica TCR é C = I × S × H^β?",
+        "retrieval": {
+          "top3_chunks": [
+            {
+              "rank": 1,
+              "chunk_id": "CORPUS-011#p4_04",
+              "score": 0.1562777391196012,
+              "corpus_id": "CORPUS-011"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "CORPUS-003#p8_02",
+              "score": 0.13498629108882412,
+              "corpus_id": "CORPUS-003"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "CORPUS-003#p3_02",
+              "score": 0.12392522852967908,
+              "corpus_id": "CORPUS-003"
+            }
+          ],
+          "top5_chunks": [
+            {
+              "rank": 1,
+              "chunk_id": "CORPUS-011#p4_04",
+              "score": 0.1562777391196012,
+              "corpus_id": "CORPUS-011"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "CORPUS-003#p8_02",
+              "score": 0.13498629108882412,
+              "corpus_id": "CORPUS-003"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "CORPUS-003#p3_02",
+              "score": 0.12392522852967908,
+              "corpus_id": "CORPUS-003"
+            },
+            {
+              "rank": 4,
+              "chunk_id": "CORPUS-003#p11_01",
+              "score": 0.11255810751482298,
+              "corpus_id": "CORPUS-003"
+            },
+            {
+              "rank": 5,
+              "chunk_id": "CORPUS-004#p3_01",
+              "score": 0.1121163308521496,
+              "corpus_id": "CORPUS-004"
+            }
+          ],
+          "expected_chunk_prefix": "CORPUS-002#p1",
+          "expected_in_top3": false,
+          "expected_in_top5": false,
+          "expected_rank": null,
+          "retrieval_hit": false
+        },
+        "B1_status_retrieval_only": "FAIL-SYSTEM"
+      },
+      {
+        "run_idx": 3,
+        "timestamp": "2026-08-17T22:29:34+00:00",
+        "pergunta": "Qual é a fonte exata da afirmação de que a métrica TCR é C = I × S × H^β?",
+        "retrieval": {
+          "top3_chunks": [
+            {
+              "rank": 1,
+              "chunk_id": "CORPUS-011#p4_04",
+              "score": 0.1562777391196012,
+              "corpus_id": "CORPUS-011"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "CORPUS-003#p8_02",
+              "score": 0.13498629108882412,
+              "corpus_id": "CORPUS-003"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "CORPUS-003#p3_02",
+              "score": 0.12392522852967908,
+              "corpus_id": "CORPUS-003"
+            }
+          ],
+          "top5_chunks": [
+            {
+              "rank": 1,
+              "chunk_id": "CORPUS-011#p4_04",
+              "score": 0.1562777391196012,
+              "corpus_id": "CORPUS-011"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "CORPUS-003#p8_02",
+              "score": 0.13498629108882412,
+              "corpus_id": "CORPUS-003"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "CORPUS-003#p3_02",
+              "score": 0.12392522852967908,
+              "corpus_id": "CORPUS-003"
+            },
+            {
+              "rank": 4,
+              "chunk_id": "CORPUS-003#p11_01",
+              "score": 0.11255810751482298,
+              "corpus_id": "CORPUS-003"
+            },
+            {
+              "rank": 5,
+              "chunk_id": "CORPUS-004#p3_01",
+              "score": 0.1121163308521496,
+              "corpus_id": "CORPUS-004"
+            }
+          ],
+          "expected_chunk_prefix": "CORPUS-002#p1",
+          "expected_in_top3": false,
+          "expected_in_top5": false,
+          "expected_rank": null,
+          "retrieval_hit": false
+        },
+        "B1_status_retrieval_only": "FAIL-SYSTEM"
+      }
+    ],
+    "n_runs": 3,
+    "hits": 0,
+    "deterministic": true,
+    "top3_sets": [
+      [
+        "CORPUS-011#p4_04",
+        "CORPUS-003#p8_02",
+        "CORPUS-003#p3_02"
+      ],
+      [
+        "CORPUS-011#p4_04",
+        "CORPUS-003#p8_02",
+        "CORPUS-003#p3_02"
+      ],
+      [
+        "CORPUS-011#p4_04",
+        "CORPUS-003#p8_02",
+        "CORPUS-003#p3_02"
+      ]
+    ],
+    "baseline_B1": "FAIL-SYSTEM",
+    "baseline_retrieval_hit_rate": 0.0
+  },
+  "stage_6_2_2_experiment_A_control": {
+    "name": "A — Controle",
+    "description": "TF-IDF atual (sklearn TfidfVectorizer), sem alteração",
+    "intervention": "NENHUMA",
+    "baseline_b1": "FAIL-SYSTEM",
+    "retrieval_hit_rate": 0.0,
+    "deterministic": true,
+    "runs": [
+      {
+        "run_idx": 1,
+        "timestamp": "2026-08-17T22:29:34+00:00",
+        "pergunta": "Qual é a fonte exata da afirmação de que a métrica TCR é C = I × S × H^β?",
+        "retrieval": {
+          "top3_chunks": [
+            {
+              "rank": 1,
+              "chunk_id": "CORPUS-011#p4_04",
+              "score": 0.1562777391196012,
+              "corpus_id": "CORPUS-011"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "CORPUS-003#p8_02",
+              "score": 0.13498629108882412,
+              "corpus_id": "CORPUS-003"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "CORPUS-003#p3_02",
+              "score": 0.12392522852967908,
+              "corpus_id": "CORPUS-003"
+            }
+          ],
+          "top5_chunks": [
+            {
+              "rank": 1,
+              "chunk_id": "CORPUS-011#p4_04",
+              "score": 0.1562777391196012,
+              "corpus_id": "CORPUS-011"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "CORPUS-003#p8_02",
+              "score": 0.13498629108882412,
+              "corpus_id": "CORPUS-003"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "CORPUS-003#p3_02",
+              "score": 0.12392522852967908,
+              "corpus_id": "CORPUS-003"
+            },
+            {
+              "rank": 4,
+              "chunk_id": "CORPUS-003#p11_01",
+              "score": 0.11255810751482298,
+              "corpus_id": "CORPUS-003"
+            },
+            {
+              "rank": 5,
+              "chunk_id": "CORPUS-004#p3_01",
+              "score": 0.1121163308521496,
+              "corpus_id": "CORPUS-004"
+            }
+          ],
+          "expected_chunk_prefix": "CORPUS-002#p1",
+          "expected_in_top3": false,
+          "expected_in_top5": false,
+          "expected_rank": null,
+          "retrieval_hit": false
+        },
+        "B1_status_retrieval_only": "FAIL-SYSTEM"
+      },
+      {
+        "run_idx": 2,
+        "timestamp": "2026-08-17T22:29:34+00:00",
+        "pergunta": "Qual é a fonte exata da afirmação de que a métrica TCR é C = I × S × H^β?",
+        "retrieval": {
+          "top3_chunks": [
+            {
+              "rank": 1,
+              "chunk_id": "CORPUS-011#p4_04",
+              "score": 0.1562777391196012,
+              "corpus_id": "CORPUS-011"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "CORPUS-003#p8_02",
+              "score": 0.13498629108882412,
+              "corpus_id": "CORPUS-003"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "CORPUS-003#p3_02",
+              "score": 0.12392522852967908,
+              "corpus_id": "CORPUS-003"
+            }
+          ],
+          "top5_chunks": [
+            {
+              "rank": 1,
+              "chunk_id": "CORPUS-011#p4_04",
+              "score": 0.1562777391196012,
+              "corpus_id": "CORPUS-011"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "CORPUS-003#p8_02",
+              "score": 0.13498629108882412,
+              "corpus_id": "CORPUS-003"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "CORPUS-003#p3_02",
+              "score": 0.12392522852967908,
+              "corpus_id": "CORPUS-003"
+            },
+            {
+              "rank": 4,
+              "chunk_id": "CORPUS-003#p11_01",
+              "score": 0.11255810751482298,
+              "corpus_id": "CORPUS-003"
+            },
+            {
+              "rank": 5,
+              "chunk_id": "CORPUS-004#p3_01",
+              "score": 0.1121163308521496,
+              "corpus_id": "CORPUS-004"
+            }
+          ],
+          "expected_chunk_prefix": "CORPUS-002#p1",
+          "expected_in_top3": false,
+          "expected_in_top5": false,
+          "expected_rank": null,
+          "retrieval_hit": false
+        },
+        "B1_status_retrieval_only": "FAIL-SYSTEM"
+      },
+      {
+        "run_idx": 3,
+        "timestamp": "2026-08-17T22:29:34+00:00",
+        "pergunta": "Qual é a fonte exata da afirmação de que a métrica TCR é C = I × S × H^β?",
+        "retrieval": {
+          "top3_chunks": [
+            {
+              "rank": 1,
+              "chunk_id": "CORPUS-011#p4_04",
+              "score": 0.1562777391196012,
+              "corpus_id": "CORPUS-011"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "CORPUS-003#p8_02",
+              "score": 0.13498629108882412,
+              "corpus_id": "CORPUS-003"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "CORPUS-003#p3_02",
+              "score": 0.12392522852967908,
+              "corpus_id": "CORPUS-003"
+            }
+          ],
+          "top5_chunks": [
+            {
+              "rank": 1,
+              "chunk_id": "CORPUS-011#p4_04",
+              "score": 0.1562777391196012,
+              "corpus_id": "CORPUS-011"
+            },
+            {
+              "rank": 2,
+              "chunk_id": "CORPUS-003#p8_02",
+              "score": 0.13498629108882412,
+              "corpus_id": "CORPUS-003"
+            },
+            {
+              "rank": 3,
+              "chunk_id": "CORPUS-003#p3_02",
+              "score": 0.12392522852967908,
+              "corpus_id": "CORPUS-003"
+            },
+            {
+              "rank": 4,
+              "chunk_id": "CORPUS-003#p11_01",
+              "score": 0.11255810751482298,
+              "corpus_id": "CORPUS-003"
+            },
+            {
+              "rank": 5,
+              "chunk_id": "CORPUS-004#p3_01",
+              "score": 0.1121163308521496,
+              "corpus_id": "CORPUS-004"
+            }
+          ],
+          "expected_chunk_prefix": "CORPUS-002#p1",
+          "expected_in_top3": false,
+          "expected_in_top5": false,
+          "expected_rank": null,
+          "retrieval_hit": false
+        },
+        "B1_status_retrieval_only": "FAIL-SYSTEM"
+      }
+    ]
+  },
+  "diagnosis": {
+    "question_tokens_count": 18,
+    "question_math_symbols": [
+      "=",
+      "×",
+      "×",
+      "β"
+    ],
+    "expected_chunk_id": "CORPUS-002#p1_01",
+    "expected_chunk_math_symbols": [
+      "=",
+      "×",
+      "×",
+      "β",
+      "β",
+      "=",
+      "=",
+      "="
+    ],
+    "expected_chunk_tokens_count": 213,
+    "shared_tokens_question_expected": 7,
+    "shared_math_symbols": [
+      "=",
+      "β",
+      "×"
+    ],
+    "top1_chunk_id": "CORPUS-011#p4_04",
+    "top1_chunk_math_symbols": [
+      "=",
+      "="
+    ],
+    "top1_shared_tokens": 7,
+    "tfidf_token_pattern": "(?u)\\b[a-zA-ZÀ-ÿ][a-zA-ZÀ-ÿ0-9_]+\\b",
+    "tfidf_vocab_size": 4096,
+    "beta_in_vocab": false,
+    "tcr_in_vocab": true,
+    "hypothesis": "TFIDF_WEIGHTING_ISSUE"
+  },
+  "next_steps": [
+    "6.2.3 — Experimento B: Normalização matemática",
+    "6.2.4 — Experimento C: Chunking matemático",
+    "6.2.5 — Experimento D: Tokenização matemática",
+    "6.2.6 — Comparação estatística/diagnóstica",
+    "6.2.7 — Rebenchmark B1-B7 da melhor intervenção",
+    "6.2.8 — Veredito (RESOLVED / PARTIALLY RESOLVED / KNOWN LIMITATION)"
+  ]
+}

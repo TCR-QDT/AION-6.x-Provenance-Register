@@ -1,0 +1,402 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "generated_at": "2026-08-17T03:52:02+00:00",
+    "author_structure": "Edson C. Nascimento (Projetista Master)",
+    "author_implementation": "IA Curadora",
+    "protocol": "AION-CORPUS-001 v1.2.0 + ONTOLOGY v1.0.0 + graphrag_enriched_v2.0"
+  },
+  "states": [
+    {
+      "concept_id": "C",
+      "concept_label": "Coerência Relacional (C)",
+      "valid_at": "UNKNOWN",
+      "document_date": "2026-08-10",
+      "document": "CORPUS-005",
+      "version": "v6.1 aspiracional",
+      "state": "C = I × S × H^β, β canônico não declarado",
+      "change_type": "STABLE",
+      "previous_state": null,
+      "evidence_text": "\"uma métrica unificada C = I × S × H^β para a coerência informacional\"",
+      "evidence_type": "[E]",
+      "note": "Cover Letter PT-BR descreve plano aspiracional v6.1; métrica fundamental já estável."
+    },
+    {
+      "concept_id": "C",
+      "concept_label": "Coerência Relacional (C)",
+      "valid_at": "2026-08-12",
+      "document_date": "2026-08-12",
+      "document": "CORPUS-002",
+      "version": "v6.2",
+      "state": "C = I × S × H^β, β=0.5 calibrado via LOOCV sobre 12 fixtures sintéticas",
+      "change_type": "REFINED",
+      "previous_state": "C = I × S × H^β, β canônico não declarado",
+      "evidence_text": "\"We adopt β = 0.5 as the canonical value throughout this work\"",
+      "evidence_type": "[E]",
+      "note": "Paper A v6.2 FINAL — β calibrado, termo de recursão R removido por irrelevância empírica (Sobol <1.1%)."
+    },
+    {
+      "concept_id": "beta",
+      "concept_label": "β (calibração LOOCV)",
+      "valid_at": "UNKNOWN",
+      "document_date": "UNKNOWN",
+      "document": "NÃO DOCUMENTADO ANTES DE v6.2",
+      "version": "pre-v6.2",
+      "state": "β não explicitamente calibrado; presunção de β=1 ou valor nominal",
+      "change_type": "INTRODUCED",
+      "previous_state": null,
+      "evidence_text": "Ausência documental — inferência do gap entre v5.1 (BJoP feedback) e v6.2 FINAL",
+      "evidence_type": "[I]",
+      "note": "Estado reconstruído por inferência; marcado UNKNOWN."
+    },
+    {
+      "concept_id": "beta",
+      "concept_label": "β (calibração LOOCV)",
+      "valid_at": "2026-08-12",
+      "document_date": "2026-08-12",
+      "document": "CORPUS-002",
+      "version": "v6.2",
+      "state": "β=0.5, calibrado via LOOCV, consistência = 1.0 em [0.1, 1.5]",
+      "change_type": "REFINED",
+      "previous_state": "β não explicitamente calibrado",
+      "evidence_text": "\"calibrated via leave-one-out cross-validation (LOOCV) over 12 synthetic connectome fixtures\"",
+      "evidence_type": "[E]",
+      "note": "Inconsistência #1 do Paper A resolvida nesta versão."
+    },
+    {
+      "concept_id": "R_recursion",
+      "concept_label": "Termo de recursão R^α",
+      "valid_at": "UNKNOWN",
+      "document_date": "UNKNOWN",
+      "document": "Paper A v5.1/v6.0 (não no corpus)",
+      "version": "pre-v6.2",
+      "state": "R^α com α=1.3 como parte da métrica C",
+      "change_type": "INTRODUCED",
+      "previous_state": null,
+      "evidence_text": "\"Earlier versions of TCR included a recursion term R with exponent α = 1.3\"",
+      "evidence_type": "[E]",
+      "note": "Referência ao estado anterior feita no Paper A v6.2 (p.1, linha 90-91)."
+    },
+    {
+      "concept_id": "R_recursion",
+      "concept_label": "Termo de recursão R^α",
+      "valid_at": "2026-08-12",
+      "document_date": "2026-08-12",
+      "document": "CORPUS-002",
+      "version": "v6.2",
+      "state": "REMOVIDO da métrica C",
+      "change_type": "REVOKED",
+      "previous_state": "R^α com α=1.3 como parte da métrica C",
+      "evidence_text": "\"global sensitivity analysis (Sobol) reveals that R contributes less than 1.1% of the variance in C, rendering it empirically irrelevant. We therefore drop it in this version\"",
+      "evidence_type": "[E]",
+      "note": "Inconsistência #2 do Paper A resolvida — abandono por irrelevância empírica (parsimônia)."
+    },
+    {
+      "concept_id": "Phi_cat",
+      "concept_label": "Functor Φcat",
+      "valid_at": "2026-08-10",
+      "document_date": "2026-08-10",
+      "document": "CORPUS-003",
+      "version": "1.0",
+      "state": "Φcat : C → Set, X ↦ Hom_C(•, X) — Conjectura (Passo 16)",
+      "change_type": "INTRODUCED",
+      "previous_state": null,
+      "evidence_text": "\"Define-se o functor Φcat : C → Set, X ↦ Hom_C(•, X)\"",
+      "evidence_type": "[E]",
+      "note": "CORPUS-003 é Parte IV de um programa maior; passos 1-15 não estão no corpus — estado anterior desconhecido."
+    },
+    {
+      "concept_id": "Q_munu",
+      "concept_label": "Tensor Qµν",
+      "valid_at": "2026-08-10",
+      "document_date": "2026-08-10",
+      "document": "CORPUS-003",
+      "version": "1.0",
+      "state": "Forma bilinear simétrica (0,2), 5 axiomas (Q1-Q5) — Proposta (Passo 17)",
+      "change_type": "INTRODUCED",
+      "previous_state": null,
+      "evidence_text": "\"Definição 3.1 (Tensor Qµν)... Q1. Simetria; Q2. Conservação covariante; Q3. Covariância geral; Q4. Traço bem definido; Q5. Decaimento assintótico\"",
+      "evidence_type": "[E]",
+      "note": "CORPUS-003 é Parte IV; estado anterior desconhecido."
+    },
+    {
+      "concept_id": "Einstein_mod",
+      "concept_label": "Equação de Einstein modificada",
+      "valid_at": "2026-08-10",
+      "document_date": "2026-08-10",
+      "document": "CORPUS-003",
+      "version": "1.0",
+      "state": "Gµν = 8πG(Tµν + Qµν) — Proposta teórica",
+      "change_type": "INTRODUCED",
+      "previous_state": null,
+      "evidence_text": "\"a equação modificada Gµν = 8πG(Tµν + Qµν)\"",
+      "evidence_type": "[E]",
+      "note": "Derivação variacional pendente (lacuna declarada na Tabela 2)."
+    },
+    {
+      "concept_id": "Power_law_T2",
+      "concept_label": "Power-law T₂ (FMO)",
+      "valid_at": "UNKNOWN",
+      "document_date": "UNKNOWN",
+      "document": "Paper B v6.0 (não no corpus)",
+      "version": "v6.0",
+      "state": "T₂ = K·J^1.205·λ^(-1.114)·γ^(-1.068)·T^(-0.795), R²=0.914 (dímero 2 sítios)",
+      "change_type": "INTRODUCED",
+      "previous_state": null,
+      "evidence_text": "\"Em nosso trabalho anterior (v6.0), reportamos um escalonamento power-law...\"",
+      "evidence_type": "[E]",
+      "note": "Estado anterior citado no Paper B v6.1; data do documento original desconhecida."
+    },
+    {
+      "concept_id": "Power_law_T2",
+      "concept_label": "Power-law T₂ (FMO)",
+      "valid_at": "2026-08-12",
+      "document_date": "2026-08-12",
+      "document": "CORPUS-004",
+      "version": "v6.1",
+      "state": "T₂ = (1.567×10⁴)·J^0.831·λ^(-0.843)·γ^(-0.766)·T^(-0.261), R²=0.988 (FMO 7 sítios)",
+      "change_type": "REFINED",
+      "previous_state": "T₂ = K·J^1.205·λ^(-1.114)·γ^(-1.068)·T^(-0.795) (dímero)",
+      "evidence_text": "\"obtemos T₂ = K J^0.831 λ^(-0.843) γ^(-0.766) T^(-0.261) com R² = 0.988\"",
+      "evidence_type": "[E]",
+      "note": "Inconsistência #3 do Paper A resolvida — re-derivação a partir do Hamiltoniano FMO completo (375 combinações)."
+    },
+    {
+      "concept_id": "eta_hyp",
+      "concept_label": "Hipótese η (cross-scale)",
+      "valid_at": "UNKNOWN",
+      "document_date": "UNKNOWN",
+      "document": "Paper B v6.0 (não no corpus)",
+      "version": "v6.0",
+      "state": "Hipótese η proposta — comensurabilidade cross-scale entre δβ e δST",
+      "change_type": "INTRODUCED",
+      "previous_state": null,
+      "evidence_text": "\"Reportamos também um índice de comensurabilidade cross-scale η...\"",
+      "evidence_type": "[E]",
+      "note": "Estado anterior citado no Paper B v6.1."
+    },
+    {
+      "concept_id": "eta_hyp",
+      "concept_label": "Hipótese η (cross-scale)",
+      "valid_at": "2026-08-12",
+      "document_date": "2026-08-12",
+      "document": "CORPUS-004",
+      "version": "v6.1",
+      "state": "HIPÓTESE RETIRADA — critério |δβ − δST|/δβ < 0.2 não satisfeito (razão = 0.291)",
+      "change_type": "REVOKED",
+      "previous_state": "Hipótese η proposta — comensurabilidade cross-scale",
+      "evidence_text": "\"O critério não é satisfeito (razão = 0.291), levando-nos a retrair a hipótese η da análise presente\"",
+      "evidence_type": "[E]",
+      "note": "Inconsistência #5 do Paper A resolvida por retração formal."
+    },
+    {
+      "concept_id": "consciencia",
+      "concept_label": "Consciência",
+      "valid_at": "2026-08-16",
+      "document_date": "2026-08-16",
+      "document": "AION-CORPUS-001 Handoff original",
+      "version": "Handoff",
+      "state": "Mencionado no Handoff original como \"Nível 0 — Campo Primordial da Consciência\" — inferência do curador, não presente nos textos",
+      "change_type": "INTRODUCED",
+      "previous_state": null,
+      "evidence_text": "Handoff original menciona \"Nível 0 — Campo Primordial da Consciência\"",
+      "evidence_type": "[I]",
+      "note": "Inferência posteriormente descreditada pela auditoria T4 — termo não aparece em nenhum dos 5 textos."
+    },
+    {
+      "concept_id": "consciencia",
+      "concept_label": "Consciência",
+      "valid_at": "2026-08-16",
+      "document_date": "2026-08-16",
+      "document": "Auditoria da ontologia v1.0.0",
+      "version": "v1.0.0",
+      "state": "AUSÊNCIA CONFIRMADA — termo \"consciência\" não aparece em nenhum dos 5 textos extraídos. Única ponte: Paper A cita Tononi (Φ-IIT) como referência crítica, não como conceito do programa.",
+      "change_type": "CONTRADICTED",
+      "previous_state": "Mencionado no Handoff como sinônimo de CORPUS-003",
+      "evidence_text": "Auditoria de corpus: termo \"consciência\" ausente de CORPUS-001 a 005",
+      "evidence_type": "[E]",
+      "note": "T4 resolvida na ontologia v1.0.0 — Handoff original continha inferência."
+    },
+    {
+      "concept_id": "campo_primordial",
+      "concept_label": "Campo Primordial",
+      "valid_at": "2026-08-16",
+      "document_date": "2026-08-16",
+      "document": "AION-CORPUS-001 Handoff original",
+      "version": "Handoff",
+      "state": "Atribuído ao CORPUS-003 no Handoff original como subtítulo descritivo",
+      "change_type": "INTRODUCED",
+      "previous_state": null,
+      "evidence_text": "Handoff original: \"Documento 3 — Nível 0 (Campo Primordial)\"",
+      "evidence_type": "[I]",
+      "note": "Inferência do curador a partir do contexto; termo não aparece no texto do CORPUS-003."
+    },
+    {
+      "concept_id": "campo_primordial",
+      "concept_label": "Campo Primordial",
+      "valid_at": "2026-08-17",
+      "document_date": "2026-08-17",
+      "document": "Auditoria da ontologia v1.0.0",
+      "version": "v1.0.0",
+      "state": "AUSÊNCIA CONFIRMADA — termo \"Campo Primordial\" não aparece no texto extraído do CORPUS-003. Conceito removido da ontologia v1.0.0.",
+      "change_type": "CONTRADICTED",
+      "previous_state": "Atribuído ao CORPUS-003 no Handoff",
+      "evidence_text": "Auditoria de corpus: termo \"Campo Primordial\" ausente do CORPUS-003",
+      "evidence_type": "[E]",
+      "note": "Conceito removido da ontologia v1.0.0 (Cluster B)."
+    },
+    {
+      "concept_id": "edge_paperA_to_parteIV",
+      "concept_label": "Dependência ontológica Paper A → Parte IV",
+      "valid_at": "2026-08-16",
+      "document_date": "2026-08-16",
+      "document": "AION-CORPUS-001 HTML canônico v1.2.0",
+      "version": "v1.2.0",
+      "state": "CORPUS-002 (Paper A) depende ontologicamente do CORPUS-003 (Parte IV)",
+      "change_type": "INTRODUCED",
+      "previous_state": null,
+      "evidence_text": "HTML canônico seção 3: \"Paper A depende ontologicamente da Parte IV\"",
+      "evidence_type": "[I]",
+      "note": "Inferência do curador no registro do corpus."
+    },
+    {
+      "concept_id": "edge_paperA_to_parteIV",
+      "concept_label": "Dependência ontológica Paper A → Parte IV",
+      "valid_at": "2026-08-17",
+      "document_date": "2026-08-17",
+      "document": "Auditoria da ontologia v1.0.0",
+      "version": "v1.0.0",
+      "state": "REVOGADA — substituída por paralelismo epistêmico",
+      "change_type": "REVOKED",
+      "previous_state": "Paper A depende ontologicamente da Parte IV",
+      "evidence_text": "\"deliberately separated to maintain focus and falsifiability\" (Paper A v6.2, p.5-6)",
+      "evidence_type": "[E]",
+      "note": "Revogação baseada em citação direta do Paper A v6.2."
+    },
+    {
+      "concept_id": "Lakatos_program",
+      "concept_label": "Programa de pesquisa Lakatosiano",
+      "valid_at": "2026-08-10",
+      "document_date": "2026-08-10",
+      "document": "CORPUS-003",
+      "version": "1.0",
+      "state": "Auto-designação explícita — núcleo firme + cinturão protetor; núcleo = formalização categórico-tensorial unificada",
+      "change_type": "INTRODUCED",
+      "previous_state": null,
+      "evidence_text": "\"A leitura conjunta dos três passos sugere uma estrutura epistêmica análoga à distinção de Lakatos\"",
+      "evidence_type": "[E]",
+      "note": "CORPUS-003 declara explicitamente a estrutura lakatosiana."
+    }
+  ],
+  "grouped_by_concept": {
+    "C": 2,
+    "beta": 2,
+    "R_recursion": 2,
+    "Phi_cat": 1,
+    "Q_munu": 1,
+    "Einstein_mod": 1,
+    "Power_law_T2": 2,
+    "eta_hyp": 2,
+    "consciencia": 2,
+    "campo_primordial": 2,
+    "edge_paperA_to_parteIV": 2,
+    "Lakatos_program": 1
+  },
+  "tpc": {
+    "total_states": 20,
+    "states_with_verified_date": 15,
+    "states_with_unknown_date": 5,
+    "tpc": 0.75,
+    "tpc_percentage": "75.0%"
+  },
+  "change_type_distribution": {
+    "STABLE": 1,
+    "REFINED": 3,
+    "INTRODUCED": 11,
+    "REVOKED": 3,
+    "CONTRADICTED": 2
+  },
+  "test_results": {
+    "AION-TEMP-001": {
+      "test_id": "AION-TEMP-001",
+      "question": "Como o conceito de Coerência Relacional evoluiu no corpus fundacional?",
+      "answer": "Evolução documental de 'Coerência Relacional' (C):\n\n• 2026-08-12 (doc: CORPUS-002 v6.2)\n  Estado: C = I × S × H^β, β=0.5 calibrado via LOOCV sobre 12 fixtures sintéticas\n  Mudança: REFINED\n  Estado anterior: C = I × S × H^β, β canônico não declarado\n  Evidência: \"We adopt β = 0.5 as the canonical value throughout this work\"...\n  Tipo: [E]\n\n• UNKNOWN (doc: CORPUS-005 v6.1 aspiracional)\n  Estado: C = I × S × H^β, β canônico não declarado\n  Mudança: STABLE\n  Evidência: \"uma métrica unificada C = I × S × H^β para a coerência informacional\"...\n  Tipo: [E]\n",
+      "concept_count_relevant": 2
+    },
+    "AION-TEMP-002": {
+      "test_id": "AION-TEMP-002",
+      "question": "Como o conceito de Consciência evoluiu?",
+      "answer": "Evolução documental do conceito de 'Consciência':\n\nRESPOSTA EPISTEMICAMENTE RESPONSÁVEL:\n\n• 2026-08-16 (doc: AION-CORPUS-001 Handoff original)\n  Estado: Mencionado no Handoff original como \"Nível 0 — Campo Primordial da Consciência\" — inferência do curador, não presente nos textos\n  Mudança: INTRODUCED\n  Evidência: [I]\n\n• 2026-08-16 (doc: Auditoria da ontologia v1.0.0)\n  Estado: AUSÊNCIA CONFIRMADA — termo \"consciência\" não aparece em nenhum dos 5 textos extraídos. Única ponte: Paper A cita Tononi (Φ-IIT) como referência crítica, não como conceito do programa.\n  Mudança: CONTRADICTED\n  Evidência: [E]\n\nCONCLUSÃO: O conceito de 'consciência' nunca foi um conceito do programa TCR.\nSua presença no Handoff original foi inferência do curador, descreditada na auditoria T4.\nA única menção textual a 'consciência' no corpus é a referência crítica a Tononi (Φ-IIT) no Paper A v6.2.",
+      "concept_count_relevant": 0
+    },
+    "AION-TEMP-003": {
+      "test_id": "AION-TEMP-003",
+      "question": "Como a relação entre Campo Primordial e Consciência evoluiu?",
+      "answer": "Evolução documental da relação 'Campo Primordial' ↔ 'Consciência':\n\nRESPOSTA EPISTEMICAMENTE RESPONSÁVEL:\n\nAmbos os conceitos:\n• Foram INFERIDOS no Handoff original (16/08/2026) a partir de contexto, não de texto.\n• Foram CONTRADITOS pela auditoria da ontologia v1.0.0 (17/08/2026) — termos não aparecem nos textos.\n• Foram REMOVIDOS da ontologia v1.0.0 como conceitos do programa.\n\nPortanto, a relação entre eles nunca existiu documentalmente.\nA relação foi uma inferência curatorial posteriormente descreditada.\n\nNão é possível estabelecer uma 'evolução' de uma relação que nunca teve evidência textual.",
+      "concept_count_relevant": 0
+    },
+    "AION-TEMP-004": {
+      "test_id": "AION-TEMP-004",
+      "question": "Quais conceitos foram abandonados, modificados ou enfraquecidos?",
+      "answer": "Conceitos abandonados (REVOKED) ou contrariados (CONTRADICTED) no corpus:\n\n• Termo de recursão R^α (R_recursion)\n  Data: 2026-08-12 (doc: CORPUS-002 v6.2)\n  Estado final: REMOVIDO da métrica C\n  Estado anterior: R^α com α=1.3 como parte da métrica C\n  Evidência: \"global sensitivity analysis (Sobol) reveals that R contributes less than 1.1% of the variance in C, rendering it empiri\n  Tipo: [E]\n\n• Hipótese η (cross-scale) (eta_hyp)\n  Data: 2026-08-12 (doc: CORPUS-004 v6.1)\n  Estado final: HIPÓTESE RETIRADA — critério |δβ − δST|/δβ < 0.2 não satisfeito (razão = 0.291)\n  Estado anterior: Hipótese η proposta — comensurabilidade cross-scale\n  Evidência: \"O critério não é satisfeito (razão = 0.291), levando-nos a retrair a hipótese η da análise presente\"\n  Tipo: [E]\n\n• Consciência (consciencia)\n  Data: 2026-08-16 (doc: Auditoria da ontologia v1.0.0 v1.0.0)\n  Estado final: AUSÊNCIA CONFIRMADA — termo \"consciência\" não aparece em nenhum dos 5 textos extraídos. Única ponte: Paper A cita Tononi (Φ-IIT) como referência crítica, não como conceito do programa.\n  Estado anterior: Mencionado no Handoff como sinônimo de CORPUS-003\n  Evidência: Auditoria de corpus: termo \"consciência\" ausente de CORPUS-001 a 005\n  Tipo: [E]\n\n• Campo Primordial (campo_primordial)\n  Data: 2026-08-17 (doc: Auditoria da ontologia v1.0.0 v1.0.0)\n  Estado final: AUSÊNCIA CONFIRMADA — termo \"Campo Primordial\" não aparece no texto extraído do CORPUS-003. Conceito removido da ontologia v1.0.0.\n  Estado anterior: Atribuído ao CORPUS-003 no Handoff\n  Evidência: Auditoria de corpus: termo \"Campo Primordial\" ausente do CORPUS-003\n  Tipo: [E]\n\n• Dependência ontológica Paper A → Parte IV (edge_paperA_to_parteIV)\n  Data: 2026-08-17 (doc: Auditoria da ontologia v1.0.0 v1.0.0)\n  Estado final: REVOGADA — substituída por paralelismo epistêmico\n  Estado anterior: Paper A depende ontologicamente da Parte IV\n  Evidência: \"deliberately separated to maintain focus and falsifiability\" (Paper A v6.2, p.5-6)\n  Tipo: [E]\n",
+      "concept_count_relevant": 0
+    },
+    "AION-TEMP-005": {
+      "test_id": "AION-TEMP-005",
+      "question": "Quais conceitos permaneceram estáveis?",
+      "answer": "Conceitos estáveis (STABLE) ou sem modificação após INTRODUCED:\n\nEstados STABLE: 1\n  • Coerência Relacional (C) (C) — UNKNOWN — C = I × S × H^β, β canônico não declarado\n\nConceitos INTRODUCED sem refinamento posterior (estável desde introdução):\n  • Functor Φcat (Phi_cat) — 2026-08-10 — Φcat : C → Set, X ↦ Hom_C(•, X) — Conjectura (Passo 16)\n  • Tensor Qµν (Q_munu) — 2026-08-10 — Forma bilinear simétrica (0,2), 5 axiomas (Q1-Q5) — Proposta (Passo 17)\n  • Equação de Einstein modificada (Einstein_mod) — 2026-08-10 — Gµν = 8πG(Tµν + Qµν) — Proposta teórica\n  • Programa de pesquisa Lakatosiano (Lakatos_program) — 2026-08-10 — Auto-designação explícita — núcleo firme + cinturão protetor; núcleo = formaliza",
+      "concept_count_relevant": 0
+    }
+  },
+  "doc_metadata": {
+    "CORPUS-001": {
+      "version": "0.1.0",
+      "document_date": "UNKNOWN",
+      "kind": "normativo",
+      "short_title": "AION-DOC-000"
+    },
+    "CORPUS-002": {
+      "version": "v6.2",
+      "document_date": "2026-08-12",
+      "kind": "paper_FINAL",
+      "short_title": "Paper A",
+      "previous_versions": [
+        {
+          "version": "v5.1",
+          "document_date": "UNKNOWN",
+          "note": "Submetido ao Brazilian Journal of Physics — feedback recebido, citado em Acknowledgments do Paper A v6.2"
+        },
+        {
+          "version": "v6.0",
+          "document_date": "UNKNOWN",
+          "note": "Incluía termo de recursão R^α com α=1.3; removido em v6.2"
+        }
+      ]
+    },
+    "CORPUS-003": {
+      "version": "1.0",
+      "document_date": "2026-08-10",
+      "kind": "documento_teorico_difusao_controlada",
+      "short_title": "Parte IV"
+    },
+    "CORPUS-004": {
+      "version": "v6.1",
+      "document_date": "2026-08-12",
+      "kind": "paper_FINAL_rascunho",
+      "short_title": "Paper B",
+      "previous_versions": [
+        {
+          "version": "v6.0",
+          "document_date": "UNKNOWN",
+          "note": "ST=-0.795 (dímero 2 sítios); hipótese η proposta"
+        }
+      ]
+    },
+    "CORPUS-005": {
+      "version": "NÃO DECLARADO",
+      "document_date": "2026-08-10",
+      "kind": "carta_submissao_v6.1_aspiracional",
+      "short_title": "Cover Letter PT-BR"
+    }
+  }
+}

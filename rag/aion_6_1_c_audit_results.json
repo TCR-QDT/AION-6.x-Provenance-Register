@@ -1,0 +1,346 @@
+{
+  "metadata": {
+    "experiment": "AION-6.1-C — Auditoria de Aquisição",
+    "timestamp": "2026-08-17T21:13:24+00:00",
+    "author_structure": "Edson C. Nascimento (Projetista Master)",
+    "author_implementation": "IA Curadora"
+  },
+  "identification_curatorial": {
+    "Paper_A_v6.1_REVTeX_COMPLETE.pdf": {
+      "curatorial_id": "Paper A v6.1 oficial",
+      "document_id": "CORPUS-006",
+      "version": "v6.1",
+      "language": "EN",
+      "state": "DRAFT (transição para v6.2)"
+    },
+    "Paper_A_v6.1_REVTeX_COMPLETE .pdf": {
+      "curatorial_id": "Paper A v6.1 revisão posterior",
+      "document_id": "CORPUS-007",
+      "version": "v6.1-revision",
+      "language": "EN",
+      "state": "REVISÃO POSTERIOR (data posterior ao v6.2)"
+    },
+    "Paper_B_QDT_v6.1_PT.pdf": {
+      "curatorial_id": "Paper B v6.1 PT (novo, 5 págs)",
+      "document_id": "CORPUS-011",
+      "version": "v6.1",
+      "language": "PT-BR",
+      "state": "NOVO Paper B v6.1 expandido"
+    },
+    "Paper_A_v6.2_FINAL.pdf": {
+      "curatorial_id": "Paper A v6.2 FINAL (substituto do v6.2 anterior)",
+      "document_id": "CORPUS-002-NEW",
+      "version": "v6.2",
+      "language": "EN",
+      "state": "SUBSTITUI o v6.2 anteriormente auditado"
+    }
+  },
+  "non_existent_documents": [
+    {
+      "document_id": "CORPUS-006-PREVIOUS-ATTEMPT",
+      "name": "Paper A v6.0",
+      "state": "DOCUMENTO NÃO EXISTENTE / NÃO DISPONÍVEL NO HISTÓRICO DOCUMENTAL DECLARADO",
+      "note": "Projetista Master declarou em 17/08/2026 que esta versão não existe.",
+      "lacunas_afetadas": [
+        "B6 (data exata de abandono do R^α)"
+      ],
+      "epistemic_implication": "B6 NÃO pode ser CLOSED por esta via; restará apenas janela temporal v6.1→v6.2"
+    },
+    {
+      "document_id": "CORPUS-008-PREVIOUS-ATTEMPT",
+      "name": "Paper B v6.0",
+      "state": "DOCUMENTO NÃO EXISTENTE / NÃO DISPONÍVEL NO HISTÓRICO DOCUMENTAL DECLARADO",
+      "note": "Projetista Master declarou em 17/08/2026 que esta versão não existe.",
+      "lacunas_afetadas": [
+        "B6 (data exata de proposição do η)"
+      ],
+      "epistemic_implication": "B6 NÃO pode ser CLOSED por esta via; restará apenas inferência a partir de menção textual no v6.1"
+    }
+  ],
+  "audit_results": {
+    "Paper_A_v6.1_REVTeX_COMPLETE.pdf": {
+      "filename": "Paper_A_v6.1_REVTeX_COMPLETE.pdf",
+      "filepath": "/home/z/my-project/upload/Paper_A_v6.1_REVTeX_COMPLETE.pdf",
+      "curatorial_identification": {
+        "curatorial_id": "Paper A v6.1 oficial",
+        "document_id": "CORPUS-006",
+        "version": "v6.1",
+        "language": "EN",
+        "state": "DRAFT (transição para v6.2)"
+      },
+      "sha256": "bc2e75fdd6bc8a6d62e4081a5c2858a890809bb07c860ade5d777bf456670f09",
+      "file_size_bytes": 138780,
+      "pdf_metadata": {
+        "pdf_metadata": {
+          "title": "Relational Coherence in Biological Networks",
+          "author": "Edson C. do Nascimento",
+          "subject": "",
+          "creator": "LaTeX with hyperref",
+          "producer": "xdvipdfmx (0.1)",
+          "creationDate": "D:20260810224850-00'00'",
+          "modDate": ""
+        },
+        "page_count": 6,
+        "declared_date_in_text": "August 10, 2026",
+        "declared_version_in_text": "6.2",
+        "title_in_first_page": "Relational Coherence in Biological Networks:",
+        "has_recursion_R_alpha": false,
+        "has_eta_hypothesis": false,
+        "first_page_excerpt": "Relational Coherence in Biological Networks:\nA Quantitative Framework from Connectomes to EEG\nEdson Carvalho do Nascimento1, ∗\n1Independent researcher, Curitiba, Brazil\n(Dated: August 10, 2026)\nWe introduce the Relational Coherence Theory (TCR) for measuring informational coherence in\nbiological networks through the metric C = I×S×Hβ, where I is the normalized multivariate mutual\ninformation (integration), S is the graph automorphism index (symmetry), and H is the normalized\nspectral entropy. Th"
+      },
+      "identity_checks": {
+        "title_match": true,
+        "author_match": true,
+        "date_in_text": true,
+        "version_in_text": true
+      },
+      "curatorial_match": {
+        "expected_version": "v6.1",
+        "version_in_pdf_metadata": "6.2",
+        "version_match": false,
+        "expected_language": "EN"
+      },
+      "document_type": "Paper A",
+      "document_specific": {
+        "has_R_alpha": false,
+        "note": "R^α presente = versão pré-v6.2; R^α ausente = v6.2 ou posterior"
+      },
+      "audit_timestamp": "2026-08-17T21:13:24+00:00"
+    },
+    "Paper_A_v6.1_REVTeX_COMPLETE .pdf": {
+      "filename": "Paper_A_v6.1_REVTeX_COMPLETE .pdf",
+      "filepath": "/home/z/my-project/upload/Paper_A_v6.1_REVTeX_COMPLETE .pdf",
+      "curatorial_identification": {
+        "curatorial_id": "Paper A v6.1 revisão posterior",
+        "document_id": "CORPUS-007",
+        "version": "v6.1-revision",
+        "language": "EN",
+        "state": "REVISÃO POSTERIOR (data posterior ao v6.2)"
+      },
+      "sha256": "470cc395e0e7829379794480a62e7c1fb6bac4b622be171ad6c2554bd7346b2c",
+      "file_size_bytes": 326156,
+      "pdf_metadata": {
+        "pdf_metadata": {
+          "title": "Relational Coherence in Biological Networks",
+          "author": "Edson C. do Nascimento",
+          "subject": "",
+          "creator": "LaTeX with hyperref",
+          "producer": "pdfTeX-1.40.25",
+          "creationDate": "D:20260812181321-03'00'",
+          "modDate": "D:20260812181321-03'00'"
+        },
+        "page_count": 6,
+        "declared_date_in_text": "August 12, 2026",
+        "declared_version_in_text": "6.3",
+        "title_in_first_page": "Relational Coherence in Biological Networks:",
+        "has_recursion_R_alpha": false,
+        "has_eta_hypothesis": false,
+        "first_page_excerpt": "Relational Coherence in Biological Networks:\nA Quantitative Framework from Connectomes to EEG\nEdson Carvalho do Nascimento1, ∗\n1Independent researcher, Curitiba, Brazil\n(Dated: August 12, 2026)\nWe introduce the Relational Coherence Theory (TCR) for measuring informational coherence in\nbiological networks through the metric C = I×S×Hβ, where I is the normalized multivariate mutual\ninformation (integration), S is the graph automorphism index (symmetry), and H is the normalized\nspectral entropy. Th"
+      },
+      "identity_checks": {
+        "title_match": true,
+        "author_match": true,
+        "date_in_text": true,
+        "version_in_text": true
+      },
+      "curatorial_match": {
+        "expected_version": "v6.1-revision",
+        "version_in_pdf_metadata": "6.3",
+        "version_match": false,
+        "expected_language": "EN"
+      },
+      "document_type": "Paper A",
+      "document_specific": {
+        "has_R_alpha": false,
+        "note": "R^α presente = versão pré-v6.2; R^α ausente = v6.2 ou posterior"
+      },
+      "audit_timestamp": "2026-08-17T21:13:24+00:00"
+    },
+    "Paper_B_QDT_v6.1_PT.pdf": {
+      "filename": "Paper_B_QDT_v6.1_PT.pdf",
+      "filepath": "/home/z/my-project/upload/Paper_B_QDT_v6.1_PT.pdf",
+      "curatorial_identification": {
+        "curatorial_id": "Paper B v6.1 PT (novo, 5 págs)",
+        "document_id": "CORPUS-011",
+        "version": "v6.1",
+        "language": "PT-BR",
+        "state": "NOVO Paper B v6.1 expandido"
+      },
+      "sha256": "30476135b03b182d8d38c74fc2b276119a356c5ced293797fdf9ccc7f70ba916",
+      "file_size_bytes": 116434,
+      "pdf_metadata": {
+        "pdf_metadata": {
+          "title": "Escalonamento Quântico Dissipativo no Complexo FMO",
+          "author": "Edson Carvalho do Nascimento",
+          "subject": "",
+          "creator": "LaTeX with hyperref",
+          "producer": "xdvipdfmx (0.1)",
+          "creationDate": "D:20260817194631-00'00'",
+          "modDate": ""
+        },
+        "page_count": 5,
+        "declared_date_in_text": "August 17, 2026",
+        "declared_version_in_text": "6.0",
+        "title_in_first_page": "Escalonamento Quântico Dissipativo no Complexo Fenna-Matthews-Olson:",
+        "has_recursion_R_alpha": false,
+        "has_eta_hypothesis": true,
+        "first_page_excerpt": "Escalonamento Quântico Dissipativo no Complexo Fenna-Matthews-Olson:\nUm Expoente de Temperatura em Lei de Potência a partir da Topologia de 7 Sítios\nEdson Carvalho do Nascimento1, ∗\n1Pesquisador independente, Curitiba, Brasil\n(Dated: August 17, 2026)\nReportamos uma análise de escalonamento abrangente do tempo de coerência eletrônica T2 no\ncomplexo pigmento-proteico Fenna-Matthews-Olson (FMO) de Chlorobium tepidum, tratando os\nsete sítios cromofóricos de bacterioclorofila em pé de igualdade. Usan"
+      },
+      "identity_checks": {
+        "title_match": true,
+        "author_match": true,
+        "date_in_text": true,
+        "version_in_text": true
+      },
+      "curatorial_match": {
+        "expected_version": "v6.1",
+        "version_in_pdf_metadata": "6.0",
+        "version_match": false,
+        "expected_language": "PT-BR"
+      },
+      "document_type": "Paper B",
+      "document_specific": {
+        "has_eta_hypothesis": true,
+        "note": "η presente = versão pré-v6.1 final; η ausente = v6.1 final (retratada)"
+      },
+      "audit_timestamp": "2026-08-17T21:13:24+00:00"
+    },
+    "Paper_A_v6.2_FINAL.pdf": {
+      "filename": "Paper_A_v6.2_FINAL.pdf",
+      "filepath": "/home/z/my-project/upload/Paper_A_v6.2_FINAL.pdf",
+      "curatorial_identification": {
+        "curatorial_id": "Paper A v6.2 FINAL (substituto do v6.2 anterior)",
+        "document_id": "CORPUS-002-NEW",
+        "version": "v6.2",
+        "language": "EN",
+        "state": "SUBSTITUI o v6.2 anteriormente auditado"
+      },
+      "sha256": "971986d96c4ceb1ea5d7a17acdf2a54f4276403f2805c3945874304020adc433",
+      "file_size_bytes": 137520,
+      "pdf_metadata": {
+        "pdf_metadata": {
+          "title": "Relational Coherence in Biological Networks",
+          "author": "Edson C. do Nascimento",
+          "subject": "",
+          "creator": "LaTeX with hyperref",
+          "producer": "xdvipdfmx (0.1)",
+          "creationDate": "D:20260812212209-00'00'",
+          "modDate": ""
+        },
+        "page_count": 6,
+        "declared_date_in_text": "August 12, 2026",
+        "declared_version_in_text": "6.3",
+        "title_in_first_page": "Relational Coherence in Biological Networks:",
+        "has_recursion_R_alpha": false,
+        "has_eta_hypothesis": false,
+        "first_page_excerpt": "Relational Coherence in Biological Networks:\nA Quantitative Framework from Connectomes to EEG\nEdson Carvalho do Nascimento1, ∗\n1Independent researcher, Curitiba, Brazil\n(Dated: August 12, 2026)\nWe introduce the Relational Coherence Theory (TCR) for measuring informational coherence in\nbiological networks through the metric C = I×S×Hβ, where I is the normalized multivariate mutual\ninformation (integration), S is the graph automorphism index (symmetry), and H is the normalized\nspectral entropy. Th"
+      },
+      "identity_checks": {
+        "title_match": true,
+        "author_match": true,
+        "date_in_text": true,
+        "version_in_text": true
+      },
+      "curatorial_match": {
+        "expected_version": "v6.2",
+        "version_in_pdf_metadata": "6.3",
+        "version_match": false,
+        "expected_language": "EN"
+      },
+      "document_type": "Paper A",
+      "document_specific": {
+        "has_R_alpha": false,
+        "note": "R^α presente = versão pré-v6.2; R^α ausente = v6.2 ou posterior"
+      },
+      "audit_timestamp": "2026-08-17T21:13:24+00:00"
+    }
+  },
+  "comparison_results": {
+    "comparisons": [
+      {
+        "comparison": "Paper A v6.1 (138KB) vs Paper A v6.1 revisão (326KB)",
+        "file_a": "Paper_A_v6.1_REVTeX_COMPLETE.pdf",
+        "file_b": "Paper_A_v6.1_REVTeX_COMPLETE .pdf",
+        "same_sha256": false,
+        "different_size": true,
+        "creation_dates": {
+          "a": "D:20260810224850-00'00'",
+          "b": "D:20260812181321-03'00'"
+        },
+        "R_alpha_presence": {
+          "a": false,
+          "b": false
+        },
+        "verdict": "ARQUIVOS DIFERENTES"
+      },
+      {
+        "comparison": "Paper A v6.2 FINAL (novo, 137.520 B) vs Paper A v6.2 (corpus atual, 134.294 B)",
+        "file_a": "Paper_A_v6.2_FINAL.pdf (novo upload)",
+        "file_b": "Paper_A_v6.2_FINAL.pdf (corpus atual, do Passo 3)",
+        "size_difference_bytes": 3226,
+        "verdict": "VARIANTES — substituição requer confirmação explícita",
+        "note": "Tamanhos diferentes indicam que não são idênticos. Auditoria textual necessária antes da substituição."
+      },
+      {
+        "comparison": "Paper B v6.1 PT (novo, 5 págs) vs Paper B v6.1 PT-BR (corpus atual, 3 págs)",
+        "file_a": "Paper_B_QDT_v6.1_PT.pdf (novo upload)",
+        "file_b": "Paper_B_QDT_JCP_v6.1_PT-BR.pdf (corpus atual, do Passo 3)",
+        "page_count_a": 5,
+        "page_count_b": 3,
+        "page_difference": 2,
+        "verdict": "VARIANTES EXPANDIDAS — Paper B novo tem 2 páginas a mais",
+        "note": "NÃO substituir automaticamente. Auditoria textual necessária para verificar se é revisão expandida ou documento diferente."
+      }
+    ]
+  },
+  "ingestion_decisions": [
+    {
+      "filename": "Paper_A_v6.1_REVTeX_COMPLETE.pdf",
+      "document_id": "CORPUS-006",
+      "decision": "INGEST",
+      "rationale": "Paper A v6.1 oficial, data 10/08/2026, anterior ao v6.2 final (12/08). Documento crítico para delimitação temporal do abandono do R^α.",
+      "audit_passed": true,
+      "pre_conditions": [
+        "Verificar se R^α está presente no texto (esperado: SIM, pois v6.2 já não tem)",
+        "Verificar coerência temporal com v6.2 (já no corpus)"
+      ]
+    },
+    {
+      "filename": "Paper_A_v6.1_REVTeX_COMPLETE .pdf",
+      "document_id": "CORPUS-007",
+      "decision": "INGEST (com ressalva)",
+      "rationale": "Revisão posterior do Paper A v6.1, data 12/08/2026 (igual ao v6.2). Documento legítimo mas de identidade ambígua — revisão posterior rotulada como v6.1.",
+      "audit_passed": true,
+      "pre_conditions": [
+        "Verificar se contém R^α ou não (distinguindo de v6.2)",
+        "Registrar explicitamente como \"v6.1 revisão posterior\" no grafo temporal",
+        "Não confundir com v6.1 oficial (CORPUS-006)"
+      ]
+    },
+    {
+      "filename": "Paper_B_QDT_v6.1_PT.pdf",
+      "document_id": "CORPUS-011",
+      "decision": "INGEST (como novo documento, não substituição)",
+      "rationale": "Paper B v6.1 expandido (5 págs vs 3 anteriores). Documento distinto do Paper_B_QDT_JCP_v6.1_PT-BR.pdf já no corpus. Mantém o antigo como CORPUS-004.",
+      "audit_passed": true,
+      "pre_conditions": [
+        "Não substituir CORPUS-004 (Paper B antigo, 3 págs)",
+        "Registrar como CORPUS-011 (novo)",
+        "Verificar relação temporal com CORPUS-004"
+      ]
+    },
+    {
+      "filename": "Paper_A_v6.2_FINAL.pdf",
+      "document_id": "CORPUS-002 (substituição)",
+      "decision": "HOLD — substituição requer confirmação explícita",
+      "rationale": "Tamanho diferente do v6.2 já auditado (137.520 B vs 134.294 B = 3.226 B de diferença). Substituição silenciosa comprometeria integridade do corpus. Auditoria textual necessária antes de substituir.",
+      "audit_passed": true,
+      "pre_conditions": [
+        "Comparar texto extraído do novo v6.2 com v6.2 já no corpus",
+        "Identificar diferenças (3.226 B pode indicar pequena revisão)",
+        "Confirmar com Projetista Master se substituição é desejada"
+      ]
+    }
+  ],
+  "next_step": "Ingestão seletiva dos 3 documentos aprovados (CORPUS-006, CORPUS-007, CORPUS-011) após confirmação do Projetista Master. CORPUS-002 (substituição) permanece em HOLD até auditoria textual."
+}

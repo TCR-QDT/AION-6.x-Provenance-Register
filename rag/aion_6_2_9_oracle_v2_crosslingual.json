@@ -1,0 +1,397 @@
+{
+  "metadata": {
+    "experiment": "AION-6.2.9 — Correção do Oracle + Benchmark Cross-Lingual",
+    "timestamp": "2026-08-19T18:08:06+00:00",
+    "author_structure": "Edson C. Nascimento (Projetista Master)",
+    "author_implementation": "IA Curadora"
+  },
+  "b1_oracle_v1": {
+    "version": "v1",
+    "status": "FROZEN — historical benchmark",
+    "frozen_at": "2026-08-19T18:08:06+00:00",
+    "acceptable_chunks": [
+      "CORPUS-002#p1_01"
+    ],
+    "description": "Alvo único — Abstract do Paper A v6.2",
+    "rationale": "Oracle original do Passo 4 (AION-BENCH-001)",
+    "preservation_rule": "NÃO apagado — preservado para reprodução de resultados anteriores"
+  },
+  "b1_oracle_v2": {
+    "version": "v2",
+    "status": "ACTIVE — oracle metodologicamente corrigido",
+    "registered_at": "2026-08-19T18:08:06+00:00",
+    "acceptable_chunks": [
+      "CORPUS-002#p1_01",
+      "CORPUS-002#p1_02",
+      "CORPUS-002#p2_01",
+      "CORPUS-002#p5_01",
+      "CORPUS-002#p5_02"
+    ],
+    "description": "Conjunto de 5 chunks com evidência primária equivalente",
+    "rationale": "Auditoria AION-6.2.8 demonstrou documentalmente que o oracle v1 era excessivamente restritivo. 5 chunks em CORPUS-002 contêm definição/introdução da fórmula C = I × S × H^β.",
+    "audit_source": "aion_6_2_8_audit_gabarito.json",
+    "methodological_rule": "Oracle ampliado a partir da estrutura documental da evidência, NÃO a partir do resultado dos experimentos de retrieval."
+  },
+  "translation_map": {
+    "qual": "what",
+    "é": "is",
+    "a": "the",
+    "fonte": "source",
+    "exata": "exact",
+    "da": "of the",
+    "afirmação": "statement",
+    "de": "of",
+    "que": "that",
+    "métrica": "metric",
+    "tcr": "TCR"
+  },
+  "b1_pergunta_pt_br": "Qual é a fonte exata da afirmação de que a métrica TCR é C = I × S × H^β?",
+  "b1_pergunta_en": "What is the exact source of the statement that the TCR metric is C = I × S × H^β?",
+  "etapa_3_baseline_a_oracle_v2": {
+    "oracle_version": "v2",
+    "oracle_chunks": [
+      "CORPUS-002#p1_01",
+      "CORPUS-002#p1_02",
+      "CORPUS-002#p2_01",
+      "CORPUS-002#p5_01",
+      "CORPUS-002#p5_02"
+    ],
+    "runs": [
+      {
+        "run_idx": 1,
+        "top_k_hits": {
+          "1": false,
+          "3": false,
+          "5": false,
+          "10": false,
+          "20": false
+        },
+        "oracle_chunk_found": null,
+        "oracle_rank": null,
+        "top3_detail": [
+          {
+            "rank": 1,
+            "chunk_id": "CORPUS-011#p4_04",
+            "corpus_id": "CORPUS-011",
+            "score": 0.1562777391196012,
+            "in_oracle_v2": false
+          },
+          {
+            "rank": 2,
+            "chunk_id": "CORPUS-003#p8_02",
+            "corpus_id": "CORPUS-003",
+            "score": 0.13498629108882412,
+            "in_oracle_v2": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "CORPUS-003#p3_02",
+            "corpus_id": "CORPUS-003",
+            "score": 0.12392522852967908,
+            "in_oracle_v2": false
+          }
+        ],
+        "all_oracle_chunks_in_top20": [],
+        "top1_chunk": "CORPUS-011#p4_04",
+        "top1_score": 0.1562777391196012
+      },
+      {
+        "run_idx": 2,
+        "top_k_hits": {
+          "1": false,
+          "3": false,
+          "5": false,
+          "10": false,
+          "20": false
+        },
+        "oracle_chunk_found": null,
+        "oracle_rank": null,
+        "top3_detail": [
+          {
+            "rank": 1,
+            "chunk_id": "CORPUS-011#p4_04",
+            "corpus_id": "CORPUS-011",
+            "score": 0.1562777391196012,
+            "in_oracle_v2": false
+          },
+          {
+            "rank": 2,
+            "chunk_id": "CORPUS-003#p8_02",
+            "corpus_id": "CORPUS-003",
+            "score": 0.13498629108882412,
+            "in_oracle_v2": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "CORPUS-003#p3_02",
+            "corpus_id": "CORPUS-003",
+            "score": 0.12392522852967908,
+            "in_oracle_v2": false
+          }
+        ],
+        "all_oracle_chunks_in_top20": [],
+        "top1_chunk": "CORPUS-011#p4_04",
+        "top1_score": 0.1562777391196012
+      },
+      {
+        "run_idx": 3,
+        "top_k_hits": {
+          "1": false,
+          "3": false,
+          "5": false,
+          "10": false,
+          "20": false
+        },
+        "oracle_chunk_found": null,
+        "oracle_rank": null,
+        "top3_detail": [
+          {
+            "rank": 1,
+            "chunk_id": "CORPUS-011#p4_04",
+            "corpus_id": "CORPUS-011",
+            "score": 0.1562777391196012,
+            "in_oracle_v2": false
+          },
+          {
+            "rank": 2,
+            "chunk_id": "CORPUS-003#p8_02",
+            "corpus_id": "CORPUS-003",
+            "score": 0.13498629108882412,
+            "in_oracle_v2": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "CORPUS-003#p3_02",
+            "corpus_id": "CORPUS-003",
+            "score": 0.12392522852967908,
+            "in_oracle_v2": false
+          }
+        ],
+        "all_oracle_chunks_in_top20": [],
+        "top1_chunk": "CORPUS-011#p4_04",
+        "top1_score": 0.1562777391196012
+      }
+    ],
+    "hits_by_k": {
+      "1": 0,
+      "3": 0,
+      "5": 0,
+      "10": 0,
+      "20": 0
+    },
+    "deterministic": true,
+    "oracle_chunks_found_in_any_run": []
+  },
+  "etapa_4_cross_lingual_j_oracle_v2": {
+    "oracle_version": "v2",
+    "oracle_chunks": [
+      "CORPUS-002#p1_01",
+      "CORPUS-002#p1_02",
+      "CORPUS-002#p2_01",
+      "CORPUS-002#p5_01",
+      "CORPUS-002#p5_02"
+    ],
+    "runs": [
+      {
+        "run_idx": 1,
+        "top_k_hits": {
+          "1": false,
+          "3": false,
+          "5": true,
+          "10": true,
+          "20": true
+        },
+        "oracle_chunk_found": "CORPUS-002#p1_01",
+        "oracle_rank": 5,
+        "top3_detail": [
+          {
+            "rank": 1,
+            "chunk_id": "CORPUS-006#p1_01",
+            "corpus_id": "CORPUS-006",
+            "score": 0.1753200315731766,
+            "in_oracle_v2": false
+          },
+          {
+            "rank": 2,
+            "chunk_id": "CORPUS-006#p3_04",
+            "corpus_id": "CORPUS-006",
+            "score": 0.15694434331181287,
+            "in_oracle_v2": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "CORPUS-007#p4_01",
+            "corpus_id": "CORPUS-007",
+            "score": 0.15491194997242907,
+            "in_oracle_v2": false
+          }
+        ],
+        "all_oracle_chunks_in_top20": [
+          {
+            "rank": 5,
+            "chunk_id": "CORPUS-002#p1_01",
+            "score": 0.15420870398579276
+          },
+          {
+            "rank": 8,
+            "chunk_id": "CORPUS-002#p2_01",
+            "score": 0.1267027137877654
+          },
+          {
+            "rank": 15,
+            "chunk_id": "CORPUS-002#p5_02",
+            "score": 0.11542577611988117
+          }
+        ],
+        "top1_chunk": "CORPUS-006#p1_01",
+        "top1_score": 0.1753200315731766
+      },
+      {
+        "run_idx": 2,
+        "top_k_hits": {
+          "1": false,
+          "3": false,
+          "5": true,
+          "10": true,
+          "20": true
+        },
+        "oracle_chunk_found": "CORPUS-002#p1_01",
+        "oracle_rank": 5,
+        "top3_detail": [
+          {
+            "rank": 1,
+            "chunk_id": "CORPUS-006#p1_01",
+            "corpus_id": "CORPUS-006",
+            "score": 0.1753200315731766,
+            "in_oracle_v2": false
+          },
+          {
+            "rank": 2,
+            "chunk_id": "CORPUS-006#p3_04",
+            "corpus_id": "CORPUS-006",
+            "score": 0.15694434331181287,
+            "in_oracle_v2": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "CORPUS-007#p4_01",
+            "corpus_id": "CORPUS-007",
+            "score": 0.15491194997242907,
+            "in_oracle_v2": false
+          }
+        ],
+        "all_oracle_chunks_in_top20": [
+          {
+            "rank": 5,
+            "chunk_id": "CORPUS-002#p1_01",
+            "score": 0.15420870398579276
+          },
+          {
+            "rank": 8,
+            "chunk_id": "CORPUS-002#p2_01",
+            "score": 0.1267027137877654
+          },
+          {
+            "rank": 15,
+            "chunk_id": "CORPUS-002#p5_02",
+            "score": 0.11542577611988117
+          }
+        ],
+        "top1_chunk": "CORPUS-006#p1_01",
+        "top1_score": 0.1753200315731766
+      },
+      {
+        "run_idx": 3,
+        "top_k_hits": {
+          "1": false,
+          "3": false,
+          "5": true,
+          "10": true,
+          "20": true
+        },
+        "oracle_chunk_found": "CORPUS-002#p1_01",
+        "oracle_rank": 5,
+        "top3_detail": [
+          {
+            "rank": 1,
+            "chunk_id": "CORPUS-006#p1_01",
+            "corpus_id": "CORPUS-006",
+            "score": 0.1753200315731766,
+            "in_oracle_v2": false
+          },
+          {
+            "rank": 2,
+            "chunk_id": "CORPUS-006#p3_04",
+            "corpus_id": "CORPUS-006",
+            "score": 0.15694434331181287,
+            "in_oracle_v2": false
+          },
+          {
+            "rank": 3,
+            "chunk_id": "CORPUS-007#p4_01",
+            "corpus_id": "CORPUS-007",
+            "score": 0.15491194997242907,
+            "in_oracle_v2": false
+          }
+        ],
+        "all_oracle_chunks_in_top20": [
+          {
+            "rank": 5,
+            "chunk_id": "CORPUS-002#p1_01",
+            "score": 0.15420870398579276
+          },
+          {
+            "rank": 8,
+            "chunk_id": "CORPUS-002#p2_01",
+            "score": 0.1267027137877654
+          },
+          {
+            "rank": 15,
+            "chunk_id": "CORPUS-002#p5_02",
+            "score": 0.11542577611988117
+          }
+        ],
+        "top1_chunk": "CORPUS-006#p1_01",
+        "top1_score": 0.1753200315731766
+      }
+    ],
+    "hits_by_k": {
+      "1": 0,
+      "3": 0,
+      "5": 3,
+      "10": 3,
+      "20": 3
+    },
+    "deterministic": true,
+    "oracle_chunks_found_in_any_run": [
+      "CORPUS-002#p1_01"
+    ]
+  },
+  "etapa_5_comparison": {
+    "a_v2_hits_by_k": {
+      "1": 0,
+      "3": 0,
+      "5": 0,
+      "10": 0,
+      "20": 0
+    },
+    "j_v2_hits_by_k": {
+      "1": 0,
+      "3": 0,
+      "5": 3,
+      "10": 3,
+      "20": 3
+    },
+    "a_v2_oracle_chunks_found": [],
+    "j_v2_oracle_chunks_found": [
+      "CORPUS-002#p1_01"
+    ]
+  },
+  "etapa_6_verdict": {
+    "result": "B",
+    "description": "Cross-lingual recupera chunk do oracle no Top-20 mas não no Top-3",
+    "interpretation": "Evidência de que componente cross-lingual é causalmente relevante",
+    "b1_status": "FAIL-SYSTEM (com evidência de mecanismo)",
+    "next_action": "Não é resolução operacional; mas identifica mecanismo"
+  }
+}

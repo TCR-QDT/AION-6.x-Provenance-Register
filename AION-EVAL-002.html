@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AION-EVAL-002 — Protocolo de Avaliação Multicamada</title>
+<meta name="aion:id" content="AION-EVAL-002">
+<meta name="aion:version" content="1.0.0">
+<meta name="aion:status" content="Frozen">
+<meta name="author" content="Edson Carvalho do Nascimento">
+<style>
+body{font-family:system-ui,sans-serif;max-width:1100px;margin:2rem auto;line-height:1.6;padding:0 1rem;background:#fafafa;color:#111}
+header,footer{border-bottom:2px solid #2c3e50;padding-bottom:1rem;margin-bottom:2rem}
+h1{color:#1a252f}
+h2{color:#2c3e50;border-left:4px solid #3498db;padding-left:.8rem;margin-top:2rem}
+h3{color:#2c3e50}
+table{border-collapse:collapse;width:100%;margin:1.5rem 0;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,0.1)}
+th,td{border:1px solid #bdc3c7;padding:.7rem;text-align:left;vertical-align:top}
+th{background:#ecf0f1;font-weight:600}
+code{background:#e8e8e8;padding:.15rem .4rem;border-radius:3px;font-size:.9em}
+.badge{display:inline-block;padding:.2rem .6rem;border-radius:4px;font-size:.8rem;color:#fff;font-weight:bold}
+.b-R{background:#3498db}
+.b-P{background:#9b59b6}
+.b-T{background:#16a085}
+.b-E{background:#27ae60}
+.b-N{background:#f39c12}
+.b-C{background:#e74c3c}
+.b-S{background:#8e44ad}
+.b-H{background:#2c3e50}
+.rule{background:#fff3cd;border-left:4px solid #f39c12;padding:1rem;margin:1rem 0}
+.layer{background:#e8f4f8;border-left:4px solid #3498db;padding:1rem;margin:.5rem 0}
+hr{margin:2rem 0;border:0;border-top:1px dashed #bdc3c7}
+</style>
+</head>
+<body>
+<article data-aion-id="AION-EVAL-002" data-aion-version="1.0.0">
+<header>
+<h1>AION-EVAL-002</h1>
+<h2>Protocolo de Avaliação Multicamada</h2>
+<p><strong>Status:</strong> Frozen 1.0.0</p>
+<p><strong>Autor da estrutura:</strong> Edson Carvalho do Nascimento (Projetista Master)</p>
+<p><strong>Implementação técnica:</strong> IA Curadora</p>
+<p><strong>Data:</strong> 17 de agosto de 2026</p>
+<p><strong>Substitui:</strong> AION-EVAL-001 v0.1.0 (mantido como histórico)</p>
+</header>
+
+<section id="objetivo">
+<h2>1. Objetivo</h2>
+<p>Estabelecer protocolo normativo para avaliação de respostas do sistema AION com <strong>avaliação multicamada</strong> — cada camada do pipeline (retrieval, contexto, proveniência, resposta) é avaliada individualmente, e a avaliação final não pode ser compensada por falhas em camadas críticas.</p>
+</section>
+
+<section id="camadas">
+<h2>2. Camadas do Pipeline Avaliadas</h2>
+
+<div class="layer">
+<strong>PERGUNTA</strong> → formulação da consulta
+</div>
+<div class="layer">
+<strong>RETRIEVAL</strong> → quais chunks foram recuperados do vector store
+</div>
+<div class="layer">
+<strong>CONTEXTO</strong> → o conjunto de chunks efetivamente passado ao LLM
+</div>
+<div class="layer">
+<strong>RESPOSTA</strong> → texto gerado pelo LLM com base no contexto
+</div>
+<div class="layer">
+<strong>AVALIAÇÃO</strong> → aplicação das 10 categorias abaixo
+</div>
+</section>
+
+<section id="categorias">
+<h2>3. Categorias de Avaliação (10 categorias multicamada)</h2>
+
+<table>
+<thead>
+<tr><th>Código</th><th>Camada</th><th>O que mede</th><th>Critério de PASS</th></tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="badge b-R">R1</span></td>
+<td>Retrieval</td>
+<td>Retrieval correto — chunks recuperados contêm a informação correta</td>
+<td>Chunk correto (definido no gabarito) está entre os top-K recuperados</td>
+</tr>
+<tr>
+<td><span class="badge b-R">R2</span></td>
+<td>Retrieval</td>
+<td>Retrieval suficiente — contexto contém informação suficiente para responder</td>
+<td>A informação necessária está presente no contexto, mesmo que em chunk diferente do esperado</td>
+</tr>
+<tr>
+<td><span class="badge b-P">P1</span></td>
+<td>Proveniência</td>
+<td>Proveniência correta — resposta cita o documento certo</td>
+<td>Documento citado na resposta corresponde ao documento do gabarito</td>
+</tr>
+<tr>
+<td><span class="badge b-P">P2</span></td>
+<td>Proveniência</td>
+<td>Proveniência granular — resposta cita seção/página/chunk específico</td>
+<td>Citação inclui referência granular (página, seção, ou chunk_id)</td>
+</tr>
+<tr>
+<td><span class="badge b-T">T1</span></td>
+<td>Temporalidade</td>
+<td>Coerência temporal — resposta distingue versões temporais</td>
+<td>Resposta distingue entre datas/versões diferentes e não mistura estados de épocas distintas</td>
+</tr>
+<tr>
+<td><span class="badge b-E">E1</span></td>
+<td>Epistemologia</td>
+<td>Distinção evidência/interpretação — resposta marca [E]/[I]/[H]</td>
+<td>Resposta distingue afirmações textuais de inferências</td>
+</tr>
+<tr>
+<td><span class="badge b-N">N1</span></td>
+<td>Negativa</td>
+<td>Tratamento correto de ausência — sistema declara "não encontrado" quando apropriado</td>
+<td>Quando a informação não está no corpus, sistema diz "INFORMAÇÃO NÃO ENCONTRADA" em vez de inferir</td>
+</tr>
+<tr>
+<td><span class="badge b-C">C1</span></td>
+<td>Contradição</td>
+<td>Detecção de contradição entre documentos</td>
+<td>Quando há contradição no corpus, sistema identifica com citação dupla</td>
+</tr>
+<tr>
+<td><span class="badge b-S">S1</span></td>
+<td>Síntese</td>
+<td>Qualidade da síntese histórica — reconstrução sem misturar versões</td>
+<td>Resposta distingue versões sem combinar estados incompatíveis</td>
+</tr>
+<tr>
+<td><span class="badge b-H">H1</span></td>
+<td>Honestidade</td>
+<td>Honestidade epistemológica — sistema não disfarça incerteza</td>
+<td>Resposta marca UNKNOWN quando data não pode ser estabelecida; não artificialmente data</td>
+</tr>
+</tbody>
+</table>
+</section>
+
+<section id="regra-nao-compensacao">
+<h2>4. Regra de Não-Compensação (Crítica)</h2>
+
+<div class="rule">
+<strong>REGRA FUNDAMENTAL:</strong> Uma resposta semanticamente correta <strong>não pode compensar</strong> retrieval incorreto quando a pergunta exige proveniência.
+</div>
+
+<p>Isto significa:</p>
+<ul>
+<li>Se a pergunta exige proveniência (P1 ou P2) e o retrieval falhou (R1 = FAIL), a avaliação final é <code>FAIL</code> mesmo que a resposta seja semanticamente correta.</li>
+<li>Se a pergunta exige temporalidade (T1) e o sistema recuperou chunks de versão errada, a avaliação final é <code>FAIL</code>.</li>
+<li>Honestidade epistemológica (H1) é <strong>pré-requisito</strong>: sem H1, nenhuma outra categoria pode ser PASS.</li>
+</ul>
+
+<p>As categorias têm dependências:</p>
+<ul>
+<li><strong>H1</strong> é pré-requisito de todas</li>
+<li><strong>R1</strong> é pré-requisito de P1, P2, T1</li>
+<li><strong>R2</strong> é pré-requisito de C1, S1</li>
+<li><strong>N1</strong> é independente (pode PASS mesmo com R1 FAIL, se a resposta correta for "não encontrado")</li>
+</ul>
+</section>
+
+<section id="status-pass-fail">
+<h2>5. Status Possíveis por Categoria</h2>
+
+<table>
+<tr><th>Status</th><th>Significado</th></tr>
+<tr><td><code>PASS</code></td><<td>Critério atendido</td></tr>
+<tr><td><code>FAIL</code></td><td>Critério não atendido</td></tr>
+<tr><td><code>PASS-SEMANTIC</code></td><td>Critério atendido semanticamente, mas com formulação lexical diferente da esperada</td></tr>
+<tr><td><code>FAIL-LEXICAL-ONLY</code></td><td>Critério falhou apenas por divergência lexical (sinônimos); semanticamente correto</td></tr>
+<tr><td><code>N/A</code></td><td>Categoria não aplicável a este teste</td></tr>
+</table>
+</section>
+
+<section id="avaliacao-final">
+<h2>6. Avaliação Final</h2>
+
+<p>A avaliação final de um teste é calculada considerando:</p>
+<ol>
+<li><strong>H1</strong> deve ser PASS ou PASS-SEMANTIC (pré-requisito)</li>
+<li>Para perguntas que exigem proveniência: <strong>R1</strong> AND <strong>P1</strong> devem ser PASS</li>
+<li>Para perguntas que exigem temporalidade: <strong>R1</strong> AND <strong>T1</strong> devem ser PASS</li>
+<li>Para perguntas sobre ausência: <strong>N1</strong> deve ser PASS (independente de R1)</li>
+<li>Para perguntas de síntese: <strong>S1</strong> AND <strong>R2</strong> devem ser PASS</li>
+</ol>
+
+<p>Status final:</p>
+<ul>
+<li><code>PASS</code> — todos os critérios aplicáveis atendidos</li>
+<li><code>PARTIAL</code> — alguns critérios não críticos falharam</li>
+<li><code>FAIL</code> — critério crítico (H1, R1 para perguntas com proveniência/temporalidade) falhou</li>
+<li><code>FAIL-LEXICAL-ONLY</code> — apenas falhas léxicas, semanticamente correto</li>
+</ul>
+</section>
+
+<section id="proveniencia-avaliacao">
+<h2>7. Proveniência da Avaliação</h2>
+
+<p>Cada avaliação registra:</p>
+<ul>
+<li><strong>test_id:</strong> identificador do teste (ex: B1, B2, HIST-001)</li>
+<li><strong>pergunta:</strong> texto original</li>
+<li><strong>resposta:</strong> texto gerado</li>
+<li><strong>retrieved_chunks:</strong> lista de chunks recuperados (top-K)</li>
+<li><strong>contexto_passado_ao_llm:</strong> chunks efetivamente usados</li>
+<li><strong>categoria_status:</strong> dict {R1: PASS/FAIL/..., R2: ..., ..., H1: ...}</li>
+<li><strong>avaliacao_final:</strong> PASS / PARTIAL / FAIL / FAIL-LEXICAL-ONLY</li>
+<li><strong>justificativa:</strong> explicação da decisão</li>
+<li><strong>avaliador:</strong> Humano ou IA</li>
+<li><strong>timestamp:</strong> data ISO</li>
+</ul>
+</section>
+
+<section id="aplicacao-bench">
+<h2>8. Aplicação ao AION-BENCH-001</h2>
+
+<p>Reavaliação esperada dos 7 testes B1-B7 com AION-EVAL-002:</p>
+
+<table>
+<tr><th>Teste</th><th>Categorias aplicáveis</th><th>Crítico</th><th>Esperado (semântico)</th></tr>
+<tr><td>B1 (Proveniência)</td><td>R1, R2, P1, P2, H1</td><td>R1, P1</td><td>R1=FAIL → FAIL (retrieval pegou chunk errado)</td></tr>
+<tr><td>B2 (Temporalidade)</td><td>R1, R2, T1, P2, H1</td><td>R1, T1</td><td>PASS-SEMANTIC (resposta correta, métrica léxica falha)</td></tr>
+<tr><td>B3 (Revogação)</td><td>R1, R2, T1, H1</td><td>R1, T1</td><td>PASS-SEMANTIC (sinônimos não reconhecidos pela métrica anterior)</td></tr>
+<tr><td>B4 (Ausência)</td><td>R2, N1, H1</td><td>N1, H1</td><td>PASS</td></tr>
+<tr><td>B5 (Contradição)</td><td>R2, C1, P2, H1</td><td>C1</td><td>PASS</td></tr>
+<tr><td>B6 (Lacuna)</td><td>R2, N1, H1</td><td>N1, H1</td><td>PASS</td></tr>
+<tr><td>B7 (Síntese)</td><td>R2, S1, T1, P2, H1</td><td>S1, T1</td><td>PASS</td></tr>
+</table>
+</section>
+
+<section id="historico">
+<h2>9. Histórico</h2>
+<table>
+<tr><th>Versão</th><th>Data</th><th>Descrição</th></tr>
+<tr><td>0.1.0 (AION-EVAL-001)</td><td>2026-08-17</td><td>Primeira versão. 7 categorias semânticas. Substituída por v1.0.0.</td></tr>
+<tr><td>1.0.0 (AION-EVAL-002)</td><td>2026-08-17</td><td>Protocolo multicamada. 10 categorias (R1-H1). Regra de não-compensação. Distinção PASS-SEMANTIC e FAIL-LEXICAL-ONLY.</td></tr>
+</table>
+</section>
+
+<footer>
+<p><strong>Próximo passo operacional:</strong> Rebenchmark B1-B7 com AION-EVAL-002 (Passo 5.11).</p>
+<p><strong>Princípio fundamental:</strong> Cada nova tecnologia precisa provar que merece ocupar espaço no AION.</p>
+<p><em>"Uma resposta semanticamente correta não pode compensar retrieval incorreto quando a pergunta exige proveniência."</em></p>
+</footer>
+</article>
+</body>
+</html>

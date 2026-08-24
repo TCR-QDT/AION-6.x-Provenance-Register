@@ -1,0 +1,175 @@
+{
+  "metadata": {
+    "experiment": "AION-6.2.12 — B2 Provenance Failure Isolation",
+    "timestamp": "2026-08-20T22:44:32+00:00",
+    "author_structure": "Edson C. Nascimento (Projetista Master)",
+    "author_implementation": "IA Curadora"
+  },
+  "etapa_1_reproducao": {
+    "runs": [
+      {
+        "run_idx": 1,
+        "tempo_segundos": 5.74,
+        "retrieved_ids_top5": [
+          "CORPUS-005#chunk_001",
+          "CORPUS-003#p3_03",
+          "CORPUS-004#p2_04",
+          "CORPUS-003#p3_02",
+          "CORPUS-001#chunk_001"
+        ],
+        "retrieved_ids_all": [
+          "CORPUS-005#chunk_001",
+          "CORPUS-003#p3_03",
+          "CORPUS-004#p2_04",
+          "CORPUS-003#p3_02",
+          "CORPUS-001#chunk_001",
+          "CORPUS-011#p2_03",
+          "CORPUS-003#p10_02",
+          "CORPUS-003#p11_01"
+        ],
+        "ids_presented_to_llm": [
+          "CORPUS-005#chunk_001",
+          "CORPUS-003#p3_03",
+          "CORPUS-004#p2_04",
+          "CORPUS-003#p3_02",
+          "CORPUS-001#chunk_001"
+        ],
+        "ids_cited_by_llm": [
+          "CORPUS-005#chunk_001"
+        ],
+        "ids_valid": [
+          "CORPUS-005#chunk_001"
+        ],
+        "ids_invalid": [],
+        "invalid_count": 0,
+        "valid_count": 1,
+        "evidence_status": "EVIDENCE_VALID",
+        "eval_status": "PASS-SEMANTIC",
+        "answer_excerpt": "[A métrica C = I × S × H^β] [E] [fonte: chunk_id=CORPUS-005#chunk_001] — Apareceu pela primeira vez no corpus na Cover Letter PT-BR (CORPUS-005) de 10 de agosto de 2026, descrita como \"uma métrica unificada C = I × S × H^β para a coerência informacional\" na versão v6.1 aspiracional.\n\n[A última modificação documentada] [E] [fonte: chunk_id=CORPUS-002] — Ocorreu no Paper A v6.2 FINAL de 12 de agosto de 2026, onde β foi calibrado via LOOCV sobre 12 fixtures sintéticas, com o estado atual sendo \"C ="
+      },
+      {
+        "run_idx": 2,
+        "tempo_segundos": 2.51,
+        "retrieved_ids_top5": [
+          "CORPUS-005#chunk_001",
+          "CORPUS-003#p3_03",
+          "CORPUS-004#p2_04",
+          "CORPUS-003#p3_02",
+          "CORPUS-001#chunk_001"
+        ],
+        "retrieved_ids_all": [
+          "CORPUS-005#chunk_001",
+          "CORPUS-003#p3_03",
+          "CORPUS-004#p2_04",
+          "CORPUS-003#p3_02",
+          "CORPUS-001#chunk_001",
+          "CORPUS-011#p2_03",
+          "CORPUS-003#p10_02",
+          "CORPUS-003#p11_01"
+        ],
+        "ids_presented_to_llm": [
+          "CORPUS-005#chunk_001",
+          "CORPUS-003#p3_03",
+          "CORPUS-004#p2_04",
+          "CORPUS-003#p3_02",
+          "CORPUS-001#chunk_001"
+        ],
+        "ids_cited_by_llm": [
+          "CORPUS-005#chunk_001",
+          "CORPUS-002#chunk_001"
+        ],
+        "ids_valid": [
+          "CORPUS-005#chunk_001"
+        ],
+        "ids_invalid": [
+          "CORPUS-002#chunk_001"
+        ],
+        "invalid_count": 1,
+        "valid_count": 1,
+        "evidence_status": "PROVENANCE_INVALID",
+        "eval_status": "PASS-SEMANTIC",
+        "answer_excerpt": "[A métrica C = I × S × H^β apareceu pela primeira vez no corpus em CORPUS-005 (Cover Letter PT-BR) em 10 de agosto de 2026, descrita como \"uma métrica unificada C = I × S × H^β para a coerência informacional\" com β canônico não declarado.] [E] [fonte: chunk_id=CORPUS-005#chunk_001]\n\n[A última modificação documentada ocorreu em CORPUS-002 (Paper A v6.2 FINAL) em 12 de agosto de 2026, onde β foi calibrado via LOOCV como β=0.5 sobre 12 fixtures sintéticas.] [E] [fonte: chunk_id=CORPUS-002#chunk_001"
+      },
+      {
+        "run_idx": 3,
+        "tempo_segundos": 2.35,
+        "retrieved_ids_top5": [
+          "CORPUS-005#chunk_001",
+          "CORPUS-003#p3_03",
+          "CORPUS-004#p2_04",
+          "CORPUS-003#p3_02",
+          "CORPUS-001#chunk_001"
+        ],
+        "retrieved_ids_all": [
+          "CORPUS-005#chunk_001",
+          "CORPUS-003#p3_03",
+          "CORPUS-004#p2_04",
+          "CORPUS-003#p3_02",
+          "CORPUS-001#chunk_001",
+          "CORPUS-011#p2_03",
+          "CORPUS-003#p10_02",
+          "CORPUS-003#p11_01"
+        ],
+        "ids_presented_to_llm": [
+          "CORPUS-005#chunk_001",
+          "CORPUS-003#p3_03",
+          "CORPUS-004#p2_04",
+          "CORPUS-003#p3_02",
+          "CORPUS-001#chunk_001"
+        ],
+        "ids_cited_by_llm": [
+          "CORPUS-005#chunk_001",
+          "CORPUS-002#chunk_001"
+        ],
+        "ids_valid": [
+          "CORPUS-005#chunk_001"
+        ],
+        "ids_invalid": [
+          "CORPUS-002#chunk_001"
+        ],
+        "invalid_count": 1,
+        "valid_count": 1,
+        "evidence_status": "PROVENANCE_INVALID",
+        "eval_status": "PASS-SEMANTIC",
+        "answer_excerpt": "A métrica C = I × S × H^β apareceu pela primeira vez no corpus na versão v6.1 aspiracional, conforme descrito na Cover Letter PT-BR (CORPUS-005) de 10 de agosto de 2026, onde era apresentada como uma métrica unificada com β canônico não declarado. [E] [fonte: chunk_id=CORPUS-005#chunk_001]\n\nSua última modificação documentada ocorreu na versão v6.2 do Paper A (CORPUS-002) de 12 de agosto de 2026, quando β foi calibrado via LOOCV sobre 12 fixtures sintéticas, resultando em β=0.5 adotado como valor"
+      }
+    ],
+    "n_runs": 3,
+    "deterministic_failure": false,
+    "invalid_ids_per_run": [
+      [],
+      [
+        "CORPUS-002#chunk_001"
+      ],
+      [
+        "CORPUS-002#chunk_001"
+      ]
+    ],
+    "all_unique_invalid_ids": [
+      "CORPUS-002#chunk_001"
+    ]
+  },
+  "etapa_2_classificacao": [
+    {
+      "invalid_id": "CORPUS-002#chunk_001",
+      "document_id": "CORPUS-002",
+      "document_exists": true,
+      "chunk_exists": false,
+      "is_historical": false,
+      "similar_ids_in_corpus": [],
+      "classification": "DOC_EXISTS_BUT_CHUNK_DOES_NOT",
+      "description": "Documento CORPUS-002 existe, mas chunk CORPUS-002#chunk_001 não existe no documento"
+    }
+  ],
+  "etapa_3_origem": {
+    "invalid_ids_analyzed": [],
+    "origins": []
+  },
+  "etapa_4_veredito": {
+    "cause": "GENERATION — LLM fabricou ID usando documento existente mas chunk inexistente",
+    "correctable": false,
+    "correction": "Não corrigível sem alterar geração do LLM; validator já intercepta corretamente",
+    "verdict": "FALHA NÃO REPRODUZIDA — erro não determinístico",
+    "action": "Reproduzir com mais runs"
+  }
+}
